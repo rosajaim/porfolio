@@ -8,7 +8,6 @@
   },
   "author": "Jaime R",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.9.2"
   }
