@@ -2,14 +2,20 @@
     height: 95vh;
     background-image: linear-gradient( 
         to right top, 
-        rgba($color-black, .6), 
-        rgba($color-black, .6)), 
+        rgba($color-black, .3), 
+        rgba($color-black, .3)), 
         url(../img/canyon-1.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
+    @include respond(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    
+    }
     
     &__logo-box {
         position: absolute;

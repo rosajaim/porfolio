@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Popup navigation -->
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
@@ -27,8 +28,8 @@
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
-                        <span>01</span>About Natous</a>
+                    <a href="#section-about" class="navigation__link">
+                        <span>01</span>About Natours</a>
                 </li>
                 <li class="navigation__item">
                     <a href="#" class="navigation__link">
@@ -50,7 +51,7 @@
         </nav>
     </div>
 
-
+    <!-- Home page header -->
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -62,11 +63,11 @@
             </h1>
             <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
         </div>
-
     </header>
 
     <main>
-        <section class="section-about">
+            <!-- About section -->
+        <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary box effect2">
                     Exciting tours for adventurous people
@@ -105,8 +106,8 @@
             </div>
         </section>
 
+        <!-- Features section -->
         <section class="section-features">
-
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="feature-box">
@@ -150,6 +151,7 @@
             </div>
         </section>
 
+        <!-- Tours section -->
         <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -261,6 +263,7 @@
             </div>
         </section>
 
+        <!-- Stories section -->
         <section class="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
@@ -321,6 +324,7 @@
             </div>
         </section>
 
+        <!-- Book section -->
         <section class="section-book">
             <div class="row">
                 <div class="book">
@@ -365,6 +369,7 @@
         </section>
     </main>
 
+      <!-- Footer -->
     <footer class="footer">
         <div class="footer__logo-box">
             <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
@@ -394,15 +399,17 @@
             <div class="col-1-of-2">
                 <p class="footer__copyright">
                     Built by
-                    <a href="#" class="footer__link">Jaime Rosales</a> for his online course
-                    <a href="Advanced CSS and Sass" class="footer__link"></a>. Copyright &copy; Jaime Rosales
-                    <span>Photo by Daniel Olah on Unsplash</span>
+                    <a href="#" class="footer__link">Jaime Rosales. </a>
+                    <a href="Advanced CSS and Sass" class="footer__link"></a>
+                    <span>Home page photo by Daniel Olah on <a href="https://unsplash.com/" target="_blank" class="footer__link">Unsplash</a></span><br>
+                    <span>Copyright &copy; Jaime Rosales</span>
                 </p>
 
             </div>
         </div>
     </footer>
 
+      <!-- Tour popup  -->
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
