@@ -66,7 +66,7 @@
     </header>
 
     <main>
-            <!-- About section -->
+        <!-- About section -->
         <section class="section-about" id="section-about">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary box effect2">
@@ -98,9 +98,21 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
+
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="Photo 1" class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="Photo 2" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
+                            alt="Photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
+
+
+                        <!-- 
                         <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
+                        <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3"> -->
                     </div>
                 </div>
             </div>
@@ -369,10 +381,15 @@
         </section>
     </main>
 
-      <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x," media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png 2x">
+            </picture>
+
         </div>
         <div class="row">
             <div class="col-1-of-2">
@@ -401,7 +418,10 @@
                     Built by
                     <a href="#" class="footer__link">Jaime Rosales. </a>
                     <a href="Advanced CSS and Sass" class="footer__link"></a>
-                    <span>Home page photo by Daniel Olah on <a href="https://unsplash.com/" target="_blank" class="footer__link">Unsplash</a></span><br>
+                    <span>Home page photo by Daniel Olah on
+                        <a href="https://unsplash.com/" target="_blank" class="footer__link">Unsplash</a>
+                    </span>
+                    <br>
                     <span>Copyright &copy; Jaime Rosales</span>
                 </p>
 
@@ -409,7 +429,7 @@
         </div>
     </footer>
 
-      <!-- Tour popup  -->
+    <!-- Tour popup  -->
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__left">
@@ -424,7 +444,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Et odio pellentesque diam volutpat. Enim sed faucibus turpis in eu mi bibendum neque egestas. Dignissim
                     convallis aenean et tortor at risus viverra adipiscing at. Amet justo donec enim diam vulputate ut pharetra.
-                    Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus. 
+                    Varius sit amet mattis vulputate enim nulla aliquet porttitor lacus.
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
             </div>
