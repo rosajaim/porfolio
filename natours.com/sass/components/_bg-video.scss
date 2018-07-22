@@ -5,10 +5,10 @@
     height: 100%;
     width: 100%;
     z-index: -1;
-    // opacity: .14;
+    opacity: .15;
     overflow: hidden;
-    // background-color: rgba(0, 0, 0, 0.7);
-    filter: opacity(25%);
+    background-color: rgba(0, 0, 0, 0.7);
+    // filter: opacity(25%);
 
     &__contant {
         height: 100%;
