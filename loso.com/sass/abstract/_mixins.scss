@@ -1,0 +1,13 @@
+@mixin sectionText {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 55px;  
+}
+
+@mixin descriptionText {
+    color: $color-dark-grey;
+    font-size: 15px;
+}

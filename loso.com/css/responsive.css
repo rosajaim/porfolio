@@ -1,0 +1,55 @@
+/* SMALL DEVISES */
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 100vh; 
+    }
+
+    .header-text {
+      padding-top: 50px;      
+    }
+    .about-iphone img {
+        display: none;
+    }
+
+    .heading-1 {
+        line-height: 60px;
+        margin-top: 0;
+    }
+    .purchase-now .col-md-3 {     
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .section-title {
+        padding-top: 40px;
+    }
+
+
+
+.counter-text {
+    margin-bottom: 40px;
+}
+}
+
+/* SMALL DEVISES AND TABLETS */
+@media only screen and (max-width: 768px) {
+    
+    .header-iphone {
+        display: none;
+    }
+    .header-text, .header-btns {
+        /* text-align: center; */
+    }
+}
+
+/* MEDIUM DEVISES, DESKTOPS */
+@media only screen and (min-width: 992px) {
+    
+    
+}
+
+/* LARGE DEVISES, LARGE SCREENS*/
+@media only screen and (min-width: 1200px) {
+    
+    
+}

@@ -1,0 +1,20 @@
+.purchase-now {
+    background-color: $color-dark-2;
+    padding: 100px 0px 100px 0px;
+}
+
+.purchase-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: $color-light-grey;
+}
+
+.btn-purchase_now {
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $color-primary;
+    padding: 15px 35px;
+    border: 1px solid $color-primary;
+    margin-left: 10px;
+    transition: all 1s;
+}

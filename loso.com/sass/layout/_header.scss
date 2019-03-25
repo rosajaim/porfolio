@@ -1,0 +1,70 @@
+.header {
+    height: 80vh;
+    background-image: linear-gradient(rgba($color-primary, 0.85), rgba($color-primary, 0.85)), url("/img/header-bg.jpg");
+    background-attachment: fixed;
+    background-position: bottom left ;
+    background-repeat: no-repeat;
+    z-index: -10;
+
+    
+    &-iphone {
+        margin-top: 100px;
+        width: 100%;
+
+    }
+
+    &-text {
+        color: $color-white;
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 600;
+        padding: 150px 0 0 50px;
+    }
+
+    &-btns {
+        padding: 40px 0 0 20px;
+    }
+
+    &-arrow_down {
+        color: $color-white;
+        font-size: 20px;
+        padding-left: 7px;
+    }
+}
+
+.btn-download,
+.btn-download:focus,
+.btn-download:active,
+.btn-download:visited {
+    // background: $color-primary;
+    color: $color-white;
+    border-color: $color-primary-dark;
+    padding: 10px 30px 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all .4s;
+}
+
+.btn-download:hover {
+    background-color: $color-primary-dark;
+    color: $color-white;
+}
+
+.btn-tour,
+.btn-tour:focus,
+.btn-tour:active,
+.btn-tour:visited {
+    color: $color-white;
+    background: transparent;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: all .4s;
+}
+
+.btn-tour:hover {
+    color: $color-white;
+}
+

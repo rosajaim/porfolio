@@ -1,0 +1,49 @@
+.choose-us-wraper {
+    padding-top: 50px;
+}
+
+.choose-us-title {
+    padding-bottom: 5px;
+}
+
+.choose-us-title__text{
+    margin-top: 40px;
+    font-size: 19px;
+    line-height: 24px;
+}
+
+.about-iphone {
+    padding-top: 32px;
+    margin-top: 8px;
+}
+
+.section-title {
+    padding-top: 20px;
+}
+
+.about-text {
+   @include sectionText;
+}
+
+.choose-us-item {
+    position: relative;
+    padding: 0 0 4px 80px;
+    
+}
+
+.choose-us-description:last-child {
+    margin-bottom: 49px
+}
+
+.choose-us-text {
+   @include descriptionText;
+}
+
+.choose-us-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 48px;
+    color: $color-primary;
+    transition: all 1s;
+}

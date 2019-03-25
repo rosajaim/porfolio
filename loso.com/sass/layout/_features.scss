@@ -1,0 +1,55 @@
+.purchase-now {
+    margin-bottom: 50px;
+}
+.features-wraper {
+    padding: 30px 0 70px 0;
+    @include descriptionText;
+
+}
+
+.left-features_item {
+    position: relative;
+    padding-right: 90px;
+    margin: 35px 0 65px 0;
+}
+
+.right-features_item {
+    position: relative;
+    padding-left: 90px;
+    margin: 35px 0 65px 0;
+}
+
+.features-title_text {
+    @include sectionText;
+    margin-bottom: 50px;
+}
+
+.features-img {
+    width: 70%;
+    margin-left: 55px;
+}
+
+.right-features_icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 30px;
+    color: $color-primary;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+
+}
+
+.left-features_icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    color: $color-primary;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+}
+
+

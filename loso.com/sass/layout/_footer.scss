@@ -1,0 +1,36 @@
+.footer {
+    background-color: $color-dark-2;
+    padding: 35px 0 35px 0;
+    border-bottom: 3px solid $color-primary;
+}
+
+#copyright {
+    width: 50%;
+}
+
+#copyright p {
+    color: $color-white;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#copyright p a {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+.scroll-top {
+    text-align: right;  
+}
+
+.scroll-top a {
+    background-color: $color-primary;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.scroll-top a i {
+    color: $color-white;
+    font-size: 25px;
+}
