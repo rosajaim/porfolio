@@ -1,3 +1,9 @@
+/* @media only screen and (max-width: 700px) {
+    .about-iphone img {
+        display: none;
+    }
+} */
+ 
 /* SMALL DEVISES */
 @media only screen and (max-width: 767px) {
     .header {
@@ -5,7 +11,16 @@
     }
 
     .header-text {
-      padding-top: 50px;      
+      padding-top: 50px; 
+      padding-left: 0;     
+    }
+
+    .header.btns {
+        padding-left: 0;
+    }
+
+    .btn-tour {
+        margin-left: 0;
     }
     .about-iphone img {
         display: none;
@@ -24,11 +39,11 @@
         padding-top: 40px;
     }
 
+    .counter-text {
+        margin-bottom: 40px;
+    }
 
-
-.counter-text {
-    margin-bottom: 40px;
-}
+    
 }
 
 /* SMALL DEVISES AND TABLETS */
@@ -38,7 +53,7 @@
         display: none;
     }
     .header-text, .header-btns {
-        /* text-align: center; */
+        text-align: center;
     }
 }
 
