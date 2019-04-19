@@ -34,7 +34,9 @@
         position: fixed;
         top: 6.5rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        background-image: radial-gradient(
+        rgba($color-primary-light, 0.9),
+        rgba($color-primary-dark, 0.9));
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -68,6 +70,7 @@
         list-style: none;
         text-align: center;
         width: 100%;
+        display: none;
     }
 
     &__item {
@@ -161,3 +164,7 @@
         transform: rotate(-135deg);
     }
 }
+   
+.visible {
+    display: block;
+  }

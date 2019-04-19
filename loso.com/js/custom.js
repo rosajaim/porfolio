@@ -1,4 +1,4 @@
-// =============== SHOW AND HIDE MENU WHEN SCROLLING ===============
+//  SHOW AND HIDE MENU WHEN SCROLLING 
 $(document).ready(function() {
     'use strict';
     $(window).scroll(function() { 
@@ -81,8 +81,7 @@ $(document).ready(function() {
                 $(".navbar-nav li a[href='#" + bb + "']").parent().addClass("active");
 
             } else {
-                $(".navbar-nav li a[href='#" + bb + "']").parent().removeClass("active");
-                
+                $(".navbar-nav li a[href='#" + bb + "']").parent().removeClass("active");   
             }          
         });
     });  
