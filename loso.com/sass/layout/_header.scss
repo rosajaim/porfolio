@@ -1,12 +1,13 @@
 .header {
     height: 80vh;
-    background-image: linear-gradient(rgba($color-primary, 0.85), rgba($color-primary, 0.85)), url("/img/header-bg.jpg");
+    background-image: linear-gradient(rgba($color-primary, 0.85),
+    rgba($color-primary, 0.85)),
+    url("/img/header-bg.jpg");
     background-attachment: fixed;
-    background-position: bottom left ;
+    background-position: bottom left;
     background-repeat: no-repeat;
     z-index: -10;
 
-    
     &-iphone {
         margin-top: 100px;
         width: 100%;
@@ -67,4 +68,3 @@
 .btn-tour:hover {
     color: $color-white;
 }
-
