@@ -1,20 +1,9 @@
+@import "abstracts/variables";
+@import "layout/header";
+
+@import "base/base";
+@import "base/typography";
+
+ 
 
 
-$color-primary: rgb(211, 15, 15); 
-$color-secondary: rgb(8, 8, 158);
-$font-size: 70px;
-
-
-body {
-    background-color: $color-primary;
-}
-
-h1 {
-    color:$color-secondary;
-    font-size: $font-size;
-    background-color: green;
-    width: 400px;
-    height: 400px;
-
-
-}

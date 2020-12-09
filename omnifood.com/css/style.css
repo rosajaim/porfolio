@@ -1,9 +1,72 @@
-body {
-  background-color: #d30f0f; }
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/omnifood.com/images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; }
+  .header__text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', 'Ariel', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 200px;
+  font-weight: 300;
+  padding: 10px 30px;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s; }
+  .btn:link:hover, .btn:link:active,
+  .btn:visited:hover,
+  .btn:visited:active {
+    background-color: #cf6d17; }
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px; }
+  .btn-full:link:hover, .btn-full:link:active,
+  .btn-full:visited:hover,
+  .btn-full:visited:active {
+    border: 1px solid #cf6d17; }
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22; }
+  .btn-ghost:link:hover, .btn-ghost:link:active,
+  .btn-ghost:visited:hover,
+  .btn-ghost:visited:active {
+    border: 1px solid #cf6d17;
+    color: #fff; }
 
 h1 {
-  color: #08089e;
-  font-size: 70px;
-  background-color: green;
-  width: 400px;
-  height: 400px; }
+  color: #fff;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  word-spacing: 4px; }
