@@ -6,7 +6,7 @@
 }
 
 html {
-    background-color: #fff;
+    background-color: $color-white;
     color: #555;
     font-family: 'Lato', 'Ariel', sans-serif;
     font-weight: 300;
@@ -44,7 +44,7 @@ html {
 .btn-full:visited {
     background-color: $color-primary;
     border: 1px solid $color-primary;
-    color: #fff;
+    color: $color-white;
     margin-right: 15px;
 
     &:hover,
@@ -58,11 +58,11 @@ html {
 .btn-ghost:link, 
 .btn-ghost:visited {
     border: 1px solid $color-primary;
-    color: #e67e22;
+    color: $color-primary;
 
     &:hover,
     &:active {
         border: 1px solid $color-primary-dark;
-        color: #fff;
+        color: $color-white;
     }
 }

@@ -1,0 +1,21 @@
+.section__features {
+    padding: 80px 0;
+
+    &--icon {
+        color: $color-primary;
+        display: block;
+        --ionicon-stroke-width: 12px;
+        font-size: 350%;
+    }
+
+    &--text {
+        line-height: 145%;
+        width: 70%;
+        margin-left: 15%;
+        
+    }
+}
+
+.box{
+    padding: 1%;
+}

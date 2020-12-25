@@ -1,9 +1,31 @@
-h1 {
-    color: #fff;
+.heading-primary {
+    @include headingFeatures;
+    color: $color-white;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     margin-bottom: 10px;
     word-spacing: 4px;
+}
+
+.heading-secondary {
+    @include headingFeatures;
+    margin-bottom: 30px;
+    font-size: 180%;
+    text-align: center;
+
+    &::after {
+        content: '';
+    display: block;
+    height: 2px;
+    background-color: $color-primary;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100px;
+
+    }
+}
+
+.heading-tertiary {
+    @include headingFeatures;
+    font-size: 110%;
+    margin-bottom: 15px;
 }
