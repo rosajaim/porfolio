@@ -590,11 +590,16 @@ html {
     color: #e67e22;
     display: block;
     --ionicon-stroke-width: 12px;
+    margin-bottom: 10px;
     font-size: 350%; }
-  .section__features--text {
+  .section__features--heading-text {
     line-height: 145%;
     width: 70%;
-    margin-left: 15%; }
+    margin-left: 15%;
+    margin-bottom: 30px; }
+  .section__features--text {
+    font-size: 90%;
+    line-height: 145%; }
 
 .box {
   padding: 1%; }
