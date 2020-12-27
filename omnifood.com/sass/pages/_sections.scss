@@ -26,3 +26,25 @@
 .box{
     padding: 1%;
 }
+
+.section__meals {
+    &--showcase {
+        list-style: none;
+        width: 100%;
+
+        &-item {
+            display: block;
+            float: left;
+            width: 25%;
+        }
+
+        &-foto {
+            width: 100%;
+            margin: 0;
+        }
+        &-foto img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

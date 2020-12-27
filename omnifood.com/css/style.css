@@ -603,3 +603,17 @@ html {
 
 .box {
   padding: 1%; }
+
+.section__meals--showcase {
+  list-style: none;
+  width: 100%; }
+  .section__meals--showcase-item {
+    display: block;
+    float: left;
+    width: 25%; }
+  .section__meals--showcase-foto {
+    width: 100%;
+    margin: 0; }
+  .section__meals--showcase-foto img {
+    width: 100%;
+    height: auto; }
