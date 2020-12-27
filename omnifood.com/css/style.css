@@ -585,7 +585,8 @@ html {
   margin-bottom: 15px; }
 
 .section__features {
-  padding: 80px 0; }
+  padding: 80px 0;
+  margin-bottom: 35px; }
   .section__features--icon {
     color: #e67e22;
     display: block;
@@ -596,7 +597,7 @@ html {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 30px; }
+    margin-bottom: 35px; }
   .section__features--text {
     font-size: 90%;
     line-height: 145%; }
@@ -604,16 +605,26 @@ html {
 .box {
   padding: 1%; }
 
-.section__meals--showcase {
-  list-style: none;
-  width: 100%; }
-  .section__meals--showcase-item {
-    display: block;
-    float: left;
-    width: 25%; }
-  .section__meals--showcase-foto {
-    width: 100%;
-    margin: 0; }
-  .section__meals--showcase-foto img {
-    width: 100%;
-    height: auto; }
+.section__meals {
+  padding: 0; }
+  .section__meals--showcase {
+    list-style: none;
+    width: 100%; }
+    .section__meals--showcase-item {
+      display: block;
+      float: left;
+      width: 25%; }
+    .section__meals--showcase-foto {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: #000; }
+      .section__meals--showcase-foto img {
+        width: 100%;
+        height: auto;
+        transform: scale(1.15);
+        opacity: 0.7;
+        transition: all 0.5s; }
+      .section__meals--showcase-foto img:hover {
+        transform: scale(1.1);
+        opacity: 1; }
