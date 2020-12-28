@@ -1,5 +1,5 @@
 .section__features {
-    padding: 80px 0;
+    padding: 65px 0;
     margin-bottom: 35px;
 
     &--icon {
@@ -61,6 +61,60 @@
             }
         }
        
+    }
+}
+
+.section__steps {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+
+    &--app-screen {
+        width: 40%;
+    }
+
+    &--work-step {
+        margin-bottom: 50px;
+
+        &:last-of-type {
+            margin-bottom: 90px;
+        }
 
     }
+
+    &--circle {
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+        color: $color-primary;
+        display: inline-block;
+        font-size: 150%;
+        float: left;
+        height: 55px;
+        margin-right: 25px;
+        text-align: center;
+        padding: 5px;
+        width: 55px;
+
+    }
+  
+}
+
+.steps-box {
+
+    &:first-child {
+        text-align: right;
+        padding-right: 3%;
+        margin-top: 30px;
+    }
+
+    &:last-child {
+        padding-left: 3%;
+        margin-top: 70px;
+    }
+}
+
+.btn-app img {
+    height: 50px;
+    margin-left: 10px;
+    width: auto;
+    border-radius: 10px;
 }

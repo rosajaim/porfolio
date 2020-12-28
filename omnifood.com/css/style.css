@@ -513,6 +513,16 @@ html {
   font-size: 20px;
   text-rendering: optimizeLegibility; }
 
+.clearfix {
+  zoom: 1; }
+
+.clearfix:after {
+  content: '';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
 .row {
   max-width: 1140px;
   margin: 0 auto; }
@@ -585,7 +595,7 @@ html {
   margin-bottom: 15px; }
 
 .section__features {
-  padding: 80px 0;
+  padding: 65px 0;
   margin-bottom: 35px; }
   .section__features--icon {
     color: #e67e22;
@@ -628,3 +638,40 @@ html {
       .section__meals--showcase-foto img:hover {
         transform: scale(1.1);
         opacity: 1; }
+
+.section__steps {
+  background-color: #f4f4f4;
+  padding: 80px 0; }
+  .section__steps--app-screen {
+    width: 40%; }
+  .section__steps--work-step {
+    margin-bottom: 50px; }
+    .section__steps--work-step:last-of-type {
+      margin-bottom: 90px; }
+  .section__steps--circle {
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    color: #e67e22;
+    display: inline-block;
+    font-size: 150%;
+    float: left;
+    height: 55px;
+    margin-right: 25px;
+    text-align: center;
+    padding: 5px;
+    width: 55px; }
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px; }
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px; }
+
+.btn-app img {
+  height: 50px;
+  margin-left: 10px;
+  width: auto;
+  border-radius: 10px; }
