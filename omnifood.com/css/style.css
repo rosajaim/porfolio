@@ -595,8 +595,8 @@ html {
   margin-bottom: 15px; }
 
 .section__features {
-  padding: 65px 0;
-  margin-bottom: 35px; }
+  padding: 80px 0;
+  margin-bottom: 25px; }
   .section__features--icon {
     color: #e67e22;
     display: block;
@@ -675,3 +675,34 @@ html {
   margin-left: 10px;
   width: auto;
   border-radius: 10px; }
+
+.section__cities {
+  padding: 80px 0; }
+
+.city__features {
+  margin-bottom: 5px; }
+  .city__features--img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; }
+  .city__features--logo {
+    display: inline-block;
+    color: #e67e22;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 120%;
+    width: 30px;
+    margin-top: -5px; }
+  .city__features--link {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: all 0.2s; }
+    .city__features--link:link,
+    .city__features--link :visited {
+      color: #e67e22; }
+    .city__features--link:hover,
+    .city__features--link :active {
+      color: #555;
+      border-bottom: none; }
