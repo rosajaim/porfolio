@@ -171,7 +171,7 @@
     background-attachment: fixed;
     color: $color-white;
     padding: 80px 0;
-    height: 80vh;
+    height: 90vh;
 
     &--img {
         height: 45px;
@@ -203,4 +203,65 @@
         left: -5px;
     }
 
+}
+
+.section__plans {
+    background-color: #f4f4f4;
+    
+}
+
+.plan__box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5px;
+
+    & div {
+      padding: 15px;
+      border-bottom: 1px solid #e8e8e8;  
+    }
+
+    & div:last-child {
+        text-align: center;
+        border: 0;
+    }
+   
+    &-price {
+        color: $color-primary;
+        font-size: 300%;
+        margin-bottom: 10px;
+        font-weight: 100;
+
+        & span {
+            font-size: 30%;
+            font-weight: 300;
+        }    
+
+    }
+
+    &-meal {
+        font-size: 80%;
+    }
+
+    &-icon {
+        color: $color-primary;
+        display: inline-block;
+        font-size: 120%;
+        margin-right: 10px;
+        margin-top: -5px;
+        text-align: center;
+        line-height: 120%;
+        vertical-align: middle;
+        width: 30px;
+    }
+
+    &-list {
+        list-style: none;
+        padding: 5px 0;
+
+        & li {
+            padding: 5px 0;
+        }
+    }
+   
 }

@@ -715,7 +715,7 @@ html {
   background-attachment: fixed;
   color: #fff;
   padding: 80px 0;
-  height: 80vh; }
+  height: 90vh; }
   .section__testimonials--img {
     height: 45px;
     border-radius: 50%;
@@ -740,3 +740,43 @@ html {
     position: absolute;
     top: -5px;
     left: -5px; }
+
+.section__plans {
+  background-color: #f4f4f4; }
+
+.plan__box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5px; }
+  .plan__box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8; }
+  .plan__box div:last-child {
+    text-align: center;
+    border: 0; }
+  .plan__box-price {
+    color: #e67e22;
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100; }
+    .plan__box-price span {
+      font-size: 30%;
+      font-weight: 300; }
+  .plan__box-meal {
+    font-size: 80%; }
+  .plan__box-icon {
+    color: #e67e22;
+    display: inline-block;
+    font-size: 120%;
+    margin-right: 10px;
+    margin-top: -5px;
+    text-align: center;
+    line-height: 120%;
+    vertical-align: middle;
+    width: 30px; }
+  .plan__box-list {
+    list-style: none;
+    padding: 5px 0; }
+    .plan__box-list li {
+      padding: 5px 0; }
