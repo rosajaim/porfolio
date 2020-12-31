@@ -207,6 +207,7 @@
 
 .section__plans {
     background-color: #f4f4f4;
+    padding: 80px 0;
     
 }
 
@@ -265,3 +266,36 @@
     }
    
 }
+
+.section__form {
+    padding: 80px 0;
+}
+.primium {
+    background-color: #fcfcfcb0;
+}
+
+.contact__form {
+    margin: 0 auto;
+    width: 60%;
+
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size:medium;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+*:focus {outline: none;}
