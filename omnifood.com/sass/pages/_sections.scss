@@ -1,5 +1,4 @@
 .section__features {
-    padding: 80px 0;
     margin-bottom: 20px;
 
     &--icon {
@@ -8,6 +7,13 @@
         --ionicon-stroke-width: 12px;
         margin-bottom: 10px;
         font-size: 350%;
+
+
+        @include respond (tab-port) {
+            width: 50%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
     }
 
     &--heading-text {
@@ -15,6 +21,16 @@
         width: 70%;
         margin-left: 15%;
         margin-bottom: 35px;
+
+        @include respond (tab-land) {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        @include respond (tab-port) {
+            width: 100%;
+            margin-left: 0;
+        }
         
     }
 
@@ -66,17 +82,41 @@
 
 .section__steps {
     background-color: #f4f4f4;
-    padding: 80px 0;
 
     &--app-screen {
         width: 40%;
+
+        @include respond (tab-land) {
+            width: 50%;
+        }
+
+        @include respond (tab-port) {
+            width: 40%;
+        }
+        
     }
 
     &--work-step {
         margin-bottom: 50px;
 
+        @include respond (tab-land) {
+            margin-bottom: 40px;
+        }
+
+        @include respond (tab-port) {
+            margin-bottom: 20px;
+        }
+
         &:last-of-type {
-            margin-bottom: 90px;
+            margin-bottom: 60px;
+
+            @include respond (tab-land) {
+                font-size: 18px;
+            }
+
+            @include respond (tab-port) {
+                margin-bottom: 35px;
+            }
         }
 
     }
@@ -94,6 +134,14 @@
         padding: 5px;
         width: 55px;
 
+        @include respond (tab-port) {
+           height: 40px;
+           width: 40px;
+           margin-right: 15px;
+           padding: 4px;
+           font-size: 120%;
+        }
+
     }
   
 }
@@ -104,11 +152,24 @@
         text-align: right;
         padding-right: 3%;
         margin-top: 30px;
+
+        @include respond (tab-port) {
+            text-align: center;
+
+        }
     }
 
     &:last-child {
         padding-left: 3%;
         margin-top: 70px;
+
+        @include respond (tab-land) {
+            margin-top: 30px;
+        }
+    }
+
+    @include respond (tab-land) {
+        margin-top: 10px;
     }
 }
 
@@ -117,14 +178,21 @@
     margin-left: 10px;
     width: auto;
     border-radius: 10px;
+
 }
 
-.section__cities {
-    padding: 80px 0;
+.app__bottons {
+    @include respond (tab-port) {
+        text-align: center;
+    }
 }
 
 .city__features {
     margin-bottom: 5px;
+
+    @include respond (tab-land) {
+       font-size: 90%;
+    }
 
     &--img {
         width: 100%;
@@ -140,7 +208,12 @@
         line-height: 120%;
         width: 30px;
         margin-top: -5px;
-        
+
+        @include respond (tab-land) {
+            width: 17px;
+            margin-right: 5px;
+        }
+
     }
 
     &--link {
@@ -170,7 +243,6 @@
     background-position: center;
     background-attachment: fixed;
     color: $color-white;
-    padding: 80px 0;
     height: 90vh;
 
     &--img {
@@ -207,7 +279,6 @@
 
 .section__plans {
     background-color: #f4f4f4;
-    padding: 80px 0;
     
 }
 
@@ -217,9 +288,21 @@
     width: 90%;
     margin-left: 5px;
 
+    @include respond (tab-land) {
+        width: 100%;
+        margin-left: 0%;
+    }
+
     & div {
       padding: 15px;
       border-bottom: 1px solid #e8e8e8;  
+    }
+
+    & div:first-child {
+
+        @include respond (tab-port) {
+            text-align: center;
+         }
     }
 
     & div:last-child {
@@ -232,6 +315,10 @@
         font-size: 300%;
         margin-bottom: 10px;
         font-weight: 100;
+
+        @include respond (tab-land) {
+            font-size: 250%;
+        }
 
         & span {
             font-size: 30%;
@@ -260,16 +347,21 @@
         list-style: none;
         padding: 5px 0;
 
+        @include respond (tab-port) {
+            margin: auto;
+            width: 57%;
+
+         }
+
+    
         & li {
             padding: 5px 0;
+
         }
-    }
-   
+    }   
 }
 
-.section__form {
-    padding: 80px 0;
-}
+
 .primium {
     background-color: #fcfcfcb0;
 }
@@ -277,6 +369,14 @@
 .contact__form {
     margin: 0 auto;
     width: 60%;
+
+    @include respond (tab-land) {
+        width: 80%;
+    }
+
+    @include respond (tab-port) {
+        width: 100%;
+    }
 
 }
 
@@ -289,6 +389,10 @@ textarea {
     border-radius: 3px;
     border: 1px solid #ccc;
     font-size:medium;
+
+    @include respond (tab-phone) {
+        padding: 10px;
+    }
 }
 
 textarea {
@@ -297,5 +401,9 @@ textarea {
 
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
+
+    @include respond (tab-phone) {
+        margin: 12px 7px 12px 0;
+    }
 }
 *:focus {outline: none;}

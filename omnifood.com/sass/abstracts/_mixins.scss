@@ -4,3 +4,32 @@
     letter-spacing: 1px;
 
 }
+
+
+//MEDIA QUERY MANAGER 
+/*
+0 - 480px ----- small phones
+600 - 900px --- Tablet portrait
+900 - 1200px -- Tablet ladscape
+[1200 - 1800] - is where our normal styles apply
+1800px + ------ Big desktop
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 480px) { @content }; 
+        
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 767px) { @content };
+        
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 1023px) { @content }; 
+        
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (max-width: 1200px) { @content }; 
+        
+    }
+}

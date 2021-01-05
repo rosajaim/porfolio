@@ -28,6 +28,15 @@
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+
+	@include respond (tab-port) {
+        width: 100%;
+	}
+	
+	@include respond (tab-port) {
+		margin: 0 0 4% 0;
+	 }
+
 }
 
 .col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */

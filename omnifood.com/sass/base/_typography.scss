@@ -4,6 +4,10 @@
     font-size: 240%;
     margin-bottom: 10px;
     word-spacing: 4px;
+
+    @include respond (tab-port) {
+        font-size: 180%;
+    }
 }
 
 .heading-secondary {
@@ -11,6 +15,10 @@
     margin-bottom: 30px;
     font-size: 180%;
     text-align: center;
+
+    @include respond (tab-port) {
+        font-size: 150%;
+    }
 
     &::after {
         content: '';
@@ -28,4 +36,9 @@
     @include headingFeatures;
     font-size: 110%;
     margin-bottom: 15px;
+
+
+    @include respond (tab-port) {
+        text-align: center;
+    }
 }

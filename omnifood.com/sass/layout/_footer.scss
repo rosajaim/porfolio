@@ -1,0 +1,94 @@
+.footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+
+    &__nav {
+        list-style: none ;        
+        float: left; 
+
+       
+        @include respond (tab-port) {
+            width: 100%;
+            text-align: center;
+        }
+    
+        & li {
+            display: inline-block;
+            margin-right: 20px;
+
+        }
+
+
+        &--link:link,
+        &--link:visited {
+            color: #888;
+            text-decoration: none;
+            transition: color 0.2s;
+
+        }
+    
+        &--link:hover,
+        &--link:active {
+            color: $color-white;
+        }
+    }
+
+    &__social {
+        list-style: none;
+        float: right;
+        font-size: 160%;
+
+
+        @include respond (tab-port) {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        & li {
+            display: inline-block;
+            margin-right: 20px;
+
+        
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        &--link:link,
+        &--link:visited {
+            color: #888;
+            text-decoration: none;
+            border: 0;
+
+        }
+
+        & ion-icon[name=logo-facebook]:hover {
+           color: #3b5998
+
+        }
+
+        & ion-icon[name=logo-twitter]:hover {
+            color: #55acee ;
+        }
+
+        & ion-icon[name=logo-google]:hover {
+            color: #dc4e41;
+        }
+
+        & ion-icon[name=logo-instagram]:hover {
+            color: #3f729b;
+        }
+
+    }
+
+    & span {
+        color: #888;
+        width: 100%;
+        display: inline-block;
+        margin-top: 20px;
+        text-align: center;
+    }
+}

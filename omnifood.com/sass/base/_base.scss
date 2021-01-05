@@ -12,7 +12,19 @@ html {
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 
+    @include respond (tab-land) {
+        font-size: 18px;
+    }
+
+}
+
+body {
+    @include respond (tab-port) {
+        font-size: 16px;
+        overflow-x: hidden;
+    }
 }
 
 .clearfix {zoom: 1};
@@ -27,8 +39,31 @@ html {
 .row {
     max-width: 1140px;
     margin: 0 auto;
+
+    @include respond (big-desktop) {
+        padding: 0 2%;
+    }
+
+    @include respond (tab-port) {
+        padding: 0 4%;
+    }
 }
 
+section {
+    padding: 80px 0;
+
+    @include respond (tab-land) {
+        padding: 60px 0;
+    }
+
+    @include respond (tab-port) {
+        padding: 30px 0;
+    }
+
+    @include respond (tab-phone) {
+        padding: 20px 0;
+    }
+}
 
 .btn:link, 
 .btn:visited,
