@@ -23,6 +23,9 @@
             display: inline-block;
             margin-right: 20px;
 
+            @include respond (phone) {
+                margin-right: 5px;
+              }
         }
 
 

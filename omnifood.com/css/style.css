@@ -541,6 +541,9 @@
     .footer__nav li {
       display: inline-block;
       margin-right: 20px; }
+      @media only screen and (max-width: 480px) {
+        .footer__nav li {
+          margin-right: 5px; } }
     .footer__nav--link:link, .footer__nav--link:visited {
       color: #888;
       text-decoration: none;
@@ -992,7 +995,7 @@ input[type=submit] {
     @media only screen and (max-width: 480px) {
       .plan__box-list {
         margin: auto;
-        width: 65%; } }
+        width: 74%; } }
     .plan__box-list li {
       padding: 5px 0; }
 
