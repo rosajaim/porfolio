@@ -390,8 +390,8 @@ textarea {
     border: 1px solid #ccc;
     font-size:medium;
 
-    @include respond (tab-phone) {
-        padding: 10px;
+    @include respond (phone) {
+        margin: 10px;
     }
 }
 
@@ -402,7 +402,7 @@ textarea {
 input[type=checkbox] {
     margin: 10px 5px 10px 0;
 
-    @include respond (tab-phone) {
+    @include respond (phone) {
         margin: 12px 7px 12px 0;
     }
 }

@@ -6,7 +6,7 @@
 1800px + ------ Big desktop
 */
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/hero.JPG);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../images/hero.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -627,6 +627,9 @@ section {
   @media only screen and (max-width: 767px) {
     section {
       padding: 30px 0; } }
+  @media only screen and (max-width: 480px) {
+    section {
+      padding: 20px 0; } }
 
 .btn:link,
 .btn:visited,
@@ -988,12 +991,21 @@ textarea {
   border-radius: 3px;
   border: 1px solid #ccc;
   font-size: medium; }
+  @media only screen and (max-width: 480px) {
+    input[type=text],
+    input[type=email],
+    select,
+    textarea {
+      margin: 10px; } }
 
 textarea {
   height: 100px; }
 
 input[type=checkbox] {
   margin: 10px 5px 10px 0; }
+  @media only screen and (max-width: 480px) {
+    input[type=checkbox] {
+      margin: 12px 7px 12px 0; } }
 
 *:focus {
   outline: none; }
