@@ -3,6 +3,12 @@
     padding: 50px;
     font-size: 80%;
 
+    @include respond (phone) {
+        padding: 40px;
+      }
+
+  
+
     &__nav {
         list-style: none ;        
         float: left; 

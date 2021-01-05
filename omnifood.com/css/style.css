@@ -528,6 +528,9 @@
   background-color: #333;
   padding: 50px;
   font-size: 80%; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      padding: 40px; } }
   .footer__nav {
     list-style: none;
     float: left; }
@@ -745,6 +748,9 @@ input[type=submit] {
   .section__features--text {
     font-size: 90%;
     line-height: 145%; }
+    @media only screen and (max-width: 480px) {
+      .section__features--text {
+        font-size: 94%; } }
 
 .box {
   padding: 1%; }
@@ -853,6 +859,9 @@ input[type=submit] {
   @media only screen and (max-width: 1023px) {
     .city__features {
       font-size: 90%; } }
+  @media only screen and (max-width: 1023px) and (max-width: 480px) {
+    .city__features {
+      font-size: 95%; } }
   .city__features--img {
     width: 100%;
     height: auto;
@@ -894,11 +903,17 @@ input[type=submit] {
     border-radius: 50%;
     margin-right: 10px;
     vertical-align: middle; }
+    @media only screen and (max-width: 480px) {
+      .section__testimonials--img {
+        height: 50px; } }
 
 .cite {
   font-size: 90%;
   margin-top: 25px;
   display: block; }
+  @media only screen and (max-width: 480px) {
+    .cite {
+      font-size: 94%; } }
 
 .blockquote {
   padding: 2%;
@@ -943,11 +958,17 @@ input[type=submit] {
     @media only screen and (max-width: 1023px) {
       .plan__box-price {
         font-size: 250%; } }
+    @media only screen and (max-width: 480px) {
+      .plan__box-price {
+        font-size: 290%; } }
     .plan__box-price span {
       font-size: 30%;
       font-weight: 300; }
   .plan__box-meal {
     font-size: 80%; }
+    @media only screen and (max-width: 480px) {
+      .plan__box-meal {
+        font-size: 85%; } }
   .plan__box-icon {
     color: #e67e22;
     display: inline-block;
@@ -965,6 +986,10 @@ input[type=submit] {
       .plan__box-list {
         margin: auto;
         width: 57%; } }
+    @media only screen and (max-width: 480px) {
+      .plan__box-list {
+        margin: auto;
+        width: 65%; } }
     .plan__box-list li {
       padding: 5px 0; }
 
