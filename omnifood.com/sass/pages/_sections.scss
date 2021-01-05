@@ -183,6 +183,10 @@
     width: auto;
     border-radius: 10px;
 
+    @include respond (phone) {
+        height: 38px;
+      }
+
 }
 
 .app__bottons {

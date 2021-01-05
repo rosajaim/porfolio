@@ -849,6 +849,9 @@ input[type=submit] {
   margin-left: 10px;
   width: auto;
   border-radius: 10px; }
+  @media only screen and (max-width: 480px) {
+    .btn-app img {
+      height: 38px; } }
 
 @media only screen and (max-width: 767px) {
   .app__bottons {
