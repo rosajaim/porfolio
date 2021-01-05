@@ -888,8 +888,7 @@ input[type=submit] {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  color: #fff;
-  height: 90vh; }
+  color: #fff; }
   .section__testimonials--img {
     height: 45px;
     border-radius: 50%;
