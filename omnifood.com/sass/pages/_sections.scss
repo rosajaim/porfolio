@@ -22,10 +22,10 @@
         margin-left: 15%;
         margin-bottom: 35px;
 
-        @include respond (tab-land) {
-            width: 80%;
-            margin-left: 10%;
-        }
+        // @include respond (tab-land) {
+        //     width: 80%;
+        //     margin-left: 10%;
+        // }
 
         @include respond (tab-port) {
             width: 100%;
@@ -38,9 +38,9 @@
         font-size: 90%;
         line-height: 145%;
 
-        @include respond (phone) {
-           font-size: 94%;
-        }
+        // @include respond (phone) {
+        //    font-size: 94%;
+        // }
     }
 }
 
@@ -48,6 +48,8 @@
     padding: 1%;
 }
 
+
+/* ***** SECTION MEALS ***** */
 .section__meals {
     padding: 0;
 
@@ -84,6 +86,8 @@
     }
 }
 
+
+/* ***** SECTION STEPS ***** */
 .section__steps {
     background-color: #f4f4f4;
 
@@ -95,37 +99,37 @@
         }
 
         @include respond (tab-port) {
-            width: 40%;
+            width: 50%;
         }
         
     }
 
-    &--work-step {
+    &-work--step {
         margin-bottom: 50px;
 
-        @include respond (tab-land) {
-            margin-bottom: 40px;
-        }
+        // @include respond (tab-land) {
+        //     margin-bottom: 40px;
+        // }
 
         @include respond (tab-port) {
             margin-bottom: 20px;
         }
 
         &:last-of-type {
-            margin-bottom: 60px;
+            font-size: 18px;
 
-            @include respond (tab-land) {
-                font-size: 18px;
-            }
+            // @include respond (tab-land) {
+            //     margin-bottom: 60px;
+            // }
 
             @include respond (tab-port) {
-                margin-bottom: 35px;
+                margin-bottom: 20px;
             }
         }
 
     }
 
-    &--circle {
+    &-circle {
         border: 2px solid $color-primary;
         border-radius: 50%;
         color: $color-primary;
@@ -151,7 +155,9 @@
 }
 
 .steps-box {
-
+    @include respond (tab-land) {
+        margin-top: 10px;
+    }
     &:first-child {
         text-align: right;
         padding-right: 3%;
@@ -168,13 +174,11 @@
         margin-top: 70px;
 
         @include respond (tab-land) {
-            margin-top: 30px;
+            margin-top: 10px;
         }
     }
 
-    @include respond (tab-land) {
-        margin-top: 10px;
-    }
+    
 }
 
 .btn-app img {
@@ -195,6 +199,7 @@
     }
 }
 
+
 .city__features {
     margin-bottom: 5px;
 
@@ -203,13 +208,14 @@
 
        @include respond (phone) {
         font-size: 95%;
-     }
+       }
     }
 
     &--img {
         width: 100%;
         height: auto;
         margin-bottom: 15px;
+        opacity: 1;
     }
 
     &--logo {
@@ -250,7 +256,7 @@
 }
 
 .section__testimonials {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../../images/back-customers.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -321,6 +327,7 @@
 
         @include respond (tab-port) {
             text-align: center;
+            
          }
     }
 
@@ -393,7 +400,6 @@
         }
     }   
 }
-
 
 .primium {
     background-color: #fcfcfcb0;

@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="vendors/css/grid">
+    <link rel="stylesheet" type="text/css" href="sass/layout/_grid.scss">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
-        rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap">
+        
     <title>Omnifood</title>
 </head>
 
@@ -19,23 +20,27 @@
     <header class="header">
         <nav class="main__nav">
             <div class="row">
-                <img class="header__logo" src="./images/logo-white.png" alt="Logo">
-                <ul class="main__nav-list">
-                    <li class="main__nav-item"><a href="#" class="main__nav-link">Food delivery</a></li>
-                    <li class="main__nav-item"><a href="#" class="main__nav-link">How it works</a> </li>
-                    <li class="main__nav-item"><a href="#" class="main__nav-link">Our cities</a> </li>
-                    <li class="main__nav-item"><a href="#" class="main__nav-link">Sign up</a> </li>
+                <img class="main__nav-logo" src="./images/logo-white.png" alt="Logo">
+                <img class="main__nav-logo--black" src="./images/logo.png" alt="Logo">
+
+                <ul class="main__nav-list js--main__nav-list">
+                    <li class="main__nav-item"><a href="#features" class="main__nav-link">Food delivery</a></li>
+                    <li class="main__nav-item"><a href="#steps" class="main__nav-link">How it works</a> </li>
+                    <li class="main__nav-item"><a href="#cities" class="main__nav-link">Our cities</a> </li>
+                    <li class="main__nav-item"><a href="#plans" class="main__nav-link">Sign up</a> </li>
                 </ul>
+                <a href="" class="mobile__nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+
             </div>
         </nav>
         <div class="header__text-box">
             <h1 class="heading-primary">Goodbye junk food. <br>Hello super healthy meals</h1>
-            <a class="btn btn-full" href="#">Hello Liam</a>
-            <a class="btn btn-ghost" href="#">Benson is cool</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
     <main>
-        <section class="section__features">
+        <section class="section__features js--section__features" id="features">
             <div class="row">
                 <h2 class="heading-secondary">Get food fast &mdash; not fast food</h2>
                 <p class="section__features--heading-text">
@@ -44,9 +49,11 @@
                     we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
-                    <ion-icon class="section__features--icon" name="calendar-outline"></ion-icon>
+                    <i class="ion-ios-calendar-outline icon-big section__features--icon"></i>
+
+                    
                     <h3 class="heading-tertiary">Up to 365 days/year</h3>
                     <p class="section__features--text">
                         Never cook again! We really mean that. Our subscription plans include up to 365 days/year
@@ -54,7 +61,8 @@
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon class="section__features--icon" name="stopwatch-outline"></ion-icon>
+                    <i class="ion-ios-stopwatch-outline icon-big section__features--icon"></i>
+
                     <h3 class="heading-tertiary">Ready in 20 minutes</h3>
                     <p class="section__features--text">
                         You're only twenty minutes away from your delicious and super healthy meals delivered right to
@@ -62,7 +70,8 @@
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon class="section__features--icon" name="nutrition-outline"></ion-icon>
+                    <i class="ion-ios-nutrition-outline icon-big section__features--icon"></i>
+
                     <h3 class="heading-tertiary">100% organic</h3>
                     <p class="section__features--text">
                         All our vegetables are fresh, organic and local. Animals are raised without added hormones or
@@ -70,7 +79,8 @@
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon class="section__features--icon" name="cart-outline"></ion-icon>
+                    <i class="ion-ios-cart-outline icon-big section__features--icon"></i>
+
                     <h3 class="heading-tertiary">Order anything</h3>
                     <p class="section__features--text">
                         We don't limit your creativity, which means you can order whatever you feel like. You can also
@@ -80,7 +90,7 @@
             </div>
         </section>
 
-        <section class="section__meals">
+        <section class="section__meals js--section__meals">
             <ul class="section__meals--showcase clearfix">
                 <li class="section__meals--showcase-item">
                     <figure class="section__meals--showcase-foto">
@@ -127,25 +137,25 @@
             </ul>
         </section>
 
-        <section class="section__steps">
+        <section class="section__steps" id="steps">
             <div class="row">
                 <h2 class="heading-secondary">How it works &mdash; simple as 1,2,3</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-2 steps-box">
-                    <img class="section__steps--app-screen" src="./images/app-iPhone.png" alt="Omnifood app on iphone">
+                <div class="col span-1-of-2 steps-box ">
+                    <img class="section__steps--app-screen js--wp-2" src="./images/app-iPhone.png" alt="Omnifood app on iphone">
                 </div>
                 <div class="col span-1-of-2 steps-box">
-                    <div class="section__steps--work-step">
-                        <div class="section__steps--circle">1</div>
+                    <div class="section__steps-work--step">
+                        <div class="section__steps-circle">1</div>
                         <p>Choose the subscription plan that best fits your needs and sign up today</p>
                     </div>
-                    <div class="section__steps--work-step">
-                        <div class="section__steps--circle">2</div>
+                    <div class="section__steps-work--step">
+                        <div class="section__steps-circle">2</div>
                         <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
                     </div>
-                    <div class="section__steps--work-step">
-                        <div class="section__steps--circle">3</div>
+                    <div class="section__steps-work--step">
+                        <div class="section__steps-circle">3</div>
                         <p>Enjoy meal after less than 20 minutes. See you the next time!</p>
                     </div>
                     <div class="app__bottons">
@@ -157,13 +167,13 @@
             </div>
         </section>
 
-        <section class="section__cities">
+        <section class="section__cities" id="cities">
             <div class="row">
                 <h2 class="heading-secondary">We're currently in the these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
-                    <img class="city__features--img" src="./images/lisbon-3.jpg" alt="Lisbon">
+                    <img class="city__features--img" src="./images/hero.jpg" alt="Lisbon">
                     <h3 class="heading-tertiary">Lisbon</h3>
                     <div class="city__features">
                         <ion-icon class="city__features--logo icon-small" name="person"></ion-icon>
@@ -273,7 +283,7 @@
 
         </section>
 
-        <section class="section__plans">
+        <section class="section__plans js--section__plans" id="plans">
             <div class="row">
                 <h2 class="heading-secondary">Start eating healthy today</h2>
             </div>
@@ -313,7 +323,7 @@
 
                 </div>
                 <div class="col span-1-of-3 box">
-                    <div class="plan__box primium">
+                    <div class="plan__box primium js--wp-4">
                         <div>
                             <h3 class="heading-tertiary">Primium</h3>
                             <p class="plan__box-price">$399<Span>/ month</Span></p>
@@ -499,7 +509,11 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./js/main.js"></script>
+
 </body>
-<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </html>

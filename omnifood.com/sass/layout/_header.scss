@@ -5,8 +5,6 @@
     background-attachment: fixed;
     height: 100vh;
 
-  
-   
     &__text-box {
         position: absolute;
         width: 1140px;
@@ -20,51 +18,10 @@
         }
 
         @include respond (tab-port) {
-            padding: 0 4%;
+            width: 100%;
+            margin-left: 0;
         }
-    }
-
-    &__logo {
-        height: 100px;
-        margin-top: 20px;
-        float: left;
-        width: auto;
-
     }
 
 }
 
-.main__nav {
-    &-list {
-        float: right;
-        list-style: none;
-        margin-top: 60px;
-
-        @include respond (tab-port) {
-            display: none;
-        }
-    
-    }
-
-    &-item {
-        display: inline-block;
-        margin-left: 40px;
-    }
-    
-    &-link:link,
-    &-link:visited {
-        color: $color-white;
-        border-bottom: 2px solid transparent;
-        font-size: 90%;
-        padding: 5px 0;
-        text-decoration: none;
-        text-transform: uppercase;
-        transition: all 0.2s;
-    }
-
-    &-link:hover,
-    &-link:active {
-        border-bottom: 2px solid $color-primary;
-    } 
-
-}

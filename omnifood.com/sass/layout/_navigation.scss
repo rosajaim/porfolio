@@ -1,0 +1,164 @@
+// MAIN NAVIGATION
+.main__nav {
+    // position: relative;
+    z-index: 1;
+
+    &-item {
+        display: inline-block;
+        margin-left: 40px;
+
+        @include respond (tab-port) {
+            display: block;
+        }
+    }
+
+    &-list {
+      
+        float: right;
+        list-style: none;
+        margin-top: 55px;
+
+        @include respond (tab-port) {
+            float: left;
+            margin-top: 35px;
+            display: none;
+
+            // position: absolute;
+            // top: 50%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+
+        }
+    
+    }
+
+    &-link:link,
+    &-link:visited {
+        color: $color-white;
+        border-bottom: 2px solid transparent;
+        font-size: 90%;
+        padding: 5px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s;
+
+        @include respond (tab-port) {
+            display: block;
+            border: 0;
+            padding: 8px 0;
+            font-size: 100%;
+        }
+    }
+
+    &-link:hover,
+    &-link:active {
+        border-bottom: 2px solid $color-primary;
+    } 
+  
+
+    &-logo {
+        height: 100px;
+        margin-top: 20px;
+        float: left;
+        width: auto;
+
+       
+    }
+
+    &-logo--black {
+        display: none;
+        height: 50px;
+        margin: 5px 0;
+        float: left;
+        width: auto;
+
+    }
+
+    &-logo--black {
+        display: none;
+    }
+
+}
+
+// MOBILE NAVIGATION
+.mobile__nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+
+    & i {
+        font-size: 200%;
+        color: $color-white;
+
+    }  
+
+    @include respond (tab-port) {
+        display: block;
+    }
+
+}
+
+// STIKY NAVIGATION
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px $color-grey-lighter;
+
+
+
+    & .main__nav-link:link,
+    & .main__nav-link:visited {
+        color: #555;
+        padding: 16px 0;
+
+        @include respond (tab-port) {
+            margin-top: 10px;
+            padding: 5px 0;
+        }
+   
+    }
+
+    & .main__nav-logo {
+        display: none;
+    }
+
+    & .main__nav-logo--black {
+        display: block;
+    
+    }
+
+    & .main__nav-list {
+        margin-top: 18px;
+    }
+
+    & .mobile__nav-icon i {
+        @include respond (tab-port) {
+            color: #555;
+            margin-top: 20px;
+        }
+    }
+
+    & .mobile__nav-icon {
+        @include respond (tab-port) {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
