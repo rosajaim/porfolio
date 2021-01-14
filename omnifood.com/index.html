@@ -4,14 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Omnifood is a primium food delivery service with the mission to bring afortable
+    and healthy foods to as many peopleas possible">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="sass/layout/_grid.scss">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="vendors/favicon/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="vendors/favicon/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="vendors/favicon/favicon_package_v0.16/site.webmanifest">
+    <link rel="shortcut icon" href="vendors/favicon/favicon_package_v0.16/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="./vendors/favicon/favicon_package_v0.16/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
         
     <title>Omnifood</title>
 </head>
@@ -24,10 +35,10 @@
                 <img class="main__nav-logo--black" src="./images/logo.png" alt="Logo">
 
                 <ul class="main__nav-list js--main__nav-list">
-                    <li class="main__nav-item"><a href="#features" class="main__nav-link">Food delivery</a></li>
-                    <li class="main__nav-item"><a href="#steps" class="main__nav-link">How it works</a> </li>
-                    <li class="main__nav-item"><a href="#cities" class="main__nav-link">Our cities</a> </li>
-                    <li class="main__nav-item"><a href="#plans" class="main__nav-link">Sign up</a> </li>
+                    <li class="main__nav-item"><a href="#features" class="main__nav-link js--scroll-to-features">Food delivery</a></li>
+                    <li class="main__nav-item"><a href="#steps" class="main__nav-link js--scroll-to-steps">How it works</a> </li>
+                    <li class="main__nav-item"><a href="#cities" class="main__nav-link js--scroll-to-cities">Our cities</a> </li>
+                    <li class="main__nav-item"><a href="#plans" class="main__nav-link js--scroll-to-plans">Sign up</a> </li>
                 </ul>
                 <a href="" class="mobile__nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
 
@@ -137,7 +148,7 @@
             </ul>
         </section>
 
-        <section class="section__steps" id="steps">
+        <section class="section__steps js--section__steps" id="steps">
             <div class="row">
                 <h2 class="heading-secondary">How it works &mdash; simple as 1,2,3</h2>
             </div>
@@ -167,13 +178,13 @@
             </div>
         </section>
 
-        <section class="section__cities" id="cities">
+        <section class="section__cities js--section__cities" id="cities">
             <div class="row">
                 <h2 class="heading-secondary">We're currently in the these cities</h2>
             </div>
             <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
-                    <img class="city__features--img" src="./images/hero.jpg" alt="Lisbon">
+                    <img class="city__features--img" src="./images/lisbon-3.jpg" alt="Lisbon">
                     <h3 class="heading-tertiary">Lisbon</h3>
                     <div class="city__features">
                         <ion-icon class="city__features--logo icon-small" name="person"></ion-icon>
@@ -509,8 +520,11 @@
         </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
     <script src="./vendors/js/jquery.waypoints.min.js"></script>
     <script src="./js/main.js"></script>
 
