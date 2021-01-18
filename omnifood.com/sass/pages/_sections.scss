@@ -10,7 +10,7 @@
 
 
         @include respond (tab-port) {
-            width: 50%;
+            text-align: center;
             margin: auto;
             margin-bottom: 20px;
         }
@@ -263,6 +263,11 @@
     background-attachment: fixed;
     color: $color-white;
 
+    @include respond (phone) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/back-customers-mobile.jpg);
+
+    }
+
     &--img {
         height: 45px;
         border-radius: 50%;
@@ -309,6 +314,7 @@
 }
 
 .plan__box {
+    position: relative;
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
@@ -391,7 +397,7 @@
         @include respond (phone) {
             margin: auto;
             width: 74%;
-
+           
         }
 
 

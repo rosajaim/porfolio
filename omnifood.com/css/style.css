@@ -11,6 +11,9 @@
   background-position: center;
   background-attachment: fixed;
   height: 100vh; }
+  @media only screen and (max-width: 480px) {
+    .header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-mobile.jpg); } }
   .header__text-box {
     position: absolute;
     width: 1140px;
@@ -541,13 +544,13 @@
       color: #888;
       text-decoration: none;
       border: 0; }
-    .footer__social ion-icon[name=logo-facebook]:hover {
+    .footer__social .ion-social-facebook:hover {
       color: #3b5998; }
-    .footer__social ion-icon[name=logo-twitter]:hover {
+    .footer__social .ion-social-twitter:hover {
       color: #55acee; }
-    .footer__social ion-icon[name=logo-google]:hover {
+    .footer__social .ion-social-googleplus:hover {
       color: #dc4e41; }
-    .footer__social ion-icon[name=logo-instagram]:hover {
+    .footer__social .ion-social-instagram:hover {
       color: #3f729b; }
   .footer span {
     color: #888;
@@ -796,7 +799,7 @@ input[type=submit] {
     font-size: 350%; }
     @media only screen and (max-width: 767px) {
       .section__features--icon {
-        width: 50%;
+        text-align: center;
         margin: auto;
         margin-bottom: 20px; } }
   .section__features--heading-text {
@@ -958,6 +961,9 @@ input[type=submit] {
   background-position: center;
   background-attachment: fixed;
   color: #fff; }
+  @media only screen and (max-width: 480px) {
+    .section__testimonials {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/back-customers-mobile.jpg); } }
   .section__testimonials--img {
     height: 45px;
     border-radius: 50%;
@@ -993,6 +999,7 @@ input[type=submit] {
   background-color: #f4f4f4; }
 
 .plan__box {
+  position: relative;
   background-color: #fff;
   border-radius: 5px;
   width: 90%;

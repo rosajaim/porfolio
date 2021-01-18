@@ -5,6 +5,12 @@
     background-attachment: fixed;
     height: 100vh;
 
+
+    @include respond (phone) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/hero-mobile.jpg);
+
+    }
+
     &__text-box {
         position: absolute;
         width: 1140px;
