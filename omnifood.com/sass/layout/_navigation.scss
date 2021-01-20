@@ -41,6 +41,8 @@
     & li a:hover,
     & li a:active {
         border-bottom: 2px solid $color-primary;
+      
+        
     } 
   
 }
@@ -100,7 +102,10 @@
 
         @include respond (tab-port) {
             padding: 10px 0;
+            border-bottom: none;
         }
+
+      
    
     }
 

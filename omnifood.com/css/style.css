@@ -632,7 +632,8 @@
     @media only screen and (max-width: 767px) {
       .sticky li a:link,
       .sticky li a:visited {
-        padding: 10px 0; } }
+        padding: 10px 0;
+        border-bottom: none; } }
   .sticky .logo {
     display: none; }
   .sticky .logo-black {
