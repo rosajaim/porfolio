@@ -1100,7 +1100,7 @@ input[type=submit] {
     @media only screen and (max-width: 480px) {
       .plan__box-list {
         margin: 0 auto;
-        width: 55%; } }
+        width: 58%; } }
     .plan__box-list li {
       padding: 5px 0; }
 
