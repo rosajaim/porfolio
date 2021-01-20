@@ -1,5 +1,5 @@
 /* **** STICKY NAVIGATION ***** */
-$(document).ready(function () {
+$(document).ready(function() {
 
     $('.js--section__features').waypoint(function (direction) {
         if (direction == "down") {
@@ -112,7 +112,7 @@ $(document).ready(function () {
 
     /* ***** MOBILE NAV ***** */
     $('.js--nav-icon').click(function () {
-        var nav = $('.js--main__nav-list');
+        var nav = $('.js--main__nav');
         var icon = $('.js--nav-icon i');
 
         nav.slideToggle(200);

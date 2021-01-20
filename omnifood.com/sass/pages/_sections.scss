@@ -22,10 +22,10 @@
         margin-left: 15%;
         margin-bottom: 35px;
 
-        // @include respond (tab-land) {
-        //     width: 80%;
-        //     margin-left: 10%;
-        // }
+        @include respond (tab-land) {
+            width: 80%;
+            margin-left: 10%;
+        }
 
         @include respond (tab-port) {
             width: 100%;
@@ -38,9 +38,9 @@
         font-size: 90%;
         line-height: 145%;
 
-        // @include respond (phone) {
-        //    font-size: 94%;
-        // }
+        @include respond (phone) {
+           font-size: 94%;
+        }
     }
 }
 
@@ -86,7 +86,6 @@
     }
 }
 
-
 /* ***** SECTION STEPS ***** */
 .section__steps {
     background-color: #f4f4f4;
@@ -99,7 +98,7 @@
         }
 
         @include respond (tab-port) {
-            width: 50%;
+            width: 40%;
         }
 
     }
@@ -107,20 +106,23 @@
     &-work--step {
         margin-bottom: 50px;
 
-        // @include respond (tab-land) {
-        //     margin-bottom: 40px;
-        // }
+        @include respond (tab-land) {
+            margin-bottom: 55px;
+        }
 
         @include respond (tab-port) {
+            padding: 10px 0 10px 0;
             margin-bottom: 20px;
+            width: 90%;
+            margin: 0 auto;
         }
 
         &:last-of-type {
-            font-size: 18px;
+            margin-bottom: 20px;
 
-            // @include respond (tab-land) {
-            //     margin-bottom: 60px;
-            // }
+            @include respond (tab-land) {
+                margin-bottom: 60px;
+            }
 
             @include respond (tab-port) {
                 margin-bottom: 20px;
@@ -175,7 +177,7 @@
         margin-top: 70px;
 
         @include respond (tab-land) {
-            margin-top: 10px;
+            margin-top: 40px;
         }
     }
 
@@ -219,22 +221,6 @@
         opacity: 1;
     }
 
-    &--logo {
-        display: inline-block;
-        color: $color-primary;
-        margin-right: 10px;
-        text-align: center;
-        line-height: 120%;
-        width: 30px;
-        margin-top: -5px;
-
-        @include respond (tab-land) {
-            width: 17px;
-            margin-right: 5px;
-        }
-
-    }
-
     &--link {
         color: $color-primary;
         text-decoration: none;
@@ -255,6 +241,27 @@
     }
 
 }
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+
+    @include respond (tab-land) {
+        width: 17px;
+        margin-right: 5px;
+    }
+}
+
+/* ***** SECTION TESTIMONIALS ***** */
 
 .section__testimonials {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/back-customers-min.jpg);
@@ -308,6 +315,8 @@
 
 }
 
+/* ***** SECTION PLANS ***** */
+
 .section__plans {
     background-color: #f4f4f4;
 
@@ -319,6 +328,7 @@
     border-radius: 5px;
     width: 90%;
     margin-left: 5px;
+    margin: 0 auto;
 
     @include respond (tab-land) {
         width: 100%;
@@ -372,7 +382,7 @@
         }
     }
 
-    &-icon {
+    & i {
         color: $color-primary;
         display: inline-block;
         font-size: 120%;
@@ -389,14 +399,14 @@
         padding: 5px 0;
 
         @include respond (tab-port) {
-            margin: auto;
-            width: 57%;
+            margin: 0 auto ;
+            width: 33%;
 
         }
 
         @include respond (phone) {
-            margin: auto;
-            width: 74%;
+            margin: 0 auto;
+            width: 55%;
            
         }
 
@@ -412,6 +422,8 @@
     background-color: #fcfcfcb0;
 }
 
+/* ***** CONTACT FORM ****** */
+
 .contact__form {
     margin: 0 auto;
     width: 60%;
@@ -421,7 +433,11 @@
     }
 
     @include respond (tab-port) {
-        width: 100%;
+        width: 80%;
+    }
+
+    @include respond (phone) {
+        width: 90%;
     }
 
 }
@@ -437,7 +453,7 @@ textarea {
     font-size: medium;
 
     @include respond (phone) {
-        margin: 10px;
+        margin: 2px;
     }
 }
 

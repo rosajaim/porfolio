@@ -11,10 +11,10 @@
 
 .row {
 	zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-	@include respond (tab-port) {
-		padding: 0 4% ;
+	// @include respond (big-desktop) {
+	// 	padding: 0 2%;
 
-	}
+    // }
 }
 
 .row:before,

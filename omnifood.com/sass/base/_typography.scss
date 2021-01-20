@@ -32,13 +32,23 @@
     }
 }
 
+.heading-tertiary-left {
+    @include headingFeatures;
+    font-size: 110%;
+    margin-bottom: 15px;
+    @include respond (tab-port) {
+        text-align: left;
+    }
+}
+
 .heading-tertiary {
     @include headingFeatures;
     font-size: 110%;
     margin-bottom: 15px;
 
-
     @include respond (tab-port) {
         text-align: center;
     }
+
 }
+
