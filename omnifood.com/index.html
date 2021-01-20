@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap">
 
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicon/favicon_package_v0.16/apple-touch-icon.png">
@@ -24,25 +25,177 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./vendors/favicon/favicon_package_v0.16/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-        
+
     <title>Omnifood</title>
+
+    <!-- <style>
+        .main-nav {
+            float: right;
+            list-style: none;
+            margin-top: 55px;
+        }
+
+        .main-nav li {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        .main-nav li a:link,
+        .main-nav li a:visited {
+            padding: 8px 0;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 90%;
+            border-bottom: 2px solid transparent;
+            -webkit-transition: border-bottom 0.2s;
+            transition: border-bottom 0.2s;
+        }
+
+        .main-nav li a:hover,
+        .main-nav li a:active {
+            border-bottom: 2px solid #e67e22;
+        }
+
+
+        /* Mobile navi */
+        .mobile-nav-icon {
+            float: right;
+            margin-top: 30px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .mobile-nav-icon i {
+            font-size: 200%;
+            color: #fff;
+        }
+
+
+        /* Sticky navi */
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 2px #efefef;
+            z-index: 9999;
+        }
+
+        .sticky .main-nav {
+            margin-top: 18px;
+        }
+
+        .sticky .main-nav li a:link,
+        .sticky .main-nav li a:visited {
+            padding: 16px 0;
+            color: #555;
+        }
+
+        .sticky .logo {
+            display: none;
+        }
+
+        .sticky .logo-black {
+            display: block;
+        }
+
+        /* Small phones to small tablets: from 481px to 767px */
+        @media only screen and (max-width: 767px) {
+
+            .main-nav {
+                display: none;
+            }
+
+            .mobile-nav-icon {
+                display: inline-block;
+            }
+
+            .main-nav {
+                float: left;
+                margin-top: 30px;
+                margin-left: 25px;
+            }
+
+            .main-nav li {
+                display: block;
+            }
+
+            .main-nav li a:link,
+            .main-nav li a:visited {
+                display: block;
+                border: 0;
+                padding: 10px 0;
+                font-size: 100%;
+            }
+
+            .sticky .main-nav {
+                margin-top: 10px;
+            }
+
+            .sticky .main-nav li a:link,
+            .sticky .main-nav li a:visited {
+                padding: 10px 0;
+            }
+
+            .sticky .mobile-nav-icon {
+                margin-top: 10px;
+            }
+
+            .sticky .mobile-nav-icon i {
+                color: #555;
+            }
+
+
+        }
+
+        .logo {
+            height: 100px;
+            width: auto;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .logo-black {
+            display: none;
+            height: 50px;
+            width: auto;
+            float: left;
+            margin: 5px 0;
+        }
+    </style> -->
 </head>
+
+
 
 <body>
     <header class="header">
+        <!-- <nav>
+            <div class="row">
+                <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                <img src="resources/img/logo.png" alt="Omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav> -->
+
         <nav>
             <div class="row">
-                <img class="main__nav-logo" src="./images/logo-white.png" alt="Logo">
-                <img class="main__nav-logo--black" src="./images/logo.png" alt="Logo">
-
-                <ul class="main__nav js--main__nav">
-                    <li><a href="#features" class="main__nav-link js--scroll-to-features">Food delivery</a></li>
-                    <li><a href="#steps" class="main__nav-link js--scroll-to-steps">How it works</a> </li>
-                    <li><a href="#cities" class="main__nav-link js--scroll-to-cities">Our cities</a> </li>
-                    <li><a href="#plans" class="main__nav-link js--scroll-to-plans">Sign up</a> </li>
+                <img src="./images/logo-white.png" alt="Omnifood logo" class="logo">
+                <img src="./images/logo.png" alt="Omnifood logo" class="logo-black">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
-                <a href="" class="mobile__nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
-
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="header__text-box">
@@ -66,7 +219,7 @@
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-calendar-outline icon-big section__features--icon"></i>
 
-                    
+
                     <h3 class="heading-tertiary">Up to 365 days/year</h3>
                     <p class="section__features--text">
                         Never cook again! We really mean that. Our subscription plans include up to 365 days/year
@@ -156,7 +309,8 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2 steps-box ">
-                    <img class="section__steps--app-screen js--wp-2" src="./images/app-iPhone.png" alt="Omnifood app on iphone">
+                    <img class="section__steps--app-screen js--wp-2" src="./images/app-iPhone.png"
+                        alt="Omnifood app on iphone">
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="section__steps-work--step clearfix">
@@ -173,8 +327,9 @@
                     </div>
                     <div class="app__bottons">
                         <a href="#" class="btn-app"><img src="images/download-app.svg" alt="App Store Button"></a>
-                        <a href="#" class="btn-app"><img src="images/download-app-android.png" alt="App Store Button"></a>
-                    </div> 
+                        <a href="#" class="btn-app"><img src="images/download-app-android.png"
+                                alt="App Store Button"></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -254,7 +409,7 @@
             </div>
         </section>
 
-        <section class="section__testimonials">
+        <section class="section__testimonials js--section__testimonials">
             <div class="row">
                 <h2 class="heading-secondary">Our costumers can't live without us</h2>
             </div>
@@ -313,7 +468,7 @@
                             <ul class="plan__box-list">
                                 <li>
                                     <i class="ion-ios-checkmark-empty icon-small"></i>
-                                    1 meal 
+                                    1 meal
                                 </li>
                                 <li>
                                     <i class="ion-ios-checkmark-empty icon-small"></i>
@@ -323,7 +478,7 @@
                                     <i class="ion-ios-close-empty icon-small"></i>
                                 </li>
                                 <li>
-                                    <i class="ion-ios-checkmark-empty icon-small"></i>                                    free delivery
+                                    <i class="ion-ios-checkmark-empty icon-small"></i> free delivery
                                 </li>
                             </ul>
                         </div>
@@ -387,7 +542,7 @@
                                     Access to newest creations
                                 </li>
                                 <li>
-                                    <i class="ion-ios-checkmark-empty icon-small"></i>                                    free delivery
+                                    <i class="ion-ios-checkmark-empty icon-small"></i> free delivery
                                 </li>
                             </ul>
                         </div>
@@ -462,7 +617,7 @@
                 </form>
             </div>
         </section>
-    
+
     </main>
     <footer class="footer">
         <div class="row">
@@ -478,7 +633,7 @@
                         <a class="footer__nav--link" href="#">Press</a>
                     </li>
                     <li>
-                        <a  class="footer__nav--link" href="#">iOS App</a>
+                        <a class="footer__nav--link" href="#">iOS App</a>
                     </li>
                     <li>
                         <a class="footer__nav--link" href="#">Android App</a>
@@ -504,7 +659,7 @@
                     </li>
                     <li>
                         <a class="footer__social--link" href="#">
-                            <i class="ion-social-instagram"></i>                        </a>
+                            <i class="ion-social-instagram"></i> </a>
                     </li>
                 </ul>
             </div>

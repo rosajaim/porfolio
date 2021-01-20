@@ -1,8 +1,8 @@
 // MAIN NAVIGATION
-.main__nav {
+.main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;    
+    margin-top: 55px;   
 
     @include respond (tab-port) {
         display: none;
@@ -20,8 +20,8 @@
         }
     }
 
-    &-link:link,
-    &-link:visited {
+    & li a:link,
+    & li a:visited {
         color: $color-white;
         border-bottom: 2px solid transparent;
         font-size: 90%;
@@ -38,38 +38,30 @@
         }
     }
 
-    &-link:hover,
-    &-link:active {
+    & li a:hover,
+    & li a:active {
         border-bottom: 2px solid $color-primary;
     } 
   
+}
+.logo {
+    height: 100px;
+    margin-top: 20px;
+    float: left;
+    width: auto;  
+}
 
-    &-logo {
-        height: 100px;
-        margin-top: 20px;
-        float: left;
-        width: auto;
-
-       
-    }
-
-    &-logo--black {
-        display: none;
-        height: 50px;
-        margin: 5px 0;
-        float: left;
-        width: auto;
-
-    }
-
-    &-logo--black {
-        display: none;
-    }
+.logo-black {
+    display: none;
+    height: 50px;
+    margin: 5px 0;
+    float: left;
+    width: auto;
 
 }
 
 // MOBILE NAVIGATION
-.mobile__nav-icon {
+.mobile-nav-icon {
     float: right;
     margin-top: 30px;
     cursor: pointer;
@@ -96,8 +88,13 @@
     box-shadow: 0 2px 2px $color-grey-lighter;
     z-index: 99;
 
-    & .main__nav-link:link,
-    & .main__nav-link:visited {
+    & .main-nav {
+        margin-top: 18px;
+
+    }
+
+    & li a:link,
+    & li a:visited {
         color: #555;
         padding: 16px 0;
 
@@ -107,20 +104,17 @@
    
     }
 
-    & .main__nav-logo {
+    & .logo {
         display: none;
     }
 
-    & .main__nav-logo--black {
+    & .logo-black {
         display: block;
     
     }
 
-    & .main__nav {
-        margin-top: 10px;
-    }
 
-    & .mobile__nav-icon i {
+    & .mobile-nav-icon i {
 
         @include respond (tab-port) {
             color: #555;
@@ -128,7 +122,7 @@
         }
     }
 
-    & .mobile__nav-icon {
+    & .mobile-nav-icon {
         @include respond (tab-port) {
             margin-top: 10px;
         }
