@@ -814,6 +814,55 @@ input[type=submit] {
     border: 1px solid #cf6d17;
     color: #fff; }
 
+.container {
+  position: fixed;
+  display: block;
+  top: 90%;
+  left: 90%;
+  transform: translate(-50%, -50%); }
+
+.back-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e67e22;
+  opacity: 0;
+  border-radius: 100%;
+  animation: back 3s infinite;
+  animation-delay: 0.3s; }
+
+.button {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #e67e22; }
+
+.ion-ios-telephone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+  animation: call 2s infinite; }
+
+.front-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0.2;
+  border-radius: 100%;
+  width: 0px;
+  height: 0px; }
+
 .section__features {
   margin-bottom: 20px; }
   .section__features--icon {
