@@ -60,7 +60,7 @@ input[type=submit] {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #e67e22;
+    background-color: $color-primary;
     opacity: 0;
     border-radius: 100%;
     animation: back 3s infinite;
@@ -74,7 +74,7 @@ input[type=submit] {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #e67e22; }
+    background-color: $color-primary; }
   
   .ion-ios-telephone {
     position: absolute;

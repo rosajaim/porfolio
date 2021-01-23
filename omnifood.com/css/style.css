@@ -1149,11 +1149,11 @@ input[type=submit] {
     @media only screen and (max-width: 767px) {
       .plan__box-list {
         margin: 0 auto;
-        width: 33%; } }
+        width: 40%; } }
     @media only screen and (max-width: 480px) {
       .plan__box-list {
         margin: 0 auto;
-        width: 60%; } }
+        width: 65%; } }
     .plan__box-list li {
       padding: 5px 0; }
 
