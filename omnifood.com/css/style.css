@@ -944,7 +944,7 @@ input[type=submit] {
       .section__steps-work--step {
         padding: 10px 0 10px 0;
         margin-bottom: 20px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto; } }
     .section__steps-work--step:last-of-type {
       margin-bottom: 20px; }
@@ -1149,7 +1149,7 @@ input[type=submit] {
     @media only screen and (max-width: 767px) {
       .plan__box-list {
         margin: 0 auto;
-        width: 40%; } }
+        width: 50%; } }
     @media only screen and (max-width: 480px) {
       .plan__box-list {
         margin: 0 auto;
