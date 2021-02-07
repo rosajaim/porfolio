@@ -1,0 +1,292 @@
+//Widescreens
+// @include mediaXL {
+//     .heading-1 {
+//         font-size: 10rem;
+//     }
+
+//     .heading-2 {
+//         font-size: 3rem;
+//     }
+
+//     .about-content__signature {
+//         left: 0;
+//     }
+// }
+
+// //Desktops & Laptops
+// @include mediaLg {}
+
+// //Tablets and Small Laptops
+// @include mediaMd {
+//     .heading-primary {
+//         line-height: 1;
+//         padding-bottom: 0;
+//     }
+
+//     .section-heading:after {
+//         bottom: -13%;
+//     }
+
+//     ul.menu-nav,
+//     div.menu-branding {
+//         float: left;
+//         width: 50%;
+//         min-height: 0;
+
+//         &.show {
+//             transform: translate3d(0, 0, 0);   
+//         }
+//     }
+
+//     .menu-branding {
+//         width: 100%;
+//         float: none;
+//         flex-flow: column wrap;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     .menu-nav {
+//         height: 100vh;
+//         transform: translate3d(100%, 0, 0);
+//         font-size: 24px;
+//     }
+
+//     .menu-branding {
+//         height: 30vh;
+//         transform: translate3d(100%, 0, 0);
+
+//         // .portrait {
+//         //     background: url('/img/portrait-small.jpg');
+//         //     width: 150px;
+//         //     height: 150px;
+//         // }
+//     }
+
+//     //ABOUT
+//     #about {
+//         height: 70vh;
+//         background: linear-gradient(to right,
+//                 $color-terceary 0%,
+//                 $color-terceary 60%,
+//                 $color-terceary-dark 50%,
+//                 $color-terceary-dark 100%);
+//     }
+
+//     .about__img-container {
+//         width: 100%;
+//         margin-top: 5.3rem;
+//     }
+
+//     .about-content-img {
+//         top: 25%;
+//         left: 50%;
+//         width: 360px;
+//         height: 562.38px;
+//     }
+
+//     .section-heading-horizontal {
+//         font-size: 2.4rem;
+//         padding-top: 4.5rem;
+
+//         &:before {
+//             top: 45%;
+
+//         }
+//     }
+
+//     .about-content__text {
+//         top: 24%;
+//         left: 7%;
+//         width: 45%;
+
+//     }
+
+//     // .btn-download {
+//     //     // margin: 0 auto;
+//     // }
+
+//     .about-content__signature {
+//         left: -17px;
+//     }
+
+//     .triangle {
+//         display: none;
+//     }
+
+
+// }
+
+// //Smartphones
+// @include mediaSm {
+//     .main-heading {
+//         padding: 2rem;
+
+//         .heading-primary {
+//             margin-top: 15vh;
+//             font-size: 5rem;
+//         }
+//     }
+
+//     .menu-btn {
+//         right: 12px;
+//         top: 12px;
+//         position: absolute;
+//         background: none;
+//         box-shadow: none;
+//     }
+
+//     //  .btn-line {
+
+//     //  }
+
+//     // MY PROJECTS
+//     .row {
+//         flex-direction: column;
+//         justify-content: center;
+//         align-items: center;
+//     }
+
+//     #portfolio {
+//         padding-top: 60px;
+//     }
+
+//     .portfolio-content:hover:before {
+//         opacity: 0;
+//     }
+
+//     .portfolio-content .content-overlay {
+//         background: $bg-overlay-darker;
+//         opacity: 1;
+//     }
+
+//     .portfolio-content__text {
+//         padding: 0;
+
+//         &-sub-title,
+//         &-title {
+//             opacity: 1;
+//             transform: translate(0, 0);
+//         }
+//     }
+
+//     .portfolio-content__link {
+//         opacity: 1;
+//         transform: translate(0, 0);
+//     }
+
+//     .section-heading:after {
+//         bottom: -15%;
+//     }
+
+//     .btn {
+//         border: solid 1px $color-secondary;
+//     }
+
+//     //ABOUT 
+//     .section-heading-horizontal {
+//         font-size: 2rem;
+//         padding-top: 2.3rem;
+//         margin-bottom: 1rem;
+//         padding: 3rem 3rem;
+
+//         &:before {
+//             top: 32%;
+//             font-size: 1.3em;
+
+//         }
+//     }
+
+//     .about-content-img {
+//         display: none;
+//     }
+
+//     #about {
+//         height: 100vh;
+//         background-image: linear-gradient(rgba($color-terceary-dark, .9), rgba($color-terceary-dark, .9)), url(../img/about-pic3.png);
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         background-attachment: fixed;
+//         background-position: center center;
+
+
+//     }
+
+//     .about-content__text {
+//         font-size: 1em;
+//         top: 12%;
+//         left: 0;
+//         margin: 0 auto;
+//         width: 100%;
+//         padding: 2rem;
+
+//     }
+
+//     .btn-download {
+//         top: 30px;
+//     }
+
+//     //PROJECTS
+//     #portfolio {
+//         padding-top: 0;
+//         // margin-top: 1rem;
+
+//     }
+
+//     //MODA
+//     .popup__content {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         padding: 2px;
+//         width: 100%;
+//         height: 100vh;
+//     }
+
+//     .popup__right {
+//         width: 100%;
+//         padding: 1rem;
+//         margin-top: 20rem;
+//     }
+//     .popup__left {
+//         display: flex;
+    
+//     }
+
+//     .popup__img {
+//         display: block;
+//         margin: 0 auto;
+//         top: 13%;
+//         left: 17%;
+//         width: 70%;
+//     }
+
+//     .btn-popup {
+//         font-size: 10px;
+//     }
+
+//     // .popup-links {
+//     //     padding: 1rem .5rem;
+//     //     font-size: 11px;
+//     // }
+
+// }
+
+// @mixin mediaXSm {
+//     .section-heading:after {
+//         bottom: -29%;
+//     }
+
+//     .section-heading-horizontal {
+//         font-size: 1.5em;
+
+//     }
+
+//     .popup__right {
+//         margin-top: 4rem;
+//     }
+
+//     .menu-btn {
+//         background: none;
+//     }
+// }
