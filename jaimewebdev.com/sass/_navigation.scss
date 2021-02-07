@@ -71,12 +71,19 @@
         overflow: hidden;
         z-index: 10;
 
+        // @media only screen and (max-width: $bp-small) {
+        //     width: 100%;
+        //     float: none;
+        // }
+
     }
 
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($color-terceary-dark, 5);
+        // background: darken($color-terceary-dark, 5);
+        background: rgba($bg-overlay-darker, 1);
+
         list-style: none;
         transform: translate3d(100%, 0, 0);
         @include easeOut;
@@ -86,26 +93,6 @@
             transform: translate3d(0, 0, 0);
         }
     }
-
-    // Branding Site
-    // &-branding {
-    //     background: $color-terceary-dark;
-    //     transform: translate3d(-100%, 0, 0);
-    //     @include easeOut;
-
-    //     &.show {
-    //         //Slide in from bottom
-    //         transform: translate3d(0, 0, 0);
-    //     }
-
-    //     .portrait {
-    //         width: 250px;
-    //         height: 250px;
-    //         border-radius: 50%;
-    //         background-image: url(/img/portrait.jpg);
-    //         border: solid 2px $color-secondary;
-    //     }
-    // }
 
     .nav-item {
         transform: translate3d(600px, 0, 0);
@@ -124,12 +111,16 @@
     .nav-link {
         display: inline-block;
         position: relative;
-        font-size: 30px;
+        font-size: 1.8rem;
         color: $color-primary;
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
         @include easeOut;
+
+        // @media only screen and (max-width: $bp-small) {
+        //     color: $color-terceary;
+        //  } 
 
         &:hover {
             color: $color-white;
@@ -148,12 +139,20 @@
             z-index: -1;
             @include easeOut;
 
+            @media only screen and (max-width: $bp-small) {
+                opacity: .3;
+                font-size: 2.5rem;
+                font-weight: 400;
+                top: 44%;
+             } 
+    
+
         }
 
         &:hover:before {
-            opacity: 0.2;
+            opacity: 1;
             top: 50%;
-            color: rgb(138, 138, 138);
+            // color: rgb(138, 138, 138);
         }
     }
 }
