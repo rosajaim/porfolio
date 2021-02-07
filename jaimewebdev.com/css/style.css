@@ -419,7 +419,7 @@ a {
   overflow: hidden;
   z-index: 4; }
   .header.bg-img {
-    background: url(/img/background.jpg);
+    background: url(../img/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
