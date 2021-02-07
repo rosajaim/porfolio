@@ -123,7 +123,7 @@
         //  } 
 
         &:hover {
-            color: $color-white;
+            color: $color-terceary;
 
         }
 
@@ -150,9 +150,9 @@
         }
 
         &:hover:before {
-            opacity: 1;
+            opacity: .5;
             top: 50%;
-            // color: rgb(138, 138, 138);
+            color: $color-primary;
         }
     }
 }
