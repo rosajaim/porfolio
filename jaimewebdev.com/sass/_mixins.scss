@@ -38,7 +38,7 @@
 }
 
 @mixin backgroundTwo {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(/img/bg2.jpg);
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(./img/bg2.jpg);
 
 }
 
