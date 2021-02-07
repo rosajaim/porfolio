@@ -1,0 +1,74 @@
+.section__skills {
+    background: $color-terceary;
+    padding: 0 2rem 10rem 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 2rem 1rem 8rem 1rem;
+     }
+
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+ 
+    @media only screen and (max-width: $bp-largest) {
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); 
+
+     }
+
+    
+
+    &__icon i:only-of-type[fa-node-js] {
+        align-self: flex-end;
+    }
+}
+
+// &__icon {}
+
+
+
+
+.java-script {
+    color: $color-javaScript;
+}
+
+.css {
+    color: $color-css;
+}
+
+.html {
+    color: $color-html;
+}
+
+.wordPress {
+    color: $color-wordPress;
+}
+
+.boostrap {
+    color: $color-boostrap;
+}
+
+.sass {
+    color: $color-sass
+}
+
+.node {
+    color: $color-node
+}
+
+.npm {
+    color: $color-npm
+}
+
+.git {
+    color: $color-primary
+}
