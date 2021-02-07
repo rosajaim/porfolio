@@ -583,12 +583,6 @@ button.scroll_down:before {
       pointer-events: none;
       z-index: -1;
       transition: all 0.3s ease-out; }
-      @media only screen and (max-width: 37.5em) {
-        .menu .nav-link:before {
-          opacity: .3;
-          font-size: 2.5rem;
-          font-weight: 400;
-          top: 44%; } }
     .menu .nav-link:hover:before {
       opacity: 1;
       top: 50%; }

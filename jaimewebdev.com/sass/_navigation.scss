@@ -139,12 +139,12 @@
             z-index: -1;
             @include easeOut;
 
-            @media only screen and (max-width: $bp-small) {
-                opacity: .3;
-                font-size: 2.5rem;
-                font-weight: 400;
-                top: 44%;
-             } 
+            // @media only screen and (max-width: $bp-small) {
+            //     opacity: .3;
+            //     font-size: 2.5rem;
+            //     font-weight: 400;
+            //     top: 44%;
+            //  } 
     
 
         }
