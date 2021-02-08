@@ -95,6 +95,10 @@
         border: none;
         width: 15%;
 
+        // @media only screen and (max-width: $bp-largest) {
+        //     width: 16.1%;
+        // }
+
         @media only screen and (max-width: $bp-medium) {
             width: 100%;
         }
