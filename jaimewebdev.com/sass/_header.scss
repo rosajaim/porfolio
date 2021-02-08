@@ -1,19 +1,22 @@
 .header {
-  @include background;
+  background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.8), rgba($color-primary, 0.8)),url(../img/background.jpg);
+  @include bgSettings;
+
+  // @include background;
   // width: 100%;
   height: 100vh;
   z-index: 4;
 
-  @media only screen and (max-width: $bp-small) {
-    @include bgMobile;
+//   @media only screen and (max-width: $bp-small) {
+//     @include bgMobile;
 
-}
+// }
 
-  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  // only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  // only screen and (min-width: 125em) {
-  //     @include backgroundMobile;
-  // }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+      @include bgMobile;
+  }
 
 }
 
