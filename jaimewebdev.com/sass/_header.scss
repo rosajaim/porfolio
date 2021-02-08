@@ -1,7 +1,7 @@
 .header {
   // @include background;
   // @include bgSettings;
-  background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-small.jpg);
+  background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -11,7 +11,9 @@
   z-index: 4;
 
   @media only screen and (max-width: $bp-small) {
-    @include bgMobile;
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-mobile.jpg);
+
+    // @include bgMobile;
     @include bgSettings;
 
 }

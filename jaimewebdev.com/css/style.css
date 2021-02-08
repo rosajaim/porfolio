@@ -412,7 +412,7 @@ a {
     transition: all .3s ease-out; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-small.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -422,7 +422,7 @@ a {
   z-index: 4; }
   @media only screen and (max-width: 37.5em) {
     .header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-small.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-mobile.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       background-attachment: fixed;
@@ -607,7 +607,6 @@ button.scroll_down:before {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
-  position: relative;
   padding-bottom: 4rem; }
   @media only screen and (max-width: 43.57em) {
     #portfolio {
@@ -948,14 +947,17 @@ button.scroll_down:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center center;
-  position: relative; }
+  background-position: center center; }
   @media only screen and (max-width: 43.57em) {
     .section__contact {
       padding: 0 0 5rem 0; } }
   @media only screen and (max-width: 37.5em) {
     .section__contact {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2-mobile.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2-mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center center; } }
 
 .form__group {
   display: flex;
@@ -981,6 +983,7 @@ button.scroll_down:before {
 
 .form__input {
   font-size: 1.2rem;
+  color: red;
   font-family: Arial, Helvetica, sans-serif;
   padding: 1rem 1.5rem;
   border-radius: 5px;
@@ -1040,6 +1043,9 @@ button.scroll_down:before {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(30, 30, 30, 0.1);
     border-bottom: 3px solid #444; }
+
+.form ::-webkit-input-placeholder {
+  color: #504d49; }
 
 .form .btn__form-send {
   border: 1px solid #00ADDA;
