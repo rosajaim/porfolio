@@ -1,5 +1,4 @@
 #portfolio {
-    // background: $color-terceary-dark;
     @include projectsBg;
     padding-bottom: 4rem;
 
@@ -33,6 +32,8 @@
     color: $color-secondary;
     overflow: hidden;
     width: 100%;
+    // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+
 
     & .content-overlay {
         position: absolute;

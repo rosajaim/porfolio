@@ -604,7 +604,7 @@ button.scroll_down:before {
   transition-delay: 0.5s; }
 
 #portfolio {
-  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
+  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(/img/Author_BG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
