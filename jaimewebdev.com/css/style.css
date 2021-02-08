@@ -412,7 +412,7 @@ a {
     transition: all .3s ease-out; }
 
 .header {
-  background-image: linear-gradient(to right bottom, rgba(0, 173, 218, 0.8), rgba(68, 68, 68, 0.8)), url(../img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -597,7 +597,7 @@ button.scroll_down:before {
   transition-delay: 0.5s; }
 
 #portfolio {
-  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(/img/Author_BG.jpg);
+  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(../img/Author_BG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

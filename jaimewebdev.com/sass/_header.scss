@@ -1,5 +1,5 @@
 .header {
-  background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.8), rgba($color-primary, 0.8)),url(../img/background.jpg);
+  background-image: url(../img/background.jpg);
   @include bgSettings;
 
   // @include background;
