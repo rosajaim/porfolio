@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
+    position: relative;
 }
 
 @mixin background {
@@ -37,13 +38,18 @@
     }
 }
 
-@mixin backgroundMobile {
+@mixin bgMobile {
     background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-small.jpg);
 
 }
 
-@mixin backgroundTwo {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2.jpg);
+@mixin bgContact {
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-min.jpg);
+
+}
+
+@mixin bgContact-mobile {
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-mobile.jpg);
 
 }
 

@@ -1,54 +1,21 @@
 .section__contact {
     padding: 2rem 0 8rem 0;
-    @include backgroundTwo;
+    @include bgContact;
     @include bgSettings;
 
+  
     @media only screen and (max-width: $bp-medium2) {
         padding: 0 0 5rem 0;
     }
 
-}
+    @media only screen and (max-width: $bp-small) {
+        @include bgContact-mobile;
 
-.contact {
-    // margin: 0 auto;
-    // display: flex;
-
-    // background-size: 100%;
-    // border-radius: 3px;
-
-    &__form {
-        // width: 100%;
-        // margin: 0 auto;
-
-        // padding: 2rem;
-
-        // @media only screen and (max-width: $bp-small) {
-        //    width: 85%;
-        //    padding: 2.5rem;
-        // }
-
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     width: 100%;
-        // }
     }
 
-    // &__info {
-        
-    // }
-
-    // &__icon {
-    //     padding: 1rem;
-    // }
-
 }
 
-// .row {
-//     width: 114rem;
-//     margin: 0 auto;
-// }
-
 .form {
-
     &__group {
         display: flex;
         justify-content: center;
@@ -62,13 +29,11 @@
             flex-direction: column;   
         }
     }
-
-    
+   
     &__group input:not(:last-of-type) {
         margin-right: 2rem;
     }
 
-  
     &__group:not(:last-child) {
         margin: 2.5rem 2.5rem;
 
