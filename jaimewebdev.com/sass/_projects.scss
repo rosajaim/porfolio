@@ -1,5 +1,5 @@
-#portfolio {
-    background-image: linear-gradient(rgba($color-terceary-dark, .2), rgba($color-terceary-dark, .2)), url(../img/Author_BG.jpg);
+#projects {
+    background-image: url(../img/Author_BG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -36,7 +36,6 @@
     color: $color-secondary;
     overflow: hidden;
     width: 100%;
-    // box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
 
     & .content-overlay {
         position: absolute;
@@ -119,6 +118,7 @@
         width: 100%;
         height: auto;
         background: $bg-overlay;
+
 
     }
 

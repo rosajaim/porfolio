@@ -321,7 +321,8 @@ a {
     @media only screen and (max-width: 37.5em) {
       .popup__img {
         width: 80%;
-        top: 8%; } }
+        top: 8%;
+        left: 10%; } }
     @media only screen and (max-width: 25em) {
       .popup__img {
         width: 93%;
@@ -567,18 +568,18 @@ button.scroll_down:before {
 .nav-item:nth-child(5) {
   transition-delay: 0.5s; }
 
-#portfolio {
-  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(../img/Author_BG.jpg);
+#projects {
+  background-image: url(../img/Author_BG.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   padding-bottom: 4rem; }
   @media only screen and (max-width: 43.57em) {
-    #portfolio {
+    #projects {
       padding-bottom: 2rem; } }
   @media only screen and (max-width: 23.43em) {
-    #portfolio {
+    #projects {
       padding-bottom: 2rem; } }
 
 .row {
