@@ -13,6 +13,9 @@
 
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+    <!-- Aminate CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700i,900" rel="stylesheet">
@@ -66,7 +69,7 @@
                 Front-end Developer<span class="txt-type" data-wait="3000"
                     data-words='[" with a passion for learning"]'></span>
             </h2>
-            <a href="#portfolio" class="btn_header"><span>View Projects</span></a>
+            <a href="#portfolio" class="btn_header btn_header--animated"><span>View Projects</span></a>
         </div>
         <div class="wrapper">
 
@@ -78,7 +81,7 @@
     <main>
         <section class="about" id="about">
             <!-- <h2 class="heading-secondary" data-text="About me">About me</h2> -->
-            <div class="about__items">
+            <div class="about__items js--wp-2">
                 <div class="about__items-text">
                     <h3><span>Hi!</span></h3>
                     <p>I'm <strong>Jaime</strong>, an enthusiastic and detail-oriented front-end developer. I focuse
@@ -91,7 +94,7 @@
                         learning new things, and recently discovered a love for Virgil's Rootbeer!</p>
                 </div>
             </div>
-            <img src="./img/JR-white.png" class="about__items-img" alt="Jaime Rosales" />
+            <img src="./img/JR-white.png" class="about__items-img js--wp-1" alt="Jaime Rosales" />
         </section>
 
         <!-- Project Section -->
@@ -103,7 +106,7 @@
 
                 <!-- Trillo Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/trillo.jpg" alt="Trillo Project" />
+                    <img class="js--wp-3" src="./img/projects/trillo.jpg" alt="Trillo Project"/>
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Web App</p>
@@ -145,7 +148,7 @@
 
                 <!-- Natours -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/natours.jpg" alt="Natours Project" />
+                    <img class="js--wp-3" src="./img/projects/natours.jpg" alt="Natours Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -186,7 +189,7 @@
 
                 <!-- Nexter Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/nexter.jpg" alt="Nexter Project" />
+                    <img class="js--wp-3" src="./img/projects/nexter.jpg" alt="Nexter Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -227,7 +230,7 @@
 
                 <!-- Vesco Project-->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/vesco.jpg" alt="Vesco" />
+                    <img class="js--wp-3" src="./img/projects/vesco.jpg" alt="Vesco" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -268,7 +271,7 @@
 
                 <!-- Portfolio Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/portfolio.jpg" alt="Portfolio" />
+                    <img class="js--wp-3" src="./img/projects/portfolio.jpg" alt="Portfolio" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -309,7 +312,7 @@
 
                 <!-- Omnifood -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/omnifood.jpg" alt="Omnifood" />
+                    <img class="js--wp-3" src="./img/projects/omnifood.jpg" alt="Omnifood" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -441,8 +444,8 @@
         <p class="copyright">&copy; jaimewebdev.com 2021</p>
     </footer>
 
+        <script src="./js/jquery.waypoits.min.js"></script>
         <script src="./js/main.js"></script>
-
 </body>
 
 </html>

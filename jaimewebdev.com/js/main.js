@@ -187,6 +187,33 @@ $(function () {
   }).resize();
 });
 
+$(document).ready(function () {
+
+  $('.js--wp-1').waypoint(function (direction) {
+    $('.js--wp-1').addClass('animate__animated animate__fadeInUp');
+  
+  }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-2').waypoint(function (direction) {
+    $('.js--wp-2').addClass('animate__animated animate__fadeInLeft');
+  
+  }, {
+    offset: '50%'
+  });
+
+  $('.js--wp-3').waypoint(function (direction) {
+    $('.js--wp-3').addClass('animate__animated animate__fadeInDown');
+  
+  }, {
+    offset: '50%'
+  });
+
+});
+
+
+
 
 
 

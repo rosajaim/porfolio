@@ -1,6 +1,6 @@
 .footer {
     background-color: rgba(33,42,56,.93);
-    padding: 8rem 0 2rem 0;
+    padding: 5rem 0 1rem 0;
     color: $color-white;
 }
     .nav {
@@ -12,10 +12,11 @@
 
         &__item {
            padding: 1rem;
+           color: $color-gray-light;
         }
 
         &__link {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: $color-gray-light;
             padding: .5rem 1rem .5rem 1rem; 
             transition: all .2s;
@@ -28,17 +29,17 @@
 
         }
 
-        &__img {
-            height: 3.5rem;
-            transition: all .2s;
+        // &__img {
+        //     height: 3.5rem;
+        //     transition: all .2s;
 
-        }
+        // }
 
-        &__img:hover,
-        &__img:active {
-            transform: translateY(-3px);
-            opacity: .8;
-        }
+        // &__img:hover,
+        // &__img:active {
+        //     transform: translateY(-3px);
+        //     opacity: .8;
+        // }
     }
 
 .copyright {

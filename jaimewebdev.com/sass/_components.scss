@@ -11,13 +11,8 @@
 
     &__link {
         position: relative;
-        // text-decoration: none;
         color: $color-primary;
         font-family: Helvetica;
-        // text-transform: uppercase;
-        // display: block;
-        // text-align: center;
-        // padding: 7px 3px;
     }
 
     .line {
@@ -88,6 +83,7 @@
             }
         }
     }
+
 }
 
 // ****** HEADER BUTTON ******
@@ -95,6 +91,7 @@
     color: $color-white;
     border: 1px solid $color-secondary;
     border-radius: 3.12rem;
+    display: inline-block;
     font-family: $font-primary;
     font-size: 1.1rem;
     font-weight: 400;
@@ -104,9 +101,12 @@
     padding: 1.2rem 2rem;
     width: 14rem;
     cursor: pointer;
-    @include easeOut;
-    outline: none;
 
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+    
     & span {
         cursor: pointer;
         display: inline-block;

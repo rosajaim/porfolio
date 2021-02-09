@@ -1,3 +1,42 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-1rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0px); } }
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0;
+  animation-duration: 1s; }
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1; }
+
 * {
   margin: 0;
   padding: 0;
@@ -198,6 +237,7 @@ a {
   color: #fff;
   border: 1px solid #00ADDA;
   border-radius: 3.12rem;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
@@ -206,9 +246,10 @@ a {
   letter-spacing: 1px;
   padding: 1.2rem 2rem;
   width: 14rem;
-  cursor: pointer;
-  transition: all 0.4s ease-out;
-  outline: none; }
+  cursor: pointer; }
+  .btn_header--animated {
+    animation: moveInBottom .5s ease-out .75s;
+    animation-fill-mode: backwards; }
   .btn_header span {
     cursor: pointer;
     display: inline-block;
@@ -802,7 +843,10 @@ button.scroll_down:before {
   font-weight: 600;
   color: #fff;
   letter-spacing: 3px;
-  line-height: .5; }
+  line-height: .5;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out; }
   @media only screen and (max-width: 50em) {
     .heading-primary {
       font-size: 7.5rem; } }
@@ -831,7 +875,8 @@ button.scroll_down:before {
   font-weight: 300;
   font-style: italic;
   padding: 3rem;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  animation: moveInRight 1s ease-out; }
   @media only screen and (max-width: 37.5em) {
     .heading-secondary--type {
       padding: 1.5rem 1rem 2rem 1rem;
@@ -1040,7 +1085,7 @@ button.scroll_down:before {
 
 .footer {
   background-color: rgba(33, 42, 56, 0.93);
-  padding: 8rem 0 2rem 0;
+  padding: 5rem 0 1rem 0;
   color: #fff; }
 
 .nav {
@@ -1050,20 +1095,15 @@ button.scroll_down:before {
   align-items: center;
   list-style: none; }
   .nav__item {
-    padding: 1rem; }
+    padding: 1rem;
+    color: #b7b7b7; }
   .nav__link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #b7b7b7;
     padding: .5rem 1rem .5rem 1rem;
     transition: all .2s; }
   .nav__link:hover, .nav__link:active {
     color: #fff; }
-  .nav__img {
-    height: 3.5rem;
-    transition: all .2s; }
-  .nav__img:hover, .nav__img:active {
-    transform: translateY(-3px);
-    opacity: .8; }
 
 .copyright {
   color: #b7b7b7;

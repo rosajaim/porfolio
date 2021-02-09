@@ -4,6 +4,9 @@
   color: $color-white;
   letter-spacing: 3px;
   line-height: .5;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 
  
   @media only screen and (max-width: $bp-medium){
@@ -43,7 +46,7 @@
   font-style: italic;
   padding: 3rem;
   margin-bottom: 8px;
-  
+  animation: moveInRight 1s ease-out;
   
   @media only screen and (max-width: $bp-small) {
     padding: 1.5rem 1rem 2rem 1rem;
