@@ -47,7 +47,7 @@
                     <a href="#about" class="nav-link" data-text="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#portfolio" class="nav-link" data-text="projects">Projects</a>
+                    <a href="#projects" class="nav-link" data-text="projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link" data-text="skills">Skills</a>
@@ -58,7 +58,7 @@
             </ul>
         </nav>
 
-        <div class="main-heading" id="home">
+        <div class="main-heading">
             <h1 class="heading-primary">
                 Jaime <span class="text-secondary">Rosales</span>
             </h1>
@@ -74,47 +74,6 @@
             <button type="button" class="scroll_down" id="scroll_down"></button>
         </div>
     </header>
-
-<!-- 
-    <div class="menu-btn navbar-toggle">
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-        <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-        <div class="menu-branding">
-            <div class="portrait"></div>
-        </div>
-        <ul class="menu-nav">
-            <li class="nav-item active">
-                <a href="#home" class="nav-link" data-text="home">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link" data-text="about">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#portfolio" class="nav-link" data-text="projects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a href="#skills" class="nav-link" data-text="skills">Skills</a>
-            </li>
-            <li class="nav-item">
-                <a href="#contact" class="nav-link" data-text="contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <header class="header">
-        <div class="header__text-box">
-            <h1 class="heading-primary">
-                <span class="heading-primary--main">Jaime Rosales</span>
-                <span class="heading-primary--sub">is where life happens</span>
-            </h1>
-            <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
-        </div>
-    </header> -->
-
 
     <main>
         <section class="about" id="about">
@@ -136,15 +95,15 @@
         </section>
 
         <!-- Project Section -->
-        <section class="projects__section" id="portfolio">
-            <div class="triangle"></div>
+        <section class="projects__section" id="projects">
+            <!-- <div class="triangle"></div> -->
 
             <h2 class="heading-secondary">Projects</h2>
             <div class="row">
 
                 <!-- Trillo Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/trillo.jpg" alt="Trillo Project">
+                    <img src="/img/projects/trillo.jpg" alt="Trillo Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Web App</p>
@@ -157,7 +116,7 @@
                 <div class="popup" id="trillo-popup">
                     <div class="popup__content">
                         <div class="popup__left">
-                            <img src="./img/projects/trillo.png" alt="Trillo Project" class="popup__img">
+                            <img src="/img/projects/trillo.png" alt="Trillo Project" class="popup__img">
                         </div>
                         <div class="popup__right">
                             <a href="#porfolio" class="popup__close">&times;</a>
@@ -174,7 +133,7 @@
                             <p class="popup__text">
                                 HTML5, CSS3, CSS Flex Box Layout, Sass, Git, npm
                             </p>
-                            <div class="popup-links">
+                            <div>
                                 <a href="https://rosajaim.github.io/portfolio/trillo.com/index.html" target="_blank"
                                     class="btn-popup">Visit website</a>
                                 <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/trillo.com" target="_blank"
@@ -227,7 +186,7 @@
 
                 <!-- Nexter Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/nexter.jpg" alt="Nexter Project"/>
+                    <img src="./img/projects/nexter.jpg" alt="Nexter Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -268,7 +227,7 @@
 
                 <!-- Vesco Project-->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/vesco.jpg" alt="Vesco"/>
+                    <img src="./img/projects/vesco.jpg" alt="Vesco" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -309,7 +268,7 @@
 
                 <!-- Portfolio Project -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/portfolio.jpg" alt="Portfolio"/>
+                    <img src="./img/projects/portfolio.jpg" alt="Portfolio" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -350,7 +309,7 @@
 
                 <!-- Omnifood -->
                 <figure class="portfolio-content">
-                    <img src="./img/projects/omnifood.jpg" alt="Omnifood"/>
+                    <img src="./img/projects/omnifood.jpg" alt="Omnifood" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -403,60 +362,60 @@
         <!-- <h2 class="heading-secondary ">Skills</h2> -->
         <section class="section__skills" id="skills">
             <h2 class="heading-secondary ">Skills</h2>
-                <div class="skills">
-                    <div class="skill__icon">
-                        <i class="fab fa-js-square java-script fa-8x"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-css3-alt fa-8x css"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-html5 fa-8x html"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-sass fa-8x sass"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-wordpress fa-8x wordPress"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-git-square fa-8x git"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-bootstrap fa-8x boostrap"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-npm fa-8x npm"></i>
-                    </div>
-                    <div class="skills__icon">
-                        <i class="fab fa-node-js fa-8x node"></i>
-                    </div>
+            <div class="skills">
+                <div class="skill__icon">
+                    <i class="fab fa-js-square java-script fa-8x"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-css3-alt fa-8x css"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-html5 fa-8x html"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-sass fa-8x sass"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-wordpress fa-8x wordPress"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-git-square fa-8x git"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-bootstrap fa-8x boostrap"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-npm fa-8x npm"></i>
+                </div>
+                <div class="skills__icon">
+                    <i class="fab fa-node-js fa-8x node"></i>
+                </div>
             </div>
         </section>
 
         <section class="section__contact" id="contact">
             <h2 class="heading-secondary white">Contact me </h2>
-                <div class="contact">
-                    <div class="contact__form">
-                        <form action="contact-form-handler.php" method="POST" class="form" id="contact-form">
-                            <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Name" id="Name" required>
-                                <label for="name" class="form__label"></label>
-                                <input type="email" class="form__input" placeholder="Email" id="email" required>
-                                <label for="name" class="form__label"></label>
-                                <input type="number" class="form__input" placeholder="Phone" id="phone" required>
-                                <label for="name" class="form__label"></label>
-                            </div>
-                            <div class="form__group">
-                                <textarea name="" id="" cols="61" rows="7" placeholder="Message"
-                                    class="form__textarea"></textarea>
-                            </div>
-                            <div class="form__group">
-                                <input type="submit" class="btn__form-send" value="send">
-                            </div>
-                        </form>
-                    </div>        
-                </div>          
+            <div class="contact">
+                <div class="contact__form">
+                    <form action="contact-form-handler.php" method="POST" class="form" id="contact-form">
+                        <div class="form__group">
+                            <input name="name" type="text" class="form__input" placeholder="Name" required>
+                            <label for="name" class="form__label"></label>
+                            <input name="email" type="email" class="form__input" placeholder="Email" required>
+                            <label for="name" class="form__label"></label>
+                            <input name="number" type="number" class="form__input" placeholder="Phone" required>
+                            <label for="name"class="form__label"></label>
+                        </div>
+                        <div class="form__group">
+                            <textarea name="text" id="message" cols="61" rows="7" placeholder="Message"
+                                class="form__textarea"></textarea>
+                        </div>
+                        <div class="form__group">
+                            <input type="submit" class="btn__form-send" value="send">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -480,6 +439,7 @@
             </li>
         </ul>
         <p class="copyright">&copy; jaimewebdev.com 2021</p>
+    </footer>
 
         <script src="./js/main.js"></script>
 

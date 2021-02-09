@@ -40,14 +40,14 @@ function toggleMenu() {
   // });
 
     /* **** NAVIGATION SCROLL ***** */
-    $('a[href^="#"]').on('click', function (e) {
-      e.preventDefault();
-      var target = this.hash;
+    $('.nav-link').on('click', function (e) {  //a[href^="#"'] will target ALL the "a" elements which can
+      e.preventDefault();                       //affect the behavior of the other "a" elemets that are 
+      var target = this.hash;                   // NOT nav links.
       var $target = $(target);
       $('html, body').stop().animate({
           'scrollTop': $target.offset().top
       }, 900, 'swing', function () {
-          // window.location.hash = target;
+          window.location.hash = target;
       });
   });
 
@@ -146,35 +146,35 @@ function init() {
 Based on a Pablo Stanley (https://medium.com/@pablostanley) design
 */
 
-var downloadBtn = document.getElementById('download-btn');
-var inprogress = false;
-downloadBtn.onclick = function () {
-  if (inprogress) {
-    return false;
-  }
-  inprogress = true
-  downloadBtn.classList.add('btn-download__first');
-  setTimeout(function () {
-    downloadBtn.classList.add('btn-download__bridge1');
-  }, 500);
-  setTimeout(function () {
-    downloadBtn.classList.add('btn-download__second');
-  }, 600);
-  setTimeout(function () {
-    downloadBtn.classList.add('btn-download__third');
-  }, 700);
-  setTimeout(function () {
-    downloadBtn.classList.add('btn-download__final');
-  }, 1800);
-  setTimeout(function () {
-    downloadBtn.classList.remove('btn-download__final');
-    downloadBtn.classList.remove('btn-download__third');
-    downloadBtn.classList.remove('btn-download__second');
-    downloadBtn.classList.remove('btn-download__bridge1');
-    downloadBtn.classList.remove('btn-download__first');
-    inprogress = false;
-  }, 3200)
-};
+// var downloadBtn = document.getElementById('download-btn');
+// var inprogress = false;
+// downloadBtn.onclick = function () {
+//   if (inprogress) {
+//     return false;
+//   }
+//   inprogress = true
+//   downloadBtn.classList.add('btn-download__first');
+//   setTimeout(function () {
+//     downloadBtn.classList.add('btn-download__bridge1');
+//   }, 500);
+//   setTimeout(function () {
+//     downloadBtn.classList.add('btn-download__second');
+//   }, 600);
+//   setTimeout(function () {
+//     downloadBtn.classList.add('btn-download__third');
+//   }, 700);
+//   setTimeout(function () {
+//     downloadBtn.classList.add('btn-download__final');
+//   }, 1800);
+//   setTimeout(function () {
+//     downloadBtn.classList.remove('btn-download__final');
+//     downloadBtn.classList.remove('btn-download__third');
+//     downloadBtn.classList.remove('btn-download__second');
+//     downloadBtn.classList.remove('btn-download__bridge1');
+//     downloadBtn.classList.remove('btn-download__first');
+//     inprogress = false;
+//   }, 3200)
+// };
 
 //REMOVES SECTION-HEADING CLASS AND ADDS SECTION-HEADING-HORIZINTAL CLASS
 $(function () {
