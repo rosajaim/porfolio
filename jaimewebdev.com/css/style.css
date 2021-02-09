@@ -26,7 +26,7 @@ a {
   display: flex;
   align-items: center;
   height: auto;
-  background: linear-gradient(to right, #f2f4f6 0%, #f2f4f6 66%, #e3e7ec 50%, #e3e7ec 100%); }
+  background: linear-gradient(to right, #f2f4f6 0%, #f2f4f6 62%, #e3e7ec 20%, #e3e7ec 100%); }
   @media only screen and (max-width: 62.5em) {
     .about {
       background: none; } }
@@ -269,10 +269,10 @@ a {
     transition: all .5s .2s; }
     @media only screen and (max-width: 62.5em) {
       .popup__content {
-        height: 98vh; } }
+        height: 95vh; } }
     @media only screen and (max-width: 43.57em) {
       .popup__content {
-        height: 100vh; } }
+        height: 95vh; } }
     @media only screen and (max-width: 23.43em) {
       .popup__content {
         width: 95%; } }

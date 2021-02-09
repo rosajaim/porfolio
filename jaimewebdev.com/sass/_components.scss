@@ -278,11 +278,11 @@
         transition: all .5s .2s;
 
         @media only screen and (max-width: $bp-large) {
-            height: 98vh;
+            height: 95vh;
         }
 
         @media only screen and (max-width: $bp-medium2) {
-            height: 100vh;  
+            height: 95vh;  
         }
 
         @media only screen and (max-width: $bp-smaller2) {
@@ -351,7 +351,8 @@
 
         @media only screen and (max-width: $bp-small) {
            width: 80%;
-           top: 8%    
+           top: 8%;
+           left: 10%;   
         }
 
         @media only screen and (max-width: $bp-smaller) {
