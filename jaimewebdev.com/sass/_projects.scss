@@ -1,9 +1,9 @@
 #projects {
     position: relative;
-    background-image: url(../img/Author_BG-min.jpg);
+    background-image: url(../img/projects-bg.jpg);
     background-size: cover;
     // background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center center;
     // overflow: hidden;
     // @include projectsBg;
@@ -12,8 +12,8 @@
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
-        background-image:url(../img/Author_BG-mobile.jpg);
-        background-attachment: none;
+        background-image:url(../img/projects-bg-small.jpg);
+        // background-attachment:unset;
 
     }
 
@@ -22,9 +22,9 @@
     }
 
 
-    @media only screen and (max-width: $bp-small) {
-        background-image: url(../img/Author_BG-mobile.jpg);
-    }
+    // @media only screen and (max-width: $bp-small) {
+    //     background-image: url(../img/Author_BG-mobile.jpg);
+    // }
 
     @media only screen and (max-width: $bp-smaller2) {
         padding-bottom: 2rem;

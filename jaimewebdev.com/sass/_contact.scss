@@ -1,10 +1,10 @@
 .section__contact {
     position: relative;
     padding: 2rem 0 8rem 0;
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-min.jpg);
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg-contact.jpg);
     background-size: cover;
     // background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-attachment: fixed;
     background-position: center center;
     // @include bgContact;
     // @include bgSettings;
@@ -12,8 +12,7 @@
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
-        background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ),url(../img/bg2-mobile.jpg);
-        background-attachment: none;
+        background-image: linear-gradient(rgba($bg-overlay, .4), rgba($bg-overlay, .4), ),url(../img/bg-contact-small.jpg);
 
     }
 
@@ -22,15 +21,15 @@
         padding: 0 0 5rem 0;
     }
 
-    @media only screen and (max-width: $bp-small) {
-        // @include bgContact-mobile;
-        background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-mobile.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center; 
+    // @media only screen and (max-width: $bp-small) {
+    //     // @include bgContact-mobile;
+    //     background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-mobile.jpg);
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    //     background-attachment: fixed;
+    //     background-position: center center; 
 
-    }
+    // }
 
 }
 
