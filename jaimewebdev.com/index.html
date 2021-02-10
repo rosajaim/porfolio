@@ -105,8 +105,8 @@
             <div class="row">
 
                 <!-- Trillo Project -->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/trillo.jpg" alt="Trillo Project"/>
+                <figure class="portfolio-content js--wp-3">
+                    <img class="" src="./img/projects/trillo.jpg" alt="Trillo Project"/>
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Web App</p>
@@ -147,8 +147,8 @@
                 </div>
 
                 <!-- Natours -->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/natours.jpg" alt="Natours Project" />
+                <figure class="portfolio-content js--wp-3">
+                    <img class="" src="./img/projects/natours.jpg" alt="Natours Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -188,8 +188,8 @@
                 </div>
 
                 <!-- Nexter Project -->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/nexter.jpg" alt="Nexter Project" />
+                <figure class="portfolio-content js--wp-3">
+                    <img class="" src="./img/projects/nexter.jpg" alt="Nexter Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -229,8 +229,8 @@
                 </div>
 
                 <!-- Vesco Project-->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/vesco.jpg" alt="Vesco" />
+                <figure class="portfolio-content js--wp-3">
+                    <img src="./img/projects/vesco.jpg" alt="Vesco" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -270,8 +270,8 @@
                 </div>
 
                 <!-- Portfolio Project -->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/portfolio.jpg" alt="Portfolio" />
+                <figure class="portfolio-content js--wp-3">
+                    <img src="./img/projects/portfolio.jpg" alt="Portfolio" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -311,8 +311,8 @@
                 </div>
 
                 <!-- Omnifood -->
-                <figure class="portfolio-content">
-                    <img class="js--wp-3" src="./img/projects/omnifood.jpg" alt="Omnifood" />
+                <figure class="portfolio-content js--wp-3">
+                    <img src="./img/projects/omnifood.jpg" alt="Omnifood" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Website</p>
@@ -400,17 +400,19 @@
             <h2 class="heading-secondary white">Contact me </h2>
             <div class="contact">
                 <div class="contact__form">
-                    <form action="contact-form-handler.php" method="POST" class="form" id="contact-form">
+                    <form action="webform.php" method="POST" class="form">
                         <div class="form__group">
-                            <input name="name" type="text" class="form__input" placeholder="Name" required>
+                            <input type="text" class="form__input" id="name" name="name" placeholder="Name" required>
                             <label for="name" class="form__label"></label>
-                            <input name="email" type="email" class="form__input" placeholder="Email" required>
-                            <label for="name" class="form__label"></label>
-                            <input name="number" type="number" class="form__input" placeholder="Phone" required>
-                            <label for="name"class="form__label"></label>
+
+                            <input type="email" class="form__input" id="email" name="email" placeholder="Email" required>
+                            <label for="email" class="form__label"></label>
+
+                            <input name="number" type="number" class="form__input" id="number" placeholder="Phone" required>
+                            <label for="number"class="form__label"></label>
                         </div>
                         <div class="form__group">
-                            <textarea name="text" id="message" cols="61" rows="7" placeholder="Message"
+                            <textarea name="message" id="message" cols="61" rows="7" id="message" placeholder="Message"
                                 class="form__textarea"></textarea>
                         </div>
                         <div class="form__group">

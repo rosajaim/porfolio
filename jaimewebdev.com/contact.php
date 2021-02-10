@@ -1,23 +1,20 @@
-<?php
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$visitors_phone = $_POST['phone'];
+ <?php
+$userName = $_POST['name'];
+$userEmail = $_POST['email'];
+$userPhone = $_POST['phone'];
 $message = $_POST['message'];
 
-$email_form = 'jrosaleswebdev@gmail.com';
-$email_subject = "New Form Submission";
-$email_body = "User Name: $name.\n".
-              "User Email: $visitor_email.\n".
-              "User Phone: $visitors_phone.\n".
-              "User Message: $message.\n";
-
 $to = "jrosaleswebdev@gmail.com";
+$body = "";
 
-$headers = "From: $email_form \r\n";
-$headers .= "Replay-To: $visitor_email \r\n";
+$body .= "Form: ". $userName. "\r\n";
+$body .= "Form: ". $userEmail. "\r\n";
+$body .= "Form: ". $userPhone. "\r\n";
+$body .= "Form: ". $message. "\r\n";
 
-mail($to, $email_subject,$email_body, $headers);
+$email_subject = "New Form Submission";
 
-header("Location: index.html");
 
-?>
+mail($to, $email_subject,$body);
+
+?> 

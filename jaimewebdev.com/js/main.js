@@ -204,7 +204,7 @@ $(document).ready(function () {
   });
 
   $('.js--wp-3').waypoint(function (direction) {
-    $('.js--wp-3').addClass('animate__animated animate__fadeInDown');
+    $('.js--wp-3').addClass('animate__animated animate__fadeInRight');
   
   }, {
     offset: '50%'
