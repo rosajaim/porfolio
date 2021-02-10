@@ -1,19 +1,24 @@
 .header {
   // @include background;
   // @include bgSettings;
-  background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background.jpg);
-  background-size: cover;
+  // background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background.jpg);
+  background-image: url(../img/background.jpg);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   position: relative;
-  widows: auto;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
   z-index: 4;
 
   @media only screen and (max-width: $bp-small) {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-mobile.jpg);
+    // background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-mobile.jpg);
+    background-image: url(../img/background.jpg);
+    background-position: center right;
+
+
+
 
     // @include bgMobile;
     @include bgSettings;
