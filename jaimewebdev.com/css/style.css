@@ -420,15 +420,16 @@ a {
     transition: all .3s ease-out; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   position: relative;
   height: 100vh;
   z-index: 4; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-header-small.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-small.jpg); } }
 
 .main-heading {
   position: relative;
@@ -606,6 +607,7 @@ button.scroll_down:before {
   position: relative;
   background-image: url(../img/projects-bg.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
   padding-bottom: 4rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
@@ -951,12 +953,12 @@ button.scroll_down:before {
 .section__contact {
   position: relative;
   padding: 2rem 0 8rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-contact.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-header.jpg);
   background-size: cover;
   background-position: center center; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .section__contact {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg-contact-small.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg-header-small.jpg); } }
   @media only screen and (max-width: 43.57em) {
     .section__contact {
       padding: 0 0 5rem 0; } }

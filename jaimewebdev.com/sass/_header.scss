@@ -1,12 +1,12 @@
 .header {
   // @include background;
   // @include bgSettings;
-  background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg-header.jpg);
+  background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background.jpg);
   // background-image: url(../img/background.jpg);
-  background-size: cover;
-  // background-repeat: no-repeat;
+  background-size: cover ;
+  background-repeat:no-repeat;
   // background-attachment: fixed;
-  background-position: center center;
+  background-position:  center center;
   position: relative;
   height: 100vh;
   z-index: 4;
@@ -14,7 +14,9 @@
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   only screen and (min-width: 125em) {
-      background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ),url(../img/bg-header-small.jpg);
+      // background-image: linear-gradient(rgba($bg-overlay, 9), rgba($bg-overlay, .7), ),url(../img/jr.jpg);
+      background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-small.jpg);
+
   }
 
   
