@@ -1,6 +1,8 @@
 .header {
   // @include background;
   // @include bgSettings;
+  position: relative;
+
   background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;

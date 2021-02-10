@@ -420,6 +420,7 @@ a {
     transition: all .3s ease-out; }
 
 .header {
+  position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -954,6 +955,7 @@ button.scroll_down:before {
   color: #e67e22; }
 
 .section__contact {
+  position: relative;
   padding: 2rem 0 8rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2-min.jpg);
   background-size: cover;
