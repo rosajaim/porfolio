@@ -429,7 +429,8 @@ a {
   z-index: 4; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/canyon-1-small.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/canyon-1-small.jpg);
+      background-attachment: none; } }
 
 .main-heading {
   position: relative;
@@ -612,7 +613,8 @@ button.scroll_down:before {
   padding-bottom: 4rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     #projects {
-      background-image: url(../img/Author_BG-mobile.jpg); } }
+      background-image: url(../img/Author_BG-mobile.jpg);
+      background-attachment: none; } }
   @media only screen and (max-width: 43.57em) {
     #projects {
       padding-bottom: 2rem; } }
@@ -962,7 +964,8 @@ button.scroll_down:before {
   background-position: center center; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .section__contact {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2-mobile.jpg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg2-mobile.jpg);
+      background-attachment: none; } }
   @media only screen and (max-width: 43.57em) {
     .section__contact {
       padding: 0 0 5rem 0; } }
