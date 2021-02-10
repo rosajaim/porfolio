@@ -420,23 +420,15 @@ a {
     transition: all .3s ease-out; }
 
 .header {
-  background-image: url(../img/background.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/canyon.jpg);
+  background-size: cover;
   background-position: center center;
   position: relative;
   height: 100vh;
   z-index: 4; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: url(../img/background.jpg);
-      background-position: center right;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center center;
-      position: relative; } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/canyon-1-small.jpg); } }
 
 .main-heading {
   position: relative;
@@ -614,10 +606,7 @@ button.scroll_down:before {
   position: relative;
   background-image: url(../img/Author_BG-min.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
-  overflow: hidden;
   padding-bottom: 4rem; }
   @media only screen and (max-width: 43.57em) {
     #projects {
