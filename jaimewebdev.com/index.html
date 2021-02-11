@@ -2,6 +2,35 @@
 <html lang="en">
 
 <head>
+<!-- Start of Async Drift Code -->
+<script>
+    "use strict";
+    
+    !function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n = Array.prototype.slice.call(arguments);
+            return n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+          var i = document.getElementsByTagName("script")[0];
+          i.parentNode.insertBefore(o, i);
+        };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('h66fg3d68u8v');
+    </script>
+    <!-- End of Async Drift Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,7 +42,7 @@
 
     <!-- CSS Style Sheet -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+
     <!-- Aminate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
@@ -50,6 +79,9 @@
                     <a href="#about" class="nav-link" data-text="about">About</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#services" class="nav-link" data-text="services">Services</a>
+                </li>
+                <li class="nav-item">
                     <a href="#projects" class="nav-link" data-text="projects">Projects</a>
                 </li>
                 <li class="nav-item">
@@ -79,7 +111,7 @@
     </header>
 
     <main>
-        <section class="about" id="about">
+        <section class="section__about" id="about">
             <!-- <h2 class="heading-secondary" data-text="About me">About me</h2> -->
             <div class="about__items js--wp-2">
                 <div class="about__items-text">
@@ -97,6 +129,37 @@
             <img src="./img/JR-white.png" class="about__items-img js--wp-1" alt="Jaime Rosales" />
         </section>
 
+        <section class="section__services" id="services">
+            <h2 class="heading-secondary">What I do</h2>
+            <div class="row">
+                <div class="services__container">
+                    <div class="services__content">
+                        <i class="services__content-icon fas fa-pencil-ruler fa-4x" style="color:#00ADDA"></i>
+                        <h3 class="heading-tertiary">Web design</h3>
+                        <p class="services__content-text">
+                            I value simple but elegant content structure, clean design patterns, and thoughtful
+                            interactions.
+                        </p>
+                    </div>
+                    <div class="services__content">
+                        <i class="services__content-icon fas fa-laptop-code fa-4x" style="color:#00ADDA"></i>
+                        <h3 class="heading-tertiary">Web development</h3>
+                        <p class="services__content-text">
+                            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+                        </p>
+                    </div>
+                    <div class="services__content">
+                        <i class="services__content-icon fas fa-search fa-4x" style="color:#00ADDA"></i>
+                        <h3 class="heading-tertiary">Seo Optimization</h3>
+                        <p class="services__content-text">
+                            I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
         <!-- Project Section -->
         <section class="projects__section" id="projects">
             <!-- <div class="triangle"></div> -->
@@ -106,7 +169,7 @@
 
                 <!-- Trillo Project -->
                 <figure class="portfolio-content js--wp-3">
-                    <img class="" src="./img/projects/trillo.jpg" alt="Trillo Project"/>
+                    <img class="" src="./img/projects/trillo.jpg" alt="Trillo Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="portfolio-content__text">
                         <p class="portfolio-content__text-sub-title">Web App</p>
@@ -405,11 +468,13 @@
                             <input type="text" class="form__input" id="name" name="name" placeholder="Name" required>
                             <label for="name" class="form__label"></label>
 
-                            <input type="email" class="form__input" id="email" name="email" placeholder="Email" required>
+                            <input type="email" class="form__input" id="email" name="email" placeholder="Email"
+                                required>
                             <label for="email" class="form__label"></label>
 
-                            <input name="number" type="number" class="form__input" id="number" placeholder="Phone" required>
-                            <label for="number"class="form__label"></label>
+                            <input name="number" type="number" class="form__input" id="number" placeholder="Phone"
+                                required>
+                            <label for="number" class="form__label"></label>
                         </div>
                         <div class="form__group">
                             <textarea name="message" id="message" cols="61" rows="7" id="message" placeholder="Message"
@@ -446,8 +511,8 @@
         <p class="copyright">&copy; jaimewebdev.com 2021</p>
     </footer>
 
-        <script src="./js/jquery.waypoits.min.js"></script>
-        <script src="./js/main.js"></script>
+    <script src="./js/jquery.waypoits.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
