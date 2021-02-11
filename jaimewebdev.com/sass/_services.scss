@@ -1,12 +1,7 @@
 .section__services {
     padding: 0 0 7rem 0;
-
-    @media only screen and (max-width: $bp-larger) {
-        background-color: antiquewhite;
-    }
-
+ 
     @media only screen and (max-width: $bp-medium) {
-        background-color: aqua;
         padding-bottom: 2.5rem;
     }
     
