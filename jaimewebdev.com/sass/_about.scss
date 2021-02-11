@@ -66,8 +66,8 @@
     margin-bottom: 5rem;
 
 
-    @media only screen and (max-width: $bp-small) {
-        width: 100%;
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0rem;
     }
 
     @media only screen and (max-width: $bp-smaller) {
@@ -108,8 +108,9 @@
         line-height: 1.5;
 
         @media only screen and (max-width: $bp-medium) {
-            width: 90%;
-            padding: 4.5rem 2rem 0 2rem;
+            width: 80%;
+            padding: 5.5rem 2rem 0 2rem;
+            text-align: center;
         }
 
         @media only screen and (max-width: $bp-medium2) {

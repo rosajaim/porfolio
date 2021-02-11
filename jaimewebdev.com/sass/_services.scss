@@ -1,5 +1,14 @@
 .section__services {
     padding: 0 0 7rem 0;
+
+    @media only screen and (max-width: $bp-larger) {
+        background-color: antiquewhite;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        background-color: aqua;
+        padding-bottom: 2.5rem;
+    }
     
 }
 
@@ -7,12 +16,22 @@
     // padding: 3rem 0 rem 0;
     display: flex;
     // justify-content: space-evenly;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+    }
 }
 
 .services__content {
     display: flex;
     flex-flow: column;
     padding: 1rem;
+
+    @media only screen and (max-width: $bp-medium) {
+        display: block;
+        text-align: center;
+        padding: 1.8rem;
+    }
 
 
     &-icon {
