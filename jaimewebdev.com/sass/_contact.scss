@@ -13,6 +13,7 @@
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
         background-image: linear-gradient(rgba($bg-overlay, .4), rgba($bg-overlay, .4), ),url(../img/bg-header-small.jpg);
+        background-attachment: fixed;
 
     }
 
