@@ -93,7 +93,8 @@ a {
   .about__items {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 5rem; }
     @media only screen and (max-width: 37.5em) {
       .about__items {
         width: 100%; } }
@@ -105,7 +106,7 @@ a {
         width: 100%; } }
     .about__items span {
       color: #00ADDA;
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 700; }
       @media only screen and (max-width: 37.5em) {
         .about__items span {
@@ -616,14 +617,19 @@ button.scroll_down:before {
 
 #projects {
   position: relative;
-  background-image: url(../img/projects-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
+  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(../img/bg-projects2-small.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  position: relative;
   padding-bottom: 4rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     #projects {
-      background-image: url(../img/projects-bg-small.jpg); } }
+      background-image: linear-gradient(rgba(242, 244, 246, 0.6), rgba(242, 244, 246, 0.6)), url(../img/bg-projects2.jpg); } }
   @media only screen and (max-width: 43.57em) {
     #projects {
       padding-bottom: 2rem; } }
