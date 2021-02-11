@@ -59,7 +59,7 @@
 }
 
 @mixin projectsBg-mobile {
-    background-image: linear-gradient(rgba($color-terceary-dark, .2), rgba($color-terceary-dark, .2)), $bg-projects-mobile;
+    background-image: linear-gradient(rgba($color-terceary-dark, .6), rgba($color-terceary-dark, .6)), $bg-projects-mobile;
     @include bgSettings;
 }
 

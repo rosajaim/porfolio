@@ -63,9 +63,9 @@ a {
 .row {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  grid-gap: 1.5rem;
+  grid-gap: 1.8rem;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 80rem;
   overflow: hidden;
   padding-bottom: 4.5rem; }
@@ -233,54 +233,13 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  padding: 10px;
-  overflow: hidden; }
+  padding: .6rem .8rem;
+  border: solid 2px #00ADDA;
+  font-family: "Raleway", sans-serif; }
   .btn__link {
-    position: relative;
-    color: #444;
-    font-family: Helvetica; }
-  .btn .line {
-    position: absolute;
-    background-color: #00ADDA; }
-    .btn .line--one {
-      width: 2px;
-      height: 100%;
-      left: 0;
-      top: 0;
-      transform: translate3d(0px, 102%, 0px); }
-    .btn .line--two {
-      width: 100%;
-      height: 2px;
-      left: 0;
-      top: 0;
-      transform: translate3d(-102%, 0px, 0px); }
-    .btn .line--three {
-      width: 2px;
-      height: 100%;
-      right: 0;
-      top: 0;
-      transform: translate3d(0px, -102%, 0px); }
-    .btn .line--four {
-      width: 100%;
-      height: 2px;
-      left: 0;
-      bottom: 0;
-      transform: translate3d(102%, 0px, 0px); }
-  .btn:hover .line {
-    opacity: 1; }
-    .btn:hover .line--one, .btn:hover .line--two, .btn:hover .line--three, .btn:hover .line--four {
-      transform: translate3d(0, 0, 0);
-      transition: transform .3s ease-in-out; }
-    .btn:hover .line--one {
-      transition-delay: 0s; }
-    .btn:hover .line--two {
-      transition-delay: 250ms; }
-    .btn:hover .line--three {
-      transition-delay: 500ms; }
-    .btn:hover .line--four {
-      transition-delay: 750ms; }
+    color: #444; }
 
 .btn_header {
   color: #fff;
@@ -668,9 +627,8 @@ button.scroll_down:before {
 #projects {
   position: relative;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
-  background-image: linear-gradient(rgba(227, 231, 236, 0.2), rgba(227, 231, 236, 0.2)), url(../img/bg-projects2-small.jpg);
+  background-image: linear-gradient(rgba(227, 231, 236, 0.6), rgba(227, 231, 236, 0.6)), url(../img/bg-projects2-small.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -679,7 +637,8 @@ button.scroll_down:before {
   padding-bottom: 4rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     #projects {
-      background-image: linear-gradient(rgba(242, 244, 246, 0.6), rgba(242, 244, 246, 0.6)), url(../img/bg-projects2.jpg); } }
+      background-image: linear-gradient(rgba(242, 244, 246, 0.8), rgba(242, 244, 246, 0.8)), url(../img/bg-projects2.jpg);
+      background-attachment: fixed; } }
   @media only screen and (max-width: 43.57em) {
     #projects {
       padding-bottom: 2rem; } }
@@ -1019,6 +978,7 @@ button.scroll_down:before {
   padding: 2rem 0 8rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-header.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .section__contact {

@@ -2,86 +2,14 @@
 .btn {
     display: inline-block;
     @include alignCenter;
-    // font-size: 15px;
-    font-weight: 600;
-    // letter-spacing: .5px;
+    font-weight: 700;
     text-transform: uppercase;
-    padding: 10px;
-    overflow: hidden;
+    padding: .6rem .8rem;
+    border: solid 2px $color-secondary;
+    font-family: $font-primary;
 
     &__link {
-        position: relative;
         color: $color-primary;
-        font-family: Helvetica;
-    }
-
-    .line {
-        position: absolute;
-        background-color: $color-secondary;
-
-        &--one {
-            width: 2px;
-            height: 100%;
-            left: 0;
-            top: 0;
-            transform: translate3d(0px, 102%, 0px);
-        }
-
-        &--two {
-            width: 100%;
-            height: 2px;
-            left: 0;
-            top: 0;
-            transform: translate3d(-102%, 0px, 0px);
-        }
-
-        &--three {
-            width: 2px;
-            height: 100%;
-            right: 0;
-            top: 0;
-            transform: translate3d(0px, -102%, 0px);
-
-        }
-
-        &--four {
-            width: 100%;
-            height: 2px;
-            left: 0;
-            bottom: 0;
-            transform: translate3d(102%, 0px, 0px);
-
-        }
-    }
-
-    &:hover {
-        .line {
-            opacity: 1;
-
-            &--one,
-            &--two,
-            &--three,
-            &--four {
-                transform: translate3d(0, 0, 0);
-                transition: transform .3s ease-in-out;
-            }
-
-            &--one {
-                transition-delay: 0s;
-            }
-
-            &--two {
-                transition-delay: 250ms;
-            }
-
-            &--three {
-                transition-delay: 500ms;
-            }
-
-            &--four {
-                transition-delay: 750ms;
-            }
-        }
     }
 
 }
@@ -141,102 +69,6 @@
     }
 
 }
-
-// ****** DOWNLOAD BUTTON ******
-// .btn-download {
-//     position: relative;
-//     top: 50px;
-//     right: 0;
-//     left: 0;
-//     width: 215px;
-//     height: 70px;
-//     background: $color-primary;
-//     background-size: 200%;
-//     border-radius: 5px;
-//     display: block;
-//     text-align: center;
-//     font-family: $font-display;
-//     text-transform: uppercase;
-//     font-weight: 500;
-//     font-size: 18px;
-//     letter-spacing: 2px;
-//     margin-top: 0px;
-//     overflow: hidden;
-//     cursor: pointer;
-//     @include easeOut;
-
-//     &:focus {
-//         outline: 0;
-//     }
-
-//     &:hover {
-//         box-shadow: 5px 15px 22px 0 rgba(0, 0, 0, .35);
-//         color: $color-secondary;
-//     }
-
-//     &__first {
-//         background-position: 100%;
-//         height: 12px;
-//         margin-top: 20px;
-//     }
-
-//     &__bridge1 {
-//         background: $color-primary;
-//         background-position: 0%;
-//         transition: none;
-//     }
-
-//     &__second {
-//         background: $color-secondary;
-//         background-size: 200%;
-//         transition: all 1.2s;
-
-//     }
-
-//     &__third {
-//         background-position: -100%;
-//     }
-
-//     &__final {
-//         margin-top: 0px;
-//         height: 70px;
-//         @include easeOut;
-//     }
-
-//     &:after {
-//         content: 'Success!';
-//         position: absolute;
-//         right: -100%;
-//         opacity: 0;
-//         width: 100%;
-//         top: 33%;
-//         margin: 0px;
-//         color: $color-white;
-//         @include easeOut;
-//     }
-
-//     &__final:after {
-//         right: 0%;
-//         opacity: 1;
-//     }
-
-//     &:before {
-//         content: 'Resume ''\2193';
-//         position: absolute;
-//         left: 0%;
-//         width: 100%;
-//         top: 33%;
-//         margin: 0px;
-//         color: $color-white;
-//         @include easeOut;
-//     }
-
-//     &__first:before {
-//         left: -100%;
-//         opacity: 0;
-//     }
-
-// }
 
 // ****** POPUP ******
 .popup {
