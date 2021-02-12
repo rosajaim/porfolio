@@ -1,29 +1,17 @@
 .projects__section {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position: center center;
     background-color: $color-terceary-dark;
-    // @include projectsBg-mobile;
     padding-bottom: 4rem;
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
-        background-image: linear-gradient(rgba($color-terceary, .8), rgba($color-terceary, .8)), url(../img/bg-projects2.jpg);
+        @include bg-projects-mobile;
         background-attachment: fixed;
-
     }
 
     @media only screen and (max-width: $bp-medium2) {
         padding-bottom: 2rem;
     }
-
-
-    // @media only screen and (max-width: $bp-small) {
-    //     background-image: url(../img/Author_BG-mobile.jpg);
-    // }
 
     @media only screen and (max-width: $bp-smaller2) {
         padding-bottom: 2rem;
@@ -74,12 +62,6 @@
 
         }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     opacity: 1;   
-        //     background: rgba($bg-overlay-darker, .8);
-
-        // }
-
     }
 
     &:hover .content-overlay {
@@ -100,8 +82,7 @@
         background-color: $color-white;
         @include easeOut;
         @include transitionDelay;
-
-       
+  
     }
 
     &:hover:before {
@@ -112,15 +93,12 @@
         @include easeOut;
         transition-delay: 0s;
         z-index: 1;
-
     }
 
     & img {
         width: 100%;
         height: auto;
         background: $bg-overlay;
-
-
     }
 
     &__text {
@@ -133,8 +111,6 @@
         align-items: center;
         width: 100%;
         height: 100%;
-
-      
     }
 
     &__text-sub-title {
@@ -162,9 +138,6 @@
             opacity: 1;
         }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     opacity: 1;
-        // }
     }
 
     &:hover &__text-sub-title {
@@ -200,9 +173,6 @@
             opacity: 1;
         }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     opacity: 1;
-        // }
     }
 
     &:hover &__text-title {
@@ -242,9 +212,6 @@
             opacity: 1;
         }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     opacity: 1;
-        // }
     }
 
     &:hover &__link {

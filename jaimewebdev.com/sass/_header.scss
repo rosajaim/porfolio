@@ -1,43 +1,15 @@
 .header {
-  // @include background;
-  // @include bgSettings;
-  background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8), ), url(../img/background.jpg);
-  // background-image: url(../img/background.jpg);
-  background-size: cover ;
-  background-repeat:no-repeat;
-  // background-attachment: fixed;
-  background-position:  center right;
-  position: relative;
+  @include bgHome;
   height: 100vh;
   z-index: 4;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   only screen and (min-width: 125em) {
-      // background-image: linear-gradient(rgba($bg-overlay, 9), rgba($bg-overlay, .7), ),url(../img/jr.jpg);
-      background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8),), url(../img/background-small.jpg);
+    @include bgHome-mobile;
       background-attachment: fixed;
-
-
+      
   }
-
-  
-//   @media only screen and (max-width: $bp-small) {
-//     // background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/background-mobile.jpg);
-//     background-image: url(../img/background.jpg);
-//     background-position: center right;
-
-//     // @include bgMobile;
-//     @include bgSettings;
-
-// }
-
-  // @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  // only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  // only screen and (min-width: 125em) {
-  //     @include bgMobile;
-  // }
-
 }
 
 .main-heading {
@@ -73,7 +45,7 @@ button.scroll_down:before {
   margin-left: -3px;
   background-color: #fff;
   border-radius: 100%;
-  -webkit-animation: scroll_down_btn-animation 2s infinite;
+  // -webkit-animation: scroll_down_btn-animation 2s infinite;
   animation: scroll_down_btn-animation 2s infinite;
   box-sizing: border-box;
 }
@@ -100,7 +72,7 @@ button.scroll_down:before {
 
 @-webkit-keyframes scroll_down_btn-animation {
   0% {
-    -webkit-transform: translate(0, 0);
+    // -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
     opacity: 0;
   }
@@ -110,7 +82,7 @@ button.scroll_down:before {
   }
 
   80% {
-    -webkit-transform: translate(0, 20px);
+    // -webkit-transform: translate(0, 20px);
     transform: translate(0, 20px);
     opacity: 0;
   }

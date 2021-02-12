@@ -1,37 +1,17 @@
 .section__contact {
-    position: relative;
     padding: 2rem 0 8rem 0;
-    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8), ), url(../img/bg-header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position: center center;
-    // @include bgContact;
-    // @include bgSettings;
+    @include bgContact;
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
     only screen and (min-width: 125em) {
-        background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8), ),url(../img/bg-header-small.jpg);
+        @include bgContact-mobile;
         background-attachment: fixed;
-
     }
 
-  
     @media only screen and (max-width: $bp-medium2) {
         padding: 0 0 5rem 0;
     }
-
-    // @media only screen and (max-width: $bp-small) {
-    //     // @include bgContact-mobile;
-    //     background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7), ), url(../img/bg2-mobile.jpg);
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    //     background-attachment: fixed;
-    //     background-position: center center; 
-
-    // }
-
 }
 
 .form {
@@ -41,7 +21,6 @@
 
         @media only screen and (max-width: $bp-small) {
             flex-direction: column; 
-
          }
 
         @media only screen and (max-width: $bp-smaller) {
@@ -64,10 +43,6 @@
             margin: 1.2rem 1.2rem;
         }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     margin: 0;;
-        // }
-      
     }
 
     &__input {
@@ -78,10 +53,6 @@
         background-color: rgba($color-white, .7);
         border: none;
         width: 15%;
-
-        // @media only screen and (max-width: $bp-largest) {
-        //     width: 16.1%;
-        // }
 
         @media only screen and (max-width: $bp-medium) {
             width: 100%;
@@ -95,7 +66,6 @@
             width: 92%;
             margin-bottom: 2rem;
             padding: 1.3rem;
-            // background-color: rgba($color-white, .7);
         }
 
         @media only screen and (max-width: $bp-smaller) {
@@ -103,17 +73,8 @@
             margin-bottom: 1.3rem;
            }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     width: 100%;
-        //     padding: 1rem;
-        //     margin-bottom: 1.5rem;
-        //     margin-right: 0;
-            
-        // }
-
         &:focus {
             outline: none;
-            // box-shadow: 0 1rem 2rem rgba($color-secondary, .4);
             border-bottom: 3px solid $color-secondary;
         }
 
@@ -158,12 +119,6 @@
             padding: 1rem 1rem;
            }
 
-        // @media only screen and (max-width: $bp-smaller2) {
-        //     width: 94%;
-        //     padding: 1.5rem 0 0 1.5rem;
-        //     margin-bottom: 2rem;
-
-        // }
 
         &:focus {
             outline: none;
@@ -183,15 +138,14 @@
         text-transform: uppercase;
         border-radius: 5px;
         background: transparent;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: $font-primary;
         font-size: 1.3rem;
         margin-top: 2.2rem;
         cursor: pointer;
  
         @media only screen and (max-width: $bp-small) {
             width: 18%;
-            margin-left: 1rem;
-            margin-top: 1rem;
+            margin: 1rem 0 0 1rem;
             padding: .8rem .6rem;
 
          }

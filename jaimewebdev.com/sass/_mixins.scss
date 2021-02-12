@@ -13,7 +13,6 @@
 @mixin bgSettings {
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
     position: relative;
 }
@@ -38,27 +37,25 @@
 //     }
 // }
 
-@mixin bgMobile {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7)), url(../img/background-small.jpg);
-
-}
-
-@mixin bgContact {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7)), url(../img/bg2-min.jpg);
-
-}
-
-@mixin bgContact-mobile {
-    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7)), url(../img/bg2-mobile.jpg);
-
-}
-
-@mixin projectsBg {
-    background-image: linear-gradient(rgba($color-terceary-dark, .2), rgba($color-terceary-dark, .2)), $bg-projects;
+@mixin bgHome {
+    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-home;
     @include bgSettings;
 }
 
-@mixin projectsBg-mobile {
+@mixin bgHome-mobile {
+    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-home-mobile;
+}
+
+@mixin bgContact {
+    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-contact;
+    @include bgSettings;
+}
+
+@mixin bgContact-mobile {
+    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-contact-mobile;
+}
+
+@mixin bg-projects-mobile {
     background-image: linear-gradient(rgba($color-terceary-dark, .6), rgba($color-terceary-dark, .6)), $bg-projects-mobile;
     @include bgSettings;
 }

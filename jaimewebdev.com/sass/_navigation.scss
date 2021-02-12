@@ -76,17 +76,11 @@
         overflow: hidden;
         z-index: 10;
 
-        // @media only screen and (max-width: $bp-small) {
-        //     width: 100%;
-        //     float: none;
-        // }
-
     }
 
     &-nav {
         margin: 0;
         padding: 0;
-        // background: darken($color-terceary-dark, 5);
         background: rgba($bg-overlay-darker, 1);
 
         list-style: none;
@@ -123,10 +117,6 @@
         font-weight: 300;
         @include easeOut;
 
-        // @media only screen and (max-width: $bp-small) {
-        //     color: $color-terceary;
-        //  } 
-
         &:hover {
             color: $color-terceary;
 
@@ -143,14 +133,6 @@
             pointer-events: none;
             z-index: -1;
             @include easeOut;
-
-            // @media only screen and (max-width: $bp-small) {
-            //     opacity: .3;
-            //     font-size: 2.5rem;
-            //     font-weight: 400;
-            //     top: 44%;
-            //  } 
-    
 
         }
 

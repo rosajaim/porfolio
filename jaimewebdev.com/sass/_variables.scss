@@ -40,12 +40,15 @@ $background:#efefef;
 $field-color:#E8E9EA;
 
 // ===== BACKGROUNDS =====
-// $show-bg-img: true;
-// $bg-img: url(../img/background.jpg);
-// $bg-projects-mobile: url(https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Images/Stars.svg?sanitize=true);
-$bg-projects-mobile: url(../img/bg-projects2-small.jpg);
-$bg-projects: url(../img/Author_BG.jpg);
 
+$bg-home: url(../img/bg-home.jpg);
+$bg-home-mobile: url(../img/bg-home-small.jpg);
+
+$bg-projects: url(../img/bg-projects.jpg);
+$bg-projects-mobile: url(../img/bg-projects-small.jpg);
+
+$bg-contact: url(../img/bg-contact.jpg);
+$bg-contact-mobile: url(../img/bg-contact-small.jpg);
 
 $bg-overlay: rgba(0, 0, 0, .5);
 $bg-overlay-darker: rgba(0, 0, 0, .7);
