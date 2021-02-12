@@ -2,8 +2,8 @@
 .menu-btn {
     position: fixed;
     background: $color-secondary;
-    height: 63px;
-    width: 63px;
+    height: 55px;
+    width: 55px;
     border-radius: 50%;
     right: 15px;
     top: 35px;
@@ -18,10 +18,10 @@
 
     .btn-line {
         position: relative;
-        top: 35.5%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 32px;
+        width: 29px;
         height: 2px;
         margin: 0 0 7px 0;
         background: $color-white;

@@ -2,34 +2,6 @@
 <html lang="en">
 
 <head>
-<!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('h66fg3d68u8v');
-    </script>
-    <!-- End of Async Drift Code -->
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,6 +16,8 @@
 
     <!-- Aminate CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700i,900" rel="stylesheet">
@@ -129,9 +103,9 @@
         </section>
 
         <section class="section__services" id="services">
-                <h2 class="heading-secondary">What I do</h2>
+                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">What I do</h2>
             <div class="row">
-                <div class="services__container">
+                <div class="services__container  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="services__content">
                         <i class="services__content-icon fas fa-pencil-ruler fa-4x" style="color:#00ADDA"></i>
                         <h3 class="heading-tertiary">Web design</h3>
@@ -162,13 +136,13 @@
         <!-- Project Section -->
         <section class="projects__section" id="projects">
             <!-- <div class="triangle"></div> -->
-            
-            <h2 class="heading-secondary">Projects</h2>
+
+            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Projects</h2>
             <div class="row">
 
                 <!-- Trillo Project -->
-                <figure class="project-content js--wp-3">
-                    <img class="" src="./img/projects/trillo.jpg" alt="Trillo Project" />
+                <figure class="project-content">
+                    <img class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" src="./img/projects/trillo.jpg" alt="Trillo Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Web App</p>
@@ -209,8 +183,8 @@
                 </div>
 
                 <!-- Natours -->
-                <figure class="project-content js--wp-3">
-                    <img class="" src="./img/projects/natours.jpg" alt="Natours Project" />
+                <figure class="project-content">
+                    <img class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s" src="./img/projects/natours.jpg" alt="Natours Project"/>
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -250,8 +224,8 @@
                 </div>
 
                 <!-- Nexter Project -->
-                <figure class="project-content js--wp-3">
-                    <img class="" src="./img/projects/nexter.jpg" alt="Nexter Project" />
+                <figure class="project-content">
+                    <img class="wow animated fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" src="./img/projects/nexter.jpg" alt="Nexter Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -291,8 +265,8 @@
                 </div>
 
                 <!-- Vesco Project-->
-                <figure class="project-content js--wp-3">
-                    <img src="./img/projects/vesco.jpg" alt="Vesco" />
+                <figure class="project-content">
+                    <img class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".5s" src="./img/projects/vesco.jpg" alt="Vesco" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -308,7 +282,7 @@
                             <img src="./img/projects/vesco.png" alt="Vesco Project" class="popup__img">
                         </div>
                         <div class="popup__right">
-                            <a href="#vesco-tours" class="popup__close">&times;</a>
+                            <a href="#projects" class="popup__close">&times;</a>
                             <h3 class="popup-heading vesco-color">Project type</h3>
                             <p class="popup__text">Website</p>
                             <h3 class="popup-heading vesco-color">Project Description</h3>
@@ -332,8 +306,8 @@
                 </div>
 
                 <!-- Portfolio Project -->
-                <figure class="project-content js--wp-3">
-                    <img src="./img/projects/portfolio.jpg" alt="Portfolio" />
+                <figure class="project-content ">
+                    <img class="wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s"src="./img/projects/portfolio.jpg" alt="Portfolio" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -349,7 +323,7 @@
                             <img src="./img/projects/portfolio.png" alt="Natours photo" class="popup__img">
                         </div>
                         <div class="popup__right">
-                            <a href="#portfolio-tours" class="popup__close">&times;</a>
+                            <a href="#portfolio" class="popup__close">&times;</a>
                             <h3 class="popup-heading natours-color">Project type</h3>
                             <p class="popup__text">Website</p>
                             <h3 class="popup-heading natours-color">Project Description</h3>
@@ -373,8 +347,8 @@
                 </div>
 
                 <!-- Omnifood -->
-                <figure class="project-content js--wp-3">
-                    <img src="./img/projects/omnifood.jpg" alt="Omnifood" />
+                <figure class="project-content">
+                    <img class="wow animated fadeInRight" data-wow-duration="1s" data-wow-delay=".5s" src="./img/projects/omnifood.jpg" alt="Omnifood" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -391,7 +365,7 @@
                         <img src="./img/projects/omnifood.png" alt="Omnifood" class="popup__img">
                     </div>
                     <div class="popup__right">
-                        <a href="#section-omnifood" class="popup__close">&times;</a>
+                        <a href="#projects" class="popup__close">&times;</a>
                         <h3 class="popup-heading omnifood-color">Project type</h3>
                         <p class="popup__text">Website</p>
                         <h3 class="popup-heading omnifood-color">Project Description</h3>
@@ -420,8 +394,8 @@
 
         <!-- <h2 class="heading-secondary ">Skills</h2> -->
         <section class="section__skills" id="skills">
-            <h2 class="heading-secondary ">Skills</h2>
-            <div class="skills">
+            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Skills</h2>
+            <div class="skills wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="skill__icon">
                     <i class="fab fa-js-square java-script fa-8x"></i>
                 </div>
@@ -453,7 +427,7 @@
         </section>
 
         <section class="section__contact" id="contact">
-            <h2 class="heading-secondary white">Contact me </h2>
+            <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Contact me </h2>
             <div class="contact">
                 <div class="contact__form">
                     <form action="webform.php" method="POST" class="form">
@@ -503,7 +477,8 @@
         </ul>
         <p class="copyright">&copy; jaimewebdev.com 2021</p>
     </footer>
-
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <script src="./js/jquery.waypoits.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

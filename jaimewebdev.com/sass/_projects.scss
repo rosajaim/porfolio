@@ -4,7 +4,8 @@
     background-repeat: no-repeat;
     // background-attachment: fixed;
     background-position: center center;
-    @include projectsBg-mobile;
+    background-color: $color-terceary-dark;
+    // @include projectsBg-mobile;
     padding-bottom: 4rem;
 
     @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),

@@ -28,13 +28,15 @@
 
 .js--wp-1,
 .js--wp-2,
-.js--wp-3 {
+.js--wp-3,
+.js--wp-4 {
   opacity: 0;
   animation-duration: 1s; }
 
 .js--wp-1.animated,
 .js--wp-2.animated,
-.js--wp-3.animated {
+.js--wp-3.animated,
+.js--wp-4.animated {
   opacity: 1; }
 
 * {
@@ -65,7 +67,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1.5rem;
   margin: 0 auto;
-  width: 95%;
+  width: 91%;
   max-width: 80rem;
   overflow: hidden;
   padding-bottom: 4.5rem; }
@@ -436,7 +438,7 @@ a {
     transition: all .3s ease-out; }
 
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center right;
@@ -445,7 +447,7 @@ a {
   z-index: 4; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/background-small.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/background-small.jpg);
       background-attachment: fixed; } }
 
 .main-heading {
@@ -514,8 +516,8 @@ button.scroll_down:before {
 .menu-btn {
   position: fixed;
   background: #00ADDA;
-  height: 63px;
-  width: 63px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
   right: 15px;
   top: 35px;
@@ -527,10 +529,10 @@ button.scroll_down:before {
       right: 25px; } }
   .menu-btn .btn-line {
     position: relative;
-    top: 35.5%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 32px;
+    width: 29px;
     height: 2px;
     margin: 0 0 7px 0;
     background: #fff;
@@ -628,12 +630,7 @@ button.scroll_down:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: linear-gradient(rgba(227, 231, 236, 0.6), rgba(227, 231, 236, 0.6)), url(../img/bg-projects2-small.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  position: relative;
+  background-color: #e3e7ec;
   padding-bottom: 4rem; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .projects__section {
@@ -976,13 +973,13 @@ button.scroll_down:before {
 .section__contact {
   position: relative;
   padding: 2rem 0 8rem 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-header.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .section__contact {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/bg-header-small.jpg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-header-small.jpg);
       background-attachment: fixed; } }
   @media only screen and (max-width: 43.57em) {
     .section__contact {
