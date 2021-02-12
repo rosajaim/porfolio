@@ -27,16 +27,12 @@
     transform: translate(0px); } }
 
 .js--wp-1,
-.js--wp-2,
-.js--wp-3,
-.js--wp-4 {
+.js--wp-2 {
   opacity: 0;
   animation-duration: 1s; }
 
 .js--wp-1.animated,
-.js--wp-2.animated,
-.js--wp-3.animated,
-.js--wp-4.animated {
+.js--wp.animated {
   opacity: 1; }
 
 * {
@@ -165,7 +161,7 @@ a {
         padding: 2.5rem 1rem 0 1rem;
         width: 90%; } }
   .about__items-img {
-    filter: grayscale(50%);
+    filter: grayscale(30%);
     width: 38%;
     height: auto;
     margin-right: 8rem; }
@@ -290,10 +286,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease-out;
-  z-index: 99;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5); }
+  z-index: 99; }
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     .popup {
       -webkit-backdrop-filter: blur(10px);

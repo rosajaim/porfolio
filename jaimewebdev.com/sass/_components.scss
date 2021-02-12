@@ -82,9 +82,8 @@
     visibility: hidden;
     @include easeOut3s;
     z-index: 99;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: $bg-overlay;
+    // -webkit-backdrop-filter: blur(10px);
+    // backdrop-filter: blur(10px);
 
     @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
@@ -125,11 +124,9 @@
     }
 
     &__right {
-        // height: 50%;
         width: 34%;
         height: auto;
-        // display: table-cell;
-        // vertical-align: middle;
+        
         margin-top: 6rem;
         padding: 0 3rem 0 6rem;
 
@@ -137,7 +134,6 @@
             width: 100%;
             margin-top: 34rem;
             padding-left: 2.2rem;
-            // display: block;
         }
 
         @media only screen and (max-width: $bp-medium2) {
