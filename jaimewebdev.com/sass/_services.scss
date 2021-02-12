@@ -8,9 +8,7 @@
 }
 
 .services__container {
-    // padding: 3rem 0 rem 0;
     display: flex;
-    // justify-content: space-evenly;
 
     @media only screen and (max-width: $bp-medium) {
         display: block;

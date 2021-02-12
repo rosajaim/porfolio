@@ -1,18 +1,3 @@
-
-// .triangle {
-//     position: absolute;
-//     top: 192%;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     margin: 0 auto;
-//     width: 70px;
-//     height: 70px;
-//     background-image: linear-gradient(rgba($color-terceary, .5), rgba($color-terceary, .5));
-//     transform: rotate(135deg);
-//     z-index: -3;
-// }
-
 .section__about {
     position: relative;
     display: flex;
@@ -110,7 +95,7 @@
         @media only screen and (max-width: $bp-medium) {
             width: 80%;
             padding: 5.5rem 2rem 0 2rem;
-            text-align: center;
+            // text-align: center;
         }
 
         @media only screen and (max-width: $bp-medium2) {
