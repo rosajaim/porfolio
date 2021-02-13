@@ -2,13 +2,15 @@
     padding: 0 0 7rem 0;
  
     @media only screen and (max-width: $bp-medium) {
-        padding-bottom: 2.5rem;
-    }
-    
+        padding-bottom: 4.3rem;
+    }    
 }
 
 .services__container {
-    display: flex;
+    display: flex;      
+    padding: 2;
+    width: 100%;
+
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
@@ -18,12 +20,23 @@
 .services__content {
     display: flex;
     flex-flow: column;
+    margin: 0 auto;
+    width: 100%;
     padding: 1rem;
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
         text-align: center;
-        padding: 1.8rem;
+        // padding: 1.8rem;
+        width: 95%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 95%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 90%;
     }
 
 

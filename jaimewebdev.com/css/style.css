@@ -63,7 +63,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
   grid-gap: 1.5rem;
   margin: 0 auto;
-  width: 91%;
+  width: 90%;
   max-width: 80rem;
   overflow: hidden;
   padding-bottom: 4.5rem; }
@@ -120,13 +120,10 @@ a {
     color: #00ADDA;
     font-size: 5rem;
     font-weight: 700; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 75em) {
       .about__items span {
-        font-size: 4.5rem; } }
-    @media only screen and (max-width: 25em) {
-      .about__items span {
-        font-size: 4rem; } }
-    @media only screen and (max-width: 23.43em) {
+        font-size: 4.8rem; } }
+    @media only screen and (max-width: 62.5em) {
       .about__items span {
         font-size: 3.5rem; } }
   .about__items-text {
@@ -195,10 +192,12 @@ a {
   padding: 0 0 7rem 0; }
   @media only screen and (max-width: 50em) {
     .section__services {
-      padding-bottom: 2.5rem; } }
+      padding-bottom: 4.3rem; } }
 
 .services__container {
-  display: flex; }
+  display: flex;
+  padding: 2;
+  width: 100%; }
   @media only screen and (max-width: 50em) {
     .services__container {
       display: block; } }
@@ -206,12 +205,20 @@ a {
 .services__content {
   display: flex;
   flex-flow: column;
+  margin: 0 auto;
+  width: 100%;
   padding: 1rem; }
   @media only screen and (max-width: 50em) {
     .services__content {
       display: block;
       text-align: center;
-      padding: 1.8rem; } }
+      width: 95%; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__content {
+      width: 95%; } }
+  @media only screen and (max-width: 37.5em) {
+    .services__content {
+      width: 90%; } }
   .services__content-icon {
     margin-bottom: 2.5rem;
     text-align: center; }
@@ -235,6 +242,9 @@ a {
   padding: .6rem .8rem;
   border: solid 2px #00ADDA;
   font-family: "Raleway", sans-serif; }
+  @media only screen and (max-width: 23.43em) {
+    .btn {
+      margin-top: 2rem; } }
   .btn__link {
     color: #444; }
 
@@ -434,10 +444,12 @@ a {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   position: relative;
   height: 100vh;
   z-index: 4; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-position: left 90% bottom 10%; } }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .header {
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-home-small.jpg);
@@ -506,35 +518,35 @@ button.scroll_down:before {
 .menu-btn {
   position: fixed;
   background: #00ADDA;
-  height: 55px;
-  width: 55px;
+  height: 3.4rem;
+  width: 3.4rem;
   border-radius: 50%;
   right: 15px;
-  top: 35px;
+  top: 2.1rem;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 2; }
   @media only screen and (max-width: 37.5em) {
     .menu-btn {
-      right: 25px; } }
+      right: .8rem; } }
   .menu-btn .btn-line {
     position: relative;
-    top: 35%;
+    top: 34%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 29px;
-    height: 2px;
-    margin: 0 0 7px 0;
+    width: 1.8rem;
+    height: 1px;
+    margin: 0 0 6px 0;
     background: #fff;
     transition: all .3s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(-5px, 18px); }
+      transform: rotate(45deg) translate(-5px, 14px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(-5px, -17px); }
+      transform: rotate(-45deg) translate(-4px, -15px); }
 
 .menu {
   position: fixed;
@@ -623,7 +635,6 @@ button.scroll_down:before {
       background-image: linear-gradient(rgba(227, 231, 236, 0.6), rgba(227, 231, 236, 0.6)), url(../img/bg-projects-small.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
       position: relative;
       background-attachment: fixed; } }
   @media only screen and (max-width: 43.57em) {
@@ -965,7 +976,6 @@ button.scroll_down:before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .section__contact {
@@ -1089,7 +1099,7 @@ button.scroll_down:before {
 
 .footer {
   background-color: rgba(33, 42, 56, 0.93);
-  padding: 5rem 0 1rem 0;
+  padding: 3rem 0 1rem 0;
   color: #fff; }
 
 .nav {
@@ -1112,7 +1122,7 @@ button.scroll_down:before {
 .copyright {
   color: #b7b7b7;
   font-size: 1.2rem;
-  margin-top: 6rem;
+  margin-top: 3rem;
   margin-right: auto;
   margin-left: auto;
   text-align: center; }

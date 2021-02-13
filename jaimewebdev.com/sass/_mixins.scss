@@ -13,29 +13,8 @@
 @mixin bgSettings {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
     position: relative;
 }
-
-// @mixin background {
-//     @if $show-bg-img {
-//         &.bg-img {
-//             background: $bg-img;
-//             @include bgSettings;
-
-//             &:after {
-//                 content: '';
-//                 position: absolute;
-//                 top: 0;
-//                 right: 0;
-//                 width: 100%;
-//                 height: 100%;
-//                 background: $bg-overlay;
-//                 z-index: -2;
-//             }
-//         }
-//     }
-// }
 
 @mixin bgHome {
     background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-home;
@@ -59,8 +38,6 @@
     background-image: linear-gradient(rgba($color-terceary-dark, .6), rgba($color-terceary-dark, .6)), $bg-projects-mobile;
     @include bgSettings;
 }
-
-
 
 @mixin lenearGradient {
     background: linear-gradient(to right,
