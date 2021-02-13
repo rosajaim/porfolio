@@ -6,10 +6,7 @@
     @include lenearGradient;
     // background-image: linear-gradient(-75deg, $color-terceary-dark 45%, $color-terceary-dark 40%, $color-terceary 30%, $color-terceary 30%);
     
-    @media only screen and (max-width: $bp-large) {
-        background: none;
-    }
-    
+  
     @media only screen and (max-width: $bp-medium){
         background: $color-terceary-dark;
         display: block;

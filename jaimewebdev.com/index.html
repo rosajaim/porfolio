@@ -4,30 +4,36 @@
 <head>
 
     <!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('h66fg3d68u8v');
+    <script>
+        "use strict";
+        ! function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void(window.console && console.error && console.error(
+                    "Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page",
+                        "hide", "off", "on"
+                    ],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5,
+                            n = Math.ceil(new Date() / e) * e,
+                            o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
+                            "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('h66fg3d68u8v');
     </script>
     <!-- End of Async Drift Code -->
 
@@ -132,33 +138,35 @@
         </section>
 
         <section class="section__services" id="services">
-                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">What I do</h2>
+            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">What I do
+            </h2>
             <!-- <div class="row"> -->
-                <div class="services__container  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                    <div class="services__content">
-                        <i class="services__content-icon fas fa-pencil-ruler fa-4x" style="color:#00ADDA"></i>
-                        <h3 class="heading-tertiary">Web design</h3>
-                        <p class="services__content-text">
-                            I value simple but elegant content structure, clean design patterns, and thoughtful
-                            interactions.
-                        </p>
-                    </div>
-                    <div class="services__content">
-                        <i class="services__content-icon fas fa-laptop-code fa-4x" style="color:#00ADDA"></i>
-                        <h3 class="heading-tertiary">Web development</h3>
-                        <p class="services__content-text">
-                            I build responsive websites for optimal user experience, and enjoy bringing ideas to life across all browser.
-                        </p>
-                    </div>
-                    <div class="services__content">
-                        <i class="services__content-icon fas fa-search fa-4x" style="color:#00ADDA"></i>
-                        <h3 class="heading-tertiary">Seo Optimization</h3>
-                        <p class="services__content-text">
-                            I like to optimize your website for maximum performance and to make it easy to find, 
-                            and reach the widest audience possible.
-                        </p>
-                    </div> 
+            <div class="services__container  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
+                <div class="services__content">
+                    <i class="services__content-icon fas fa-pencil-ruler fa-4x" style="color:#00ADDA"></i>
+                    <h3 class="heading-tertiary">Web design</h3>
+                    <p class="services__content-text">
+                        I value simple but elegant content structure, clean design patterns, and thoughtful
+                        interactions.
+                    </p>
                 </div>
+                <div class="services__content">
+                    <i class="services__content-icon fas fa-laptop-code fa-4x" style="color:#00ADDA"></i>
+                    <h3 class="heading-tertiary">Web development</h3>
+                    <p class="services__content-text">
+                        I build responsive websites for optimal user experience, and enjoy bringing ideas to life across
+                        all browser.
+                    </p>
+                </div>
+                <div class="services__content">
+                    <i class="services__content-icon fas fa-search fa-4x" style="color:#00ADDA"></i>
+                    <h3 class="heading-tertiary">Seo Optimization</h3>
+                    <p class="services__content-text">
+                        I like to optimize your website for maximum performance and to make it easy to find,
+                        and reach the widest audience possible.
+                    </p>
+                </div>
+            </div>
             <!-- </div> -->
 
         </section>
@@ -167,7 +175,8 @@
         <section class="projects__section" id="projects">
             <!-- <div class="triangle"></div> -->
 
-            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Projects</h2>
+            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Projects
+            </h2>
             <div class="row">
 
                 <!-- Trillo Project -->
@@ -214,7 +223,7 @@
 
                 <!-- Natours -->
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                    <img src="./img/projects/natours.jpg" alt="Natours Project"/>
+                    <img src="./img/projects/natours.jpg" alt="Natours Project" />
                     <div class="content-overlay"></div>
                     <figcaption class="project-content__text">
                         <p class="project-content__text-sub-title">Website</p>
@@ -418,13 +427,21 @@
                     </div>
                 </div>
             </div>
-                <a class="btn btn__link" href="#"> View more </a>
+            <!-- <a class="btn btn__link" href="#"> View more </a> -->
+            </div>
+            <div class="container">
+                <a href="https://twitter.com/Dave_Conner" class="btn btn_projects">
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
+                    View more
+                </a>
             </div>
         </section>
 
         <!-- <h2 class="heading-secondary ">Skills</h2> -->
         <section class="section__skills" id="skills">
-            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s">Skills</h2>
+            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Skills</h2>
             <div class="skills wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="skill__icon">
                     <i class="fab fa-js-square java-script fa-8x"></i>
@@ -457,7 +474,8 @@
         </section>
 
         <section class="section__contact" id="contact">
-            <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Contact me </h2>
+            <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                Contact me </h2>
             <div class="contact">
                 <div class="contact__form">
                     <form action="webform.php" method="POST" class="form">
@@ -508,7 +526,9 @@
         <p class="copyright">&copy; jaimewebdev.com 2021</p>
     </footer>
     <script src="js/wow.min.js"></script>
-    <script>new WOW().init();</script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./js/jquery.waypoits.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

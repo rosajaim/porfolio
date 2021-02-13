@@ -1,23 +1,55 @@
-// ****** NAV BUTTON ******
+
+// ****** DEFAULT BUTTON ******
 .btn {
-    display: inline-block;
-    @include alignCenter;
-    font-weight: 700;
+    // display: inline-block;
+    color: $color-primary;
+    cursor: pointer;
+    display: block;
+    font-weight: 400;
+    line-height: 2.8;
+    letter-spacing: 1px;
+    margin: 0 0 2rem;
+    max-width: 160px; 
+    position: relative;
+    text-decoration: none;
     text-transform: uppercase;
-    padding: .6rem .8rem;
-    border: solid 2px $color-secondary;
-    font-family: $font-primary;
-
-    @media only screen and (max-width: $bp-smaller2) {
-        margin-top: 2rem;
+    width: 100%; 
+    
+  }
+  
+  .btn_projects {
+    background: transparent;
+    font-weight: 700;
+    
+    svg {
+      height: 35px;
+      left: 11px;
+      position: absolute;
+      top: 0; 
+      width: 85%; 
     }
-
-    &__link {
-        color: $color-primary;
+    
+    rect {
+      fill: none;
+      stroke: $color-secondary;
+      stroke-width: 3;
+      stroke-dasharray: 422, 0;
+      transition: all 0.35s linear;
     }
-
-}
-
+  }
+  
+  .btn_projects:hover {
+    font-weight: 800;
+    letter-spacing: 1px;
+    
+    rect {
+      stroke-width: 5;
+      stroke-dasharray: 15, 268;
+      stroke-dashoffset: 55;
+      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+   
 // ****** HEADER BUTTON ******
 .btn_header {
     color: $color-white;
@@ -282,6 +314,9 @@
     }
 
 }
+
+
+
 
 
 

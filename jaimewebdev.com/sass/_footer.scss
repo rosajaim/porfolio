@@ -1,6 +1,6 @@
 .footer {
-    background-color: rgba(33,42,56,.93);
-    padding: 3rem 0 1rem 0;
+    background-color: $color-black;
+    padding: 3rem 0 0 0;
     color: $color-white;
 }
     .nav {
@@ -9,6 +9,7 @@
         justify-content: center;
         align-items: center;
         list-style: none;
+        margin-bottom: 3rem;
 
         &__item {
            padding: 1rem;
@@ -28,28 +29,18 @@
             color: $color-white;
 
         }
-
-        // &__img {
-        //     height: 3.5rem;
-        //     transition: all .2s;
-
-        // }
-
-        // &__img:hover,
-        // &__img:active {
-        //     transform: translateY(-3px);
-        //     opacity: .8;
-        // }
     }
 
 .copyright {
-   
-    color: $color-gray-light;
+    background-color: $color-black-2;
+    color: $color-secondary;
     font-size: 1.2rem;
     margin-top: 3rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+    padding: .7rem;
     text-align: center;
+    width: 100%;
+
 }
 
 

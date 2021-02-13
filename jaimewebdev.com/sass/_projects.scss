@@ -228,3 +228,14 @@
         transition-delay: 0s !important;
     }
 }
+
+// Projects Button wrap
+.container { 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center; 
+   
+}

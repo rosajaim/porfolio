@@ -16,14 +16,17 @@
 html {
     box-sizing: inherit;
     font-size: 80%; //1 rem = 10px/16px = 62.5%
+    overflow-x: hidden;
+
 }
 
 
 
 
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: $font-primary;
     line-height: 1.6rem;
+
 
 }
 
