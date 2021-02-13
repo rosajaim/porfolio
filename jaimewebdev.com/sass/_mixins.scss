@@ -17,7 +17,7 @@
 }
 
 @mixin bgHome {
-    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-home;
+    background-image: linear-gradient(rgba($bg-overlay, .9), rgba($bg-overlay, .9)), $bg-home;
     @include bgSettings;
 }
 
