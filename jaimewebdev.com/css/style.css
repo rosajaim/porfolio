@@ -36,6 +36,10 @@
   opacity: 1; }
 
 * {
+  outline: 1px red solid !important;
+  visibility: visible !important; }
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -49,11 +53,13 @@
 
 html {
   box-sizing: inherit;
-  font-size: 80%; }
+  font-size: 80%;
+  overflow-x: hidden; }
 
 body {
   font-family: "Raleway", sans-serif;
-  line-height: 1.6rem; }
+  line-height: 1.6rem;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
