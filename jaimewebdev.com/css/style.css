@@ -49,8 +49,7 @@
 
 html {
   box-sizing: inherit;
-  font-size: 80%;
-  overflow-x: hidden; }
+  font-size: 80%; }
 
 body {
   font-family: "Raleway", sans-serif;
@@ -1155,5 +1154,4 @@ button.scroll_down:before {
   margin-top: 3rem;
   margin: 0 auto;
   padding: .7rem;
-  text-align: center;
-  width: 100%; }
+  text-align: center; }

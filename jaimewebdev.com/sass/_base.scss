@@ -16,16 +16,19 @@
 html {
     box-sizing: inherit;
     font-size: 80%; //1 rem = 10px/16px = 62.5%
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
 }
 
-
+//it outline all the elements to find whish is outside 
+// * { outline: 1px red solid !important; visibility: visible !important }
 
 
 body {
     font-family: $font-primary;
     line-height: 1.6rem;
+    // overflow-x: hidden;
+
 
 
 }
