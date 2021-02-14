@@ -194,10 +194,10 @@ a {
       padding: 6rem 2rem 1rem 2rem; } }
   @media only screen and (max-width: 37.5em) {
     .section__services {
-      padding: 0 1.5rem 3rem 1.5rem; } }
+      padding: 6rem 1.5rem 3rem 1.5rem; } }
   @media only screen and (max-width: 25em) {
     .section__services {
-      padding: 0 1.3rem 3rem 1.3rem; } }
+      padding: 6rem 1.3rem 3rem 1.3rem; } }
   @media only screen and (max-width: 23.43em) {
     .section__services {
       padding: 6rem 1rem 3rem 1rem; } }
@@ -838,7 +838,7 @@ button.scroll_down:before {
   padding: 6rem 2rem 8rem 2rem; }
   @media only screen and (max-width: 37.5em) {
     .section__skills {
-      padding: 2rem 1rem 8rem 1rem; } }
+      padding: 6rem 1rem 8rem 1rem; } }
 
 .skills {
   display: grid;
@@ -1001,7 +1001,7 @@ button.scroll_down:before {
   color: #e67e22; }
 
 .section__contact {
-  padding: 2rem 0 8rem 0;
+  padding: 6rem 0 8rem 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg-contact.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1012,7 +1012,7 @@ button.scroll_down:before {
       background-attachment: fixed; } }
   @media only screen and (max-width: 43.57em) {
     .section__contact {
-      padding: 0 0 5rem 0; } }
+      padding: 6rem 0 5rem 0; } }
 
 .form__group {
   display: flex;
