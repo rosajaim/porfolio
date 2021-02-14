@@ -4,8 +4,7 @@
     align-items: center;
     height: auto;
     @include lenearGradient;
-    padding-top: 6rem;
-    // background-image: linear-gradient(-75deg, $color-terceary-dark 45%, $color-terceary-dark 40%, $color-terceary 30%, $color-terceary 30%);
+     // background-image: linear-gradient(-75deg, $color-terceary-dark 45%, $color-terceary-dark 40%, $color-terceary 30%, $color-terceary 30%);
     
   
     @media only screen and (max-width: $bp-medium){

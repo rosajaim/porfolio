@@ -78,8 +78,7 @@ a {
   display: flex;
   align-items: center;
   height: auto;
-  background: linear-gradient(to right, #f2f4f6 0%, #f2f4f6 62%, #e3e7ec 20%, #e3e7ec 100%);
-  padding-top: 6rem; }
+  background: linear-gradient(to right, #f2f4f6 0%, #f2f4f6 62%, #e3e7ec 20%, #e3e7ec 100%); }
   @media only screen and (max-width: 50em) {
     .section__about {
       background: #e3e7ec;
