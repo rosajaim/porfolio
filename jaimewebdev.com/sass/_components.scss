@@ -117,7 +117,7 @@
     &__content {
         display: flex;
         justify-content: flex-end;
-        margin-top: 27rem;
+        margin-top: 28rem;
         @include alignCenter;
         max-width: 90rem;
         width: 90%;
@@ -151,31 +151,37 @@
         margin-top: 6rem;
         padding: 0 3rem 0 6rem;
 
+        @media only screen and (max-width: $bp-largest) {
+            margin-top: 7rem;   
+         }
+
         @media only screen and (max-width: $bp-large) {
             width: 100%;
-            margin-top: 34rem;
-            padding-left: 2.2rem;
+            margin-top: 36rem;
+            padding-left: 2.3rem;
+        }
+
+        @media only screen and (max-width: $bp-medium) {
+            margin-top: 33rem;
+ 
         }
 
         @media only screen and (max-width: $bp-medium2) {
-            margin-top: 32rem;;  
-        }
-
-        @media only screen and (max-width: $bp-smaller2) {
             width: 100%;
-            padding: 30rem 2rem 2rem 2rem;    
+            margin-top: 35rem;
+            // padding: 30rem 2rem 2rem 2rem;    
         }
 
          @media only screen and (max-width: $bp-small) {
-           margin-top: 26rem;   
+           margin-top: 33rem;   
          }
 
          @media only screen and (max-width: $bp-smaller) {
-            margin-top: 30rem;   
+            margin-top: 27rem;   
          }
 
          @media only screen and (max-width: $bp-smaller2) {
-            margin-top: 2rem;   
+            margin-top: 29rem ;   
          }
 
     }
@@ -189,31 +195,36 @@
         z-index: -1;
 
         @media only screen and (max-width: $bp-large) {
-           top: 5%;
+           top: 8%;
+           width: 50%;
         }
 
         @media only screen and (max-width: $bp-medium) {
-            width: 64%;
+            top: 10%;
+            width: 58%;
+
          }
 
          @media only screen and (max-width: $bp-medium2) {
-            width: 72%; 
+            width: 65%; 
+            left: 5%;
         }
 
         @media only screen and (max-width: $bp-small) {
-           width: 80%;
-           top: 8%;
-           left: 10%;   
+           width: 70%;
+           top: 10%;
+           left: 6%;   
         }
 
         @media only screen and (max-width: $bp-smaller) {
             width: 80%;
-            top: 9%    
+            top: 9%;  
+            left: 10%;  
          }
 
          @media only screen and (max-width: $bp-smaller2) {
             width: 85%;
-            top: 10%;  
+            top: 11%;  
             left: 8%;  
          }
     }
