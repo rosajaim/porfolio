@@ -96,3 +96,65 @@ button.scroll_down:before {
     opacity: 0;
   }
 }
+
+
+
+.language {
+  display: none;
+}
+
+.language.active {
+  display: block;
+
+}
+
+.language-choice img {
+  transform: scale(.9);
+  filter: blur(.1px) brightness(80%);
+
+
+}
+
+.language-choice.current img {
+  transform: scale(.9);
+  filter: blur(0) brightness(100%);
+
+}
+
+.language-controls {
+  padding: 1rem 0 0 1.5rem;
+
+  & a {
+    color: $color-secondary;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &--flag {
+    display: inline-block;
+    margin-right: .5rem;
+    width: 3%;
+    height: auto;
+    transform: translateX(-4rem) scale(1.4);
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 5%;
+    }
+
+
+    @media only screen and (max-width: $bp-medium2) {
+      width: 6%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 8%;
+    }
+
+
+    &:hover {
+      filter: blur(.1px) brightness(100%);
+    }
+
+  }
+}
+

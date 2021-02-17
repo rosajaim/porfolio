@@ -51,7 +51,8 @@ function toggleMenu() {
       });
   });
 
-// ES6 Class
+
+// ******* HEADER TYPE WRITER ********
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -79,7 +80,8 @@ class TypeWriter {
     }
 
     // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+    this.txtElement.innerHTML = `<span class="txt-type">${this.txt}</span>`;
+
 
     // Initial Type Speed
     let typeSpeed = 300;
@@ -118,6 +120,7 @@ function init() {
   new TypeWriter(txtElement, words, wait);
 }
 
+
 // SCROLL DOWN BOTTON
 (function () {
   'use strict';
@@ -140,41 +143,6 @@ function init() {
   btnScrollDown.addEventListener('click', scrollDown);
 })();
 
-
-//DOWNLOAD BUTTON
-/* 
-Based on a Pablo Stanley (https://medium.com/@pablostanley) design
-*/
-
-// var downloadBtn = document.getElementById('download-btn');
-// var inprogress = false;
-// downloadBtn.onclick = function () {
-//   if (inprogress) {
-//     return false;
-//   }
-//   inprogress = true
-//   downloadBtn.classList.add('btn-download__first');
-//   setTimeout(function () {
-//     downloadBtn.classList.add('btn-download__bridge1');
-//   }, 500);
-//   setTimeout(function () {
-//     downloadBtn.classList.add('btn-download__second');
-//   }, 600);
-//   setTimeout(function () {
-//     downloadBtn.classList.add('btn-download__third');
-//   }, 700);
-//   setTimeout(function () {
-//     downloadBtn.classList.add('btn-download__final');
-//   }, 1800);
-//   setTimeout(function () {
-//     downloadBtn.classList.remove('btn-download__final');
-//     downloadBtn.classList.remove('btn-download__third');
-//     downloadBtn.classList.remove('btn-download__second');
-//     downloadBtn.classList.remove('btn-download__bridge1');
-//     downloadBtn.classList.remove('btn-download__first');
-//     inprogress = false;
-//   }, 3200)
-// };
 
 //REMOVES SECTION-HEADING CLASS AND ADDS SECTION-HEADING-HORIZINTAL CLASS
 $(function () {
@@ -211,6 +179,25 @@ $(document).ready(function () {
   });
 
 });
+
+
+var currentLanguage;
+
+var $languageChoice = $('.language-choice');
+
+$languageChoice.on('click', function() {
+  $('.language').removeClass('active');
+  currentLanguage = $(this).data('language');
+  $languageChoice.removeClass('current');
+  $(this).addClass('current');
+  $('.' + currentLanguage).addClass('active');
+	$('body').removeClass().addClass(currentLanguage);
+});
+
+
+
+
+
 
 
 

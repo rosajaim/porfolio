@@ -2,54 +2,40 @@
 // ****** DEFAULT BUTTON ******
 .btn {
     // display: inline-block;
+    border: 1.5px solid $color-secondary;
     color: $color-primary;
     cursor: pointer;
     display: block;
     font-weight: 400;
     line-height: 2.8;
-    letter-spacing: 1px;
+    // letter-spacing: 1px;
     margin: 0 0 2rem;
     max-width: 160px; 
     position: relative;
+    padding: .1rem .5rem .1rem .5rem;
     text-decoration: none;
     text-transform: uppercase;
     width: 100%; 
-    
+    transition: all .2s;
+  
   }
   
   .btn_projects {
     background: transparent;
     font-weight: 700;
-    
-    svg {
-      height: 35px;
-      left: 11px;
-      position: absolute;
-      top: 0; 
-      width: 85%; 
-    }
-    
-    rect {
-      fill: none;
-      stroke: $color-secondary;
-      stroke-width: 3;
-      stroke-dasharray: 422, 0;
-      transition: all 0.35s linear;
-    }
+
+
+    &:hover {
+        font-weight: 900;
+        letter-spacing: 1px;
+
+
+        
+      }
+  
   }
   
-  .btn_projects:hover {
-    font-weight: 800;
-    letter-spacing: 1px;
-    
-    rect {
-      stroke-width: 5;
-      stroke-dasharray: 15, 268;
-      stroke-dashoffset: 55;
-      transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
-    }
-  }
-   
+
 // ****** HEADER BUTTON ******
 .btn_header {
     color: $color-white;
@@ -108,18 +94,19 @@
 
 // ****** POPUP ******
 .popup {
+    position: relative;
     height: 100vh;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    // background-color: $bg-overlay;
+    background-color: $bg-overlay;
     opacity: 0;
     visibility: hidden;
     @include easeOut3s;
     z-index: 99;
     // -webkit-backdrop-filter: blur(10px);
-    // backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 
     @supports(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
         -webkit-backdrop-filter: blur(10px);
@@ -130,7 +117,7 @@
     &__content {
         display: flex;
         justify-content: flex-end;
-
+        margin-top: 27rem;
         @include alignCenter;
         max-width: 90rem;
         width: 90%;
@@ -138,7 +125,6 @@
         background-color: $color-terceary;
         box-shadow: 0 2rem 4rem rgba($bg-overlay-darker, .9);
         border-radius: 3px;
-        // display: table;
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%, -50%) scale(.2);

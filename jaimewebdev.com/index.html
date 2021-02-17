@@ -36,10 +36,10 @@
     </script>
     <!-- End of Async Drift Code -->
 
-     <!-- Favicon -->
-     <link rel="shortcut icon" type="image/png" href="./img/jr-favicon.ico">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="./img/jr-favicon.ico">
 
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta content="Web developer based out of Idaho, Unated States - specializing in 
@@ -70,52 +70,106 @@
     <title>Jaime Rosales</title>
 </head>
 
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dighital" title="Dighital">Dighital</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
 <body>
     <header class="header bg-img" id="home">
+
+        <!-- NAV BOTTON-->
         <div class="menu-btn navbar-toggle">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
+
+        <!-- LANGUAGE CONTROLER-->
+         <div class='language-controls'>
+            <div class="language-choices">
+                <a href='#0' data-language='english' class="language-choice current">
+                    <img class="language-controls--flag" src="./img/us-flag.png" alt="USA Flag">
+                </a>
+                <a href='#0' data-language='spanish' class="language-choice">  
+                    <img class="language-controls--flag" src="./img/mexico-flag.png" alt="Mex Flag">           
+                </a>
+            </div>         
+        </div>
+
+        <!-- <figure class="story__shape">
+            <img src="./img/us_flag.png" alt="Person on a tour" class="story__img">
+            <figcaption class="story__caption">
+                Mary Smith
+            </figcaption>
+        </figure> -->
+        
+        <!-- NAVIGATION -->
         <nav class="menu">
             <div class="menu-branding">
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item active">
+                <li class="nav-item active-link language english active">
                     <a href="#home" class="nav-link" data-text="home">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active-link language spanish ">
+                    <a href="#home" class="nav-link" data-text="Inicio">Inicio</a>
+                </li>
+                <li class="nav-item language english active">
                     <a href="#about" class="nav-link" data-text="about">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item language spanish">
+                    <a href="#about" class="nav-link" data-text="quien_soy">Quien soy</a>
+                </li>
+                <li class="nav-item language english active">
                     <a href="#services" class="nav-link" data-text="services">Services</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item language spanish">
+                    <a href="#services" class="nav-link" data-text="servicios">Servicios</a>
+                </li>
+                <li class="nav-item language english active">
                     <a href="#projects" class="nav-link" data-text="projects">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item language spanish">
+                    <a href="#projects" class="nav-link" data-text="proyectos">Projectos</a>
+                </li>
+                <li class="nav-item language english active">
                     <a href="#skills" class="nav-link" data-text="skills">Skills</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item language spanish">
+                    <a href="#skills" class="nav-link" data-text="avilidades">Habilidades</a>
+                </li>
+                <li class="nav-item language english active">
                     <a href="#contact" class="nav-link" data-text="contact">Contact</a>
+                </li>
+                <li class="nav-item language spanish">
+                    <a href="#contact" class="nav-link" data-text="contacto">Contacto</a>
                 </li>
             </ul>
         </nav>
 
         <div class="main-heading">
+
             <h1 class="heading-primary">
                 Jaime <span class="text-secondary">Rosales</span>
             </h1>
-            <h2 class="heading-secondary--type">
+            <div class="language english aptive"></div>
+            <h2 class="heading-secondary--type language english active">
                 Front-end Developer<span class="txt-type" data-wait="3000"
                     data-words='[" with a passion for learning"]'></span>
             </h2>
-            <a href="#portfolio" class="btn_header btn_header--animated"><span>View Projects</span></a>
-        </div>
-        <div class="wrapper">
 
-            <!-- begin Scroll Down Button  -->
+            <h2 class="heading-secondary--type language spanish">
+                Desarrollador Front-end con una pasion por aprender
+            </h2>
+            <div class="language english active">
+                <a href="#portfolio" class="btn_header btn_header--animated"><span>View Projects</span></a>
+            </div>
+            <div class="language spanish">
+                <a href="#portfolio" class="btn_header btn_header--animated"><span>Ver Projectos</span></a>
+            </div>
+        </div>
+
+        <!-- begin Scroll Down Button  -->
+        <div class="wrapper">
             <button type="button" class="scroll_down" id="scroll_down"></button>
         </div>
     </header>
@@ -123,8 +177,8 @@
     <main>
         <section class="section__about" id="about">
             <!-- <h2 class="heading-secondary" data-text="About me">About me</h2> -->
-            <div class="about__items js--wp-2">
-                <div class="about__items-text">
+            <div class="about__items ">
+                <div class="about__items-text language english active">
                     <h3><span>Hi, I'm Jaime.</span></h3>
                     <p>I'm an enthusiastic and detail-oriented front-end developer. I focus
                         on building websites upon the principles of maintainable and scalable code, responsive design,
@@ -135,38 +189,100 @@
                         playing soccer,
                         learning new things, and recently discovered a love for Virgil's Rootbeer!</p>
                 </div>
+
+                <div class="about__items-text language spanish">
+                    <h3><span>Hola, soy Jaime.</span></h3>
+                    <p>Soy un desarrollador front-end entusiasta y orientado a los detalles. Me enfoco en construir
+                        sitios web
+                        sobre los principios de código escalable y mantenible, diseño responsivo y rendimiento web.
+                    </p>
+                    <br>
+                    <p>Cuando no estoy codificando, disfruto pasar tiempo de calidad con mis hijos pequeños. Me gusta
+                        escuchar música,
+                        jugar fútbol, aprender cosas nuevas, ¡y recientemente descubrí el amor Virgil's Rootbeer!</p>
+                </div>
+
             </div>
             <img src="./img/JR-white.png" class="about__items-img js--wp-1" alt="Jaime Rosales" />
         </section>
 
         <section class="section__services" id="services">
-            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s">What I do
-            </h2>
+            <div class="language english active">
+                <h2 class="heading-secondary wow animated fadeInDown " data-wow-duration="2s" data-wow-delay=".5s">What
+                    I do</h2>
+            </div>
+            <div class="language spanish">
+                <h2 class="heading-secondary wow animated fadeInDown language spanish " data-wow-duration="2s"
+                    data-wow-delay=".5s">Lo que hago</h2>
+            </div>
+
             <!-- <div class="row"> -->
             <div class="services__container  wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="services__content">
                     <i class="services__content-icon fas fa-pencil-ruler fa-4x" style="color:#00ADDA"></i>
-                    <h3 class="heading-tertiary">Web design</h3>
-                    <p class="services__content-text">
-                        I focus on desiigning simple but elegant content layouts, clean design patterns, and thoughtful
-                        interactions.
-                    </p>
+                    <div class="language english active">
+                        <h3 class="heading-tertiary">Web design</h3>
+                    </div>
+                    <div class="language spanish ">
+                        <h3 class="heading-tertiary">Diseño web</h3>
+                    </div>
+                    <div class="language english active">
+                        <p class="services__content-text">
+                            I focus on desiigning simple but elegant content layouts, clean design patterns, and
+                            thoughtful
+                            interactions.
+                        </p>
+                    </div>
+                    <div class="language spanish">
+                        <p class="services__content-text">
+                            Me concentro en diseñar diseños de contenido simples pero elegantes, patrones de
+                            diseño limpios e interacciones reflexivas.
+                        </p>
+                    </div>
+
                 </div>
                 <div class="services__content">
                     <i class="services__content-icon fas fa-laptop-code fa-4x" style="color:#00ADDA"></i>
-                    <h3 class="heading-tertiary">Web development</h3>
-                    <p class="services__content-text">
-                        I build responsive websites for optimal user experience, and enjoy bringing ideas to life across
-                        all browser.
-                    </p>
+                    <div class="language english active">
+                        <h3 class="heading-tertiary">Web development</h3>
+                    </div>
+                    <div class="language spanish ">
+                        <h3 class="heading-tertiary">Desarrollo web</h3>
+                    </div>
+                    <div class="language english active">
+                        <p class="services__content-text">
+                            I build responsive websites for optimal user experience, and enjoy bringing ideas to life
+                            across
+                            all browser.
+                        </p>
+                    </div>
+                    <div class="language spanish">
+                        <p class="services__content-text">
+                            Creo sitios web responsivos para una experiencia de usuario óptima y disfruto dando vida
+                            a las ideas en todos los navegadores.
+                        </p>
+                    </div>
                 </div>
                 <div class="services__content">
                     <i class="services__content-icon fas fa-search fa-4x" style="color:#00ADDA"></i>
-                    <h3 class="heading-tertiary">Seo Optimization</h3>
-                    <p class="services__content-text">
-                        I like to optimize your website for maximum performance and to make it easy to find,
-                        and reach the widest audience possible.
-                    </p>
+                    <div class="language english active">
+                        <h3 class="heading-tertiary">Seo Optimization</h3>
+                    </div>
+                    <div class="language spanish ">
+                        <h3 class="heading-tertiary">Optimizacion Seo</h3>
+                    </div>
+                    <div class="language english active">
+                        <p class="services__content-text">
+                            I like to optimize your website for maximum performance and to make it easy to find,
+                            and reach the widest audience possible.
+                        </p>
+                    </div>
+                    <div class="language spanish ">
+                        <p class="services__content-text">
+                            Me gusta optimizar su sitio web para obtener el máximo rendimiento y que sea fácil
+                            de encontrar y llegar a la audiencia más amplia posible.
+                        </p>
+                    </div>
                 </div>
             </div>
             <!-- </div> -->
@@ -176,48 +292,99 @@
         <!-- Project Section -->
         <section class="projects__section" id="projects">
             <!-- <div class="triangle"></div> -->
+            <div class="language english active">
+                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Projects
+                </h2>
+            </div>
+            <div class="language spanish">
+                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Proyectos
+                </h2>
+            </div>
 
-            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Projects
-            </h2>
             <div class="row">
 
                 <!-- Trillo Project -->
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/trillo.jpg" alt="Trillo Project" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Web App</p>
-                        <h2 class="project-content__text-title">Trillo</h2>
-                        <a href="#trillo-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Web App</p>
+                            <h2 class="project-content__text-title">Trillo</h2>
+                            <a href="#trillo-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish ">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Web App</p>
+                            <h2 class="project-content__text-title">Trillo</h2>
+                            <a href="#trillo-popup" class="project-content__link">Ver Proyecto</a>
+                        </figcaption>
+                    </div>
+
                 </figure>
 
                 <!-- Trillo Popup -->
                 <div class="popup" id="trillo-popup">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="./img/projects/trillo.png" alt="Trillo Project" class="popup__img">
-                        </div>
-                        <div class="popup__right">
-                            <a href="#projects" class="popup__close">&times;</a>
-                            <h3 class="popup-heading trillo-color">Project type</h3>
-                            <p class="popup__text">Web Application</p>
-                            <h3 class="popup-heading trillo-color">Project Description</h3>
-                            <p class="popup__text"> Trillo is a concept all in one book web application.
-                                The main idea of this project is that a user can book a car, a hotel, a
-                                flight and a tour all in one platform. The main goal of this project was
-                                to master flexbox.
-                            </p>
+                    <div class="language english active">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/trillo.png" alt="Trillo Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#projects" class="popup__close">&times;</a>
+                                <h3 class="popup-heading trillo-color">Project type</h3>
+                                <p class="popup__text">Web Application</p>
+                                <h3 class="popup-heading trillo-color">Project Description</h3>
+                                <p class="popup__text"> Trillo is a concept all in one book web application.
+                                    The main idea of this project is that a user can book a car, a hotel, a
+                                    flight and a tour all in one platform. The main goal of this project was
+                                    to master flexbox.
+                                </p>
 
-                            <h3 class="popup-heading trillo-color">Technologies Used</h3>
-                            <p class="popup__text">
-                                HTML5, CSS3, CSS Flex Box Layout, Sass, Git, npm
-                            </p>
-                            <div>
-                                <a href="https://rosajaim.github.io/portfolio/trillo.com/index.html" target="_blank"
-                                    class="btn-popup">Visit website</a>
-                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/trillo.com" target="_blank"
-                                    class="btn-popup">Source code</a>
+                                <h3 class="popup-heading trillo-color">Technologies Used</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, CSS Flex Box Layout, Sass, Git, npm
+                                </p>
+                                <div>
+                                    <a href="https://rosajaim.github.io/portfolio/trillo.com/index.html" target="_blank"
+                                        class="btn-popup">Visit website</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/trillo.com"
+                                        target="_blank" class="btn-popup">Source code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language spanish ">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/trillo.png" alt="Trillo Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#projects" class="popup__close">&times;</a>
+                                <h3 class="popup-heading trillo-color">Tipo de proyecto</h3>
+                                <p class="popup__text">Web Application</p>
+                                <h3 class="popup-heading trillo-color">Project Description</h3>
+                                <p class="popup__text"> Trillo es un concepto de aplicación web todo en un sitio. La
+                                    idea principal
+                                    de este proyecto es que un usuario puede reservar un automóvil, un hotel, un vuelo y
+                                    un recorrido,
+                                    todo en una plataforma. El objetivo principal de este proyecto era dominar CSS
+                                    flexbox.
+                                </p>
+
+                                <h3 class="popup-heading trillo-color">Tecnologias usadas</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, CSS Flex Box Layout, Sass, Git, npm
+                                </p>
+                                <div>
+                                    <a href="https://rosajaim.github.io/portfolio/trillo.com/index.html" target="_blank"
+                                        class="btn-popup">Ver sitio</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/trillo.com"
+                                        target="_blank" class="btn-popup">Ver codigo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -227,79 +394,158 @@
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/natours.jpg" alt="Natours Project" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Website</p>
-                        <h2 class="project-content__text-title">Natours</h2>
-                        <a href="#natours-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Website</p>
+                            <h2 class="project-content__text-title">Natours</h2>
+                            <a href="#natours-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Sitio web</p>
+                            <h2 class="project-content__text-title">Natours</h2>
+                            <a href="#natours-popup" class="project-content__link">Ver Proyecto</a>
+                        </figcaption>
+                    </div>
                 </figure>
 
                 <!-- Natours popup -->
                 <div class="popup" id="natours-popup">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="./img/projects/natours.png" alt="Natours Project" class="popup__img">
-                        </div>
-                        <div class="popup__right">
-                            <a href="#natours-tours" class="popup__close">&times;</a>
-                            <h3 class="popup-heading natours-color">Project type</h3>
-                            <p class="popup__text">Website</p>
-                            <h3 class="popup-heading natours-color">Project Description</h3>
-                            <p class="popup__text"> Natours is a fictional company that offers tours
-                                in the nature. The main goal for this project was to use animation using
-                                the most modern CSS techniques.
-                            </p>
+                    <div class="language english active">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/natours.png" alt="Natours Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#natours-tours" class="popup__close">&times;</a>
+                                <h3 class="popup-heading natours-color">Project type</h3>
+                                <p class="popup__text">Website</p>
+                                <h3 class="popup-heading natours-color">Project Description</h3>
+                                <p class="popup__text"> Natours is a fictional company that offers tours
+                                    in the nature. The main goal for this project was to use animation using
+                                    the most modern CSS techniques.
+                                </p>
 
-                            <h3 class="popup-heading natours-color">Technologies Used</h3>
-                            <p class="popup__text">
-                                HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
-                            </p>
-                            <div class="popup-links">
-                                <a href="https://rosajaim.github.io/portfolio/natours.com/index.html" target="_blank"
-                                    class="btn-popup">Visit website</a>
-                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
-                                    target="_blank" class="btn-popup">Source code</a>
+                                <h3 class="popup-heading natours-color">Technologies Used</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/natours.com/index.html"
+                                        target="_blank" class="btn-popup">Visit website</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                        target="_blank" class="btn-popup">Source code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language spanish">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/natours.png" alt="Natours Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#natours-tours" class="popup__close">&times;</a>
+                                <h3 class="popup-heading natours-color">Tipo de proyecto</h3>
+                                <p class="popup__text">Sitio web</p>
+                                <h3 class="popup-heading natours-color">Descripción de Proyecto</h3>
+                                <p class="popup__text"> Natours is a fictional company that offers tours in nature. The
+                                    main
+                                    goal for this project was to use animation using the most modern CSS techniques.
+                                </p>
+
+                                <h3 class="popup-heading natours-color">Tecnologias usadas</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/natours.com/index.html"
+                                        target="_blank" class="btn-popup">Visite sitio</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                        target="_blank" class="btn-popup disable">Ver codigo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+
                 <!-- Nexter Project -->
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/nexter.jpg" alt="Nexter Project" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Website</p>
-                        <h2 class="project-content__text-title">Nexter</h2>
-                        <a href="#nexter-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Website</p>
+                            <h2 class="project-content__text-title">Nexter</h2>
+                            <a href="#nexter-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Sitio Web</p>
+                            <h2 class="project-content__text-title">Nexter</h2>
+                            <a href="#nexter-popup" class="project-content__link">Ver Proyecto</a>
+                        </figcaption>
+                    </div>
                 </figure>
 
                 <!-- Nexter popup  -->
                 <div class="popup" id="nexter-popup">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="./img/projects/nexter.png" alt="Nexter Project" class="popup__img">
-                        </div>
-                        <div class="popup__right">
-                            <a href="#section-tours" class="popup__close">&times;</a>
-                            <h3 class="popup-heading nexter-color">Project type</h3>
-                            <p class="popup__text">Website</p>
-                            <h3 class="popup-heading nexter-color">Project Description</h3>
-                            <p class="popup__text">Nexter is landing page for a fictional company which
-                                sells luxury home around the world. The main goal of this project was to master
-                                CSS Grid so the entire layout of the page is a Grid.
-                            </p>
+                    <div class="language english active">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/nexter.png" alt="Nexter Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#section-tours" class="popup__close">&times;</a>
+                                <h3 class="popup-heading nexter-color">Project type</h3>
+                                <p class="popup__text">Website</p>
+                                <h3 class="popup-heading nexter-color">Project Description</h3>
+                                <p class="popup__text">Nexter is the landing page for a fictional company which
+                                    sells luxury home around the world. The main goal of this project was to master
+                                    CSS Grid. The entire layout of the page is a Grid.
+                                </p>
 
-                            <h3 class="popup-heading nexter-color">Technologies Used</h3>
-                            <p class="popup__text">
-                                HTML5, CSS3, CSS Grid Layout, Sass, Git, npm
-                            </p>
-                            <div class="popup-links">
-                                <a href="https://rosajaim.github.io/portfolio/nexter.com/index.html" target="_blank"
-                                    class="btn-popup">Visit website</a>
-                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/nexter.com" target="_blank"
-                                    class="btn-popup">Source code</a>
+                                <h3 class="popup-heading nexter-color">Technologies Used</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, CSS Grid Layout, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/nexter.com/index.html" target="_blank"
+                                        class="btn-popup">Visit website</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/nexter.com"
+                                        target="_blank" class="btn-popup">Source code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language spanish">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/nexter.png" alt="Nexter Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#section-tours" class="popup__close">&times;</a>
+                                <h3 class="popup-heading nexter-color">Tipo de proyecto</h3>
+                                <p class="popup__text">Sitio web</p>
+                                <h3 class="popup-heading nexter-color">Descripción de proyecto</h3>
+                                <p class="popup__text">Nexter es la página de inicio de una empresa ficticia que vende
+                                    casas de lujo en todo el mundo. El objetivo principal de este proyecto era dominar
+                                    CSS Grid. Todo el diseño de la página sea un cuadricula.
+                                </p>
+
+                                <h3 class="popup-heading nexter-color">Tecnologias usadas</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, CSS Grid Layout, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/nexter.com/index.html" target="_blank"
+                                        class="btn-popup">Ver sitio</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/nexter.com"
+                                        target="_blank" class="btn-popup">ver codigo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -309,38 +555,78 @@
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/vesco.jpg" alt="Vesco" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Website</p>
-                        <h2 class="project-content__text-title">Vesco</h2>
-                        <a href="#vesco-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Website</p>
+                            <h2 class="project-content__text-title">Vesco</h2>
+                            <a href="#vesco-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Sitio web</p>
+                            <h2 class="project-content__text-title">Vesco</h2>
+                            <a href="#vesco-popup" class="project-content__link">Ver Proyecto</a>
+                        </figcaption>
+                    </div>
                 </figure>
 
                 <!-- Vesco popup -->
                 <div class="popup" id="vesco-popup">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="./img/projects/vesco.png" alt="Vesco Project" class="popup__img">
-                        </div>
-                        <div class="popup__right">
-                            <a href="#projects" class="popup__close">&times;</a>
-                            <h3 class="popup-heading vesco-color">Project type</h3>
-                            <p class="popup__text">Website</p>
-                            <h3 class="popup-heading vesco-color">Project Description</h3>
-                            <p class="popup__text"> Natours is a fictional company that offers tours
-                                in the nature. The main goal for this project was to use animation using
-                                the most modern CSS techniques.
-                            </p>
+                    <div class="language english active">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/vesco.png" alt="Vesco Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#projects" class="popup__close">&times;</a>
+                                <h3 class="popup-heading vesco-color">Project type</h3>
+                                <p class="popup__text">Website</p>
+                                <h3 class="popup-heading vesco-color">Project Description</h3>
+                                <p class="popup__text">Vesco is landing page for a fictional corporation that provide
+                                    multiple services
+                                    The main goal for this project was to use animation, Jquery and Boostrap.
+                                </p>
 
-                            <h3 class="popup-heading vesco-color">Technologies Used</h3>
-                            <p class="popup__text">
-                                HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
-                            </p>
-                            <div class="popup-links">
-                                <a href="https://rosajaim.github.io/portfolio/vesco.com/index.html" target="_blank"
-                                    class="btn-popup">Visit website</a>
-                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/vesco.com" target="_blank"
-                                    class="btn-popup">Source code</a>
+                                <h3 class="popup-heading vesco-color">Technologies Used</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/vesco.com/index.html" target="_blank"
+                                        class="btn-popup">Visit website</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/vesco.com"
+                                        target="_blank" class="btn-popup">Source code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language spanish">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/vesco.png" alt="Vesco Project" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#projects" class="popup__close">&times;</a>
+                                <h3 class="popup-heading vesco-color">Tipo de proyecto</h3>
+                                <p class="popup__text">Sitio web</p>
+                                <h3 class="popup-heading vesco-color">Descrición de proyecto</h3>
+                                <p class="popup__text"> Vesco es la página de inicio de una corporación ficticia que
+                                    brinda múltiples
+                                    servicios. El objetivo principal de este proyecto era utilizar animación, Jquery y
+                                    Boostrap.
+                                </p>
+
+                                <h3 class="popup-heading vesco-color">Tecnolohias usadas</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/vesco.com/index.html" target="_blank"
+                                        class="btn-popup">Ver sitio</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/vesco.com"
+                                        target="_blank" class="btn-popup">Ver codigo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -350,38 +636,78 @@
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/portfolio.jpg" alt="Portfolio" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Website</p>
-                        <h2 class="project-content__text-title">Jaime Rosales</h2>
-                        <a href="#portfolio-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Website</p>
+                            <h2 class="project-content__text-title">Jaime Rosales</h2>
+                            <a href="#portfolio-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Sitio Personal</p>
+                            <h2 class="project-content__text-title">Jaime Rosales</h2>
+                            <a href="#portfolio-popup" class="project-content__link">Ver Proyecto</a>
+                        </figcaption>
+                    </div>
+
                 </figure>
 
                 <!-- Portfolio popup  -->
                 <div class="popup" id="portfolio-popup">
-                    <div class="popup__content">
-                        <div class="popup__left">
-                            <img src="./img/projects/portfolio.png" alt="Natours photo" class="popup__img">
-                        </div>
-                        <div class="popup__right">
-                            <a href="#portfolio" class="popup__close">&times;</a>
-                            <h3 class="popup-heading natours-color">Project type</h3>
-                            <p class="popup__text">Website</p>
-                            <h3 class="popup-heading natours-color">Project Description</h3>
-                            <p class="popup__text"> Natours is a fictional company that offers tours
-                                in the nature. The main goal for this project was to use animation using
-                                the most modern CSS techniques.
-                            </p>
+                    <div class="language english active">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/portfolio.png" alt="Natours photo" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#portfolio" class="popup__close">&times;</a>
+                                <h3 class="popup-heading natours-color">Project type</h3>
+                                <p class="popup__text">Personal Website</p>
+                                <h3 class="popup-heading natours-color">Project Description</h3>
+                                <p class="popup__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                                    ipsum hic magni
+                                    cum minima quisquam a amet aut excepturi consequatur sit necessitatibus.
+                                </p>
 
-                            <h3 class="popup-heading natours-color">Technologies Used</h3>
-                            <p class="popup__text">
-                                HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
-                            </p>
-                            <div class="popup-links">
-                                <a href="https://rosajaim.github.io/portfolio/portfolio.com/index.html" target="_blank"
-                                    class="btn-popup">Visit website</a>
-                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
-                                    target="_blank" class="btn-popup">Source code</a>
+                                <h3 class="popup-heading natours-color">Technologies Used</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/portfolio.com/index.html"
+                                        target="_blank" class="btn-popup">Visit website</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                        target="_blank" class="btn-popup">Source code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="language spanish">
+                        <div class="popup__content">
+                            <div class="popup__left">
+                                <img src="./img/projects/portfolio.png" alt="Natours photo" class="popup__img">
+                            </div>
+                            <div class="popup__right">
+                                <a href="#portfolio" class="popup__close">&times;</a>
+                                <h3 class="popup-heading natours-color">Tipon de proyecto</h3>
+                                <p class="popup__text">Sitio Personal</p>
+                                <h3 class="popup-heading natours-color">Project Description</h3>
+                                <p class="popup__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                                    ipsum hic magni
+                                    cum minima quisquam a amet aut excepturi consequatur sit necessitatibus.
+                                </p>
+
+                                <h3 class="popup-heading natours-color">Tecnologias usdas</h3>
+                                <p class="popup__text">
+                                    HTML5, CSS3, Custom Grid Layout, JavaScript, Sass, Git, npm
+                                </p>
+                                <div class="popup-links">
+                                    <a href="https://rosajaim.github.io/portfolio/portfolio.com/index.html"
+                                        target="_blank" class="btn-popup">Ver sitio</a>
+                                    <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                        target="_blank" class="btn-popup">Ver codigo</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -391,60 +717,120 @@
                 <figure class="project-content wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                     <img src="./img/projects/omnifood.jpg" alt="Omnifood" />
                     <div class="content-overlay"></div>
-                    <figcaption class="project-content__text">
-                        <p class="project-content__text-sub-title">Website</p>
-                        <h2 class="project-content__text-title">Omnifood</h2>
-                        <a href="#omnifood-popup" class="project-content__link">View Project</a>
-                    </figcaption>
+                    <div class="language english active">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Website</p>
+                            <h2 class="project-content__text-title">Omnifood</h2>
+                            <a href="#omnifood-popup" class="project-content__link">View Project</a>
+                        </figcaption>
+                    </div>
+                    <div class="language spanish">
+                        <figcaption class="project-content__text">
+                            <p class="project-content__text-sub-title">Sitio</p>
+                            <h2 class="project-content__text-title">Omnifood</h2>
+                            <a href="#omnifood-popup" class="project-content__link">Ver proyecto</a>
+                        </figcaption>
+                    </div>
+
                 </figure>
             </div>
 
             <!-- Omnifood popup  -->
             <div class="popup" id="omnifood-popup">
-                <div class="popup__content">
-                    <div class="popup__left">
-                        <img src="./img/projects/omnifood.png" alt="Omnifood" class="popup__img">
-                    </div>
-                    <div class="popup__right">
-                        <a href="#projects" class="popup__close">&times;</a>
-                        <h3 class="popup-heading omnifood-color">Project type</h3>
-                        <p class="popup__text">Website</p>
-                        <h3 class="popup-heading omnifood-color">Project Description</h3>
-                        <p class="popup__text"> Omnifood is a fictional company that offers a primium food delivery
-                            service
-                            around the world. The main goal for this project was to learn and get familar with CSS and
-                            JQuery.
-                        </p>
+                <div class="langauge english active">
+                    <div class="popup__content">
+                        <div class="popup__left">
+                            <img src="./img/projects/omnifood.png" alt="Omnifood" class="popup__img">
+                        </div>
+                        <div class="popup__right">
+                            <a href="#projects" class="popup__close">&times;</a>
+                            <h3 class="popup-heading omnifood-color">Project type</h3>
+                            <p class="popup__text">Website</p>
+                            <h3 class="popup-heading omnifood-color">Project Description</h3>
+                            <p class="popup__text"> Omnifood is a fictional company that offers a primium food delivery
+                                service
+                                around the world. The main goal for this project was to learn and get familar with CSS
+                                and
+                                JQuery.
+                            </p>
 
-                        <h3 class="popup-heading omnifood-color">Technologies Used</h3>
-                        <p class="popup__text">
-                            HTML5, CSS3, JQuery, Sass, Git, npm
-                        </p>
-                        <div class="popup-links">
-                            <a href="https://rosajaim.github.io/portfolio/omnifood.com/index.html" target="_blank"
-                                class="btn-popup">Visit website</a>
-                            <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com" target="_blank"
-                                class="btn-popup">Source code</a>
+                            <h3 class="popup-heading omnifood-color">Technologies Used</h3>
+                            <p class="popup__text">
+                                HTML5, CSS3, JQuery, Sass, Git, npm
+                            </p>
+                            <div class="popup-links">
+                                <a href="https://rosajaim.github.io/portfolio/omnifood.com/index.html" target="_blank"
+                                    class="btn-popup">Visit website</a>
+                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                    target="_blank" class="btn-popup">Source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="langauge spanish ">
+                    <div class="popup__content">
+                        <div class="popup__left">
+                            <img src="./img/projects/omnifood.png" alt="Omnifood" class="popup__img">
+                        </div>
+                        <div class="popup__right">
+                            <a href="#projects" class="popup__close">&times;</a>
+                            <h3 class="popup-heading omnifood-color">Tipo de proyecto</h3>
+                            <p class="popup__text">Sitio web</p>
+                            <h3 class="popup-heading omnifood-color">Project Description</h3>
+                            <p class="popup__text"> Omnifood es una empresa ficticia que ofrece un servicio de entrega
+                                de alimentos
+                                premium en todo el mundo. El objetivo principal de este proyecto era aprender y
+                                familiarizarse con CSS y JQuery.
+                            </p>
+
+                            <h3 class="popup-heading omnifood-color">Tecnologias usadas</h3>
+                            <p class="popup__text">
+                                HTML5, CSS3, JQuery, Sass, Git, npm
+                            </p>
+                            <div class="popup-links">
+                                <a href="https://rosajaim.github.io/portfolio/omnifood.com/index.html" target="_blank"
+                                    class="btn-popup">Visite sitio</a>
+                                <a href="https://github.com/rosajaim/portfolio/tree/gh-pages/natours.com"
+                                    target="_blank" class="btn-popup">Ver codigo</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <a class="btn btn__link" href="#"> View more </a> -->
             </div>
-            <div class="container">
-                <a href="https://twitter.com/Dave_Conner" class="btn btn_projects">
-                    <svg>
-                        <rect x="0" y="0" fill="none" width="100%" height="100%" />
-                    </svg>
-                    View more
-                </a>
+            <div class="language english active">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn btn_projects">
+                            View more
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="language spanish ">
+                <div class="container">
+                    <div>
+                        <a href="#" class="btn btn_projects">
+                            Ver mas
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- <h2 class="heading-secondary ">Skills</h2> -->
         <section class="section__skills" id="skills">
-            <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">Skills
-            </h2>
+            <div class="language english active">
+                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Skills
+                </h2>
+            </div>
+            <div class="language spanish">
+                <h2 class="heading-secondary wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Habilidades
+                </h2>
+            </div>
             <div class="skills wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                 <div class="skill__icon">
                     <i class="fab fa-js-square java-script fa-8x"></i>
@@ -477,31 +863,70 @@
         </section>
 
         <section class="section__contact" id="contact">
-            <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                Contact me </h2>
+            <div class="language english active">
+                <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Contact me
+                </h2>
+            </div>
+            <div class="language spanish">
+                <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
+                    Contáctame
+                </h2>
+            </div>
             <div class="contact">
                 <div class="contact__form">
-                    <form action="webform.php" method="POST" class="form">
-                        <div class="form__group">
-                            <input type="text" class="form__input" id="name" name="name" placeholder="Name" required>
-                            <label for="name" class="form__label"></label>
+                    <div class="language english active">
+                        <form action="webform.php" method="POST" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" id="name" name="name" placeholder="Name"
+                                    required>
+                                <label for="name" class="form__label"></label>
 
-                            <input type="email" class="form__input" id="email" name="email" placeholder="Email"
-                                required>
-                            <label for="email" class="form__label"></label>
+                                <input type="email" class="form__input" id="email" name="email" placeholder="Email"
+                                    required>
+                                <label for="email" class="form__label"></label>
 
-                            <input name="number" type="number" class="form__input" id="number" placeholder="Phone"
-                                required>
-                            <label for="number" class="form__label"></label>
-                        </div>
-                        <div class="form__group">
-                            <textarea name="message" id="message" cols="61" rows="7" id="message" placeholder="Message"
-                                class="form__textarea"></textarea>
-                        </div>
-                        <div class="form__group">
-                            <input type="submit" class="btn__form-send" value="send">
-                        </div>
-                    </form>
+                                <input name="number" type="number" class="form__input" id="number" placeholder="Phone"
+                                    required>
+                                <label for="number" class="form__label"></label>
+                            </div>
+                            <div class="form__group">
+                                <textarea name="message" id="message" cols="61" rows="7" id="message"
+                                    placeholder="Message" class="form__textarea"></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="submit" class="btn__form-send" value="send">
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="language spanish">
+                        <form action="webform.php" method="POST" class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" id="name" name="name" placeholder="Nombre"
+                                    required>
+                                <label for="name" class="form__label"></label>
+
+                                <input type="email" class="form__input" id="email" name="email" placeholder="Email"
+                                    required>
+                                <label for="email" class="form__label"></label>
+
+                                <input name="number" type="number" class="form__input" id="number"
+                                    placeholder="Telefono" required>
+                                <label for="number" class="form__label"></label>
+                            </div>
+                            <div class="form__group">
+                                <textarea name="message" id="message" cols="61" rows="7" id="message"
+                                    placeholder="Mensaje" class="form__textarea"></textarea>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="submit" class="btn__form-send" value="enviar">
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -520,13 +945,25 @@
                 </a>
             </li>
             <li class="nav__item">
-                <a href="./img/JR_resume.pdf" class="nav__link" download><i class="fa fa-download"></i>
-                    Resume
-                </a>
+                <div class="language english active">
+                    <a href="./img/JR_resume.pdf" class="nav__link" download><i class="fas fa-file-download"></i>
+                        Resume
+                    </a>
+                </div>
+                <div class="language spanish">
+                    <a href="./img/JR_resume.pdf" class="nav__link" download><i class="fas fa-file-download"></i>
+                        Currículum
+                    </a>
+                </div>
 
             </li>
         </ul>
-        <p class="copyright">&copy; jaimewebdev.com 2021</p>
+        <div class="language english active">
+            <p class="copyright">copyright &copy; 2021 by jaimewebdev. All rights reserved</p>
+        </div>
+        <div class="language spanish">
+            <p class="copyright">derechos de autor &copy; 2021 por jaimewebdev. Reservados todos los derechos</p>
+        </div>
     </footer>
     <script src="js/wow.min.js"></script>
     <script>

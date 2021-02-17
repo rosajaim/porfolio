@@ -22,6 +22,11 @@
             padding: .5rem 1rem .5rem 1rem; 
             transition: all .2s;
 
+            & i {
+                font-size: 2rem;
+                margin-right: .5rem;
+            }
+
         }
 
         &__link:hover,
