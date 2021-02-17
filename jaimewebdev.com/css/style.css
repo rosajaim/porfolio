@@ -575,7 +575,7 @@ button.scroll_down:before {
       .language-controls--flag {
         width: 8%; } }
     .language-controls--flag:hover {
-      filter: blur(0.1px) brightness(100%); }
+      filter: brightness(100%); }
 
 .menu-btn {
   position: fixed;
