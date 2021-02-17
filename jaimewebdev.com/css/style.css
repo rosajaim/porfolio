@@ -547,11 +547,11 @@ button.scroll_down:before {
 
 .language-choice img {
   transform: scale(0.9);
-  filter: blur(0.1px) brightness(80%); }
+  filter: brightness(90%); }
 
 .language-choice.current img {
   transform: scale(0.9);
-  filter: blur(0) brightness(100%); }
+  filter: brightness(100%); }
 
 .language-controls {
   padding: 1rem 0 0 1.5rem; }
@@ -564,7 +564,7 @@ button.scroll_down:before {
     margin-right: .5rem;
     width: 3%;
     height: auto;
-    transform: translateX(-4rem) scale(1.4); }
+    filter: brightness(100%); }
     @media only screen and (max-width: 50em) {
       .language-controls--flag {
         width: 5%; } }
@@ -575,7 +575,7 @@ button.scroll_down:before {
       .language-controls--flag {
         width: 8%; } }
     .language-controls--flag:hover {
-      filter: brightness(100%); }
+      opacity: .8; }
 
 .menu-btn {
   position: fixed;
