@@ -18,7 +18,7 @@ function toggleMenu() {
     menuBranding.classList.add('show');
     navItems.forEach(index => index.classList.add('show'));
 
-    //SET MENU STATE
+    //===== SET MENU STATE =====
     showMenu = true;
   } else {
     menuBtn.classList.remove('close');
@@ -27,29 +27,29 @@ function toggleMenu() {
     menuBranding.classList.remove('show');
     navItems.forEach(index => index.classList.remove('show'));
 
-    //SET MENU STATE
+    //===== SET MENU STATE ====== 
     showMenu = false;
 
   }
 
 }
 
-  // Closes the Responsive Menu on Menu Item Click
-  // $('.nav-item ul li a').click(function() {
-  //   $('.navbar-toggle:visible').click();
-  // });
+//===== CLOSES THE NAV ON NAV ITEM CLICK =====
+$('.nav-item').click(function () {
+  $('.navbar-toggle:visible').click();
+});
 
-    /* **** NAVIGATION SCROLL ***** */
-    $('.nav-link').on('click', function (e) {  //a[href^="#"'] will target ALL the "a" elements which can
-      e.preventDefault();                       //affect the behavior of the other "a" elemets that are 
-      var target = this.hash;                   // NOT nav links.
-      var $target = $(target);
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 900, 'swing', function () {
-          window.location.hash = target;
-      });
+//===== NAVIGATION SCROLL =====
+$('.nav-link, .project-link').on('click', function (e) { //a[href^="#"'] will target ALL the "a" elements which can
+  e.preventDefault(); //affect the behavior of the other "a" elemets that are 
+  var target = this.hash; // NOT nav links.
+  var $target = $(target);
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+  }, 900, 'swing', function () {
+    window.location.hash = target;
   });
+});
 
 
 // ******* HEADER TYPE WRITER ********
@@ -121,7 +121,7 @@ function init() {
 }
 
 
-// SCROLL DOWN BOTTON
+// ===== HEADER SCROLL DOWN BOTTON =====
 (function () {
   'use strict';
 
@@ -144,9 +144,9 @@ function init() {
 })();
 
 
-//REMOVES SECTION-HEADING CLASS AND ADDS SECTION-HEADING-HORIZINTAL CLASS
+//===== REMOVES SECTION-HEADING CLASS AND ADDS SECTION-HEADING-HORIZINTAL CLASS =====
 $(function () {
-  $(window).bind("resize", function () {
+  $(window).bind("resize", function () { // THIS CODE IS NOT BEING USE. JUST KEEP IT FOR FURURE REFERANCE
     if ($(this).width() < 770) {
       $('.mobile').removeClass('section-heading-vertical').addClass('section-heading-horizontal')
     } else {
@@ -155,58 +155,42 @@ $(function () {
   }).resize();
 });
 
+
+//===== ANIMATION =====
 $(document).ready(function () {
 
   $('.js--wp-1').waypoint(function (direction) {
     $('.js--wp-1').addClass('animate__animated animate__fadeInUp');
-  
+
   }, {
     offset: '50%'
   });
 
   $('.js--wp-2').waypoint(function (direction) {
     $('.js--wp-2').addClass('animate__animated animate__fadeInLeft');
-  
+
   }, {
     offset: '50%'
   });
 
   $('.js--wp-3').waypoint(function (direction) {
     $('.js--wp-3').addClass('animate__animated animate__fadeInRight');
-  
+
   }, {
     offset: '50%'
   });
 
 });
 
-
+//===== TOGGLES THE PAGE BETWEEN INGLISH AND SPANISH
 var currentLanguage;
-
 var $languageChoice = $('.language-choice');
 
-$languageChoice.on('click', function() {
+$languageChoice.on('click', function () {
   $('.language').removeClass('active');
   currentLanguage = $(this).data('language');
   $languageChoice.removeClass('current');
   $(this).addClass('current');
   $('.' + currentLanguage).addClass('active');
-	$('body').removeClass().addClass(currentLanguage);
+  $('body').removeClass().addClass(currentLanguage);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
