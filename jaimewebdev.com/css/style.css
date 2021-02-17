@@ -375,7 +375,7 @@ a {
         margin-top: 35rem; } }
     @media only screen and (max-width: 37.5em) {
       .popup__right {
-        margin-top: 33rem; } }
+        margin-top: 28rem; } }
     @media only screen and (max-width: 25em) {
       .popup__right {
         margin-top: 27rem; } }
@@ -403,7 +403,7 @@ a {
         left: 5%; } }
     @media only screen and (max-width: 37.5em) {
       .popup__img {
-        width: 70%;
+        width: 80%;
         top: 10%;
         left: 6%; } }
     @media only screen and (max-width: 25em) {
