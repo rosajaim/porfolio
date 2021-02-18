@@ -76,24 +76,43 @@
     <header class="header bg-img" id="home">
 
         <!-- NAV BOTTON-->
-        <div class="menu-btn navbar-toggle">
+        <div class="menu-btn navbar-toggle wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
 
         <!-- LANGUAGE CONTROLER-->
-         <div class='language-controls'>
+        <div class="language-controls wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
             <div class="language-choices">
                 <a href='#0' data-language='english' class="language-choice current">
-                    <img class="language-controls--flag" src="./img/us-flag.png" alt="USA Flag">
+                    <!-- <img class="language-controls--flag" src="./img/us-flag.png" alt="USA Flag"> -->
+                    ENG
                 </a>
-                <a href='#0' data-language='spanish' class="language-choice">  
-                    <img class="language-controls--flag" src="./img/mexico-flag.png" alt="Mex Flag">           
+                <a href='#0' data-language='spanish' class="language-choice">
+                    <!-- <img class="language-controls--flag" src="./img/mexico-flag.png" alt="Mex Flag"> -->
+                    SPA
                 </a>
-            </div>         
+            </div>
         </div>
-    
+
+        <!-- SOCIAL MEDIA ICONS-->
+        <div class="social-container wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="social_links">
+                <a href="https://github.com/rosajaim" target="blank">
+                    <i class="fab fa-github white fa-2x"></i>
+                    <!-- test -->
+                </a>
+                <a href="https://www.linkedin.com/in/jaime-rosales-a70b0479/" target="blank">
+                    <i class="fab fa-linkedin white fa-2x"></i>
+                    <!-- test -->
+                </a>
+                <!-- <a href="./img/JR_resume.pdf" class="nav__link" download><i class="fas fa-file-download"></i>
+                        <p>Resume</p> 
+                </a> -->
+            </div>
+        </div>
+
         <!-- NAVIGATION -->
         <nav class="menu">
             <div class="menu-branding">
@@ -139,7 +158,7 @@
             </ul>
         </nav>
 
-         <!-- MAIN HEADING -->
+        <!-- MAIN HEADING -->
         <div class="main-heading">
             <h1 class="heading-primary">
                 Jaime <span class="text-secondary">Rosales</span>
@@ -170,7 +189,7 @@
     <main>
         <section class="section__about" id="about">
             <!-- <h2 class="heading-secondary" data-text="About me">About me</h2> -->
-            <div class="about__items ">
+            <div class="about__items wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
                 <div class="about__items-text language english active">
                     <h3><span>Hi, I'm Jaime.</span></h3>
                     <p>I'm an enthusiastic and detail-oriented front-end developer. I focus
@@ -795,7 +814,7 @@
                 <div class="container">
                     <div>
                         <a href="#" class="btn btn_projects">
-                            View more
+                            View more 
                         </a>
                     </div>
                 </div>
@@ -858,7 +877,7 @@
         <section class="section__contact" id="contact">
             <div class="language english active">
                 <h2 class="heading-secondary white wow animated fadeInDown" data-wow-duration="1s" data-wow-delay=".5s">
-                    Contact me
+                    Drop me a line
                 </h2>
             </div>
             <div class="language spanish">
@@ -926,7 +945,7 @@
     </main>
 
     <footer class="footer">
-        <ul class="nav">
+        <!-- <ul class="nav">
             <li class="nav__item">
                 <a href="https://github.com/rosajaim" target="blank">
                     <i class="fab fa-github white fa-2x"></i>
@@ -950,7 +969,7 @@
                 </div>
 
             </li>
-        </ul>
+        </ul> -->
         <div class="language english active">
             <p class="copyright">copyright &copy; 2021 by jaimewebdev.</p>
         </div>

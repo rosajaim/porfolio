@@ -24,8 +24,8 @@
     background: transparent;
     font-weight: 700;
 
-
     &:hover {
+        color: $color-black-2;
         font-weight: 900;
         letter-spacing: 1px;
 
@@ -278,6 +278,11 @@
             transition: all .2s;
             line-height: 1;
             z-index: 110;
+
+            @media only screen and (max-width: $bp-small) {
+              top: 2rem;
+        
+             }
         }
 
         &:hover {

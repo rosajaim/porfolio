@@ -22,7 +22,7 @@
 }
 
 @mixin bgHome-mobile {
-    background-image: linear-gradient(rgba($bg-overlay, .8), rgba($bg-overlay, .8)), $bg-home-mobile;
+    background-image: linear-gradient(rgba($bg-overlay, .7), rgba($bg-overlay, .7)), $bg-home-mobile;
 }
 
 @mixin bgContact {

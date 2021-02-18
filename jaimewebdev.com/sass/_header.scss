@@ -50,7 +50,6 @@ button.scroll_down:before {
   margin-left: -3px;
   background-color: #fff;
   border-radius: 100%;
-  // -webkit-animation: scroll_down_btn-animation 2s infinite;
   animation: scroll_down_btn-animation 2s infinite;
   box-sizing: border-box;
 }
@@ -108,54 +107,101 @@ button.scroll_down:before {
 
 }
 
-.language-choice img {
-  transform: scale(.9);
-  filter: brightness(90%);
+// .language-choice {
 
+// }
 
-}
-
-.language-choice.current img {
-  transform: scale(.9);
-  filter: brightness(100%);
+.language-choice.current {
+  color: $color-terceary-dark;
 
 }
 
 .language-controls {
-  padding: 1rem 0 0 1.5rem;
+  padding: 1.2rem 0 0 1.5rem;
 
   & a {
     color: $color-secondary;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-right: .3rem;
+
+    &:first-child {
+      border-right: 1px solid $color-secondary;
+    }
   }
 
-  &--flag {
-    display: inline-block;
-    margin-right: .5rem;
-    width: 3%;
-    height: auto;
-    filter: brightness(100%);
+  // &--flag {
+  //   display: inline-block;
+  //   margin-right: .5rem;
+  //   width: 3%;
+  //   height: auto;
+  //   filter: brightness(100%);
     
 
-    @media only screen and (max-width: $bp-medium) {
-      width: 5%;
-    }
+  //   @media only screen and (max-width: $bp-medium) {
+  //     width: 5%;
+  //   }
 
 
-    @media only screen and (max-width: $bp-medium2) {
-      width: 6%;
-    }
+  //   @media only screen and (max-width: $bp-medium2) {
+  //     width: 6%;
+  //   }
 
-    @media only screen and (max-width: $bp-small) {
-      width: 8%;
-    }
+  //   @media only screen and (max-width: $bp-small) {
+  //     width: 8%;
+  //   }
 
+
+  //   &:hover {
+  //     opacity: .8;
+  //   }
+
+  // }
+}
+
+.social-container {
+position: absolute;
+top: 88%;
+left: 97%;
+
+@media only screen and (max-width: $bp-large) {
+  left: 96%;
+}
+
+@media only screen and (max-width: $bp-medium) {
+  left: 95%;
+}
+
+@media only screen and (max-width: $bp-small) {
+  left: 93%;
+}
+
+@media only screen and (max-width: $bp-smaller) {
+  left: 90%;
+}
+
+@media only screen and (max-width: $bp-smaller2) {
+  left: 89%;
+}
+
+}
+
+
+.social_links a {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  transition: all .5s;
+
+  & i {
+    font-size: 1.8rem;
+    color: $color-white;
 
     &:hover {
-      opacity: .8;
+      color: $color-secondary;
     }
-
   }
+
+
 }
 
