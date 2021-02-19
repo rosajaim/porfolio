@@ -573,6 +573,12 @@ button.scroll_down:before {
     font-weight: 600;
     font-size: 1.2rem;
     margin-right: .3rem; }
+    @media only screen and (max-width: 43.57em) {
+      .language-controls a {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .language-controls a {
+        font-size: 1.5rem; } }
     .language-controls a:first-child {
       border-right: 1px solid #00ADDA; }
 
@@ -586,9 +592,12 @@ button.scroll_down:before {
   @media only screen and (max-width: 50em) {
     .social-container {
       left: 95%; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.57em) {
     .social-container {
       left: 93%; } }
+  @media only screen and (max-width: 37.5em) {
+    .social-container {
+      left: 90%; } }
   @media only screen and (max-width: 25em) {
     .social-container {
       left: 90%; } }
@@ -604,6 +613,12 @@ button.scroll_down:before {
   .social_links a i {
     font-size: 1.8rem;
     color: #fff; }
+    @media only screen and (max-width: 43.57em) {
+      .social_links a i {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .social_links a i {
+        font-size: 2rem; } }
     .social_links a i:hover {
       color: #00ADDA; }
 

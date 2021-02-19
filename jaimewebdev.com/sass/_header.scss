@@ -125,6 +125,14 @@ button.scroll_down:before {
     font-size: 1.2rem;
     margin-right: .3rem;
 
+    @media only screen and (max-width: $bp-medium2) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.5rem;
+    }
+
     &:first-child {
       border-right: 1px solid $color-secondary;
     }
@@ -172,8 +180,13 @@ left: 97%;
   left: 95%;
 }
 
-@media only screen and (max-width: $bp-small) {
+@media only screen and (max-width: $bp-medium2) {
   left: 93%;
+}
+
+
+@media only screen and (max-width: $bp-small) {
+  left: 90%;
 }
 
 @media only screen and (max-width: $bp-smaller) {
@@ -196,6 +209,14 @@ left: 97%;
   & i {
     font-size: 1.8rem;
     color: $color-white;
+
+    @media only screen and (max-width: $bp-medium2) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2rem;
+    }
 
     &:hover {
       color: $color-secondary;
