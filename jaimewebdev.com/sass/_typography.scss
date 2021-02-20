@@ -72,7 +72,11 @@
   width: 100%;
 
   display: flex;
-justify-content: center;  
+  justify-content: center;  
+
+@media only screen and (max-width: $bp-medium) {
+  margin-bottom: 6rem;
+}
 
   @media only screen and (max-width: $bp-small) {
     // padding: 3rem 0 6rem 0;

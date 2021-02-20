@@ -10,13 +10,17 @@
         background-attachment: fixed;
     }
 
-    @media only screen and (max-width: $bp-medium2) {
-        padding-bottom: 2rem;
+    @media only screen and (max-width: $bp-medium) {
+        padding: 4rem 0 0 0;
     }
 
-    @media only screen and (max-width: $bp-smaller2) {
-        padding-bottom: 2rem;
-    }
+    // @media only screen and (max-width: $bp-medium2) {
+    //     padding: 4rem 0 0 0;
+    // }
+
+    // @media only screen and (max-width: $bp-smaller2) {
+    //     padding-bottom: 2rem;
+    // }
 
 }
 

@@ -1,9 +1,9 @@
 .section__skills {
     background: $color-terceary;
     padding: 6rem 2rem 8rem 2rem;
-
-    @media only screen and (max-width: $bp-small) {
-        padding: 6rem 1rem 8rem 1rem;
+ 
+    @media only screen and (max-width: $bp-medium2) {
+        padding: 4rem 1rem 8rem 1rem;
      }
 
 }

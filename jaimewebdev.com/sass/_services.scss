@@ -1,23 +1,26 @@
 .section__services {
     padding: 6rem 3.5rem 8rem 3.5rem;
 
+    @media only screen and (max-width: $bp-medium) {
+        padding: 6rem 0 1rem 0;
  
+     }  
     @media only screen and (max-width: $bp-medium2) {
-       padding: 6rem 2rem 1rem 2rem;
+       padding: 4rem 2rem 1rem 2rem;
 
     }    
     
     @media only screen and (max-width: $bp-small) {
-        padding: 6rem 1.5rem 3rem 1.5rem;
+        padding: 3rem 1.5rem 3rem 1.5rem;
     
      }
 
     @media only screen and (max-width: $bp-smaller) {
-       padding: 6rem 1.3rem 3rem 1.3rem;
+       padding: 3rem 1.3rem 3rem 1.3rem;
     }
 
     @media only screen and (max-width: $bp-smaller2) {
-        padding: 6rem 1rem 3rem 1rem;
+        padding: 3rem 1rem 3rem 1rem;
         
      }
 
@@ -26,8 +29,6 @@
 
 .services__container {
     display: flex; 
-    // padding: 2rem;
-
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
@@ -37,7 +38,6 @@
 .services__content {
     display: flex;
     flex-flow: column;
-    // padding: 0rem 1rem 0 1rem;
     margin: 0 auto;
     width: 100%;
 
@@ -82,7 +82,14 @@
         width: 85%;
 
         @media only screen and (max-width: $bp-medium) {
-            margin-top: 1rem;   
+            margin-top: 1rem;
+            padding-top: 0;
+            width: 92%;   
+        }
+
+        @media only screen and (max-width: $bp-medium2) {
+            margin-top: 1rem;
+            width: 100%;   
         }
     }
 }
