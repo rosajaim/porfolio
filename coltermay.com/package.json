@@ -1,0 +1,16 @@
+{
+  "name": "coltermay.com",
+  "version": "1.0.0",
+  "description": "colter's portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devServer": "live-server",
+    "start": "npm-run-all --parallel devServer watch:sass"
+  },
+  "author": "jaime rosales",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
