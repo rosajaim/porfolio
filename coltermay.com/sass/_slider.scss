@@ -3,6 +3,7 @@
     overflow: hidden;
     height: 100vh;
     width: 100vw;
+    z-index: -8;
 }
 
 .slide {
@@ -16,8 +17,8 @@
 
     &__content {
         position: absolute;
-        color: #333;
-        background-color: rgba(255, 255, 255, 0.8);
+        color: #fff;
+        background-color: rgba(14, 4, 4, 0.699);
         padding: 30px;
         bottom: 70px;
         left: -600px;
@@ -26,6 +27,7 @@
 
         & h1 {
             margin-bottom: 10px;
+            color: $color-primary;
         }
     }
 
@@ -44,21 +46,21 @@
 
 
     &:first-child {
-        background: url(../img/img1.jpg) no-repeat center center/cover;
+        background: url(../img/EasterSunrise-min.jpg) no-repeat center center/cover;
     }
 
     &:nth-child(2) {
-        background: url(../img/img2.jpg) no-repeat center center/cover;
+        background: url(../img/EasterSunset-min.JPEG) no-repeat center center/cover;
 
     }
 
     &:nth-child(3) {
-        background: url(../img/img3.jpg) no-repeat center center/cover;
+        background: url(../img/TheTowers-min.jpg) no-repeat center center/cover;
 
     }
 
     &:nth-child(4) {
-        background: url(../img/img4.jpg) no-repeat center center/cover;
+        background: url(../img/ChasingDusk-min.jpg) no-repeat center center/cover;
 
     }
 
@@ -68,7 +70,7 @@
     }
 
     &__buttons button {
-        border: 2px solid #fff;
+        border: 2px solid $color-primary;
         background-color: transparent;
         color: #fff;
         font-size: 20px;

@@ -137,34 +137,6 @@ button.scroll_down:before {
       border-right: 1px solid $color-secondary;
     }
   }
-
-  // &--flag {
-  //   display: inline-block;
-  //   margin-right: .5rem;
-  //   width: 3%;
-  //   height: auto;
-  //   filter: brightness(100%);
-    
-
-  //   @media only screen and (max-width: $bp-medium) {
-  //     width: 5%;
-  //   }
-
-
-  //   @media only screen and (max-width: $bp-medium2) {
-  //     width: 6%;
-  //   }
-
-  //   @media only screen and (max-width: $bp-small) {
-  //     width: 8%;
-  //   }
-
-
-  //   &:hover {
-  //     opacity: .8;
-  //   }
-
-  // }
 }
 
 .social-container {
