@@ -16,7 +16,7 @@
     background-color: #e2ca7b; }
 
 .heading__secondary {
-  font-size: 1.8em;
+  font-size: 1.7em;
   text-transform: uppercase;
   color: #e2ca7b;
   letter-spacing: 1.8px;
@@ -45,10 +45,14 @@
     bottom: 70px;
     left: -600px;
     opacity: 0;
+    font-weight: 200;
+    line-height: 1.5;
+    letter-spacing: 1.2;
     width: 600px; }
     .slide__content h1 {
       margin-bottom: 10px;
-      color: #e2ca7b; }
+      color: #e2ca7b;
+      font-weight: 400; }
   .slide.current {
     opacity: 1; }
   .slide.current .slide__content {
@@ -105,8 +109,10 @@
   box-sizing: inherit; }
 
 body {
-  font-family: "Roboto", sans-serif;
-  background: #070707; }
+  font-family: "Roboto", sans-serif; }
+
+.mg-lb-lg {
+  margin: 0 0 87px 77px; }
 
 .main__nav {
   position: absolute;
@@ -155,7 +161,7 @@ body {
       top: 100%;
       left: 0; }
     .nav__link:hover {
-      color: #525151; }
+      color: #a6a6a6; }
 
 .nav__item:hover .nav__link:before {
   width: 50%;
@@ -195,7 +201,8 @@ body {
     background-color: #e2ca7b; }
 
 .section__about {
-  padding: 60px 0 50px 0; }
+  padding: 60px 0 50px 0;
+  background-color: #000000; }
 
 .about {
   display: flex;
@@ -204,10 +211,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 40%;
+    width: 80%;
     padding: 40px 40px 20px 40px;
     line-height: 1.6;
     font-weight: 200;
+    font-size: 1.2em;
     letter-spacing: 1.2px;
     color: #a6a6a6; }
   .about__name {
@@ -216,12 +224,111 @@ body {
     margin-top: 45px;
     align-self: right;
     text-align: right; }
-  .about__name p {
-    letter-spacing: none;
-    font-size: .8em;
-    letter-spacing: 1.5px; }
+    .about__name p {
+      letter-spacing: none;
+      font-size: .8em;
+      letter-spacing: 1.4px;
+      font-weight: 400; }
   .about__photo img {
     position: relative;
-    top: -55px;
-    width: 90%;
+    top: -67px;
+    left: 0;
+    width: 100%;
     display: inline-block; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto; }
+  .timeline h2 {
+    color: #e2ca7b;
+    margin-bottom: 10px; }
+  .timeline h3 {
+    color: #5b5b5b; }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #e2ca7b;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; }
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 43.5%; }
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -5px;
+  background-color: #000000;
+  border: 2px solid #e2ca7b;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1; }
+
+/* Place the container to the left */
+.left {
+  left: 0; }
+
+/* Place the container to the right */
+.right {
+  left: 49.7%; }
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white; }
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent; }
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -7px; }
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+  color: #5b5b5b;
+  font-weight: 400; }
+  .content ul {
+    margin: 10px 0 0 20px; }
+  .content li :first-child {
+    margin-bottom: 30px; }
+
+.mentor {
+  color: #5b5b5b;
+  font-weight: 700; }

@@ -17,17 +17,21 @@
 
     &__content {
         position: absolute;
-        color: #fff;
-        background-color: rgba(14, 4, 4, 0.699);
+        color: $color-white;
+        background-color: $color-black-bg;
         padding: 30px;
         bottom: 70px;
         left: -600px;
         opacity: 0;
+        font-weight: 200;
+        line-height: 1.5;
+        letter-spacing: 1.2;
         width: 600px;
 
         & h1 {
             margin-bottom: 10px;
             color: $color-primary;
+            font-weight: 400;
         }
     }
 

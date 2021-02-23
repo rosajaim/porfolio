@@ -10,7 +10,7 @@
 }
 body {
     font-family: $font-primary;
-    background: rgb(7, 7, 7);
+    // background: rgba(14, 4, 4, 0.699);
     // color: #fff;
     // line-height: 1.5;
 }
@@ -20,4 +20,8 @@ body {
 //     visibility: visible !important 
 // }
 
+.mg-lb-lg {
+    margin: 0 0 87px 77px;
+
+}
 
