@@ -1,0 +1,49 @@
+.section__about {
+    padding: 60px 0 50px 0;
+}
+
+.about {
+    display: flex;
+    margin-left: 50px;
+    // flex-direction: column-reverse; //mobile version
+    // flex-direction: row-reverse;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+
+        width: 40%;
+        padding: 40px 40px 20px 40px;
+        line-height: 1.6;
+        font-weight: 200;
+        letter-spacing: 1.2px;
+        color: #a6a6a6;
+
+    }
+
+    &__name {
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-top: 45px;
+        align-self: right;
+        text-align: right;
+           
+    
+    }
+
+    &__name p {    
+        letter-spacing: none;
+        font-size: .8em;
+        letter-spacing: 1.5px;
+    }
+
+    &__photo img {
+        position: relative;
+        top: -55px;
+        width: 90%;
+        display: inline-block;
+        // overflow: hidden;
+    }
+}

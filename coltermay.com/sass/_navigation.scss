@@ -5,8 +5,8 @@
     width: 100%;
     height: 100px;
     display: flex;
-    background-color: rgba(14, 4, 4, 0.699);
-    ;
+    background-color: rgba(14, 4, 4, 0.788);
+    overflow: hidden;
     justify-content: space-between;
     align-items: center;
 
@@ -33,17 +33,42 @@
     }
 
     &__link {
+        position: relative;
         display: inline-block;
-        color: red;
         margin-right: 40px;
         text-decoration: none;
         font-size: 1em;
         color: $color-primary;
-        font-weight: 200;
+        font-weight: 300;
         text-transform: uppercase;
-        transition: all 6s;
+        transition: all .4s;
+
+        &:before {
+            content: '';
+		    width: 0;
+		    height: 2px;
+            margin-top: 5px;
+		    background-color: $color-primary;
+		    position: absolute;
+		    top: 100%;
+		    left: 0;
+        }
+
+        &:hover {
+            color: rgb(82, 81, 81);
+        }
 
     }
+}
+
+.nav__item:hover .nav__link:before {
+    width: 50%;
+    transform: translatex(100%);
+    transition: .5s;
+}
+
+.active {
+    color: $color-white;
 }
 
 .social__icons a {
@@ -64,29 +89,27 @@
     position: absolute;
     top: 80%;
     left: 94%;
+    transform: translate(0, 0) rotate(270deg);
+
+
 
     & p {
         font-weight: 300;
         color: $color-primary;
-        // background-color: rgba(14, 4, 4, 0.699);
         text-transform: uppercase;
         font-size: 13px;
         letter-spacing: 7px;
-        transform: translate(0, 0) rotate(270deg);
-
     }
 
     &::after {
         content:'';
-        position: relative;
-        top: 90%;
-        left: 80%;
-        width: 70px;
-        height: 55px;
-        background-color:chartreuse;
-        transform: translate(30px, 20px) rotate(90deg);
-
-        
+        position: absolute;
+        bottom: 40%;
+        left: -60%;
+        width: 40px;
+        height: 1px;
+        background-color: $color-primary;
+        // transform: translate(30px, 20px) rotate(177deg);
     }
 
 
