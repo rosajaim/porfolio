@@ -1,11 +1,12 @@
 .section__about {
-    padding: 60px 0 50px 0;
+    // padding: 0 0 50px 0;
     background-color: $color-black;
 }
 
 .about {
     display: flex;
     margin-left: 50px;
+    margin-top: 17px;
     // flex-direction: column-reverse; //mobile version
     // flex-direction: row-reverse;
 
@@ -13,11 +14,11 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 80%;
+        width: 60%;
         padding: 40px 40px 20px 40px;
-        line-height: 1.6;
+        line-height: 1.5;
         font-weight: 200;
-        font-size: 1.2em;
+        font-size: 1.1em;
         letter-spacing: 1.2px;
         color: $color-grey-light;
 
@@ -33,144 +34,139 @@
         & p {    
             letter-spacing: none;
             font-size: .8em;
-            letter-spacing: 1.4px;
+            letter-spacing: 1.2px;
             font-weight: 400;
         }
     
     }
 
-   
-
+ /* ABOUT IMG REVEALING ON SCROLL */
     &__photo img {
-        position: relative;
-        // top: -60px;
-        top: -67px;
-        left: 0;
-        // width: 90%;
-        width: 100%;
-        display: inline-block;
+       @include aboutImgSetings;
+        filter: brightness(.2); 
+        // filter: brightness(1);  // <-- delete this and uncomment the above for revealing effect 
+
+
+    }
+
+    &__photo-js img {
+       @include aboutImgSetings;
+        filter:brightness(1);
     }
 }
 
 
-
-/* The actual timeline (the vertical ruler) */
+/* **********  TIMELINE VERTICAL RULER ***********/
 .cv {
-//    background-color: aqua; 
+    background-image: linear-gradient(rgba($color-black, 2), rgba($color-black-bg, .7)),url(../img/mountain-min.jpg);
+    // background-image: radial-gradient(rgba($color-black, .1), rgba($color-black, .1)),url(../img/mountain-min.jpg);
+    // background-image: radial-gradient(circle, rgba(0, 0, 0, 0.808) 45%, rgb(0, 0, 0) 65%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), url(../img/mountain-min.jpg);
+
+    background-size:cover;
+    background-repeat: none;
 }
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 
+    &::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: $color-primary;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+      }
+
     & h2 {
         color: $color-primary;
         margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        font-weight: 400;
     }
 
     & h3 {
-        color: $color-grey-dark;
+        color: $color-white;
     }
 
   }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    background-color: $color-primary;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
+    
+  /* CONTAINER AROUND CONTENT */
   .container {
-    padding: 10px 40px;
+    padding: 0 40px;
     position: relative;
+    padding-bottom: 40px;
     background-color: inherit;
     width: 43.5%;
+
+ /* DOTS ON TIMELINE */
+    &::after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      right: -5px;
+      background-color: $color-primary;
+      border: 2px solid $color-primary;
+      top: 20px;
+      border-radius: 50%;
+      z-index: 1;
+
+    }
   }
   
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    right: -5px;
-    background-color: $color-black;
-    border: 2px solid $color-primary;
-    top: 20px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
+  /* PLACE CONTAINER TO THE LEFT */
   .left {
     left: 0;
   }
   
-  /* Place the container to the right */
+  /* PLACE CONTAINER TO THE right */
   .right {
     left: 49.7%;
   }
   
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
   
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
+  /* FIX DOT ON THE RIGHT SIDE*/
   .right::after {
     left: -7px;
   }
   
-  /* The actual content */
+  /* CONTENT */
   .content {
     padding: 20px 30px;
-    background-color: $color-white;
+    // background-color: $color-white; //for mobile version 
     position: relative;
     border-radius: 6px;
-    color: $color-grey-dark;
-    font-weight: 400;
+    font-weight: 300;
+    color: $color-grey-light;
 
     & ul {
-        margin: 10px 0 0 20px;
+        margin: 5px 0 0 20px;
     }
 
-    & li :first-child {
-        margin-bottom: 30px;
+    & li:not(:last-child){
+        margin-bottom: 5px;
+
     }
         
     }
 
+.mentors__box {
+    margin-left: 55px;
+    margin-top: 30px;
+    overflow: hidden;
+
+    & h2 {
+        color: $color-white;
+    }
+}
 .mentor {
-    color:$color-grey-dark;
-    font-weight: 700;
+    color:$color-primary;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1px;
 }

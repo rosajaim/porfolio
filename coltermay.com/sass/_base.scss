@@ -8,20 +8,28 @@
 *::after {
     box-sizing: inherit;
 }
+
 body {
     font-family: $font-primary;
-    // background: rgba(14, 4, 4, 0.699);
-    // color: #fff;
-    // line-height: 1.5;
+    // background-color: $color-black;
+    overflow-x: hidden;
+  
 }
+
 
 // * { 
 //     outline: 1px red solid !important; 
 //     visibility: visible !important 
 // }
 
-.mg-lb-lg {
-    margin: 0 0 87px 77px;
 
-}
+// UTILITY CLASS
+.mg-lb-lg {margin: 0 0 50px 77px;}
+.mg-bottom-lg {margin-bottom: 90px;}
+.mg-top-lg {margin-top: 80px;}
+.align-right {text-align: right;}
+.li-dots-right {direction: rtl; unicode-bidi: embed;}
+.grey {color: $color-grey-light;}
+
+
 

@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/1b4e84012c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 
     <title>Colter May</title>
+
 </head>
 
 <body>
@@ -28,7 +30,7 @@
             <a class="logo" href="#">Colter <span class="active">May</span>.</a>
             <ul class="nav">
                 <li class="nav__item"><a class="nav__link active" href="#">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#artWork">Art work</a></li>
+                <li class="nav__item"><a class="nav__link" href="#art">Art work</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
@@ -84,7 +86,7 @@
 
     <!-- ====== SECTION ABOUT ====== -->
     <section class="section__about" id="about">
-        <h1 class="heading__primary">About</h1>
+        <h2 class="heading__secondary" data-text="01">About</h2>
         <div class="about">
             <div class="about__text">
                 <p>
@@ -102,9 +104,9 @@
                 </p>
                 <div class="about__name">
                     <p>Wildlife ispired artist</p>
-                    <h2 class="heading__secondary">
+                    <h3 class="heading__terceary">
                         Colter <span class="active">May</span>
-                    </h2>
+                    </h3>
                 </div>
             </div>
             <div class="about__photo">
@@ -113,31 +115,36 @@
         </div>
 
         <!-- ====== CV TIMELINE ====== -->
+        <h2 class="heading__secondary" data-text="02">Curriculum Vitae</h2>
         <div class="cv">
-            <h1 class="heading__primary mg-lb-lg">
-                Curriculum Vitae
-            </h1>
+            <div class="mentors__box">
+                <div class="content left">
+                    <h3 class="heading__terceary grey">Mentors</h3>
+                    <p><span class="mentor">Kimball Geisler</span> &ndash; Plein Air
+                        Internship</p>
+                    <p><span class="mentor">Brian Astle</span> &ndash; Painting, Brigham
+                        Young University - Idaho</p>
+                    <p><span class="mentor">Leon Parson</span> &ndash; Painting &
+                        Drawing, Brigham Young University - Idaho</p>
+                    <p><span class="mentor">Barbara Crawford</span> &ndash; Painting &
+                        Drawing, Southern Virginia University</p>
+                    <p><span class="mentor">Bryce Pendleton</span>&ndash; Design,
+                        Southern Virginia University</p>
+                </div>
+            </div>
             <div class="timeline">
-                <!-- <div class="container right">
-                    <div class="content">
-                        <h2>Shows</h2>
-                        <h3>2018</h3>
-                        <ul>
-                            <li>Best in Show, Utah County State Fair, <q>Pastel Horse</q> oil pastel</li>
-                            <li>People’s Choice Award, Southern Virginia University Student Art Show,
-                                <q>My Fish: Dog</q> Ink and colored pencil</li>
-                        </ul>
-                    </div>
-                </div> -->
-                <div class="container left">
+                <div class="container right">
                     <div class="content">
                         <h2>Shows</h2>
                         <h3>2020</h3>
                         <ul>
                             <li><q>Student Show Exhibit</q>, Brigham Young University - Idaho</li>
-                            <li><q>Introspection</q>, Yellowstone Teton Gallery, St. Anthony, Idaho</li>
-                            <li><q>Winter Fine Arts Show</q>, Yellowstone Teton Gallery, St. Anthony, Idaho</li>
-                            <li>Idaho Arts Council National Juried Exhibition, Idaho Falls, Idaho</li>
+                            <li><q>Introspection</q>, Yellowstone Teton Gallery, St. Anthony,
+                                Idaho</li>
+                            <li><q>Winter Fine Arts Show</q>, Yellowstone Teton Gallery, St.
+                                Anthony, Idaho</li>
+                            <li>Idaho Arts Council National Juried Exhibition, Idaho Falls, Idaho
+                            </li>
                             <li>Art Grows Rexburg, Rexburg Idaho</li>
                             <li>Shades of Red, Camelback Gallery</li>
                             <li>Spring City Plein Air Competitio</li>
@@ -145,49 +152,66 @@
                         </ul>
                     </div>
                 </div>
-                <div class="container right">
+                <div class="container left">
                     <div class="content">
-                        <h2>Shows</h2>
-                        <h3>2018-2019</h3>
-                        <ul>
-                            <li><q>Student Show Exhibit</q>, Brigham Young University - Idaho</li>
-                            <li> Art Grows Rexburg, Rexburg Idaho</li>
-                            <li><q>Book of Mormon Art Show</q>Special Collections & Archives, Brigham Young University - Idaho</li>
-                            <li> Student Art Show, Southern Virginia University</li>
+                        <h2 class="align-right">Shows</h2>
+                        <h3 class="align-right">2018-2019</h3>
+                        <ul class="align-right">
+                            <li class="li-dots-right"><q>Student Show Exhibit</q>, Brigham Young University - Idaho</li>
+                            <li class="li-dots-right"> Art Grows Rexburg, Rexburg Idaho</li>
+                            <li class="li-dots-right"><q>Book of Mormon Art Show</q>Special Collections & Archives,
+                                Brigham Young University -
+                                Idaho</li>
+                            <li class="li-dots-right"> Student Art Show, Southern Virginia University</li>
                         </ul>
                     </div>
                 </div>
-                <div class="container left">
+                <div class="container right">
                     <div class="content">
                         <h2>Awards</h2>
                         <h3>2020-2021</h3>
                         <ul>
                             <li>Finalist, Camelback Gallery, Shades of Red Show</li>
                             <li>First Place Amateur, Art Grows Rexburg</li>
-                            <li>Art Talent Award Scholarship, Brigham Young University - Idaho</li>
+                            <li>Art Talent Award Scholarship, Brigham Young University - Idaho
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2 class="align-right">Awards</h2>
+                        <h3 class="align-right">2019</h3>
+                        <ul class="align-right">
+                            <li class="li-dots-right">Cover Award, The Review, Southern Virginia University Publication,
+                                Release, Cyanotype</li>
+                            <li class="li-dots-right"> Reserve Grand Champion, Madison County Fair</li>
+                            <li class="li-dots-right">Best in Catagory, Book Arts, “Book of Mormon Art Show” Special
+                                Collections & Archives,
+                                Brigham Young University - Idaho</li>
                         </ul>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
                         <h2>Awards</h2>
-                        <h3>2019</h3>
+                        <h3>2018</h3>
                         <ul>
-                            <li>Cover Award, The Review, Southern Virginia University Publication, Release, Cyanotype</li>
-                            <li> Reserve Grand Champion, Madison County Fair</li>
-                            <li>Best in Catagory, Book Arts, “Book of Mormon Art Show” Special Collections & Archives, 
-                                Brigham Young University - Idaho</li>
+                            <li>Best in Show, Utah County State Fair, <q>Pastel Horse</q> oil
+                                pastel</li>
+                            <li>People’s Choice Award, Southern Virginia University Student Art
+                                Show,
+                                <q>My Fish: Dog</q> Ink and colored pencil</li>
                         </ul>
                     </div>
                 </div>
                 <div class="container left">
                     <div class="content">
-                        <h2>Awards</h2>
-                        <h3>2018</h3>
-                        <ul>
-                            <li>Best in Show, Utah County State Fair, <q>Pastel Horse</q> oil pastel</li>
-                            <li>People’s Choice Award, Southern Virginia University Student Art Show,
-                                <q>My Fish: Dog</q> Ink and colored pencil</li>
+                        <h2 class="align-right">Education</h2>
+                        <h3 class="align-right">2019-present</h3>
+                        <ul class="align-right">
+                            <li class="li-dots-right">B.F.A. Painting, Brigham Young University - Idaho, Rexburg, Idaho
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -195,31 +219,91 @@
                     <div class="content">
                         <h2>Education</h2>
                         <h3>2017-2018</h3>
-                        <p> Southern Virginia University, Art Major, Concentration Graphic Design </p>
-                    </div>
-                </div>
-                <div class="container left">
-                    <div class="content">
-                        <h2>Mentors</h2>
                         <ul>
-                            <li><span class="mentor">Kimball Geisler</span> &ndash; Plein Air Internship</li>
-                            <li><span class="mentor">Brian Astle</span> &ndash; Painting, Brigham Young University - Idaho</li>
-                            <li><span class="mentor">Leon Parson</span> &ndash; Painting & Drawing, Brigham Young University - Idaho</li>
-                            <li><span class="mentor">Barbara Crawford</span> &ndash; Painting & Drawing, Southern Virginia University</li>
-                            <li><span class="mentor">Bryce Pendleton</span>&ndash; Design, Southern Virginia University</li>
-
+                            <li> Southern Virginia University, Art Major, Concentration Graphic Design </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <section class="about-cv">
 
+    <!-- ====== SECTION ART ====== -->
+    <section class="section__art" id="art">
+        <h2 class="heading__secondary mg-bottom-lg" data-text="03">My Art Work</h2>
+        <div class="art__slider">
+            <div class="slider-wrapper flex">
+                <div class="art__slide flex">
+                    <div class="slide-image slider-link prev">
+                        <img src="./img/native-girl.jpg">
+                    <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">30.07.2017.</div>
+                        <div class="slide-title">Warrior</div>
+                        <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
+                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
+                            laoreet, per rebum omittam ex. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="art__slide flex">
+                    <div class="slide-image slider-link next"><img src="./img/ram.jpg">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">30.08.2017.</div>
+                        <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                        <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
+                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
+                            laoreet, per rebum omittam ex. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="art__slide flex">
+                    <div class="slide-image slider-link next"><img src="./img/ram.jpg">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">30.09.2017.</div>
+                        <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                        <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
+                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
+                            laoreet, per rebum omittam ex. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+                <div class="art__slide flex">
+                    <div class="slide-image slider-link next"><img src="./img/ram.jpg">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">30.10.2017.</div>
+                        <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                        <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
+                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
+                            laoreet, per rebum omittam ex. </div>
+                        <div class="slide-more">READ MORE</div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrows">
+                <a href="#" title="Previous" class="arrow slider-link prev"></a>
+                <a href="#" title="Next" class="arrow slider-link next"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__contact" id="contact">
+        <h2 class="heading__secondary" data-text="04">Contact</h2>
     </section>
 
     <script src="./js/main.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
 </body>
 
 </html>

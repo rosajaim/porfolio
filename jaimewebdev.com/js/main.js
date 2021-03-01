@@ -40,7 +40,7 @@ $('.nav-item').click(function () {
 });
 
 //===== NAVIGATION SCROLL =====
-$('.nav-link, .project-link').on('click', function (e) { //a[href^="#"'] will target ALL the "a" elements which can
+$('.nav-link, .project-link').on('click', function (e) { //a['href^="#"'] will target ALL the "a" elements which can
   e.preventDefault(); //affect the behavior of the other "a" elemets that are 
   var target = this.hash; // NOT nav links.
   var $target = $(target);
