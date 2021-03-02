@@ -2,7 +2,7 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false;
+const auto = true;
 const intervalTime = 4000;
 let slideInterval;
 
@@ -77,7 +77,7 @@ $('.nav__link').on('click',function (e) {  //a['href^="#"'] will target ALL the 
 // ========== ABOUT IMAGE REVEALING EFFECT ON SCROLLING ==========
 $(window).scroll(function() {    
     var imgEffect = $(window).scrollTop(); 
-    if (imgEffect > 650) {
+    if (imgEffect > 1350) {
         $(".about__photo").addClass("about__photo-js");
     }
     else {
@@ -86,11 +86,12 @@ $(window).scroll(function() {
 })
 
 
+// ========== ART SLIDER ==========
     $(document).ready(function() {
       
       var s           = $('.art__slider'),
           sWrapper    = s.find('.slider-wrapper'),
-          sItem       = s.find('.art__slide'),
+          sItem       = s.find('.slide-content'),
           btn         = s.find('.slider-link'),
           sWidth      = sItem.width(),
           sCount      = sItem.length,
@@ -135,4 +136,3 @@ $(window).scroll(function() {
     });
   (jQuery);
   
-  $('.overlay').addClass('overlay-blue');
