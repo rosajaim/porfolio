@@ -1,9 +1,14 @@
 @mixin aboutImgSetings {
     position: relative;
     top: -190px;
-    left: 0;
-    width: 90%;
+    left: 50px;
+    width: 80%;
     display: inline-block;
     transition: 1s;
 
+}
+
+@mixin navBg {
+    background-color: rgba(14, 4, 4, 0.788);
+    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.75);
 }

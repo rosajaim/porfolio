@@ -1,6 +1,5 @@
 /* **** STICKY NAVIGATION ***** */
 $(document).ready(function () {
-
     $('.js--section__features').waypoint(function (direction) {
         if (direction == "down") {
             $('nav').addClass('sticky');

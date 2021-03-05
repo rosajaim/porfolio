@@ -88,13 +88,7 @@
   }
 
   .modal-content img {
-    // border:solid 2px;
-    // border-bottom-color:#ffe;
-    // border-left-color:#eed;
-    // border-right-color:#eed;
-    // border-top-color:#ccb;
-    // max-height:100%;
-    // max-width:100%;
+ 
   }
   
   /* Responsive layout - makes a two.gallery__content-layout instead of four.gallery__contents */
@@ -115,19 +109,16 @@
 
 
     .modal {
-        // position: absolute;
-		background-color: #f6f5ee;
-	//   background-image: url(../img/moda-bg.jpg);
-	//   background-size: contain;
+	    background-color: #f6f5ee;
       display:none;
       z-index:2;
       position:fixed;
       top:50%;
       left:50%;
       transform:translate(-50%, -50%);
-      width:90vw;
-      max-width:1200px;
-      height:90vh;
+      width: 95vw;
+      max-width:1300px;
+      height:95vh;
       overflow-y:auto;
       border-radius: 5px;
       animation: top-to-down .5s;

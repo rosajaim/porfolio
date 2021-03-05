@@ -138,6 +138,20 @@ body {
 .black {
   color: #000000; }
 
+.long-horizontal img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%; }
+
+.long-vertical img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 37%; }
+
 .main__nav {
   position: absolute;
   top: 0;
@@ -204,25 +218,15 @@ body {
   .social__icons a:hover {
     color: #fff; }
 
-.scroll {
-  position: absolute;
-  top: 80%;
-  left: 94%;
-  transform: translate(0, 0) rotate(270deg); }
-  .scroll p {
-    font-weight: 300;
-    color: #e2ca7b;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 7px; }
-  .scroll::after {
-    content: '';
-    position: absolute;
-    bottom: 40%;
-    left: -60%;
-    width: 40px;
-    height: 1px;
-    background-color: #e2ca7b; }
+.sticky {
+  position: fixed;
+  background: rgba(14, 4, 4, 0.699);
+  animation-name: stick;
+  animation-duration: .4s;
+  animation-timing-function: ease;
+  transition: background-color 1000ms ease-out;
+  transition-delay: 125ms;
+  z-index: 99; }
 
 .section__about {
   background-color: #000000; }
@@ -257,16 +261,16 @@ body {
   .about__photo img {
     position: relative;
     top: -190px;
-    left: 0;
-    width: 90%;
+    left: 50px;
+    width: 80%;
     display: inline-block;
     transition: 1s;
     filter: brightness(0.2); }
   .about__photo-js img {
     position: relative;
     top: -190px;
-    left: 0;
-    width: 90%;
+    left: 50px;
+    width: 80%;
     display: inline-block;
     transition: 1s;
     filter: brightness(1); }
@@ -483,9 +487,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw;
-  max-width: 1200px;
-  height: 90vh;
+  width: 95vw;
+  max-width: 1300px;
+  height: 95vh;
   overflow-y: auto;
   border-radius: 5px;
   animation: top-to-down .5s;

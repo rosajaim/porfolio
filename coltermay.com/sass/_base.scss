@@ -1,3 +1,8 @@
+// * { 
+//     outline: 1px red solid !important; 
+//     visibility: visible !important 
+// }
+
 * {
     margin: 0;
     padding: 0;
@@ -13,17 +18,7 @@
 body {
     font-family: $font-primary;
 
-    // background-color: $color-black;
-    // overflow: hidden;
-  
 }
-
-
-
-// * { 
-//     outline: 1px red solid !important; 
-//     visibility: visible !important 
-// }
 
 
 // UTILITY CLASS
@@ -36,6 +31,25 @@ body {
 
 .grey {color: $color-grey-light;}
 .black {color:$color-black;}
+
+.long-horizontal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+}
+
+.long-vertical img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 37%;
+
+}
+
+
 
 
 
