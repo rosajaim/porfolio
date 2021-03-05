@@ -20,11 +20,6 @@
 
 <body>
     <header class="header">
-        <!-- ====== SCROLL BANNER ====== -->
-        <div class="scroll">
-            <p>scroll</p>
-        </div>
-
         <!-- ====== NAVIGATION ====== -->
         <nav class="main__nav">
             <a class="logo" href="#">Colter <span class="active">May</span>.</a>
@@ -86,86 +81,406 @@
 
     <!-- ====== SECTION ART ====== -->
     <section class="section__art" id="art">
-        <h2 class="heading__secondary mg-bottom-lg" data-text="01">My Art Work</h2>
-        <div class="art__slider">
-            <div class="slider-wrapper">
-                <div class="slide-content">
-                    <div class="slide-image prev">
-                        <img src="./img/native-girl.jpg">
-                    </div>
-                    <div class="slide-description">
-                        <p class="slide-date">30.07.2016.</p>
-                        <h3 class="heading__terceary mg-bottom-sm black">Warrior</h3>
-                        <p class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
-                            laoreet, per rebum omittam ex. </p>
-                        <a href="#warrior-popup" class="slide__more popup__link">Show frame</a>
-                    </div>
-                </div>
-                  <!-- ART POPUP -->
-                  <!-- <div class="popup" id="warrior-popup">
-                    <a href="#art" class="popup__close">&times;</a>
-                    <div class="popup__img">
-                        <img src="./img/native-girl.jpg" alt="" class="frame">
-                    </div>
-                </div> -->
+        <h2 class="heading__secondary mg-bottom-lg" data-text="01">My Work</h2>
+    </section>
 
-                <div class="slide-content">
-                    <div class="slide-image prev">
-                        <img src="./img/ram.jpg">
+    <section class="gallery">
+        <div id="overlay"></div>
+        <div class="gallery__row">
+            <div class="gallery__content">
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/ram.jpg" alt="Ram" >
+                        <div class="read-more">Read more..</div>
                     </div>
-                    <div class="slide-description">
-                        <p class="slide-date">30.07.2016.</p>
-                        <h3 class="heading__terceary mg-bottom-sm black">Warrior</h3>
-                        <p class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
-                            laoreet, per rebum omittam ex. </p>
-                            <a href="#rum-popup" class="slide__more popup__link">Show frame</a>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 1</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/ram.jpg" alt="Ram" class="frame">
                         </div>
+                    </div>
                 </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/AfterShootingLigh-min.jpg" alt="After Shooting Ligh">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 2</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/AfterShootingLigh-min.jpg" alt="After Shooting Ligh" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/native-girl.jpg" alt="Native Girl">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 3</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/native-girl.jpg" alt="Native Girl" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/bewarethegriz-min.jpg" alt="Bear">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 4</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/bewarethegriz-min.jpg" alt="Bear" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/TheTowers-min.jpg" alt="The Towers">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/TheTowers-min.jpg" alt="The Towers" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="https://www.w3schools.com/w3images/mist.jpg"> -->
+                <!-- <img src="https://www.w3schools.com/w3images/paris.jpg"> -->
+            </div>
 
-                 <!-- ART POPUP -->
-                  <!-- <div class="popup" id="rum-popup">
-                    <a href="#art" class="popup__close">&times;</a>
-                    <div class="popup__img">
+            <div class="gallery__content">
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/EasterSunrise-min.jpg" alt="Easter Sunrise">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/EasterSunrise-min.jpg" alt="Easter Sunrise" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/native-girl.jpg" alt="Native Girl">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/native-girl.jpg" alt="Native Girl" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/ComplementarySkies-min.jpg" alt="Skies">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/ComplementarySkies-min.jpg" alt="Skies" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/EasterSunset-min.JPEG" alt="Easter Sunset">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/EasterSunset-min.JPEG" alt="Easter Sunset" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/pink-fire-min.png" alt="Pink Fire" >
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/pink-fire-min.png" alt="pink Fire" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/blackmore-min.jpg" alt="Blackmore">
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/blackmore-min.jpg" alt="Blackmore" class="frame">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__content">
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/AfterShootingLigh-min.jpg" alt="After Shooting">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/AfterShootingLigh-min.jpg" alt="After Shooting" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/mtnArtboard-min.png" alt="Arboard">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/mtnArtboard-min.png" alt="Arboad" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="https://www.w3schools.com/w3images/falls2.jpg"> -->
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/green-field-min.jpg" alt="Green Field">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/green-field-min.jpg" alt="Green Field" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img"src="./img/musclebutt-min.jpg" alt="Muscle Butt">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/musclebutt-min.jpg" alt="Muscle Butt" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="https://www.w3schools.com/w3images/mist.jpg"> -->
+                <!-- <img src="https://www.w3schools.com/w3images/paris.jpg"> -->
+            </div>
+            <div class="gallery__content">
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img"src="./img/EasterSunset-min.JPEG" alt="Easter Sunset">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/EasterSunset-min.JPEG" alt="Easter Sunset" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/portrait-child.jpg" alt="Portrait Child">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/portrait-child.jpg" alt="Portrait Child" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/ChasingDusk-min.jpg" alt="Chasing Duck">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/ChasingDusk-min.jpg" alt="Chasing Duck" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/ram.jpg" alt="Ram">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/ram.jpg" alt="Ram" class="frame">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay"></div>
+                        <img class="thumbnail-img" src="./img/little-tree-min.jpg" alt="Little Tree">
+                        <div class="read-more">Read more..</div>
+                    </div>
+                    <div class="modal">
+                        <div class="close">&#x2715;</div>
+                        <div class="modal-content">
+                            <h2>Modal 5</h2>
+                            <p>Some text inside modal</p>
+                            <img src="./img/little-tree-min.jpg" alt="Little Tree" class="frame">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--  
+        <div id="overlay"></div>
+        <div class="gallery__container">
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="thumbnail-overlay"></div>
+                    <img src="./img/ram.jpg">
+                    <div class="read-more">Read more..</div>
+                </div>
+                <div class="modal">
+                    <div class="close">&#x2715;</div>
+                    <div class="modal-content">
+                        <h2>Modal 1</h2>
+                        <p>Some text inside modal</p>
                         <img src="./img/ram.jpg" alt="Ram" class="frame">
                     </div>
-                </div> -->
-
-                <div class="slide-content">
-                    <div class="slide-image prev">
-                        <img src="./img/native-girl.jpg">
-                    </div>
-                    <div class="slide-description">
-                        <p class="slide-date">30.07.2016.</p>
-                        <h3 class="heading__terceary mg-bottom-sm black">Warrior</h3>
-                        <p class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
-                            laoreet, per rebum omittam ex. </p>
-                        <button class="slide__more">Show frame</button>
-                    </div>
                 </div>
-                <div class="slide-content">
-                    <div class="slide-image prev">
-                        <img src="./img/ram.jpg">
-                    </div>
-                    <div class="slide-description">
-                        <p class="slide-date">30.07.2016.</p>
-                        <h3 class="heading__terceary mg-bottom-sm black">Warrior</h3>
-                        <p class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat
-                            apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum
-                            laoreet, per rebum omittam ex. </p>
-                        <button class="slide__more">Show frame</button>
+            </div>
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="thumbnail-overlay"></div>
+                    <img src="./img/AfterShootingLigh-min.jpg">
+                    <div class="read-more">Read more..</div>
+                </div>
+                <div class="modal">
+                    <div class="close">&#x2715;</div>
+                    <div class="modal-content">
+                        <h2>Modal 2</h2>
+                        <p>Some text inside modal</p>
+                        <img src="./img/AfterShootingLigh-min.jpg" alt="Ram" class="frame">
                     </div>
                 </div>
             </div>
-
-            <div class="arrows">
-                <a href="#" title="Next" class="arrow slider-link next"></a>
-                <a href="#" title="Previous" class="arrow slider-link prev"></a>
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="thumbnail-overlay"></div>
+                    <img src="./img/native-girl.jpg">
+                    <div class="read-more">Read more..</div>
+                </div>
+                <div class="modal">
+                    <div class="close">&#x2715;</div>
+                    <div class="modal-content">
+                        <h2>Modal 3</h2>
+                        <p>Some text inside modal</p>
+                        <img src="./img/native-girl.jpg" alt="Ram" class="frame">
+                    </div>
+                </div>
             </div>
-
-        </div>
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="thumbnail-overlay"></div>
+                    <img src="./img/bewarethegriz-min.jpg">
+                    <div class="read-more">Read more..</div>
+                </div>
+                <div class="modal">
+                    <div class="close">&#x2715;</div>
+                    <div class="modal-content">
+                        <h2>Modal 4</h2>
+                        <p>Some text inside modal</p>
+                        <img src="./img/bewarethegriz-min.jpg" alt="Ram" class="frame">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="thumbnail">
+                    <div class="thumbnail-overlay"></div>
+                    <img src="./img/TheTowers-min.jpg">
+                    <div class="read-more">Read more..</div>
+                </div>
+                <div class="modal">
+                    <div class="close">&#x2715;</div>
+                    <div class="modal-content">
+                        <h2>Modal 5</h2>
+                        <p>Some text inside modal</p>
+                        <img src="./img/TheTowers-min.jpg" alt="Ram">
+                    </div>
+                </div>
+            </div>
+        </div>  -->
     </section>
 
     <!-- ====== SECTION ABOUT ====== -->
@@ -314,7 +629,17 @@
 
 
     <section class="section__contact" id="contact">
-        <h2 class="heading__secondary" data-text="04">Contact</h2>
+        <!-- <h2 class="heading__secondary" data-text="04">Contact</h2> -->
+        <div class="row">
+            <div class="contact">
+                <div class="contact__info">
+                    <div class="contact__form">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <script src="./js/main.js"></script>

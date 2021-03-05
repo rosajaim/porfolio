@@ -1,20 +1,23 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 body {
     font-family: $font-primary;
+
     // background-color: $color-black;
-    overflow-x: hidden;
+    // overflow: hidden;
   
 }
+
 
 
 // * { 

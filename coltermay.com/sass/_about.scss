@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 60%;
+        width: 50%;
         padding: 40px 40px 20px 40px;
         line-height: 1.5;
         font-weight: 200;
@@ -58,7 +58,7 @@
 
 /* **********  TIMELINE VERTICAL RULER ***********/
 .cv {
-    background-image: linear-gradient(rgba($color-black, 2), rgba($color-black-bg, .7)),url(../img/mountain-min.jpg);
+    background-image: linear-gradient(rgba($color-black, 1), rgba($color-black-bg, .9)),url(../img/mountain-min.jpg);
     // background-image: radial-gradient(rgba($color-black, .1), rgba($color-black, .1)),url(../img/mountain-min.jpg);
     // background-image: radial-gradient(circle, rgba(0, 0, 0, 0.808) 45%, rgb(0, 0, 0) 65%, rgb(0, 0, 0) 85%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), url(../img/mountain-min.jpg);
 
@@ -69,6 +69,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: -150px;
 
     &::after {
         content: '';
@@ -157,8 +158,8 @@
 
 .mentors__box {
     margin-left: 55px;
-    margin-top: 30px;
-    overflow: hidden;
+    margin-top: 80px;
+    // overflow: hidden;
 
     & h2 {
         color: $color-white;

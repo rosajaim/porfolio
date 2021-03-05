@@ -7,7 +7,6 @@
     font-weight: 400;
     letter-spacing: 3px;
     padding: 70px 0 30px 88px;
-    // margin:0px 0 30px 88px;
 
     &:before {
         content: attr(data-text);
@@ -15,7 +14,7 @@
         top: 48%;
         left: 2.4%;
         font-size: 1.1em;
-        color: $color-grey-darker;
+        color: darken($color-grey-darker, 10% );
         pointer-events: none;
 
     }
@@ -24,10 +23,10 @@
         position: absolute;
         content:"";
         top: 87%;
-        left: 7%;
-        width: 4%;
+        left: 6%;
+        width: 3%;
         height: 2px;
-        background-color:$color-grey-light;
+        background-color:$color-white;
     }
 }
 
