@@ -62,26 +62,27 @@ if (auto) {
 }
 
 // ========== NAVIGATION  SCROLL ==========
-    $('.nav__link').on('click', function (e) { //a['href^="#"'] will target ALL the "a" elements which can
-    e.preventDefault();                     //affect the behavior of the other "a" elemets that are 
-    var target = this.hash;                 // NOT nav links.
-    var $target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': $target.offset().top
-    }, 900, 'swing', function () {
-      window.location.hash = target;
-    });
+$('.nav__link, .art__link').on('click', function (e) { //a['href^="#"'] will target ALL the "a" elements which can
+  e.preventDefault(); //affect the behavior of the other "a" elemets that are 
+  var target = this.hash; // NOT nav links.
+  var $target = $(target);
+  $('html, body').stop().animate({
+    'scrollTop': $target.offset().top
+  }, 900, 'swing', function () {
+    window.location.hash = target;
   });
+});
 
 // ========== ABOUT IMAGE REVEALING EFFECT ON SCROLLING ==========
 $(window).scroll(function () {
   var imgEffect = $(window).scrollTop();
-  if (imgEffect > 2700) {
+  if (imgEffect > 3100) {
     $(".about__photo").addClass("about__photo-js");
   } else {
     $(".about__photo").removeClass("about__photo-js");
   }
 
+  // ========== SITCKY NAV ON SCROLL==========
   if ($(window).scrollTop() > 780 ) {
     $('.main__nav').addClass("sticky");
   } else {
@@ -90,13 +91,15 @@ $(window).scroll(function () {
 
 });
 
-// $(window).scroll(function() {
-//   if ($(window).scrollTop() > 150 ) {
-//     $('.main__nav').addClass("sticky");
-//   } else {
-//     $('.main__nav').removeClass( "sticky" );
-//   } 
-// });
+// ========== ARTIST STATEMENT IMAGE REVEALING EFFECT ON SCROLLING ==========
+$(window).scroll(function () {
+  var imgEffect2 = $(window).scrollTop();
+  if (imgEffect2 > 6900) {
+    $(".statement__img").addClass("js-statement__img");
+  } else {
+    $(".statement__img").removeClass("js-statement__img");
+  }
+});
 
 // ========== ART GRID MODAL==========
 function main() {
@@ -143,20 +146,10 @@ function handleOverlay(status) {
   overlay.style.display = status;
 }
 
-/* **** STICKY NAVIGATION ***** */
-
-    // $(window).on('scroll', function(){
-    //   var scroll = $(window).scrollTop();    
-    //     if (scroll >= 10) {				
-    //     $(".main__nav").addClass(".sticky");
-    //     } else if(scroll <= 50) {
-    //     $(".main_nav").removeClass("sticky");
-    //   }
-    // });
-
-
-    // $(document).ready(function(){
-    //   $(".slide__btn").click(function(){
-    //     $(".slide-image").toggleClass("frame slider-wrapper-frame slide-image-frame");
-    //   });
-    // });
+// ========== GlIDE SLIDER==========
+var glide = new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 3,
+  focusAt: 'center',
+}).mount()

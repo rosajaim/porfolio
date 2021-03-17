@@ -1,66 +1,194 @@
-// .section__contact {
+.section__contact {
+    padding: 100px 0 0 0;
+    @include linearGradient;
+}
 
- 
-// }
+.contact__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+.contact__container { //container
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 999;
 
-// .row {
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     min-height: 100vh;
-//     background: #095a55;
+    & .contact__form {  //contactForm
+        position: absolute;
+        padding: 70px 50px;
+        margin-left: 150px;
+        padding-left: 250px;
+        width: calc(100% - 150px);
+        height: 100%;
+        background: $color-white2;
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    
+    }
+}
 
-//     &::before {
-//         content: '';
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         width: 50%;
-//         height: 100%;
-//         background: #fff38a;
-//     }
+.contact__info {
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
+    background: $color-primary;
+    z-index: 1;
+    page-break-after: 40px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 
-// }
+    & h2 {
+        color: $color-black;
+        font-size: 27px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
 
-// .contact {
-//     position: relative;
-//     min-width: 1100px;
-//     min-height: 550px;
-//     display: flex;
-//     z-index: 1000;
-//     background: $color-white;
-
-//     &__form {
-//         position: relative;
-//         // padding: 70px 50px;
-//         // padding-left: 250px;
-//         // margin-left: 150px;
-//         // width: calc(100%- 150px);
-//         // height: 100%;
-//         background-color: $color-white;
-//         // box-shadow: 0 50px 50px rgba(0, 0, 0,0.25);
-
-//     }
-//     // &__info {
-//     //     position: absolute;
-//     //     top: 40px;
-//     //     width: 350px;
-//     //     height: calc(100% - 80px);
-//     //     background-color: #095a55;
-//     //     z-index: 1;
-//     //     padding: 40px;
-//     //     display: flex;
-//     //     justify-content: center;
-//     //     flex-direction: column;
-//     //     justify-content: space-between;
-//     //     box-shadow: 0 20px 25px rgba(0, 0, 0,0.15) 
-//     // }
-
-// }
-
+    &--icons {
+        position: relative;
+        display: flex;
+        justify-items: flex-end;
+        transition: .3s;
+    }
 
 
+    & li {
+        list-style: none;
+        margin-right: 15px;
 
+        & a {
+            text-decoration: none;
+
+            & i {
+                color: $color-black;
+            }
+
+            & i:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.info {
+    position: relative;
+    margin: 20px 0;
+
+    & li {
+        position: relative;
+        list-style: none;
+        display: flex;
+        margin: 20px 0;
+        cursor: pointer;
+        align-items: flex-start;
+    }
+
+
+    & span:nth-child(1) {
+        width: 30px;
+        min-width: 30px;
+    }
+
+    & span:nth-child(1) i {
+        color: $color-black;
+        font-size: 25px;
+    }
+
+    & span:nth-child(2) {
+        color: $color-black;
+        margin-left: 10px;
+        font-weight: 300;
+    }
+
+}
+
+.form__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.input__box {
+    position: relative;
+    margin: 0 0 35px 0;
+
+    &.w50 {
+        width: 47%;
+    }
+
+    &.w100 {
+        width: 100%;
+
+    }
+
+    & input,
+    & textarea {
+        width: 100% !important;
+        background: $color-white2;
+        padding: 5px 0;
+        font-size: 1em;
+        font-weight: 300;
+
+        color: $color-grey-dark;
+        border: none;
+        border-bottom: 1px solid $color-grey-light;
+        outline: none;
+    }
+
+    & textarea {
+        min-height: 120px;
+        font-family: inherit;
+        font-weight: inherit;
+    }
+
+    & label {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 17px;
+        font-weight: 300;
+        color: $color-grey-dark;
+        transition: 0.5s;
+        pointer-events: none;
+
+    }
+
+    & textarea:focus~label,
+    & input:focus~label {
+        @include formInput;
+        color: $color-grey-light;
+    }
+
+    & input:valid~label {
+        @include formInput;
+        color: $color-green-light;
+    }
+
+    & input[type="submit"] {
+        position: relative;
+        cursor: pointer;
+        text-transform: uppercase;
+        background: $color-black;
+        color: $color-white;
+        border: none;
+        max-width: 150px;
+        padding: 12px;
+        transition: .2s;
+    }
+
+    & input[type="submit"]:hover {
+        opacity: 0.7;
+
+    }
+}
 

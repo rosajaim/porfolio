@@ -1,14 +1,81 @@
-@mixin aboutImgSetings {
+@mixin imgSetings {
     position: relative;
-    top: -190px;
-    left: 50px;
-    width: 80%;
+    top: -15px;
+    left: 90px;
+    width: 35%;
     display: inline-block;
     transition: 1s;
+}
 
+@mixin statementImg {
+    position: relative;
+    top: 90px;
+    left: 6%;
+    width: 37%;
+    display: inline-block;
+    padding-top: 50px;
+    transition: 1s;
+    
 }
 
 @mixin navBg {
     background-color: rgba(14, 4, 4, 0.788);
     box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.75);
+}
+
+@mixin modalContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+    text-align: center; 
+}
+@mixin formInput {
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+@mixin popupCenter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+@mixin setCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+
+@mixin linkSettings {
+    text-decoration: none;
+    font-size: .9em;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding: 15px 25px;
+    opacity: 0;
+    transition-delay: 0.4s;
+    transition: all 0.4s ease-out;
+    
+}
+
+@mixin linearGradient {
+    background: linear-gradient(to right,
+      $color-black 45%,
+      $color-black 45%,
+      $color-primary 20%,
+      $color-primary 50%);  
+}
+
+@mixin mobileLinearGradient {
+    background: linear-gradient(to right,
+      $color-black 65%,
+      $color-black 65%,
+      $color-primary 20%,
+      $color-primary 50%);  
 }

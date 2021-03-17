@@ -10,8 +10,6 @@
     justify-content: space-between;
     align-items: center;
 
-
-
     & .logo {
         position: relative;
         font-size: 1.4em;
@@ -36,12 +34,13 @@
 
     &__link {
         position: relative;
+        // padding: 15px;
         display: inline-block;
         margin-right: 40px;
         text-decoration: none;
         font-size: 1em;
         color: $color-primary;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         transition: all .4s;
 
@@ -49,6 +48,7 @@
             content: '';
 		    width: 0;
 		    height: 2px;
+            // margin-top: 15px;
             margin-top: 30px;
 		    background-color: $color-primary;
 		    position: absolute;
@@ -57,7 +57,7 @@
         }
 
         &:hover {
-            color: $color-grey-dark;
+            color: $color-grey-light;
         }
 
     }
@@ -88,14 +88,12 @@
 
 .sticky{
     position: fixed;
-    background: $color-black-bg;
-   
+    background: $color-black-bg2;
     animation-name: stick;
     animation-duration: .4s;
     animation-timing-function: ease;
     transition: background-color 1000ms ease-out;
     transition-delay: 125ms;
-   
     z-index: 99;
 
  

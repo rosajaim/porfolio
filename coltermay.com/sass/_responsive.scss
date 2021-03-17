@@ -1,0 +1,409 @@
+/// RESPONSIVE BREAKE POINTS 
+$bp-largest: 75em; //1200px/16
+$bp-large: 68.75em; //1100px/16
+$bp-medium: 56.25em; //900px/16
+$bp-medium2: 50em; //800px/16
+$bp-small: 37.5em; //600px/16
+$bp-smallest: 31.25em; //500px/16
+
+@media screen and (max-width: $bp-largest) {
+
+    .popup__content {
+        flex-direction: column;
+        height: 80vh;
+
+    }
+
+    .popup__right {
+        margin-top: 50px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .popup__img {
+        padding-top: 104px;
+
+    }
+
+    // CONTACT SECTION
+    .contact__container {
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+    }
+
+    .contact__container .contact__info {
+        position: relative;
+        top: 0;
+        height: 550px;
+        box-shadow: none;
+
+    }
+    // .contact__container .contact__form {
+    //     position: relative;
+    //     width: calc(100% - 350px);
+    //     padding-left: 0;
+    //     margin-left: 0;
+    //     padding: 40px;
+    //     height: 550px;
+
+    // }
+
+}
+
+@media screen and (max-width: $bp-large) {
+  
+
+}
+
+@media screen and (max-width: $bp-medium) {
+    .section__art {
+        background: $color-black;
+    }
+
+    .main {
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+
+    .col-4 {
+        width: 85%;
+        padding: 40px 26px 70px 0;
+    }
+
+    .col-8 {
+        width: 80%;
+        margin: 0;
+    }
+
+    .glide img {
+        height: 400px;
+    }
+
+    .glide__arrows {
+        left: 10px;
+    }
+
+    .heading__secondary {
+        padding: 0px 0 30px 67px;
+    }
+
+    .popup__content {
+       width: 90%;
+
+    }
+
+    // .popup__img {
+    //     width: 50%;
+        
+    // }
+
+
+
+    .glide__slide--link {
+        width: 150px;
+    }
+
+
+    // CONTACT SECTION
+    .section__contact {
+        @include mobileLinearGradient
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: column-reverse ;
+        margin: 150px 0 150px 0;
+    } 
+
+    .contact__container .contact__form {
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+
+    }
+
+    .contact__container .contact__form {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact__container .contact__info {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+    }
+
+  
+    // ARTIST STATEMENT
+    .artist__statement {
+        flex-direction: column;
+    }
+
+    // ABOUT
+    .about {
+        flex-direction: column;
+        align-items: center;
+
+        &__photo{
+            top: -20px;
+            left: 0;
+            width: 50%;
+            margin: auto ;
+            margin-bottom: 30px;
+        }
+
+        &__name {
+            text-align: none;
+        }
+    }
+
+    .about__text {
+        width: 85%;
+        margin-left: 0;
+        padding: 120px 0 50px 0;
+        align-items: flex-start;
+    }
+
+    // GALLERY
+    .modal {
+        height: 90vh;
+        width: 90vw;
+    }
+
+    .modal-content {
+        flex-direction: column;
+        text-align: center;
+
+        & img {
+            width: 60%;
+        }
+    }
+
+    .long-horizontal {
+        flex-direction: column;
+
+        & img {
+            width: 85%;
+        }
+    }
+
+    .small-rectangular {
+        flex-direction: column;
+        text-align: center;
+
+        & img {
+            width: 75%;
+        }
+    }
+
+    .long-vertical {
+        flex-direction: column;
+        text-align: center;
+
+        & img {
+            width: 55%;
+        }
+
+    }
+
+    // CURRICULUM VITAE
+    .mentors__box {
+        margin-top: 117px;
+    }
+
+    .container {
+        padding: 0;
+        width: 49.5%;
+    }
+
+    .statement__text {
+        width: 80%;
+        margin-left: 0;
+        margin: auto;
+
+        &:first-child {
+            padding-top: 130px;
+
+        }
+    }
+
+    .statement__img {
+        top: 102px;
+        left: 0;
+        width: 60%;
+    }
+
+    .blockquote::before {
+        top: 18%;
+        left: -4%;
+    }
+
+
+    // CURRICULUM VITAE
+
+
+
+}
+
+@media screen and (max-width: $bp-medium2) {
+
+    // .section__form {
+    //     @include mobileLinearGradient
+    // }
+
+    // .form__container {
+    //     display: flex;
+    //     flex-direction: column-reverse;
+    // }
+
+    // .contact__info {
+    //     width: 100%;
+    //     height: auto;
+    // }
+
+    // .contact__form {
+    //     position: relative;
+    //     width: 100%;
+    //     height: auto;
+    //     padding-left: 40px;
+    //     margin-left: 0;
+    // }
+
+    // .form__wraper {
+    //     margin-top: 100px;
+
+    // }
+
+    // .flex {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: flex-start;
+    // }
+
+    // .contact__info--icons {
+    //     margin-top: -32px;
+    // }
+}
+
+@media screen and (max-width: $bp-small) {
+    .heading__secondary {
+        left: -5px;
+    }
+
+    .glide img {
+        height: 260px;
+
+    }
+
+    .modal-content img {
+        width: 83%; 
+    }
+
+    .heading__secondary {
+        padding: 0px 0 30px 49px;
+    }
+
+    .slide .slide__content {
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .slide__content {
+        transform: translateY(-300px);
+    }
+
+    .cover__line {
+        visibility: hidden;
+    }
+
+    // CONTACT FORM
+    .section__contact {
+        background: $color-black;
+    }
+    .form__content {
+        flex-direction: column;
+    }
+    .contact__container .contact__info {
+        flex-direction: column;
+        
+    }
+    .contact__info--icons {
+        margin-top: 35px;
+    }
+
+    .input__box.w50 {
+        width: 100%;
+    }
+    .form__content {
+        padding-top: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: $bp-smallest) {
+  
+    .contact__container .contact__form {
+        padding: 20px;
+    }
+    .heading__secondary {
+        left: -38px;
+    }
+
+    // .flex {
+    //     flex-direction: column;
+
+    // }
+
+    // .form_content {
+    //     width: 100%;
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // .input__box.w50 {
+    //     width: 100%;
+    // }
+
+    .heading__secondary {
+        left: -13px;
+    }
+
+    .glide img {
+        height: 200px;
+    }
+
+    .gallery__row {
+        padding: 4px 32px;
+    }
+
+}
+
+
+//RESPONSIVE BREAKPOINTS
+// $bp-largest: 222.5em; //2560px
+// $bp-larger: 75em; //1200px
+// $bp-large: 62.5em; //1000px
+// $bp-medium: 50em; //800px
+// $bp-medium2: 43.57em; //700px
+// $bp-small: 37.5em; //600px
+// $bp-smaller: 25em; //400px 
+// $bp-smaller2: 23.43em; //375px
+
+// @media(max-width: 600px) { 
+//     .main__nav .logo {
+//         display: none;
+//     }
+
+//     .main__nav .logo__mobile {
+//         display: block;
+//     }
+
+// } 
