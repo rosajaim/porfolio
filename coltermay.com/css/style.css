@@ -361,8 +361,7 @@ body {
   letter-spacing: 1px; }
 
 .section__art {
-  padding-bottom: 20px;
-  background: linear-gradient(to right, #000000 45%, #000000 45%, #e2ca7b 20%, #e2ca7b 50%); }
+  background-color: #ecd99f; }
 
 .frame {
   background-color: #ddc;
