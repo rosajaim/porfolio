@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0 140px;
-  max-width: 86rem;
+  max-width: 89rem;
   margin: auto;
 }
 
@@ -64,7 +64,7 @@
 
 .col-8 {
   width: 66%;
-  padding-right: 50px;
+  padding-right: 40px;
 }
 
 .col-4 {
@@ -212,11 +212,10 @@
   &__content {
    @include setCenter;
     width: 75%;
-    max-width: 71rem;
+    max-width: 75rem;
     background-color: $color-white2;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
     border-radius: 3px;
-    // display: table;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,38 +225,14 @@
     transition: all .5s .2s;
   }
 
-  &__left {
-    // width: 33.333333%;
-    // display: table-cell;
-  }
-
   &__right {
     margin: auto;
-    // width: 66.6666667%;
-    // display: table-cell;
-    // vertical-align: middle;
-    // padding: 3rem 5rem;
   }
 
   &__img {
     display: block;
-    // width: 10%;
+  
   }
-
-  // &__text {
-  //   font-size: 1.4rem;
-  //   margin-bottom: 4rem;
-  //   -moz-column-count: 2;
-  //   -moz-column-gap: 4rem;
-  //   -moz-column-rule: 1px solid $color-grey-light;
-  //   column-count: 2;
-  //   column-gap: 4rem;
-  //   column-rule: 1px solid $color-grey-light;
-  //   -moz-hyphens: auto;
-  //   -ms-hyphens: auto;
-  //   -webkit-hyphens: auto;
-  //   hyphens: auto;
-  // }
 
   //Open state
   &:target {

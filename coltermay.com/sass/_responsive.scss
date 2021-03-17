@@ -52,7 +52,9 @@ $bp-smallest: 31.25em; //500px/16
 }
 
 @media screen and (max-width: $bp-large) {
-  
+    .glide img {
+        height: 400px;
+    }
 
 }
 
@@ -72,12 +74,12 @@ $bp-smallest: 31.25em; //500px/16
     }
 
     .col-8 {
-        width: 80%;
-        margin: 0;
+        width: 74%;
+        padding-right: 0;
     }
 
     .glide img {
-        height: 400px;
+        height: 360px;
     }
 
     .glide__arrows {
@@ -253,6 +255,14 @@ $bp-smallest: 31.25em; //500px/16
 
 @media screen and (max-width: $bp-medium2) {
 
+    .glide img {
+        height: 300px;
+    }
+
+    .popup__content {
+        width: 100%;
+    }
+
     // .section__form {
     //     @include mobileLinearGradient
     // }
@@ -343,6 +353,13 @@ $bp-smallest: 31.25em; //500px/16
     }
     .form__content {
         padding-top: 50px;
+    }
+
+    
+
+    .popup__img {
+        width: 90%;
+        margin: auto;
     }
 
 }
