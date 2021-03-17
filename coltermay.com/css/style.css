@@ -1081,9 +1081,9 @@ body {
 
 @media screen and (max-width: 37.5em) {
   .heading__secondary {
-    left: -5px; }
+    left: -9px; }
   .glide img {
-    height: 260px; }
+    height: 200px; }
   .modal-content img {
     width: 83%; }
   .heading__secondary {
@@ -1096,6 +1096,10 @@ body {
     transform: translateY(-300px); }
   .cover__line {
     visibility: hidden; }
+  .glide__slide--link {
+    letter-spacing: 0;
+    padding: 12px 10px;
+    width: 109px; }
   .section__contact {
     background: #000000; }
   .form__content {

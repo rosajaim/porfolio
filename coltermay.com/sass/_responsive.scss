@@ -303,11 +303,11 @@ $bp-smallest: 31.25em; //500px/16
 
 @media screen and (max-width: $bp-small) {
     .heading__secondary {
-        left: -5px;
+        left: -9px;
     }
 
     .glide img {
-        height: 260px;
+        height: 200px;
 
     }
 
@@ -331,6 +331,13 @@ $bp-smallest: 31.25em; //500px/16
 
     .cover__line {
         visibility: hidden;
+    }
+
+
+    .glide__slide--link {
+        letter-spacing: 0;
+        padding: 12px 10px;
+        width: 109px;
     }
 
     // CONTACT FORM
