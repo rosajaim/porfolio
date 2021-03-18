@@ -35,6 +35,47 @@
   padding-top: 8px;
 }
 
+.modal {
+  @include popupCenter;
+  background-color: #f6f5ee;
+  display: none;
+  z-index: 2;
+  width: 95vw;
+  max-width: 1300px;
+  height: 95vh;
+  overflow-y: auto;
+  border-radius: 5px;
+  z-index: 99;
+
+  &-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: $color-grey-dark;
+
+    & span {
+      color: $color-grey-light;
+    }
+
+    & img {
+      width: 45%;
+      display: inline-block;
+    }
+  }
+
+  &__description {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.3em;
+    letter-spacing: .4px;
+    text-align: left;
+    width: 35%;
+    // margin: auto;
+
+  }
+}
+
 .thumbnail {
   position: relative;
   cursor: pointer;
@@ -97,42 +138,6 @@
   }
 }
 
-
-.modal {
-  @include popupCenter;
-  background-color: #f6f5ee;
-  display: none;
-  z-index: 2;
-  width: 95vw;
-  max-width: 1300px;
-  height: 95vh;
-  overflow-y: auto;
-  border-radius: 5px;
-  z-index: 99;
-
-  &-content {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    & img {
-      width: 45%;
-      display: inline-block;
-    }
-  }
-
-  &__description {
-    padding: 10px;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: $color-grey-dark;
-
-    & span {
-      color: $color-grey-light;
-    }
-  }
-}
 
 .long-horizontal {
   @include modalContent;

@@ -153,3 +153,17 @@ var glide = new Glide('.glide', {
   perView: 3,
   focusAt: 'center',
 }).mount()
+
+
+// ========== SWAPS h2 CURRICULUM VITAE TO h2 CV ==========
+$(function () {
+  $(window).bind("resize", function () { 
+    if ($(this).width() <= 500) {
+      $('#cv').css('display', 'none');
+      $('.js-heading__secondary').css('display', 'block');
+    } else {
+      $('.js-heading__secondary').css('display', 'none');
+      $('#cv').css('display', 'block');
+    }
+  }).resize();
+});

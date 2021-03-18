@@ -69,7 +69,7 @@
 
 .col-4 {
   width: 36%;
-  padding: 30px 40px;
+  padding: 30px 55px;
 
 
   & h2 {
@@ -149,7 +149,6 @@
   }
 }
 
-
 // ========== IMG FRAME ==========
 .frame {
   background-color: #ddc;
@@ -162,8 +161,6 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
   box-sizing: border-box;
   display: inline-block;
-  //   margin:10vh 10vw;
-  //   height:80vh;
   padding: 4vmin;
   position: relative;
   text-align: center;
@@ -223,6 +220,21 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.2);
     transition: all .5s .2s;
+  }
+
+  &__description {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: .4px;
+    text-align: left;
+    color: $color-grey-dark;
+    width: 72%;
+    margin: auto;
+
+    & span {
+      color: $color-grey-light;
+    }
   }
 
   &__right {

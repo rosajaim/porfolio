@@ -39,15 +39,14 @@ $bp-smallest: 31.25em; //500px/16
         box-shadow: none;
 
     }
-    // .contact__container .contact__form {
-    //     position: relative;
-    //     width: calc(100% - 350px);
-    //     padding-left: 0;
-    //     margin-left: 0;
-    //     padding: 40px;
-    //     height: 550px;
-
-    // }
+    //ABOUT 
+    .about__photo {
+        top: -64px;
+        left: 50px;
+    }
+    .about__text {
+        padding: 100px 0px 20px 11px;
+    }
 
 }
 
@@ -55,6 +54,13 @@ $bp-smallest: 31.25em; //500px/16
     .glide img {
         height: 400px;
     }
+
+    //ABBOUT 
+    .about__photo {
+        top: -92px;
+        left: 45px;
+    }
+   
 
 }
 
@@ -95,10 +101,10 @@ $bp-smallest: 31.25em; //500px/16
 
     }
 
-    // .popup__img {
-    //     width: 50%;
-        
-    // }
+    //ART / FEATURED PROJECTS
+    .modal__description {
+        width: 60%;
+    } 
 
 
 
@@ -155,7 +161,7 @@ $bp-smallest: 31.25em; //500px/16
         &__photo{
             top: -20px;
             left: 0;
-            width: 50%;
+            width: 60%;
             margin: auto ;
             margin-bottom: 30px;
         }
@@ -163,13 +169,23 @@ $bp-smallest: 31.25em; //500px/16
         &__name {
             text-align: none;
         }
+
+        &__text {
+            width: 85%;
+            padding: 100px 0 0 0;
+            margin: auto;
+
+        }
     }
 
+    // .about__text {
+     
+    //     margin-left: 0;
+    //     align-items: flex-start;
+    // }
+
     .about__text {
-        width: 85%;
-        margin-left: 0;
-        padding: 120px 0 50px 0;
-        align-items: flex-start;
+        width: 84%;
     }
 
     // GALLERY
@@ -263,6 +279,20 @@ $bp-smallest: 31.25em; //500px/16
         width: 100%;
     }
 
+    .modal__description {
+        width: 70%;
+        margin-top: -40px;
+    }
+
+    .modal-content img {
+        width: 65%;
+        margin-top: 60px;
+    }
+    .heading__secondary {
+        padding: 0px 0 30px 63px;
+
+    }
+
     // .section__form {
     //     @include mobileLinearGradient
     // }
@@ -304,8 +334,10 @@ $bp-smallest: 31.25em; //500px/16
 @media screen and (max-width: $bp-small) {
     .heading__secondary {
         left: -9px;
-    }
+        padding: 0px 0 30px 63px;
 
+    }
+   
     .glide img {
         height: 200px;
 
@@ -340,6 +372,24 @@ $bp-smallest: 31.25em; //500px/16
         width: 109px;
     }
 
+    //GALLERY 
+    .gallery__row {
+        padding: 8px 30px;
+      
+      }
+
+    //ABOUT 
+    .about__text {
+        padding-top: 100px;
+    }
+    .about__name {
+        text-align: left;
+        margin-top: 50px;
+    }
+    .about__photo{
+        width: 75%;
+    }
+
     // CONTACT FORM
     .section__contact {
         background: $color-black;
@@ -362,6 +412,16 @@ $bp-smallest: 31.25em; //500px/16
         padding-top: 50px;
     }
 
+
+    .modal__description {
+        width: 80%;
+        margin-top: -60px;
+    }
+
+    .frame {
+        margin-top: 60px;
+    }
+
     
 
     .popup__img {
@@ -379,6 +439,11 @@ $bp-smallest: 31.25em; //500px/16
     }
     .heading__secondary {
         left: -38px;
+    }
+
+    .modal__description {
+        width: 90%;
+        margin-top: -145px;
     }
 
     // .flex {

@@ -5,8 +5,26 @@
   font-size: 2.2em;
   font-weight: 400;
   letter-spacing: 3px;
-  padding: 0px 0 30px 67px; }
+  padding: 0px 0 30px 98px; }
   .heading__secondary:before {
+    content: attr(data-text);
+    position: relative;
+    top: 0;
+    left: 0.6%;
+    color: #1a1a1a;
+    pointer-events: none; }
+
+.js-heading__secondary {
+  display: none;
+  position: absolute;
+  text-transform: uppercase;
+  color: #ffd880;
+  font-size: 2.2em;
+  font-weight: 400;
+  letter-spacing: 3px;
+  padding: 0px 0 30px 98px;
+  padding-left: 38px; }
+  .js-heading__secondary:before {
     content: attr(data-text);
     position: relative;
     top: 0;
@@ -237,7 +255,7 @@ body {
   /* ABOUT IMG REVEALING ON SCROLL */ }
   .about__text {
     width: 50%;
-    padding: 60px 40px 20px 10px;
+    padding: 60px 40px 20px 2px;
     line-height: 1.6;
     font-weight: 200;
     font-size: 1.1em;
@@ -298,9 +316,9 @@ body {
 
 .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 85rem;
   margin: 0 auto;
-  margin-top: -150px; }
+  margin-top: 180px; }
   .timeline::after {
     content: '';
     position: absolute;
@@ -495,7 +513,7 @@ body {
 
 .col-4 {
   width: 36%;
-  padding: 30px 40px; }
+  padding: 30px 55px; }
   .col-4 h2 {
     font-size: 2.2em;
     border-bottom: 1px solid #ffd880;
@@ -619,6 +637,17 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.2);
     transition: all .5s .2s; }
+  .popup__description {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.1em;
+    letter-spacing: .4px;
+    text-align: left;
+    color: #5b5b5b;
+    width: 72%;
+    margin: auto; }
+    .popup__description span {
+      color: #a6a6a6; }
   .popup__right {
     margin: auto; }
   .popup__img {
@@ -817,6 +846,39 @@ body {
 .box {
   padding-top: 8px; }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6f5ee;
+  display: none;
+  z-index: 2;
+  width: 95vw;
+  max-width: 1300px;
+  height: 95vh;
+  overflow-y: auto;
+  border-radius: 5px;
+  z-index: 99; }
+  .modal-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #5b5b5b; }
+    .modal-content span {
+      color: #a6a6a6; }
+    .modal-content img {
+      width: 45%;
+      display: inline-block; }
+  .modal__description {
+    padding: 10px;
+    font-weight: 400;
+    font-size: 1.3em;
+    letter-spacing: .4px;
+    text-align: left;
+    width: 35%; }
+
 .thumbnail {
   position: relative;
   cursor: pointer;
@@ -871,42 +933,16 @@ body {
     flex: 100%;
     max-width: 100%; } }
 
-.modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f6f5ee;
-  display: none;
-  z-index: 2;
-  width: 95vw;
-  max-width: 1300px;
-  height: 95vh;
-  overflow-y: auto;
-  border-radius: 5px;
-  z-index: 99; }
-  .modal-content {
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .modal-content img {
-      width: 45%;
-      display: inline-block; }
-  .modal__description {
-    padding: 10px;
-    font-weight: 400;
-    font-size: 1.1em;
-    color: #5b5b5b; }
-    .modal__description span {
-      color: #a6a6a6; }
-
 .long-horizontal {
   height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  text-align: left;
+  color: #5b5b5b; }
+  .long-horizontal span {
+    color: #a6a6a6; }
   .long-horizontal img {
     width: 60%; }
 
@@ -915,7 +951,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  text-align: left;
+  color: #5b5b5b; }
+  .long-vertical span {
+    color: #a6a6a6; }
   .long-vertical img {
     width: 37%; }
 
@@ -924,7 +964,11 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  text-align: left;
+  color: #5b5b5b; }
+  .small-rectangular span {
+    color: #a6a6a6; }
   .small-rectangular img {
     width: 50%; }
 
@@ -964,11 +1008,19 @@ body {
     position: relative;
     top: 0;
     height: 550px;
-    box-shadow: none; } }
+    box-shadow: none; }
+  .about__photo {
+    top: -64px;
+    left: 50px; }
+  .about__text {
+    padding: 100px 0px 20px 11px; } }
 
 @media screen and (max-width: 68.75em) {
   .glide img {
-    height: 400px; } }
+    height: 400px; }
+  .about__photo {
+    top: -92px;
+    left: 45px; } }
 
 @media screen and (max-width: 56.25em) {
   .section__art {
@@ -990,6 +1042,8 @@ body {
     padding: 0px 0 30px 67px; }
   .popup__content {
     width: 90%; }
+  .modal__description {
+    width: 60%; }
   .glide__slide--link {
     width: 150px; }
   .section__contact {
@@ -1022,16 +1076,17 @@ body {
     .about__photo {
       top: -20px;
       left: 0;
-      width: 50%;
+      width: 60%;
       margin: auto;
       margin-bottom: 30px; }
     .about__name {
       text-align: none; }
+    .about__text {
+      width: 85%;
+      padding: 100px 0 0 0;
+      margin: auto; }
   .about__text {
-    width: 85%;
-    margin-left: 0;
-    padding: 120px 0 50px 0;
-    align-items: flex-start; }
+    width: 84%; }
   .modal {
     height: 90vh;
     width: 90vw; }
@@ -1077,11 +1132,20 @@ body {
   .glide img {
     height: 300px; }
   .popup__content {
-    width: 100%; } }
+    width: 100%; }
+  .modal__description {
+    width: 70%;
+    margin-top: -40px; }
+  .modal-content img {
+    width: 65%;
+    margin-top: 60px; }
+  .heading__secondary {
+    padding: 0px 0 30px 63px; } }
 
 @media screen and (max-width: 37.5em) {
   .heading__secondary {
-    left: -9px; }
+    left: -9px;
+    padding: 0px 0 30px 63px; }
   .glide img {
     height: 200px; }
   .modal-content img {
@@ -1100,6 +1164,15 @@ body {
     letter-spacing: 0;
     padding: 12px 10px;
     width: 109px; }
+  .gallery__row {
+    padding: 8px 30px; }
+  .about__text {
+    padding-top: 100px; }
+  .about__name {
+    text-align: left;
+    margin-top: 50px; }
+  .about__photo {
+    width: 75%; }
   .section__contact {
     background: #000000; }
   .form__content {
@@ -1112,6 +1185,11 @@ body {
     width: 100%; }
   .form__content {
     padding-top: 50px; }
+  .modal__description {
+    width: 80%;
+    margin-top: -60px; }
+  .frame {
+    margin-top: 60px; }
   .popup__img {
     width: 90%;
     margin: auto; } }
@@ -1121,6 +1199,9 @@ body {
     padding: 20px; }
   .heading__secondary {
     left: -38px; }
+  .modal__description {
+    width: 90%;
+    margin-top: -145px; }
   .heading__secondary {
     left: -13px; }
   .glide img {

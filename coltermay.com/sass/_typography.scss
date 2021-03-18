@@ -1,32 +1,12 @@
 .heading__secondary {
-    position: absolute;
-    text-transform: uppercase;
-    color: $color-primary;
-    font-size: 2.2em;
-    font-weight: 400;
-    letter-spacing: 3px;
-    padding: 0px 0 30px 67px;
+    @include h2;
+}
 
-    &:before {
-        content: attr(data-text);
-        position: relative;
-        top: 0;
-        left: 0.6%;
-        // font-size: 1.06em;
-        color: darken($color-grey-darker, 10% );
-        pointer-events: none;
+.js-heading__secondary {
+    display: none;
+    @include h2;
+    padding-left: 38px;
 
-    }
-
-    // &:after {
-    //     position: absolute;
-    //     content:"";
-    //     top: 70%;
-    //     left: 9%;
-    //     width: 3%;
-    //     height: 2px;
-    //     background-color:$color-white2;
-    // }
 }
 
 .heading__terceary {
