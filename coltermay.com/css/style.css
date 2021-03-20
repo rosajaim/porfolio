@@ -152,13 +152,6 @@ body {
 .height {
   height: 143px; }
 
-.align-right {
-  text-align: right; }
-
-.li-dots-right {
-  direction: rtl;
-  unicode-bidi: embed; }
-
 .grey {
   color: #a6a6a6; }
 
@@ -374,7 +367,6 @@ body {
 .content {
   padding: 20px 30px;
   position: relative;
-  border-radius: 6px;
   font-weight: 300;
   color: #a6a6a6; }
   .content ul {
@@ -382,17 +374,12 @@ body {
   .content li:not(:last-child) {
     margin-bottom: 5px; }
 
-.mentors__box {
-  margin-left: 43px;
-  margin-top: 80px; }
-  .mentors__box h2 {
-    color: #fff; }
+.align-right {
+  text-align: right; }
 
-.mentor {
-  color: #ffd880;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 1px; }
+.li-dots-right {
+  direction: rtl;
+  unicode-bidi: embed; }
 
 /* **********  ARTIST STATEMENT ***********/
 .statement__box {
@@ -494,11 +481,10 @@ body {
     transform: translate(-50%, -50%);
     text-decoration: none;
     font-size: .9em;
-    letter-spacing: .5px;
     text-transform: uppercase;
     color: #fff;
     border: 1px solid #fff;
-    padding: 15px 25px;
+    padding: 10px 12px;
     opacity: 0;
     transition-delay: 0.4s;
     transition: all 0.4s ease-out;
@@ -513,7 +499,7 @@ body {
 
 .col-4 {
   width: 36%;
-  padding: 30px 55px; }
+  padding: 30px 74px; }
   .col-4 h2 {
     font-size: 2.2em;
     border-bottom: 1px solid #ffd880;
@@ -909,11 +895,10 @@ body {
   transform: translate(-50%, -50%);
   text-decoration: none;
   font-size: .9em;
-  letter-spacing: .5px;
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
-  padding: 15px 25px;
+  padding: 10px 12px;
   opacity: 0;
   transition-delay: 0.4s;
   transition: all 0.4s ease-out;
@@ -1000,6 +985,19 @@ body {
     padding-bottom: 50px; }
   .popup__img {
     padding-top: 104px; }
+  .about__photo {
+    top: -64px;
+    left: 50px; }
+  .about__text {
+    padding: 100px 0px 20px 11px; }
+  .statement__content {
+    margin-top: 130px; }
+  .statement__text {
+    margin-left: 200px; }
+  .statement__img {
+    top: 100px;
+    left: 8%;
+    width: 40%; }
   .contact__container {
     width: 90%;
     min-width: auto;
@@ -1008,19 +1006,21 @@ body {
     position: relative;
     top: 0;
     height: 550px;
-    box-shadow: none; }
-  .about__photo {
-    top: -64px;
-    left: 50px; }
-  .about__text {
-    padding: 100px 0px 20px 11px; } }
+    box-shadow: none; } }
 
 @media screen and (max-width: 68.75em) {
   .glide img {
     height: 400px; }
+  .glide__slide--link {
+    padding: 9px 12px;
+    font-size: .7em; }
   .about__photo {
     top: -92px;
-    left: 45px; } }
+    left: 45px; }
+  .statement__box {
+    margin-top: -87px; }
+  .statement__img {
+    width: 44%; } }
 
 @media screen and (max-width: 56.25em) {
   .section__art {
@@ -1044,8 +1044,6 @@ body {
     width: 90%; }
   .modal__description {
     width: 60%; }
-  .glide__slide--link {
-    width: 150px; }
   .section__contact {
     background: linear-gradient(to right, #000000 65%, #000000 65%, #ffd880 20%, #ffd880 50%); }
   .contact__container {
@@ -1068,8 +1066,6 @@ body {
     width: 100%;
     height: auto;
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25); }
-  .artist__statement {
-    flex-direction: column; }
   .about {
     flex-direction: column;
     align-items: center; }
@@ -1109,28 +1105,33 @@ body {
     text-align: center; }
     .long-vertical img {
       width: 55%; }
-  .mentors__box {
-    margin-top: 117px; }
   .container {
     padding: 0;
     width: 49.5%; }
+  .artist__statement {
+    flex-direction: column; }
   .statement__text {
     width: 80%;
     margin-left: 0;
     margin: auto; }
     .statement__text:first-child {
-      padding-top: 130px; }
+      padding-top: 0; }
+  .statement__content {
+    margin-top: 145px; }
   .statement__img {
     top: 102px;
     left: 0;
-    width: 60%; }
+    width: 70%;
+    margin: auto; }
   .blockquote::before {
-    top: 18%;
+    top: -33%;
     left: -4%; } }
 
 @media screen and (max-width: 50em) {
   .glide img {
     height: 300px; }
+  .glide__slide--link {
+    padding: 9px 6px; }
   .popup__content {
     width: 100%; }
   .modal__description {
@@ -1161,20 +1162,49 @@ body {
   .cover__line {
     visibility: hidden; }
   .glide__slide--link {
-    letter-spacing: 0;
-    padding: 12px 10px;
-    width: 109px; }
+    display: none; }
   .gallery__row {
     padding: 8px 30px; }
-  .about__text {
-    padding-top: 100px; }
-  .about__name {
-    text-align: left;
-    margin-top: 50px; }
-  .about__photo {
-    width: 75%; }
+  .about {
+    padding-bottom: 50px; }
+    .about__text {
+      padding-top: 100px; }
+    .about__name {
+      text-align: left;
+      margin-top: 50px; }
+    .aboutabout__photo {
+      width: 75%; }
+  .cv {
+    background: none; }
+  .timeline::after {
+    left: 31px; }
+  .container {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 25px; }
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent; }
+  .left::after, .right::after {
+    left: 21px; }
+  .right {
+    left: 0%; }
+  .content h2 {
+    text-align: left; }
+  .content h3 {
+    text-align: left; }
+  .content li {
+    direction: ltr;
+    text-align: left; }
+  .timeline {
+    margin-top: 115px; }
+  .statement__img {
+    top: 30px; }
   .section__contact {
-    background: #000000; }
+    background: #000000;
+    padding-top: 20px; }
   .form__content {
     flex-direction: column; }
   .contact__container .contact__info {
@@ -1207,4 +1237,14 @@ body {
   .glide img {
     height: 200px; }
   .gallery__row {
-    padding: 4px 32px; } }
+    padding: 4px 32px; }
+  .blockquote::before {
+    top: -15%; }
+  .statement__text:first-child {
+    padding-top: 16px; }
+  .about__video {
+    margin-bottom: 50px; }
+  .glide__slide--link {
+    padding: 8px 6px;
+    font-size: .8em;
+    width: 86%; } }

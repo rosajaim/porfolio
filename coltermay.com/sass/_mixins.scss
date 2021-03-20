@@ -60,11 +60,10 @@
 @mixin linkSettings {
     text-decoration: none;
     font-size: .9em;
-    letter-spacing: .5px;
     text-transform: uppercase;
     color: $color-white;
     border: 1px solid $color-white;
-    padding: 15px 25px;
+    padding: 10px 12px;
     opacity: 0;
     transition-delay: 0.4s;
     transition: all 0.4s ease-out;
