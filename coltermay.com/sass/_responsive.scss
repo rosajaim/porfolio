@@ -31,6 +31,7 @@ $bp-smallest: 31.25em; //500px/16
         top: -64px;
         left: 50px;
     }
+
     .about__text {
         padding: 100px 0px 20px 11px;
     }
@@ -38,9 +39,11 @@ $bp-smallest: 31.25em; //500px/16
     .statement__content {
         margin-top: 130px;
     }
+
     .statement__text {
         margin-left: 200px;
     }
+
     .statement__img {
         top: 100px;
         left: 8%;
@@ -83,14 +86,15 @@ $bp-smallest: 31.25em; //500px/16
     .statement__box {
         margin-top: -87px;
     }
+
     .statement__img {
         width: 44%;
     }
-   
+
     // .statement__content {
     //     margin-top: 130px;
     // }
-   
+
 
 }
 
@@ -127,19 +131,14 @@ $bp-smallest: 31.25em; //500px/16
     }
 
     .popup__content {
-       width: 90%;
+        width: 90%;
 
     }
 
     //ART / FEATURED PROJECTS
     .modal__description {
         width: 60%;
-    } 
-
-    .glide__slide--link {
-        // width: 150px;
     }
-
 
     // CONTACT SECTION
     .section__contact {
@@ -148,9 +147,9 @@ $bp-smallest: 31.25em; //500px/16
 
     .contact__container {
         display: flex;
-        flex-direction: column-reverse ;
+        flex-direction: column-reverse;
         margin: 150px 0 150px 0;
-    } 
+    }
 
     .contact__container .contact__form {
         position: relative;
@@ -180,11 +179,11 @@ $bp-smallest: 31.25em; //500px/16
         flex-direction: column;
         align-items: center;
 
-        &__photo{
+        &__photo {
             top: -20px;
             left: 0;
             width: 60%;
-            margin: auto ;
+            margin: auto;
             margin-bottom: 30px;
         }
 
@@ -270,6 +269,7 @@ $bp-smallest: 31.25em; //500px/16
 
         }
     }
+
     .statement__content {
         margin-top: 145px;
     }
@@ -285,7 +285,7 @@ $bp-smallest: 31.25em; //500px/16
         top: -33%;
         left: -4%;
     }
-   
+
 }
 
 @media screen and (max-width: $bp-medium2) {
@@ -293,6 +293,7 @@ $bp-smallest: 31.25em; //500px/16
     .glide img {
         height: 300px;
     }
+
     .glide__slide--link {
         padding: 9px 6px;
         // font-size: .7em;
@@ -311,10 +312,102 @@ $bp-smallest: 31.25em; //500px/16
         width: 65%;
         margin-top: 60px;
     }
+
     .heading__secondary {
         padding: 0px 0 30px 63px;
 
     }
+
+
+
+
+    //MOBILE NAV
+
+    .nav,
+    .social__icons,
+    .logo {
+        display: none;
+    }
+
+    .main__nav .logo__mobile {
+        display: block;
+    }
+
+    .menu__btn {
+        display: block;
+    }
+
+
+    // .mobile {
+    //     position: fixed;
+    //     top: 0;
+    //     width: 100%;
+    //     opacity: 0.98;
+    //     // visibility: hidden;
+
+        &.show {
+            visibility: visible;
+        }
+
+    // }
+
+    // .nav,
+    // .branding {
+    //     display: flex;
+    //     flex-flow: column wrap;
+    //     align-items: center;
+    //     justify-content: center;
+    //     float: left;
+    //     width: 50%;
+    //     height: 100vh;
+    //     overflow: hidden;
+    //     // z-index: 10;
+    // }
+
+    // .nav {
+    //     margin: 0;
+    //     padding: 0;
+    //     background: $color-black-bg2;
+    //     list-style: none;
+    //     transform: translate3d(100%, 0, 0);
+    //     // @include easeOut;
+
+    //     &.show {
+    //         //Slide in from top
+    //         transform: translate3d(0, 0, 0);
+    //     }
+    // }
+
+    // .nav__item {
+    //     transform: translate3d(600px, 0, 0);
+    //     // @include easeOut;
+
+    //     &.show {
+    //         //Slide in from right
+    //         transform: translate3d(0, 0, 0);
+    //     }
+
+    //     // &.active-link>a {
+    //     //     color: $color-secondary;
+    //     // }
+    // }
+
+    // .nav__link {
+    //     display: inline-block;
+    //     position: relative;
+    //     font-size: 2rem;
+    //     color: $color-primary;
+    //     text-transform: uppercase;
+    //     padding: 1rem 0;
+    //     font-weight: 300;
+    //     // @include easeOut;
+
+    //     &:hover {
+    //         color: red;
+
+    //     }
+
+    // }
 
 }
 
@@ -324,14 +417,14 @@ $bp-smallest: 31.25em; //500px/16
         padding: 0px 0 30px 63px;
 
     }
-   
+
     .glide img {
         height: 200px;
 
     }
 
     .modal-content img {
-        width: 83%; 
+        width: 83%;
     }
 
     .heading__secondary {
@@ -354,14 +447,14 @@ $bp-smallest: 31.25em; //500px/16
 
 
     .glide__slide--link {
-       display: none;
+        display: none;
     }
 
     //GALLERY 
     .gallery__row {
         padding: 8px 30px;
-      
-      }
+
+    }
 
     //ABOUT 
     .about {
@@ -376,24 +469,26 @@ $bp-smallest: 31.25em; //500px/16
             margin-top: 50px;
         }
 
-        &about__photo{
+        &about__photo {
             width: 75%;
         }
     }
-   
+
     //TIME LINE
     .cv {
         background: none;
     }
+
     .timeline::after {
         left: 31px;
-     }
+    }
 
-     .container {
+    .container {
         width: 100%;
         padding-left: 35px;
         padding-right: 25px;
     }
+
     .container::before {
         left: 60px;
         border: medium solid white;
@@ -401,7 +496,8 @@ $bp-smallest: 31.25em; //500px/16
         border-color: transparent white transparent transparent;
     }
 
-    .left::after, .right::after {
+    .left::after,
+    .right::after {
         left: 21px;
     }
 
@@ -418,9 +514,10 @@ $bp-smallest: 31.25em; //500px/16
     }
 
     .content li {
-        direction:ltr;
+        direction: ltr;
         text-align: left;
     }
+
     .timeline {
         margin-top: 115px;
     }
@@ -428,7 +525,7 @@ $bp-smallest: 31.25em; //500px/16
     //ARTIST STATEMENT 
     .statement__img {
         top: 30px;
-    
+
     }
 
 
@@ -437,13 +534,16 @@ $bp-smallest: 31.25em; //500px/16
         background: $color-black;
         padding-top: 20px;
     }
+
     .form__content {
         flex-direction: column;
     }
+
     .contact__container .contact__info {
         flex-direction: column;
-        
+
     }
+
     .contact__info--icons {
         margin-top: 35px;
     }
@@ -451,6 +551,7 @@ $bp-smallest: 31.25em; //500px/16
     .input__box.w50 {
         width: 100%;
     }
+
     .form__content {
         padding-top: 50px;
     }
@@ -474,10 +575,11 @@ $bp-smallest: 31.25em; //500px/16
 
 
 @media screen and (max-width: $bp-smallest) {
-  
+
     .contact__container .contact__form {
         padding: 20px;
     }
+
     .heading__secondary {
         left: -38px;
     }
@@ -501,11 +603,13 @@ $bp-smallest: 31.25em; //500px/16
 
 
     .blockquote::before {
-        top: -15%;    
+        top: -15%;
     }
+
     .statement__text:first-child {
         padding-top: 16px;
     }
+
     .about__video {
         margin-bottom: 50px;
     }

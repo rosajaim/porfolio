@@ -166,7 +166,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  padding: 27px;
   display: flex;
   background-color: rgba(14, 4, 4, 0.788);
   box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.75);
@@ -176,6 +176,16 @@ body {
   .main__nav .logo {
     position: relative;
     font-size: 1.4em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    margin-left: 40px;
+    color: #ffd880; }
+  .main__nav .logo__mobile {
+    display: none;
+    position: relative;
+    font-size: 1.7em;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1.3px;
@@ -236,6 +246,35 @@ body {
   transition: background-color 1000ms ease-out;
   transition-delay: 125ms;
   z-index: 99; }
+
+.menu__btn {
+  position: absolute;
+  height: 4.2rem;
+  width: 4.2rem;
+  border-radius: 50%;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  display: none;
+  z-index: 2; }
+  .menu__btn .btn__line {
+    position: relative;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 1px;
+    margin: 0 0 6px 0;
+    background: #fff;
+    transition: ease-out .3s; }
+  .menu__btn.close {
+    transform: rotate(180deg); }
+    .menu__btn.close .btn__line:nth-child(1) {
+      transform: rotate(45deg) translate(-5px, 14px); }
+    .menu__btn.close .btn__line:nth-child(2) {
+      opacity: 0; }
+    .menu__btn.close .btn__line:nth-child(3) {
+      transform: rotate(-45deg) translate(-4px, -15px); }
 
 .section__about {
   background-color: #000000; }
@@ -1141,7 +1180,17 @@ body {
     width: 65%;
     margin-top: 60px; }
   .heading__secondary {
-    padding: 0px 0 30px 63px; } }
+    padding: 0px 0 30px 63px; }
+  .nav,
+  .social__icons,
+  .logo {
+    display: none; }
+  .main__nav .logo__mobile {
+    display: block; }
+  .menu__btn {
+    display: block; }
+  .show {
+    visibility: visible; } }
 
 @media screen and (max-width: 37.5em) {
   .heading__secondary {
@@ -1187,7 +1236,8 @@ body {
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent; }
-  .left::after, .right::after {
+  .left::after,
+  .right::after {
     left: 21px; }
   .right {
     left: 0%; }
