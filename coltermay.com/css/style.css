@@ -1195,8 +1195,6 @@ span.two {
     transform: translateY(-300px); }
   .cover__line {
     visibility: hidden; }
-  .glide__slide--link {
-    display: none; }
   .gallery__content {
     flex: 100%;
     max-width: 100%; }
