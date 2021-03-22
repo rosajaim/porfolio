@@ -123,20 +123,20 @@
 }
 
 /* Responsive layout - makes a two.gallery__content-layout instead of four.gallery__contents */
-@media screen and (max-width: 800px) {
-  .gallery__content {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+// @media screen and (max-width: 800px) {
+//   .gallery__content {
+//     flex: 50%;
+//     max-width: 50%;
+//   }
+// }
 
 /* Responsive layout - makes the two.gallery__contents stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .gallery__content {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
+// @media screen and (max-width: 600px) {
+//   .gallery__content {
+//     flex: 100%;
+//     max-width: 100%;
+//   }
+// }
 
 
 .long-horizontal {

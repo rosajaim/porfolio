@@ -15,39 +15,32 @@
     <script src="https://kit.fontawesome.com/1b4e84012c.js" crossorigin="anonymous"></script>
     <!-- GQUERY -->
     <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <title>Colter May</title>
-
+    
 </head>
 
 <body>
     <header class="header" id="header">
         <!-- ====== NAVIGATION ====== -->
-        <nav class="main__nav">
-            <!--Mobile nav botton-->
-            <div class="menu__btn">
-                <div class="btn__line"></div>
-                <div class="btn__line"></div>
-                <div class="btn__line"></div>
+        <div class="navigation">
+            <a class="logo" href="#">C<span class="active">M</span></a>
+            <div class="toggle-btn">
+                <span class="one"></span>
+                <span class="two"></span>
             </div>
-            <!--Logo-->
-            <a class="logo" href="#">Colter <span class="active">May</span></a>
-            <a class="logo__mobile" href="#">C<span class="active">M</span></a>
-
-            <!--Nav menu-->
-            <ul class="nav">
-                <li class="nav__item"><a class="nav__link active" href="#header">Home</a></li>
-                <li class="nav__item"><a class="nav__link" href="#art">Art work</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
-            </ul>
-
-            <!--social media icons-->
-            <div class="social__icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </nav>
+            <nav class="menu">
+                <div class="data">
+                    <ul class="nav__list" >
+                        <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#art">Gallery</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
         <!-- ====== HOME PAGE SLIDER ====== -->
         <div class="slider">
@@ -111,28 +104,28 @@
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
-                                <img src="./img/green-field-min.jpg" alt="Green Field">
-                                <a class="glide__slide--link" href="#greenField">Read more</a>
+                                <img src="./img/chita2-thumbnail-min.jpg" alt="Chita">
+                                <a class="glide__slide--link" href="#chita">Read more</a>
                             </li>
                             <li class="glide__slide">
-                                <img src="./img/little-tree-min.jpg" alt="Little Tree">
-                                <a class="glide__slide--link" href="#littleTree">Read more</a>
+                                <img src="./img/deer-thumbnail-min.jpeg" alt="Deer">
+                                <a class="glide__slide--link" href="#deer">Read more</a>
                             </li>
                             <li class="glide__slide">
-                                <img src="./img/native-girl.jpg" alt="Native Girl">
-                                <a class="glide__slide--link" href="#nativeGirl">Read more</a>
+                                <img src="./img/gorilla-thumbnail-min.jpg" alt="Gorilla">
+                                <a class="glide__slide--link" href="#gorilla">Read more</a>
                             </li>
                             <li class="glide__slide">
-                                <img src="./img/portrait-child.jpg" alt="Portrait">
-                                <a class="glide__slide--link" href="#portrait">Read more</a>
+                                <img src="./img/gorilla2-thumbnail-min.jpg" alt="Gorilla2">
+                                <a class="glide__slide--link" href="#gorilla2">Read more</a>
                             </li>
                             <li class="glide__slide">
-                                <img src="./img/ram.jpg" alt="Ram">
-                                <a class="glide__slide--link" href="#rum">Read more</a>
+                                <img src="./img/leon2-thumnnail-min.jpeg" alt="Leon2">
+                                <a class="glide__slide--link" href="#leon2">Read more</a>
                             </li>
                             <li class="glide__slide">
-                                <img src="./img/green-field-min.jpg" alt="Green field">
-                                <a class="glide__slide--link" href="#greenField">Read more</a>
+                                <img src="./img/mono2-thumbnail-min.jpg" alt="mono2">
+                                <a class="glide__slide--link" href="#mono2">Read more</a>
                             </li>
                         </ul>
                     </div>
@@ -148,12 +141,9 @@
         </div>
 
         <!-- FEATURED PROJECTS POPUP -->
-        <div class="popup" id="greenField">
+        <div class="popup" id="chita">
             <div class="popup__content">
-                <div class="popup__left">
-                    <!--image below-->
-                    <img src="./img/green-field-min.jpg" alt="Green Field" class="popup__img">
-                </div>
+                <img src="./img/chita2-min.jpg" alt="Chita" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -165,11 +155,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="littleTree">
+        <div class="popup" id="deer">
             <div class="popup__content">
-                <div class="popup__left">
-                    <img src="./img/little-tree-min.jpg" alt="Lttle tree" class="popup__img">
-                </div>
+                <img src="./img/deer-min.jpeg" alt="Deer" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -181,11 +169,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="nativeGirl">
+        <div class="popup" id="gorilla">
             <div class="popup__content">
-                <div class="popup__left">
-                    <img src="./img/native-girl.jpg" alt="Native Girl" class="popup__img">
-                </div>
+                <img src="./img/gorilla-min.jpg" alt="Gorilla" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -197,11 +183,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="portrait">
+        <div class="popup" id="gorilla2">
             <div class="popup__content">
-                <div class="popup__left">
-                    <img src="./img/portrait-child.jpg" alt="Portrait" class="popup__img">
-                </div>
+                <img src="./img/gorilla2-min.jpg" alt="Gorilla" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -213,11 +197,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="rum">
+        <div class="popup" id="leon2">
             <div class="popup__content">
-                <div class="popup__left">
-                    <img src="./img/ram.jpg" alt="Rum" class="popup__img">
-                </div>
+                <img src="./img/leon2-min.jpeg" alt="Leon2" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -229,11 +211,9 @@
                 </div>
             </div>
         </div>
-        <div class="popup" id="greenField">
+        <div class="popup" id="mono2">
             <div class="popup__content">
-                <div class="popup__left">
-                    <img src="./img/green-field-min.jpg" alt="greenField" class="popup__img">
-                </div>
+                <img src="./img/mono2-min.jpg" alt="Mono2" class="popup__img">
                 <div class="popup__right">
                     <a href="#art" class="popup__close">&times;</a>
                     <div class="popup__description">
@@ -245,6 +225,8 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="breaker">
     </section>
 
     <!-- ====== ART GRID ====== -->
@@ -729,10 +711,12 @@
         </div>
         <div class="cover__line"></div>
     </section>
+    <section class="breaker2">
+    </section>
 
     <!-- ====== SECTION ABOUT ====== -->
     <section class="section__about" id="about">
-        <h2 class="heading__secondary" data-text="02">About</h2>
+        <h2 class="heading__secondary mg-top-lg" data-text="02">About</h2>
         <div class="about">
             <div class="about__text">
                 <p>
@@ -1041,5 +1025,7 @@
 <script src="./js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 
 </html>

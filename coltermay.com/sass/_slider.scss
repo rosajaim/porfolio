@@ -20,7 +20,7 @@
         &__content {
             position: absolute;
             color: $color-white;
-            background-color: $color-black-bg;
+            // background-color: $color-black-bg;
             padding: 30px 30px 30px 60px;
             bottom: 70px;
             left: -600px;
@@ -51,26 +51,26 @@
 
     // ========== HOME PAGE SILDER PICTURES ==========
     &:first-child {     //picture 1
-        background: url(../img/EasterSunrise-min.jpg) no-repeat center center/cover;
+        background: url(../img/chita-min.jpg) no-repeat center center/cover;
     }
 
     &:nth-child(2) {    //picture 2
-        background: url(../img/EasterSunset-min.JPEG) no-repeat center center/cover;
+        background: url(../img/jaguar-min.jpeg) no-repeat center center/cover;
 
     }
 
     &:nth-child(3) {    //picture 3
-        background: url(../img/TheTowers-min.jpg) no-repeat center center/cover;
+        background: url(../img/elephant-min.jpeg) no-repeat center center/cover;
 
     }
 
     &:nth-child(4) {    //picture 4
-        background: url(../img/ChasingDusk-min.jpg) no-repeat center center/cover;
+        background: url(../img/leon-min.jpg) no-repeat center center/cover;
 
     }
 
     &:nth-child(5) {    //picture 5
-        background: url(../img/img5.jpg) no-repeat center center/cover;
+        background: url(../img/mono-min.jpg) no-repeat center center/cover;
 
     }
 

@@ -16,5 +16,12 @@ $color-black: #000000;
 // #ecd99f
 // #e2ca7b primary
 
-
 $font-primary: 'Roboto', sans-serif;
+
+/// RESPONSIVE BREAKE POINTS 
+$bp-largest: 75em; //1200px/16
+$bp-large: 68.75em; //1100px/16
+$bp-medium: 56.25em; //900px/16
+$bp-medium2: 50em; //800px/16
+$bp-small: 37.5em; //600px/16
+$bp-smallest: 31.25em; //500px/16

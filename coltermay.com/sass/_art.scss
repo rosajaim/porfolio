@@ -63,7 +63,7 @@
 }
 
 .col-8 {
-  width: 66%;
+  width: 64.5%;
   padding-right: 40px;
 }
 
@@ -208,7 +208,8 @@
 
   &__content {
    @include setCenter;
-    width: 75%;
+    width: 80%;
+    height: 90vh;
     max-width: 75rem;
     background-color: $color-white2;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
@@ -223,13 +224,11 @@
   }
 
   &__description {
-    padding: 10px;
+    padding: 50px;
     font-weight: 400;
     font-size: 1.1em;
-    letter-spacing: .4px;
     text-align: left;
     color: $color-grey-dark;
-    width: 72%;
     margin: auto;
 
     & span {
@@ -242,7 +241,7 @@
   }
 
   &__img {
-    display: block;
+    width: 60%;
   
   }
 
@@ -263,7 +262,7 @@
     &:visited {
       color: $color-grey-dark;
       position: absolute;
-      top: 2.5rem;
+      top: 1rem;
       right: 2.5rem;
       font-size: 3rem;
       text-decoration: none;
@@ -276,4 +275,19 @@
       color: $color-primary;
     }
   }
+}
+
+.breaker {
+  background-image: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url(../img/africa.jpeg);;
+  height: 80vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+.breaker2 {
+  background-image: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url(../img/chita-section.jpg);;
+  height: 80vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
 }

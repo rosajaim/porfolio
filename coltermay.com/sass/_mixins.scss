@@ -1,6 +1,6 @@
 @mixin imgSetings {
     position: relative;
-    top: -15px;
+    top: 4px;
     left: 90px;
     width: 35%;
     display: inline-block;
@@ -93,7 +93,7 @@
     font-size: 2.2em;
     font-weight: 400;
     letter-spacing: 3px;
-    padding: 0px 0 30px 98px;
+    padding: 0px 0 30px 76px;
 
     &:before {
         content: attr(data-text);
