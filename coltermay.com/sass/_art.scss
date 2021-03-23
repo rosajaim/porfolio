@@ -278,16 +278,25 @@
 }
 
 .breaker {
-  background-image: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url(../img/africa.jpeg);;
-  height: 80vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom center;
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolf-section-mobile.jpeg);;
+  @include sectionBraker;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    @include brakerMobile;
+  }
+
 }
+
 .breaker2 {
-  background-image: linear-gradient(rgba($color-black, .7), rgba($color-black, .7)), url(../img/chita-section.jpg);;
-  height: 80vh;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom center;
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/chita-section.jpg);;
+  @include sectionBraker; height: 80vh;
+
+}
+
+.breaker3 {
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolves-section3.jpeg);;
+  @include sectionBraker; height: 80vh;
+
 }

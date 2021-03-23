@@ -9,7 +9,7 @@
 
 @mixin statementImg {
     position: relative;
-    top: 90px;
+    top: 100px;
     left: 6%;
     width: 37%;
     display: inline-block;
@@ -105,4 +105,15 @@
 
     }
     
+}
+
+@mixin sectionBraker {
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@mixin brakerMobile {
+    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolf-section.jpeg);   
 }

@@ -379,11 +379,10 @@
         visibility: hidden;
     }
 
-
-    // .glide__slide--link {
-    //     display: none;
-    // }
-
+    .glide__slide--link {
+        padding: 13px 7px;
+        width: 83px;
+    }
     //GALLERY 
     .gallery__content {
         flex: 100%;
@@ -415,7 +414,7 @@
 
     //TIME LINE
     .cv {
-        background: none;
+        // background: none;
     }
 
     .timeline::after {
