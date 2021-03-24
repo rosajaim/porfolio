@@ -686,8 +686,7 @@ span.two {
   background-position: center; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .breaker {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
-      background-attachment: fixed; } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg); } }
 
 .breaker2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
@@ -1197,7 +1196,7 @@ span.two {
     left: -9px;
     padding: 0px 0 30px 63px; }
   .glide img {
-    height: 200px; }
+    height: 656px; }
   .modal-content img {
     width: 83%; }
   .heading__secondary {
@@ -1211,8 +1210,9 @@ span.two {
   .cover__line {
     visibility: hidden; }
   .glide__slide--link {
-    padding: 13px 7px;
-    width: 83px; }
+    display: none; }
+  .glide__arrows {
+    bottom: -61px; }
   .gallery__content {
     flex: 100%;
     max-width: 100%; }

@@ -1,3 +1,4 @@
+
 // ========== HOMEPAGE SLIDER ==========
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
@@ -149,10 +150,16 @@ function handleOverlay(status) {
 // ========== GlIDE SLIDER==========
 var glide = new Glide('.glide', {
   type: 'carousel',
-  startAt: 0,
+  startAt: 4,
   perView: 3,
-  focusAt: 'center',
+	breakpoints: {
+    600: {
+			perView: 1
+		}
+	},
+  focusAt: 'center'
 }).mount()
+
 
 
 // ========== SWAPS h2 CURRICULUM VITAE TO h2 CV ==========

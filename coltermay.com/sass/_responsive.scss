@@ -359,7 +359,7 @@
     }
 
     .glide img {
-        height: 200px;
+        height: 656px;
     }
 
     .modal-content img {
@@ -385,9 +385,14 @@
     }
 
     .glide__slide--link {
-        padding: 13px 7px;
-        width: 83px;
+        display: none;
+        // padding: 13px 7px;
+        // width: 83px;
     }
+    .glide__arrows {
+        bottom: -61px;
+    }
+
     //GALLERY 
     .gallery__content {
         flex: 100%;
