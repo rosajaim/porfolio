@@ -76,7 +76,7 @@ $('.nav__link, .art__link').on('click', function (e) { //a['href^="#"'] will tar
 // ========== ABOUT IMAGE REVEALING EFFECT ON SCROLLING ==========
 $(window).scroll(function () {
   var imgEffect = $(window).scrollTop();
-  if (imgEffect > 4700) {
+  if (imgEffect > 4550) {
     $(".about__photo").addClass("about__photo-js");
   } else {
     $(".about__photo").removeClass("about__photo-js");

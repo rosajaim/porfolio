@@ -278,13 +278,14 @@
 }
 
 .breaker {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolf-section-mobile.jpeg);;
+  background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section.jpeg);;
   @include sectionBraker;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   only screen and (min-width: 125em) {
     @include brakerMobile;
+    background-attachment: fixed;
   }
 
 }

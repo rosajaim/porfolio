@@ -115,5 +115,5 @@
 }
 
 @mixin brakerMobile {
-    background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolf-section.jpeg);   
+    background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section-mobile.jpeg);   
 }
