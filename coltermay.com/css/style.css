@@ -84,7 +84,8 @@
   .slide:nth-child(3) {
     background: url(../img/lion2-slider.jpg) no-repeat center center/cover; }
   .slide:nth-child(4) {
-    background: url(../img/leon-min.jpg) no-repeat center center/cover; }
+    background: url(../img/leon-min.jpg) no-repeat center center/cover;
+    background-position: center right 20%; }
   .slide:nth-child(5) {
     background: url(../img/mono-min.jpg) no-repeat center center/cover; }
   .slide__buttons button {
@@ -683,7 +684,8 @@ span.two {
   height: 80vh;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .breaker {
       background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg); } }
@@ -694,6 +696,7 @@ span.two {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  position: relative;
   height: 80vh; }
 
 .breaker3 {
@@ -702,6 +705,7 @@ span.two {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  position: relative;
   height: 80vh; }
 
 .section__contact {
@@ -1190,6 +1194,8 @@ span.two {
 @media screen and (max-width: 37.5em) {
   .slide:nth-child(3) {
     background-position: center right 30%; }
+  .slide:nth-child(4) {
+    background-position: center right 20%; }
   .toggle-btn {
     left: 78%; }
   .heading__secondary {
