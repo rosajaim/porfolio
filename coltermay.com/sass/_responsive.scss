@@ -344,6 +344,11 @@
 }
 
 @media screen and (max-width: $bp-small) {
+    //SLIDER 
+    .slide:nth-child(3) {
+        background-position: center right 30%;
+    }
+
     // NAV
      .toggle-btn {
         left: 78%;
@@ -413,10 +418,6 @@
     }
 
     //TIME LINE
-    .cv {
-        // background: none;
-    }
-
     .timeline::after {
         left: 31px;
     }

@@ -77,7 +77,7 @@
     &__buttons button {
         border: 2px solid $color-primary;
         background-color: transparent;
-        color: #fff;
+        color: $color-white;
         font-size: 20px;
         cursor: pointer;
         padding: 13px 15px;
@@ -86,7 +86,7 @@
         transition: all .2s;
 
         &:hover {
-            background-color: #fff;
+            background-color: $color-white;
             color: #333;
         }
 
