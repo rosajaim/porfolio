@@ -683,18 +683,17 @@ span.two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section.jpeg);
   height: 80vh;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .breaker {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
+      background-attachment: fixed; } }
 
 .breaker2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
   height: 80vh;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   position: relative;
   height: 80vh; }
@@ -703,7 +702,6 @@ span.two {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3.jpeg);
   height: 80vh;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   position: relative;
   height: 80vh; }
@@ -1294,8 +1292,6 @@ span.two {
     margin-top: -145px; }
   .heading__secondary {
     left: -13px; }
-  .glide img {
-    height: 200px; }
   .gallery__row {
     padding: 4px 32px; }
   .blockquote::before {
