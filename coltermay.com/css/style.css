@@ -1200,7 +1200,7 @@ span.two {
     left: -9px;
     padding: 0px 0 30px 63px; }
   .glide img {
-    height: 656px; }
+    height: 600px; }
   .modal-content img {
     width: 83%; }
   .heading__secondary {
@@ -1278,7 +1278,9 @@ span.two {
     margin-top: 60px; }
   .popup__img {
     width: 90%;
-    margin: auto; } }
+    margin: auto; }
+  .breaker {
+    background-attachment: fixed; } }
 
 @media screen and (max-width: 31.25em) {
   .toggle-btn {

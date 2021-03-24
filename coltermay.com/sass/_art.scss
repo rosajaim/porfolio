@@ -279,12 +279,12 @@
 
 .breaker {
   background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section.jpeg);;
-  @include sectionBraker;
+  @include sectionBreaker;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
   only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
   only screen and (min-width: 125em) {
-    @include brakerMobile;
+    @include breakerMobile;
     background-attachment: fixed;
   }
 
@@ -292,12 +292,12 @@
 
 .breaker2 {
   background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/chita-section.jpg);;
-  @include sectionBraker; height: 80vh;
+  @include sectionBreaker; height: 80vh;
 
 }
 
 .breaker3 {
   background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolves-section3.jpeg);;
-  @include sectionBraker; height: 80vh;
+  @include sectionBreaker; height: 80vh;
 
 }

@@ -107,7 +107,7 @@
     
 }
 
-@mixin sectionBraker {
+@mixin sectionBreaker {
     height: 80vh;
     background-size: cover;
     // background-attachment: fixed;
@@ -115,6 +115,6 @@
     position: relative;
 }
 
-@mixin brakerMobile {
+@mixin breakerMobile {
     background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section-mobile.jpeg);   
 }
