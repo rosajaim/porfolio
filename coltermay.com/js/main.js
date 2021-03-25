@@ -3,7 +3,7 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = true;
+const auto = false;
 const intervalTime = 4000;
 let slideInterval;
 
@@ -77,7 +77,7 @@ $('.nav__link, .art__link').on('click', function (e) { //a['href^="#"'] will tar
 // ========== ABOUT IMAGE REVEALING EFFECT ON SCROLLING ==========
 $(window).scroll(function () {
   var imgEffect = $(window).scrollTop();
-  if (imgEffect > 4550) {
+  if (imgEffect > 4450) {
     $(".about__photo").addClass("about__photo-js");
   } else {
     $(".about__photo").removeClass("about__photo-js");
@@ -95,7 +95,7 @@ $(window).scroll(function () {
 // ========== ARTIST STATEMENT IMAGE REVEALING EFFECT ON SCROLLING ==========
 $(window).scroll(function () {
   var imgEffect2 = $(window).scrollTop();
-  if (imgEffect2 > 6900) {
+  if (imgEffect2 > 8200) {
     $(".statement__img").addClass("js-statement__img");
   } else {
     $(".statement__img").removeClass("js-statement__img");

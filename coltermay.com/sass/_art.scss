@@ -5,7 +5,7 @@
 }
 
 // ========== ART SLIDER ==========
-.main {  
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +42,7 @@
 
     &:hover {
       .glide__slide--link {
-        opacity:1;
+        opacity: 1;
         margin-top: 0;
       }
     }
@@ -152,8 +152,8 @@
 // ========== IMG FRAME ==========
 .frame {
   background-color: #ddc;
-  border: solid 5vmin  #eee;
-  border-bottom-color:  #fff;
+  border: solid 5vmin #eee;
+  border-bottom-color: #fff;
   border-left-color: #eee;
   border-radius: 2px;
   border-right-color: #eee;
@@ -207,7 +207,7 @@
   }
 
   &__content {
-   @include setCenter;
+    @include setCenter;
     width: 80%;
     height: 90vh;
     max-width: 75rem;
@@ -242,7 +242,7 @@
 
   &__img {
     width: 60%;
-  
+
   }
 
   //Open state
@@ -277,8 +277,30 @@
   }
 }
 
+.quote {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 300;
+  width: 85%;
+  max-width: 46ch;
+  color: $color-white2;
+
+  &::before {
+    position: absolute;
+    content: "\201c";
+    color: $color-primary;
+    font-size: 4em;
+    display: block;
+    top: -70%;
+    left: -5%;
+  }
+}
+
 .breaker {
-  background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section.jpeg);;
+  background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section-mobile.jpeg);
   @include sectionBreaker;
 
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
@@ -287,17 +309,30 @@
     @include breakerMobile;
     background-attachment: fixed;
   }
-
 }
 
 .breaker2 {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/chita-section.jpg);;
-  @include sectionBreaker; height: 80vh;
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/chita-section-mobile.jpg);
+  @include sectionBreaker;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    @include breaker2Mobile;
+    background-attachment: fixed;
+  }
 
 }
 
 .breaker3 {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolves-section3.jpeg);;
-  @include sectionBreaker; height: 80vh;
+  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolves-section3-mobile.jpeg);
+  @include sectionBreaker;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+  only screen and (min-width: 125em) {
+    @include breaker3Mobile;
+    background-attachment: fixed;
+  }
 
 }

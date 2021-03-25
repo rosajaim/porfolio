@@ -84,10 +84,9 @@
   .slide:nth-child(3) {
     background: url(../img/lion2-slider.jpg) no-repeat center center/cover; }
   .slide:nth-child(4) {
-    background: url(../img/leon-min.jpg) no-repeat center center/cover;
-    background-position: center right 20%; }
+    background: url(../img/leon-min.jpg) no-repeat center center/cover; }
   .slide:nth-child(5) {
-    background: url(../img/mono-min.jpg) no-repeat center center/cover; }
+    background: url(../img/cheetah-lsider.jpg) no-repeat center center/cover; }
   .slide__buttons button {
     border: 2px solid #ffd880;
     background-color: transparent;
@@ -172,7 +171,7 @@ body {
 .logo {
   position: relative;
   left: 3rem;
-  font-size: 1.7em;
+  font-size: 1.8em;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -270,12 +269,18 @@ span.two {
   /* ABOUT IMG REVEALING ON SCROLL */ }
   .about__text {
     width: 50%;
-    padding: 60px 40px 20px 2px;
+    max-width: 82ch;
+    padding: 100px 40px 20px 2px;
     line-height: 1.6;
     font-weight: 200;
     font-size: 1.1em;
     letter-spacing: 1.2px;
     color: #a6a6a6; }
+    .about__text::first-letter {
+      color: #ffd880;
+      font-size: 2em;
+      font-weight: 500;
+      line-height: 1; }
   .about__name {
     line-height: 1.2;
     text-transform: uppercase;
@@ -411,37 +416,34 @@ span.two {
 
 .artist__statement {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-end; }
+  align-items: center;
+  justify-content: space-evenly; }
+
+.statement__content {
+  width: 40%;
+  margin-top: 85px; }
 
 .statement__img {
-  position: relative;
-  top: 100px;
-  left: 6%;
-  width: 37%;
+  width: 34%;
   display: inline-block;
-  padding-top: 50px;
+  padding-top: 180px;
   transition: 1s;
-  filter: brightness(0.2); }
+  filter: brightness(0.05); }
 
 .js-statement__img {
-  position: relative;
-  top: 100px;
-  left: 6%;
-  width: 37%;
+  width: 34%;
   display: inline-block;
-  padding-top: 50px;
+  padding-top: 180px;
   transition: 1s;
   filter: brightness(1); }
 
 .statement__text {
-  width: 60%;
-  padding: 10px 0 0 0px;
-  margin-left: 250px;
+  padding: 0 0 0 30px;
   line-height: 1.6;
   font-weight: 200;
   font-size: 1.1em;
   letter-spacing: 1.2px;
+  max-width: 70ch;
   color: #a6a6a6; }
 
 .statement__text:first-child::first-letter {
@@ -454,12 +456,13 @@ span.two {
   line-height: 1.6;
   position: relative; }
   .blockquote::before {
-    content: "\201c";
-    font-size: 550%;
-    display: block;
     position: absolute;
-    top: -20%;
-    left: -6%; }
+    content: "\201C";
+    font-size: 8em;
+    color: #ffd880;
+    display: block;
+    top: -40%;
+    left: -3%; }
 
 .section__art {
   padding: 100px 0 50px 0;
@@ -580,7 +583,7 @@ span.two {
 
 .frame {
   background-color: #ddc;
-  border: solid 5vmin  #eee;
+  border: solid 5vmin #eee;
   border-bottom-color: #fff;
   border-left-color: #eee;
   border-radius: 2px;
@@ -679,32 +682,57 @@ span.two {
   .popup__close:hover {
     color: #ffd880; }
 
+.quote {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 300;
+  width: 85%;
+  max-width: 46ch;
+  color: #f6f5ee; }
+  .quote::before {
+    position: absolute;
+    content: "\201c";
+    color: #ffd880;
+    font-size: 4em;
+    display: block;
+    top: -70%;
+    left: -5%; }
+
 .breaker {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section.jpeg);
-  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
+  height: 70vh;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   position: relative; }
   @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
     .breaker {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section.jpeg);
       background-attachment: fixed; } }
 
 .breaker2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
-  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section-mobile.jpg);
+  height: 70vh;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 80vh; }
+  background-position: center center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .breaker2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
+      background-attachment: fixed; } }
 
 .breaker3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3.jpeg);
-  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3-mobile.jpeg);
+  height: 70vh;
   background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 80vh; }
+  background-position: center center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .breaker3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3.jpeg);
+      background-attachment: fixed; } }
 
 .section__contact {
   padding: 100px 0 0 0;
@@ -1014,6 +1042,35 @@ span.two {
   height: 64px;
   background-color: #000000; }
 
+@media screen and (min-width: 90.5em) and (max-width: 150em) {
+  .logo {
+    font-size: 3em; }
+  .slide__buttons button {
+    font-size: 3em;
+    padding: 10px 15px; }
+  .slide__content h1 {
+    font-size: 3.2em; }
+  .slide__content p {
+    font-size: 1.5em; }
+  .heading__secondary {
+    font-size: 3.2em; }
+  .col-4 {
+    padding: 0 55px; }
+    .col-4 h2 {
+      font-size: 3em; }
+    .col-4 p {
+      font-size: 1.4em; }
+  .quote {
+    font-size: 3em; }
+  .about__text {
+    font-size: 1.5em; }
+  .timeline {
+    font-size: 1.6em; }
+  .statement__text {
+    font-size: 1.5em; }
+  .contact__box {
+    font-size: 1.4em; } }
+
 @media screen and (max-width: 75em) {
   .popup__content {
     flex-direction: column;
@@ -1031,12 +1088,6 @@ span.two {
     padding: 100px 0px 20px 11px; }
   .statement__content {
     margin-top: 130px; }
-  .statement__text {
-    margin-left: 200px; }
-  .statement__img {
-    top: 100px;
-    left: 8%;
-    width: 40%; }
   .contact__container {
     width: 90%;
     min-width: auto;
@@ -1087,6 +1138,8 @@ span.two {
     width: 90%; }
   .modal__description {
     width: 60%; }
+  .quote {
+    font-size: 1.8em; }
   .section__contact {
     background: linear-gradient(to right, #000000 65%, #000000 65%, #ffd880 20%, #ffd880 50%); }
   .contact__container {
@@ -1160,11 +1213,11 @@ span.two {
     .statement__text:first-child {
       padding-top: 0; }
   .statement__content {
-    margin-top: 145px; }
+    width: 100%; }
   .statement__img {
     top: 102px;
     left: 0;
-    width: 70%;
+    width: 65%;
     margin: auto; }
   .blockquote::before {
     top: -33%;
@@ -1201,8 +1254,25 @@ span.two {
     padding: 0px 0 30px 63px; }
   .glide img {
     height: 600px; }
-  .modal-content img {
-    width: 83%; }
+  .gallery__content {
+    flex: 100%;
+    max-width: 100%; }
+  .gallery__row {
+    padding: 8px 30px; }
+  .long-vertical img {
+    width: 89%; }
+  .small-rectangular img {
+    width: 90%; }
+  .frame {
+    top: 0; }
+  .modal {
+    width: 95vw;
+    height: 98vh; }
+    .modal-content img {
+      width: 95%; }
+    .modal__description {
+      width: 80%;
+      margin-top: -10px; }
   .heading__secondary {
     padding: 0px 0 30px 49px; }
   .slide .slide__content {
@@ -1217,11 +1287,6 @@ span.two {
     display: none; }
   .glide__arrows {
     bottom: -61px; }
-  .gallery__content {
-    flex: 100%;
-    max-width: 100%; }
-  .gallery__row {
-    padding: 8px 30px; }
   .about {
     padding-bottom: 50px; }
     .about__text {
@@ -1257,10 +1322,19 @@ span.two {
   .timeline {
     margin-top: 115px; }
   .statement__img {
-    top: 30px; }
+    top: 30px;
+    width: 70%; }
+  .statement__text {
+    padding: 0; }
+  .blockquote::before {
+    top: -40%; }
+  .quote {
+    font-size: 1.5em; }
   .section__contact {
     background: #000000;
-    padding-top: 20px; }
+    padding-top: 50px; }
+  .contact__container {
+    margin: 130px 0 70px 0; }
   .form__content {
     flex-direction: column; }
   .contact__container .contact__info {
@@ -1271,20 +1345,15 @@ span.two {
     width: 100%; }
   .form__content {
     padding-top: 50px; }
-  .modal__description {
-    width: 80%;
-    margin-top: -60px; }
-  .frame {
-    margin-top: 60px; }
   .popup__img {
     width: 90%;
-    margin: auto; }
-  .breaker {
-    background-attachment: fixed; } }
+    margin: auto; } }
 
 @media screen and (max-width: 31.25em) {
   .toggle-btn {
     left: 72%; }
+  .section__art {
+    padding-top: 50px; }
   .contact__container .contact__form {
     padding: 20px; }
   .heading__secondary {
@@ -1294,15 +1363,33 @@ span.two {
     margin-top: -145px; }
   .heading__secondary {
     left: -13px; }
+  .mg-top-lg {
+    margin-top: 50px; }
   .gallery__row {
     padding: 4px 32px; }
   .blockquote::before {
     top: -15%; }
+  .statement__box {
+    padding-bottom: 60px; }
+  .statement__content {
+    margin-top: 100px; }
   .statement__text:first-child {
     padding-top: 16px; }
+  .about {
+    padding: 60px 0 0 0; }
   .about__video {
     margin-bottom: 50px; }
   .glide__slide--link {
     padding: 8px 6px;
     font-size: .8em;
-    width: 86%; } }
+    width: 86%; }
+  .statement__img {
+    width: 76%; }
+  .blockquote::before {
+    top: -24%; }
+  .quote {
+    font-size: 1.3em; }
+  .breaker3 {
+    background-position: right; }
+  .contact__container {
+    margin: 120px 0 70px 0; } }

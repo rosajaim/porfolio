@@ -8,12 +8,9 @@
 }
 
 @mixin statementImg {
-    position: relative;
-    top: 100px;
-    left: 6%;
-    width: 37%;
+    width: 34%;
     display: inline-block;
-    padding-top: 50px;
+    padding-top: 180px;
     transition: 1s;
     
 }
@@ -106,15 +103,26 @@
     }
     
 }
+@mixin firstLetter {
+    color: $color-primary;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1;  
+}
 
 @mixin sectionBreaker {
-    height: 80vh;
+    height: 70vh;
     background-size: cover;
-    // background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     position: relative;
 }
 
 @mixin breakerMobile {
-    background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section-mobile.jpeg);   
+    background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section.jpeg);   
+}
+@mixin breaker2Mobile {
+    background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/chita-section.jpg);   
+}
+@mixin breaker3Mobile {
+    background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolves-section3.jpeg);   
 }

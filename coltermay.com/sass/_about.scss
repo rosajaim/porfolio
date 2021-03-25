@@ -3,20 +3,24 @@
 }
 
 .about {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     padding: 100px 0 100px 0;
 
-
     &__text {
         width: 50%;
-        padding: 60px 40px 20px 2px;
+        max-width: 82ch;
+        padding: 100px 40px 20px 2px;
         line-height: 1.6;
         font-weight: 200;
         font-size: 1.1em;
         letter-spacing: 1.2px;
         color: $color-grey-light;
+
+        &::first-letter {
+           @include firstLetter;
+        }
 
     }
 
@@ -186,16 +190,24 @@
 .statement__box {
     margin-top: -200px;
     padding-bottom: 100px;
+
 }
+
 .artist__statement {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.statement__content {
+    width: 40%;
+    margin-top: 85px;
 }
 
 .statement__img {
  @include statementImg;
-    filter: brightness(.2);
+    filter: brightness(.05);
 }
 
 .js-statement__img {
@@ -205,20 +217,16 @@
 
 .statement {
     &__text {
-        width: 60%;
-        padding: 10px 0 0 0px;
-        margin-left: 250px;
+        padding: 0 0 0 30px;
         line-height: 1.6;
         font-weight: 200;
         font-size: 1.1em;
         letter-spacing: 1.2px;
+        max-width: 70ch;
         color: $color-grey-light;
     }
     &__text:first-child::first-letter {
-        color: $color-primary;
-        font-size: 2em;
-        font-weight: 500;
-        line-height: 1;
+        @include firstLetter;
     }
 }
 
@@ -227,12 +235,13 @@
     position: relative;
 
     &::before {
-        content: "\201c";
-        font-size: 550%;
-        display: block;
         position: absolute;
-        top: -20%;
-        left: -6%;
+        content: "\201C";
+        font-size: 8em;
+        color: $color-primary;
+        display: block;
+        top: -40%;
+        left: -3%;
     }
 
 }

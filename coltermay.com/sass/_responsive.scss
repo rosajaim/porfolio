@@ -1,3 +1,52 @@
+@media screen and (min-width: 90.5em) and (max-width: 150em){  //90.533em = 1448px  150em = 2400px
+    .logo {
+        font-size: 3em;
+    }
+    .slide__buttons button {
+        font-size: 3em;
+        padding: 10px 15px;
+    }
+
+    .slide__content h1 {
+        font-size: 3.2em;
+    }
+    .slide__content p {
+        font-size: 1.5em;
+    }
+
+    .heading__secondary {
+        font-size: 3.2em;
+    }
+    .col-4 {
+        padding: 0 55px;
+
+        & h2 {
+            font-size: 3em;
+        }
+        & p {
+            font-size: 1.4em;
+        }
+    }
+
+    .quote {
+        font-size: 3em;
+    }
+
+    .about__text {
+        font-size: 1.5em;
+    }
+    .timeline {
+        font-size: 1.6em;
+    }
+    .statement__text {
+        font-size: 1.5em;
+    }
+    .contact__box {
+        font-size: 1.4em;
+    }
+   
+   
+}
 
 @media screen and (max-width: $bp-largest) {
 
@@ -33,15 +82,15 @@
         margin-top: 130px;
     }
 
-    .statement__text {
-        margin-left: 200px;
-    }
+    // .statement__text {
+    //     margin-left: 200px;
+    // }
 
-    .statement__img {
-        top: 100px;
-        left: 8%;
-        width: 40%;
-    }
+    // .statement__img {
+    //     top: 100px;
+    //     left: 8%;
+    //     width: 40%;
+    // }
 
     // CONTACT SECTION
     .contact__container {
@@ -137,6 +186,10 @@
     //ART / FEATURED PROJECTS
     .modal__description {
         width: 60%;
+    }
+
+    .quote {
+        font-size: 1.8em;
     }
 
     // CONTACT SECTION
@@ -246,7 +299,6 @@
     }
 
     // CURRICULUM VITAE
-
     .container {
         padding: 0;
         width: 49.5%;
@@ -270,13 +322,14 @@
     }
 
     .statement__content {
-        margin-top: 145px;
+        // margin-top: 145px;
+        width: 100%;
     }
 
     .statement__img {
         top: 102px;
         left: 0;
-        width: 70%;
+        width: 65%;
         margin: auto;
     }
 
@@ -365,8 +418,37 @@
         height: 600px;
     }
 
-    .modal-content img {
-        width: 83%;
+    //GALLERY
+    .gallery__content {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+    .gallery__row {
+        padding: 8px 30px;
+
+    }
+    .long-vertical img {
+        width: 89%;
+    }
+    .small-rectangular img {
+        width: 90%;
+    }
+    .frame {
+        top: 0;
+    }
+
+    .modal {
+        width: 95vw;
+        height: 98vh;
+
+        &-content img {
+            width: 95%;
+        }
+        &__description {
+            width: 80%;
+            margin-top: -10px;
+        }
     }
 
     .heading__secondary {
@@ -396,17 +478,7 @@
         bottom: -61px;
     }
 
-    //GALLERY 
-    .gallery__content {
-        flex: 100%;
-        max-width: 100%;
-      }
-
-    .gallery__row {
-        padding: 8px 30px;
-
-    }
-
+  
     //ABOUT 
     .about {
         padding-bottom: 50px;
@@ -472,12 +544,29 @@
     //ARTIST STATEMENT 
     .statement__img {
         top: 30px;
+        width: 70%;
+    }
+
+    .statement__text {
+        padding: 0;
+    }
+
+    .blockquote::before {
+        top: -40%;
+    }
+
+    .quote {
+        font-size: 1.5em;
     }
 
     // CONTACT FORM
     .section__contact {
         background: $color-black;
-        padding-top: 20px;
+        padding-top: 50px;
+    }
+
+    .contact__container {
+        margin: 130px 0 70px 0;
     }
 
     .form__content {
@@ -501,23 +590,13 @@
         padding-top: 50px;
     }
 
-
-    .modal__description {
-        width: 80%;
-        margin-top: -60px;
-    }
-
-    .frame {
-        margin-top: 60px;
-    }
-
     .popup__img {
         width: 90%;
         margin: auto;
     }
-    .breaker {
-        background-attachment: fixed;
-    }
+    // .breaker {
+    //     background-attachment: fixed !important;
+    // }
 
 }
 
@@ -526,6 +605,10 @@
      // NAV
      .toggle-btn {
         left: 72%;
+    }
+
+    .section__art {
+        padding-top: 50px;
     }
 
     .contact__container .contact__form {
@@ -544,6 +627,9 @@
     .heading__secondary {
         left: -13px;
     }
+    .mg-top-lg {
+        margin-top: 50px;
+    }
 
     .gallery__row {
         padding: 4px 32px;
@@ -554,8 +640,19 @@
         top: -15%;
     }
 
+    .statement__box {
+        padding-bottom: 60px;
+    }
+    .statement__content {
+        margin-top: 100px;
+    }
+
     .statement__text:first-child {
         padding-top: 16px;
+    }
+
+    .about {
+        padding: 60px 0 0 0;
     }
 
     .about__video {
@@ -567,6 +664,29 @@
         font-size: .8em;
         width: 86%;
     }
+
+    .statement__img {
+        width: 76%;
+    }
+  
+    .blockquote::before {
+        top: -24%;
+    }
+
+    .quote {
+        font-size: 1.3em;
+    }
+
+    .breaker3 {
+        background-position: right;
+    }
+
+    .contact__container {
+        margin: 120px 0 70px 0;
+    }
+
+   
+
 
 }
 
