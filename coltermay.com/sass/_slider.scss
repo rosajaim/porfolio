@@ -20,7 +20,7 @@
         &__content {
             position: absolute;
             color: $color-white;
-            // background-color: $color-black-bg;
+            background-color: darken($color-black-bg, 30%);
             padding: 30px 30px 30px 60px;
             bottom: 70px;
             left: -600px;
