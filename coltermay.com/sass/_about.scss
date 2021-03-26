@@ -3,9 +3,7 @@
 }
 
 .about {
-    display: flex; 
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     padding: 100px 0 100px 0;
 
     &__text {
@@ -21,7 +19,6 @@
         &::first-letter {
            @include firstLetter;
         }
-
     }
 
     &__name {
@@ -39,7 +36,7 @@
 
     }
 
-    /* ABOUT IMG REVEALING ON SCROLL */
+/* ===== IMG REVEALING ON SCROLL ===== */
     &__photo {
         @include imgSetings;
         filter: brightness(.05);
@@ -49,14 +46,14 @@
         @include imgSetings;
         filter: brightness(1);
     }
-
+/* ===================================== */
+   
     &__video {
         margin-top: 100px;
         position: relative;
         padding-bottom: 66.25%;
         height: 0;
         overflow: hidden;
-
     }
 
     &__video iframe {
@@ -79,7 +76,7 @@
     margin-top: -35px;
 }
 
-/* **********  TIMELINE VERTICAL RULER ***********/ //0.822
+/* ==========  TIMELINE VERTICAL RULER ========== */ 
 .cv {
     background-image: radial-gradient(rgba(0, 0, 0, 0.753) 40%, 
                     rgb(0, 0, 0) 55%, 
@@ -121,10 +118,9 @@
     & h3 {
         color: $color-white;
     }
-
 }
 
-/* CONTAINER AROUND CONTENT */
+/* ========== CONTAINER AROUND CONTENT ========= */
 .container {
     padding: 0 40px;
     position: relative;
@@ -144,7 +140,6 @@
         top: 20px;
         border-radius: 50%;
         z-index: 1;
-
     }
 }
 
@@ -168,7 +163,6 @@
 .content {
     padding: 20px 30px;
     position: relative;
-    // border-radius: 6px;
     font-weight: 300;
     color: $color-grey-light;
 
@@ -185,20 +179,16 @@
 .align-right {text-align: right;}
 .li-dots-right {direction: rtl; unicode-bidi: embed;}
 
-
-
 /* **********  ARTIST STATEMENT ***********/
 .statement__box {
     margin-top: -200px;
     padding-bottom: 100px;
-
 }
 
 .artist__statement {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
 
 .statement__content {
@@ -206,6 +196,7 @@
     margin-top: 85px;
 }
 
+/* ===== ARTIST STATEMENT IMG REVEALING ON SCROLL ===== */
 .statement__img {
  @include statementImg;
     filter: brightness(.05);
@@ -215,6 +206,7 @@
     @include statementImg;
     filter: brightness(1);
 }
+/* ============================ */
 
 .statement {
     &__text {

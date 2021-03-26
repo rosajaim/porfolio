@@ -193,14 +193,14 @@ t1.to(".two", .8, {
 t1.to(".menu", 1.5, {
   top: "0%",
   ease: Expo.easeInOut,
-  delay: -1.5
+  delay: -1
 });
 
-t1.staggerFrom(".menu ul li", .5, {
+t1.staggerFrom(".menu ul li", .3, {
   x: -200,
   opacity: 0,
   ease: Expo.easeOut
-}, 0.3);
+}, .3);
 
 t1.reverse();
 $(document).on("click", ".toggle-btn", function () {

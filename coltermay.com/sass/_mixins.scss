@@ -11,8 +11,7 @@
     width: 34%;
     display: inline-block;
     padding-top: 180px;
-    transition: 1s;
-    
+    transition: 1s; 
 }
 
 @mixin navBg {
@@ -32,7 +31,6 @@
     span {
         color: $color-grey-light;
     }
-
 }
 @mixin formInput {
     transform: translateY(-20px);
@@ -99,10 +97,9 @@
         left: 0.6%;
         color: darken($color-grey-darker, 10% );
         pointer-events: none;
-
-    }
-    
+    }   
 }
+
 @mixin firstLetter {
     color: $color-primary;
     font-size: 2em;
@@ -125,4 +122,10 @@
 }
 @mixin breaker3Mobile {
     background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolves-section3.jpeg);   
+}
+
+@mixin flexCenter {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }

@@ -44,16 +44,14 @@
     .contact__box {
         font-size: 1.4em;
     }
-   
-   
+     
 }
 
 @media screen and (max-width: $bp-largest) {
-
+   //ART
     .popup__content {
         flex-direction: column;
         height: 80vh;
-
     }
 
     .popup__right {
@@ -66,7 +64,6 @@
         padding-top: 104px;
 
     }
-
 
     //ABOUT 
     .about__photo {
@@ -82,16 +79,6 @@
         margin-top: 130px;
     }
 
-    // .statement__text {
-    //     margin-left: 200px;
-    // }
-
-    // .statement__img {
-    //     top: 100px;
-    //     left: 8%;
-    //     width: 40%;
-    // }
-
     // CONTACT SECTION
     .contact__container {
         width: 90%;
@@ -105,10 +92,10 @@
         height: 550px;
         box-shadow: none;
     }
-
 }
 
 @media screen and (max-width: $bp-large) {
+    //ART 
     .glide img {
         height: 400px;
     }
@@ -146,7 +133,7 @@
         left: 84%;
     }
 
-    //ART SECTION
+    //ART 
     .section__art {
         background: $color-black;
     }
@@ -174,6 +161,7 @@
         left: 10px;
     }
 
+    //TYPOGRAPHY
     .heading__secondary {
         padding: 0px 0 30px 67px;
     }
@@ -307,7 +295,6 @@
         width: 49.5%;
     }
 
-
     // ARTIST STATEMENT
     .artist__statement {
         flex-direction: column;
@@ -325,7 +312,6 @@
     }
 
     .statement__content {
-        // margin-top: 145px;
         width: 100%;
     }
 
@@ -351,7 +337,6 @@
 
     .glide__slide--link {
         padding: 9px 6px;
-        // font-size: .7em;
     }
 
     .popup__content {
@@ -378,24 +363,6 @@
         flex: 50%;
         max-width: 50%;
       }
-
-
-   
-
-    // .nav,
-    // .social__icons,
-    // .logo {
-    //     // display: none;
-    // }
-
-    // .main__nav .logo__mobile {
-    //     display: block;
-    //     margin-left: 16px;
-    // }
-
-    // .menu__btn {
-    //     display: block;
-    // }
 
 }
 
@@ -663,6 +630,10 @@
 
     .about {
         padding: 60px 0 0 0;
+
+        &__text {
+            padding-top: 80px;
+        }
     }
 
     .about__video {
@@ -695,31 +666,5 @@
         margin: 120px 0 70px 0;
     }
 
-   
-
-   
-
 
 }
-
-
-//RESPONSIVE BREAKPOINTS
-// $bp-largest: 222.5em; //2560px
-// $bp-larger: 75em; //1200px
-// $bp-large: 62.5em; //1000px
-// $bp-medium: 50em; //800px
-// $bp-medium2: 43.57em; //700px
-// $bp-small: 37.5em; //600px
-// $bp-smaller: 25em; //400px 
-// $bp-smaller2: 23.43em; //375px
-
-// @media(max-width: 600px) { 
-//     .main__nav .logo {
-//         display: none;
-//     }
-
-//     .main__nav .logo__mobile {
-//         display: block;
-//     }
-
-// } 

@@ -6,9 +6,7 @@
 
 // ========== ART SLIDER ==========
 .main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+ @include flexCenter;
   padding: 50px 0 140px;
   max-width: 89rem;
   margin: auto;
@@ -35,7 +33,6 @@
   transition: all ease 0.4s;
   overflow: hidden;
 
-
   &--active {
     transform: scale(1);
     filter: brightness(100%);
@@ -57,9 +54,7 @@
       background: rgba(0, 0, 0, 0.466);
       border: none;
     }
-
   }
-
 }
 
 .col-8 {
@@ -145,7 +140,6 @@
     &--right {
       right: -80px;
     }
-
   }
 }
 
@@ -257,7 +251,6 @@
   }
 
   &__close {
-
     &:link,
     &:visited {
       color: $color-grey-dark;
@@ -277,62 +270,3 @@
   }
 }
 
-.quote {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-  font-weight: 300;
-  width: 85%;
-  max-width: 46ch;
-  color: $color-white2;
-
-  &::before {
-    position: absolute;
-    content: "\201c";
-    color: $color-primary;
-    font-size: 4em;
-    display: block;
-    top: -70%;
-    left: -5%;
-  }
-}
-
-.breaker {
-  background-image: linear-gradient(rgba($bg-overlay, .5), rgba($bg-overlay, .5)), url(../img/wolf-section-mobile.jpeg);
-  @include sectionBreaker;
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 125em) {
-    @include breakerMobile;
-    background-attachment: fixed;
-  }
-}
-
-.breaker2 {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/chita-section-mobile.jpg);
-  @include sectionBreaker;
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 125em) {
-    @include breaker2Mobile;
-    background-attachment: fixed;
-  }
-
-}
-
-.breaker3 {
-  background-image: linear-gradient(rgba($color-black, .5), rgba($color-black, .5)), url(../img/wolves-section3-mobile.jpeg);
-  @include sectionBreaker;
-
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
-  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-  only screen and (min-width: 125em) {
-    @include breaker3Mobile;
-    background-attachment: fixed;
-  }
-
-}

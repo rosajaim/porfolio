@@ -267,7 +267,8 @@ span.two {
   justify-content: center;
   align-items: center;
   padding: 100px 0 100px 0;
-  /* ABOUT IMG REVEALING ON SCROLL */ }
+  /* ===== IMG REVEALING ON SCROLL ===== */
+  /* ===================================== */ }
   .about__text {
     width: 50%;
     max-width: 82ch;
@@ -329,7 +330,7 @@ span.two {
   width: 160px;
   margin-top: -35px; }
 
-/* **********  TIMELINE VERTICAL RULER ***********/
+/* ==========  TIMELINE VERTICAL RULER ========== */
 .cv {
   background-image: radial-gradient(rgba(0, 0, 0, 0.753) 40%, black 55%, black 85%, black 50%, black 100%), url(../img/leon2-min.jpeg);
   background-size: contain;
@@ -360,7 +361,7 @@ span.two {
   .timeline h3 {
     color: #fff; }
 
-/* CONTAINER AROUND CONTENT */
+/* ========== CONTAINER AROUND CONTENT ========= */
 .container {
   padding: 0 40px;
   position: relative;
@@ -425,6 +426,7 @@ span.two {
   width: 40%;
   margin-top: 85px; }
 
+/* ===== ARTIST STATEMENT IMG REVEALING ON SCROLL ===== */
 .statement__img {
   width: 34%;
   display: inline-block;
@@ -439,6 +441,7 @@ span.two {
   transition: 1s;
   filter: brightness(1); }
 
+/* ============================ */
 .statement__text {
   padding: 0 0 0 30px;
   line-height: 1.6;
@@ -683,58 +686,6 @@ span.two {
     line-height: 1; }
   .popup__close:hover {
     color: #ffd880; }
-
-.quote {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-  font-weight: 300;
-  width: 85%;
-  max-width: 46ch;
-  color: #f6f5ee; }
-  .quote::before {
-    position: absolute;
-    content: "\201c";
-    color: #ffd880;
-    font-size: 4em;
-    display: block;
-    top: -70%;
-    left: -5%; }
-
-.breaker {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
-  height: 70vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .breaker {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section.jpeg);
-      background-attachment: fixed; } }
-
-.breaker2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section-mobile.jpg);
-  height: 70vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .breaker2 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
-      background-attachment: fixed; } }
-
-.breaker3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3-mobile.jpeg);
-  height: 70vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative; }
-  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
-    .breaker3 {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3.jpeg);
-      background-attachment: fixed; } }
 
 .section__contact {
   padding: 100px 0 0 0;
@@ -985,8 +936,6 @@ span.two {
   .read-more:hover {
     opacity: 1; }
 
-/* Responsive layout - makes a two.gallery__content-layout instead of four.gallery__contents */
-/* Responsive layout - makes the two.gallery__contents stack on top of each other instead of next to each other */
 .long-horizontal {
   height: 100%;
   display: flex;
@@ -1043,6 +992,60 @@ span.two {
   width: 100%;
   height: 64px;
   background-color: #000000; }
+
+/* Responsive layout - makes a two.gallery__content-layout instead of four.gallery__contents */
+/* Responsive layout - makes the two.gallery__contents stack on top of each other instead of next to each other */
+.breaker {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section-mobile.jpeg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .breaker {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolf-section.jpeg);
+      background-attachment: fixed; } }
+
+.breaker2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section-mobile.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .breaker2 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/chita-section.jpg);
+      background-attachment: fixed; } }
+
+.breaker3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3-mobile.jpeg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-width: 125em) {
+    .breaker3 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/wolves-section3.jpeg);
+      background-attachment: fixed; } }
+
+.quote {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  font-weight: 300;
+  width: 85%;
+  max-width: 46ch;
+  color: #f6f5ee; }
+  .quote::before {
+    position: absolute;
+    content: "\201c";
+    color: #ffd880;
+    font-size: 4em;
+    display: block;
+    top: -70%;
+    left: -5%; }
 
 @media screen and (min-width: 90.5em) and (max-width: 150em) {
   .logo {
@@ -1388,6 +1391,8 @@ span.two {
     padding-top: 16px; }
   .about {
     padding: 60px 0 0 0; }
+    .about__text {
+      padding-top: 80px; }
   .about__video {
     margin-bottom: 50px; }
   .glide__slide--link {
