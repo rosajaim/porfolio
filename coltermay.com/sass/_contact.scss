@@ -16,7 +16,7 @@
     min-height: 550px;
     display: flex;
     flex-direction: column-reverse;
-    z-index: 999;
+    z-index: 1;
 
     & .contact__form {  //contactForm
         position: absolute;

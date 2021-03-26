@@ -187,6 +187,9 @@
     .modal__description {
         width: 60%;
     }
+    .modal__description {
+        text-align: center;
+    }
 
     .quote {
         font-size: 1.8em;
@@ -401,9 +404,7 @@
     .slide .slide__content {
         bottom: -300px;
         left: 0; 
-        width: 100%;
-
-        
+        width: 100%; 
     }
  
     .slide.current .slide__content {
@@ -422,6 +423,13 @@
      .toggle-btn {
         left: 78%;
     }
+    .nav__link {
+        color: lighten($color-grey-dark, 10%);
+
+        &:hover {
+            color: $color-grey-light;
+        }
+    }
     .heading__secondary {
         left: -9px;
         padding: 0px 0 30px 63px;
@@ -438,11 +446,14 @@
       }
 
     .gallery__row {
-        padding: 8px 30px;
+        padding: 8px 10px;
 
     }
+    .thumbnail-img {
+        opacity: 1;
+    }
     .long-vertical img {
-        width: 89%;
+        width: 70%;
     }
     .small-rectangular img {
         width: 90%;
@@ -452,11 +463,11 @@
     }
 
     .modal {
-        width: 95vw;
-        height: 98vh;
+        width: 100vw;
+        height: 95vh;
 
         &-content img {
-            width: 95%;
+            width: 80%;
         }
         &__description {
             width: 80%;
@@ -622,8 +633,11 @@
 
     .modal__description {
         width: 90%;
-        margin-top: -145px;
+        margin-top: -77px;
+    }.modal-content img {
+        width: 90%;
     }
+
 
     .heading__secondary {
         left: -13px;
@@ -631,11 +645,6 @@
     .mg-top-lg {
         margin-top: 50px;
     }
-
-    .gallery__row {
-        padding: 4px 32px;
-    }
-
 
     .blockquote::before {
         top: -15%;
@@ -685,6 +694,8 @@
     .contact__container {
         margin: 120px 0 70px 0;
     }
+
+   
 
    
 

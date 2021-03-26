@@ -160,8 +160,6 @@ var glide = new Glide('.glide', {
   focusAt: 'center'
 }).mount()
 
-
-
 // ========== SWAPS h2 CURRICULUM VITAE TO h2 CV ==========
 $(function () {
   $(window).bind("resize", function () {
@@ -198,7 +196,7 @@ t1.to(".menu", 1.5, {
   delay: -1.5
 });
 
-t1.staggerFrom(".menu ul li", 2, {
+t1.staggerFrom(".menu ul li", .5, {
   x: -200,
   opacity: 0,
   ease: Expo.easeOut

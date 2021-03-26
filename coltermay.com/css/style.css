@@ -209,7 +209,7 @@ span.two {
   height: 100vh;
   width: 100%;
   top: -100%;
-  z-index: 1; }
+  z-index: 9; }
   .menu span {
     color: #fff; }
 
@@ -227,9 +227,9 @@ span.two {
 
 .nav__link {
   text-decoration: none;
-  color: #424242; }
+  color: #a6a6a6; }
   .nav__link:hover {
-    color: #757575; }
+    color: #5b5b5b; }
   .nav__link::before {
     content: '[';
     left: -5px; }
@@ -274,7 +274,7 @@ span.two {
     padding: 100px 40px 20px 2px;
     line-height: 1.6;
     font-weight: 200;
-    font-size: 1.1em;
+    font-size: 1.2em;
     letter-spacing: 1.2px;
     color: #a6a6a6; }
     .about__text::first-letter {
@@ -331,7 +331,7 @@ span.two {
 
 /* **********  TIMELINE VERTICAL RULER ***********/
 .cv {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.822) 40%, black 55%, black 85%, black 50%, black 100%), url(../img/leon2-min.jpeg);
+  background-image: radial-gradient(rgba(0, 0, 0, 0.753) 40%, black 55%, black 85%, black 50%, black 100%), url(../img/leon2-min.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
@@ -340,7 +340,8 @@ span.two {
   position: relative;
   max-width: 85rem;
   margin: 0 auto;
-  margin-top: 180px; }
+  margin-top: 180px;
+  font-size: 1.1em; }
   .timeline::after {
     content: '';
     position: absolute;
@@ -442,7 +443,7 @@ span.two {
   padding: 0 0 0 30px;
   line-height: 1.6;
   font-weight: 200;
-  font-size: 1.1em;
+  font-size: 1.2em;
   letter-spacing: 1.2px;
   max-width: 70ch;
   color: #a6a6a6; }
@@ -751,7 +752,7 @@ span.two {
   min-height: 550px;
   display: flex;
   flex-direction: column-reverse;
-  z-index: 999; }
+  z-index: 1; }
   .contact__container .contact__form {
     position: absolute;
     padding: 70px 50px;
@@ -1139,6 +1140,8 @@ span.two {
     width: 90%; }
   .modal__description {
     width: 60%; }
+  .modal__description {
+    text-align: center; }
   .quote {
     font-size: 1.8em; }
   .section__contact {
@@ -1257,6 +1260,10 @@ span.two {
     background-position: center right 20%; }
   .toggle-btn {
     left: 78%; }
+  .nav__link {
+    color: #757575; }
+    .nav__link:hover {
+      color: #a6a6a6; }
   .heading__secondary {
     left: -9px;
     padding: 0px 0 30px 63px; }
@@ -1266,18 +1273,20 @@ span.two {
     flex: 100%;
     max-width: 100%; }
   .gallery__row {
-    padding: 8px 30px; }
+    padding: 8px 10px; }
+  .thumbnail-img {
+    opacity: 1; }
   .long-vertical img {
-    width: 89%; }
+    width: 70%; }
   .small-rectangular img {
     width: 90%; }
   .frame {
     top: 0; }
   .modal {
-    width: 95vw;
-    height: 98vh; }
+    width: 100vw;
+    height: 95vh; }
     .modal-content img {
-      width: 95%; }
+      width: 80%; }
     .modal__description {
       width: 80%;
       margin-top: -10px; }
@@ -1362,13 +1371,13 @@ span.two {
     left: -38px; }
   .modal__description {
     width: 90%;
-    margin-top: -145px; }
+    margin-top: -77px; }
+  .modal-content img {
+    width: 90%; }
   .heading__secondary {
     left: -13px; }
   .mg-top-lg {
     margin-top: 50px; }
-  .gallery__row {
-    padding: 4px 32px; }
   .blockquote::before {
     top: -15%; }
   .statement__box {

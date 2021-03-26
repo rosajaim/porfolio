@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS STYLES -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="./css/animate.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
@@ -18,21 +21,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
     <title>Colter May</title>
-    
+
 </head>
 
 <body>
     <header class="header" id="header">
         <!-- ====== NAVIGATION ====== -->
         <div class="navigation">
-            <a class="logo" href="#">J<span class="active">R</span></a>
-            <div class="toggle-btn">
+            <a class="logo wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s" href="#">J<span
+                    class="active">R</span></a>
+            <div class="toggle-btn wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                 <span class="one"></span>
                 <span class="two"></span>
             </div>
             <nav class="menu">
                 <div class="data">
-                    <ul class="nav__list" >
+                    <ul class="nav__list">
                         <li class="nav__item"><a class="nav__link" href="#header">Home</a></li>
                         <li class="nav__item"><a class="nav__link" href="#art">Gallery</a></li>
                         <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
@@ -82,20 +86,20 @@
         </div>
         <!--slider arrow buttons-->
         <div class="slide__buttons">
-            <button id="prev"><i class="fas fa-arrow-left"></i></button>
-            <button id="next"><i class="fas fa-arrow-right"></i></button>
+            <button class="wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s" id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button class="wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s" id="next"><i class="fas fa-arrow-right"></i></button>
         </div>
     </header>
 
     <!-- ====== SECTION ART ====== -->
     <section class="section__art" id="art">
-        <h2 class="heading__secondary" data-text="01">My Work</h2>
+        <h2 class="heading__secondary wow animated fadeInDown"data-wow-duration="2s" data-wow-delay=".5s" data-text="01">My Work</h2>
         <div class="main">
-            <div class="col-4">
+            <div class="col-4 wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s" data-text="01">
                 <h2>Featured Projects</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Ipsum minus beatae eius, iste aspernatur saepe voluptatibus et? Tempora, et atque.</p>
-                <a class="art__link" href="#gallery">see more</a>
+                <a class="art__link wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="1.8s" href="#gallery">see more</a>
             </div>
 
             <!-- FEATURED PROJECTS SLIDER -->
@@ -229,12 +233,15 @@
 
     <!-- ======== SECTION DEVIDER ========= -->
     <section class="breaker">
-        <blockquote class="quote">
-            A true artist is not one who is inspired, but one who inspires others.
-            <cite>&ndash;Salvador Dali</cite>
-        </blockquote>
+        <div class="quote">
+            <blockquote class="wow animate fadeInUp"data-wow-duration="2s" data-wow-delay=".5s">
+                true artist is not one who is inspired, but one who inspires others.
+                <cite>&ndash;Salvador Dali</cite>
+            </blockquote>
+        </div>
+       
     </section>
-    
+
     <!-- ====== ART GRID ====== -->
     <section class="gallery" id="gallery">
         <div id="overlay"></div>
@@ -330,7 +337,7 @@
                     </div>
                     <div class="modal">
                         <div class="close">&#x2715;</div>
-                        <div class="modal-content">
+                        <div class="long-vertical">
                             <img src="./img/bear-gallery.jpg" alt="Bear" class="frame">
                             <div class="modal__description">
                                 <span>12.03.2020</span>
@@ -485,7 +492,7 @@
                         </div>
                     </div>
                 </div>
-              
+
             </div>
 
             <!-- ======= THIRD COLUMN ======= -->
@@ -509,7 +516,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="box">
                     <div class="thumbnail">
                         <div class="thumbnail-overlay"></div>
@@ -539,7 +546,7 @@
                     </div>
                     <div class="modal">
                         <div class="close">&#x2715;</div>
-                        <div class="modal-content">
+                        <div class="long-vertical">
                             <img src="./img/tiger-gallery.jpg" alt="Tiger" class="frame">
                             <div class="modal__description">
                                 <span>12.03.2020</span>
@@ -580,7 +587,7 @@
                     <div class="modal">
                         <div class="close">&#x2715;</div>
                         <div class="modal-content">
-                            <img src="./img/bison.jpeg" alt="Mono" class="frame">
+                            <img src="./img/bison.jpeg" alt="Bison" class="frame">
                             <div class="modal__description">
                                 <span>12.03.2020</span>
                                 <h3 class="heading__terceary mg-top-sm mg-bottom-sm">Title</h3>
@@ -665,7 +672,8 @@
                     <div class="modal">
                         <div class="close">&#x2715;</div>
                         <div class="modal-content">
-                            <img src="./img/jirafa.jpg" alt="jirafa" class="frame"> <div class="modal__description">
+                            <img src="./img/jirafa.jpg" alt="jirafa" class="frame">
+                            <div class="modal__description">
                                 <span>12.03.2020</span>
                                 <h3 class="heading__terceary mg-top-sm mg-bottom-sm">Title</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -736,31 +744,33 @@
         </div>
     </section>
     <section class="breaker2">
-        <blockquote class="quote">
-            Artists are just children who refuse to put down their crayons. 
-            <cite>&ndash;Al Hirschfeld</cite>
-        </blockquote>
+        <div class="quote">
+            <blockquote class="wow animate fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                Artists are just children who refuse to put down their crayons.
+                <cite>&ndash;Al Hirschfeld</cite>
+            </blockquote>
+        </div>     
     </section>
 
     <!-- ====== SECTION ABOUT ====== -->
     <section class="section__about" id="about">
-        <h2 class="heading__secondary mg-top-lg" data-text="02">About</h2>
+        <h2 class="heading__secondary mg-top-lg wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" data-text="02">About</h2>
         <div class="about">
-            <div class="about__text">
+            <div class="about__text wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus id officia
-                    exercitationem est minima neque delectus excepturi a. Asperiores atque 
+                    exercitationem est minima neque delectus excepturi a. Asperiores atque
                     ipsum eligendi esse odio veniam, quasi laboriosam officiis eaque incidunt
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, aliquid 
-                    illo at obcaecati deleniti nam, facere iusto magni sequi error beatae dolor 
-                    tenetur est eveniet voluptate quasi ad, eos pariatur debitis deserunt laboriosam 
-                    exercitationem possimus! Libero consectetur ipsum placeat ut fugit praesentium 
-                    vel harum velit assumenda officiis deleniti, provident nulla sint atque unde 
-                    nemo, perspiciatis dolores natus nobis doloribus iste non. Asperiores reiciendis 
-                    voluptatem cupiditate quidem dolorem sed, quibusdam a, eveniet libero molestiae 
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, aliquid
+                    illo at obcaecati deleniti nam, facere iusto magni sequi error beatae dolor
+                    tenetur est eveniet voluptate quasi ad, eos pariatur debitis deserunt laboriosam
+                    exercitationem possimus! Libero consectetur ipsum placeat ut fugit praesentium
+                    vel harum velit assumenda officiis deleniti, provident nulla sint atque unde
+                    nemo, perspiciatis dolores natus nobis doloribus iste non. Asperiores reiciendis
+                    voluptatem cupiditate quidem dolorem sed, quibusdam a, eveniet libero molestiae
                     aperiam veritatis iusto dolorum, non corrupti. Hic est alias iure numquam ipsum
                 </p>
-                <div class="about__name">
+                <div class="about__name wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="1.5s">
                     <p>Wildlife ispired artist</p>
                     <h3 class="heading__terceary">Colter <span class="active">May</span></h3>
                     <?xml version="1.0" encoding="UTF-8"?>
@@ -848,13 +858,13 @@
         </div>
 
         <!-- ====== CV TIMELINE ====== -->
-        <h2 class=" heading__secondary" id="cv" data-text="03">Curriculum Vitae</h2>
-        <h2 class="js-heading__secondary" data-text="03">CV</h2>
+        <h2 class=" heading__secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" id="cv" data-text="03">Curriculum Vitae</h2>
+        <h2 class="js-heading__secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" data-text="03">CV</h2>
 
         <div class="cv">
             <div class="timeline">
                 <div class="container right">
-                    <div class="content">
+                    <div class="content wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2>Shows</h2>
                         <h3>2020</h3>
                         <ul>
@@ -873,7 +883,7 @@
                     </div>
                 </div>
                 <div class="container left">
-                    <div class="content">
+                    <div class="content wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2 class="align-right">Shows</h2>
                         <h3 class="align-right">2018-2019</h3>
                         <ul class="align-right">
@@ -887,7 +897,7 @@
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2>Awards</h2>
                         <h3>2020-2021</h3>
                         <ul>
@@ -899,7 +909,7 @@
                     </div>
                 </div>
                 <div class="container left">
-                    <div class="content">
+                    <div class="content wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2 class="align-right">Awards</h2>
                         <h3 class="align-right">2019</h3>
                         <ul class="align-right">
@@ -913,7 +923,7 @@
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2>Awards</h2>
                         <h3>2018</h3>
                         <ul>
@@ -926,7 +936,7 @@
                     </div>
                 </div>
                 <div class="container left">
-                    <div class="content">
+                    <div class="content wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2 class="align-right">Education</h2>
                         <h3 class="align-right">2019-present</h3>
                         <ul class="align-right">
@@ -936,7 +946,7 @@
                     </div>
                 </div>
                 <div class="container right">
-                    <div class="content">
+                    <div class="content wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                         <h2>Education</h2>
                         <h3>2017-2018</h3>
                         <ul>
@@ -948,15 +958,15 @@
         </div>
 
         <div class="about__video">
-            <iframe src="https://www.youtube.com/embed/lugard7P0nw" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/lugard7P0nw" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <div class="statement__box">
-            <h2 class="heading__secondary" data-text="04">Artist's statement</h2>
+            <h2 class="heading__secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" data-text="04">Artist's statement</h2>
             <div class="artist__statement">
                 <img class="statement__img js-statement__img" src="./img/brushes-min.jpeg" alt=" May Family">
-                <div class="statement__content">
+                <div class="statement__content wow animate fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                     <p class="statement__text blockquote">
                         <strong>God left us the world unfinished for man to work his skill upon.</strong> He left
                         the electricity in the cloud, the oil in the earth. He left the rivers
@@ -980,20 +990,21 @@
         </div>
     </section>
     <section class="breaker3">
-        <blockquote class="quote">
-            The artist must train not only his eye but also his soul.<br>
-            <cite>&ndash;Wassily Kandinsky </cite>
-        </blockquote>
+        <div class="quote">
+            <blockquote class="wow animate fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+                <blockquote class="">
+                The artist must train not only his eye but also his soul.<br>
+                <cite>&ndash;Wassily Kandinsky </cite>
+            </blockquote>
+        </div>   
     </section>
 
 
     <section class="section__contact" id="contact">
-        <h2 class="heading__secondary" data-text="05">Contact</h2>
+        <h2 class="heading__secondary wow animated fadeInDown" data-wow-duration="2s" data-wow-delay=".5s" data-text="05">Contact</h2>
         <div class="contact__box">
             <div class="contact__container">
-                <!--container -->
-                <div class="contact__info">
-                    <!--contactInfo -->
+                <div class="contact__info wow animated fadeInLeft" data-wow-duration="2s" data-wow-delay=".5s">
                     <div>
                         <h2>Contact info</h2>
                         <ul class="info">
@@ -1020,8 +1031,7 @@
                         <li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a> </li>
                     </ul>
                 </div>
-                <div class="contact__form">
-                    <!--contactForm-->
+                <div class="contact__form wow animated fadeInRight" data-wow-duration="2s" data-wow-delay=".5s">
                     <h3 class="heading__terceary black">Contact Colter May</h3>
                     <div class="form__content">
                         <div class="input__box w50">
@@ -1039,7 +1049,7 @@
                         <div class="input__box w100">
                             <textarea name="message" placeholder="Message"></textarea>
                         </div>
-                        <div class="input__box w50">
+                        <div class="input__box w50 wow animated fadeInUp" data-wow-duration="2s" data-wow-delay="2.3s">
                             <input type="submit" value="send">
                         </div>
                     </div>
@@ -1053,11 +1063,16 @@
     </footer>
 
 </body>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
-<script src="./js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="./js/main.js"></script>
 
+
+<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
 
 </html>

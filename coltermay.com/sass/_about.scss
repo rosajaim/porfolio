@@ -14,7 +14,7 @@
         padding: 100px 40px 20px 2px;
         line-height: 1.6;
         font-weight: 200;
-        font-size: 1.1em;
+        font-size: 1.2em;
         letter-spacing: 1.2px;
         color: $color-grey-light;
 
@@ -79,9 +79,9 @@
     margin-top: -35px;
 }
 
-/* **********  TIMELINE VERTICAL RULER ***********/
+/* **********  TIMELINE VERTICAL RULER ***********/ //0.822
 .cv {
-    background-image: radial-gradient(rgba(0, 0, 0, 0.822) 40%, 
+    background-image: radial-gradient(rgba(0, 0, 0, 0.753) 40%, 
                     rgb(0, 0, 0) 55%, 
                     rgb(0, 0, 0) 85%, 
                     rgb(0, 0, 0) 50%, 
@@ -97,6 +97,7 @@
     max-width: 85rem;
     margin: 0 auto;
     margin-top: 180px;
+    font-size: 1.1em;
 
     &::after {
         content: '';
@@ -220,7 +221,7 @@
         padding: 0 0 0 30px;
         line-height: 1.6;
         font-weight: 200;
-        font-size: 1.1em;
+        font-size: 1.2em;
         letter-spacing: 1.2px;
         max-width: 70ch;
         color: $color-grey-light;

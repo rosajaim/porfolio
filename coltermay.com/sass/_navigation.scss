@@ -55,7 +55,7 @@ span.two {
     height: 100vh;
     width: 100%;
     top: -100%;
-    z-index: 1;
+    z-index: 9;
 
     & span {
         color: $color-white;
@@ -80,10 +80,10 @@ span.two {
 
 .nav__link {
     text-decoration: none;
-    color: darken($color-grey-dark, 10%);
+    color: $color-grey-light;
 
     &:hover {
-        color: lighten($color-grey-dark, 10%);
+        color: $color-grey-dark;
     }
 
     &::before {
