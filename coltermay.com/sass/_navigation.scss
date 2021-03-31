@@ -33,6 +33,16 @@
     z-index: 99;
 }
 
+.menu__btn {
+    position: absolute;
+    top: 20px;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 1px;
+
+}
+
 span.one {
     position: absolute;
     width: 40px;
