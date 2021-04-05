@@ -3976,7 +3976,7 @@ button.scroll_down:before {
   padding: .5rem;
   transition: all .5s; }
   .social_links a i {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: #fff; }
     @media only screen and (max-width: 43.57em) {
       .social_links a i {
@@ -4464,8 +4464,8 @@ button.scroll_down:before {
 .omnifood-color {
   color: #e67e22; }
 
-.portfolio-color {
-  color: #00ADDA; }
+.coltermay-color {
+  color: #ffd880; }
 
 .section__contact {
   padding: 6rem 0 8rem 0;
